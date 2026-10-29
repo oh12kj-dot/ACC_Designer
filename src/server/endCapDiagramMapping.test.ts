@@ -1,0 +1,6 @@
+import {it,expect} from 'vitest';import {endCapDiagram} from './endCapDiagramMapping';
+const recipe={productIds:['1'],sha256:'h',heightsMm:{'1.5':7.5}};const input={productId:'1',variantId:'2',sku:'3',sizeText:'内径1.5mm',variant:{id:'2',sku:'3',sizeText:'内径1.5mm'},galleryUrls:['url'],captures:[{url:'url',sha256:'h',productIds:['1'],fetchedAt:'today',finalUrl:'url'}]};
+it('keeps cord inner diameter and approximate overall height separate',()=>{expect(endCapDiagram(input,recipe)).toMatchObject({innerDiameterMm:1.5,approximateOverallHeightMm:7.5});expect(endCapDiagram(input,recipe)).not.toHaveProperty('connectionPoints');});
+it('rejects outer/approximate or unreviewed labels and foreign captures',()=>{for(const patch of [{sizeText:'1.5mm'},{sizeText:'内径約1.5mm'},{sizeText:'内径5.4mm'},{sku:'other'},{galleryUrls:[]},{captures:[]}])expect(endCapDiagram({...input,...patch},recipe)).toBeUndefined();});
+
+it('preserves explicitly reviewed approximate inner labels',()=>{const approx={...input,sizeText:'内径約8mm',variant:{...input.variant,sizeText:'内径約8mm'}};expect(endCapDiagram(approx,{...recipe,heightsMm:{'約8':13}})).toMatchObject({innerDiameterMm:8,innerDiameterApproximate:true,approximateOverallHeightMm:13});expect(endCapDiagram({...approx,sizeText:'内径8mm'},{...recipe,heightsMm:{'約8':13}})).toBeUndefined();});

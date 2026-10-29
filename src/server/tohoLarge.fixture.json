@@ -1,0 +1,149 @@
+[
+  {
+    "index": 0,
+    "draft": {
+      "id": "kiwa:8711132381476:46969917538596",
+      "productId": "8711132381476",
+      "variantId": "46969917538596",
+      "name": "TOHO丸大ビーズ　No.49 / 3mm / 7g(バラ・約250粒)",
+      "sku": "4964291010499",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-lseed-008?variant=46969917538596",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "made in JAPAN",
+        "TOHO丸大ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約3mm、穴のサイズは約1mmです。不透明な黒です。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50357.jpg?v=1694516567",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/re_kr0104a_1_cf7d7aa1-9f0a-4783-96f6-e5d8ca5cdf9a.jpg?v=1694516568",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/re_kr0107a_2_12ebfe0b-34cf-4cb8-a00a-2f0f25eebf33.jpg?v=1694516567"
+      ],
+      "price": 231,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "3mm",
+      "purchase": {
+        "sourceText": "7g(バラ・約250粒)",
+        "unit": "weight",
+        "approximate": true,
+        "weightG": 7,
+        "estimatedCount": 250
+      },
+      "measurements": [
+        {
+          "sourceText": "3mm",
+          "valuesMm": [
+            3
+          ],
+          "approximate": false,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50357.jpg?v=1694516567",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50357.jpg?v=1694516567",
+      "fetchedAt": "2026-10-08T04:48:34.323Z",
+      "sha256": "bc66f942ab8332d9527cda893b44310cb42c4479604f406934b6c6732f7ed6cc",
+      "bytes": 14968,
+      "mime": "image/webp",
+      "pixelWidth": 450,
+      "pixelHeight": 450,
+      "productIds": [
+        "8711132381476"
+      ],
+      "status": "pending_dimension_region_review"
+    },
+    "objectSha256": "695f8e0b9b69d36164cf203cc73e4064270f11a79e755ef6d452524387961bd3",
+    "sale": {
+      "allowed": true
+    },
+    "held": false
+  },
+  {
+    "index": 33,
+    "draft": {
+      "id": "kiwa:8711137984804:46969930776868",
+      "productId": "8711137984804",
+      "variantId": "46969930776868",
+      "name": "TOHO特大ビーズ 　No.51 / 5.5mm / 約16g(バラ・約90粒)",
+      "sku": "4964291030305",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-llseed-002?variant=46969930776868",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "made in JAPAN",
+        "TOHO特大ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約5.5mmの丸みを帯びたビーズです。不透明な白色です。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50396.jpg?v=1694516739",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50396_1.jpg?v=1694516739",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/re_kr0835_2_d398044e-f7b0-4efe-846a-4bb662430c33.jpg?v=1694516739"
+      ],
+      "price": 550,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "5.5mm",
+      "purchase": {
+        "sourceText": "約16g(バラ・約90粒)",
+        "unit": "unknown",
+        "approximate": true,
+        "estimatedCount": 90
+      },
+      "measurements": [
+        {
+          "sourceText": "5.5mm",
+          "valuesMm": [
+            5.5
+          ],
+          "approximate": false,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:23:41.515Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50396.jpg?v=1694516739",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50396.jpg?v=1694516739",
+      "fetchedAt": "2026-10-07T12:22:35.140Z",
+      "sha256": "88d445bb2b9f7f6644e8f3770dca77cc4836d3fc1d5227c5ddbde2efa28e6a69",
+      "bytes": 7760,
+      "mime": "image/webp",
+      "pixelWidth": 450,
+      "pixelHeight": 450,
+      "productIds": [
+        "8711137984804"
+      ],
+      "status": "pending_dimension_region_review"
+    },
+    "objectSha256": "bf739ecfc0475fa95b6d1a766f9a4d8d88b5d4992a8877ffe523064a440063b3",
+    "sale": {
+      "allowed": true
+    },
+    "held": false
+  }
+]

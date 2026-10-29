@@ -1,0 +1,28 @@
+import {test,expect} from '@playwright/test';
+import sharp from 'sharp';
+for(const bodySizeBox of [false,true,"pair","acrylic","acrylicOrientation","categoryCharm","categoryOther"]) test(bodySizeBox==='categoryCharm'?'category charm BOX preserves unknown axes through save and reload':bodySizeBox==='categoryOther'?'category other BOX preserves unknown axes through save and reload':bodySizeBox==='acrylicOrientation'?'explicit acrylic photo pose preserves provisional pair placement through save and reload':(bodySizeBox==='acrylic'||bodySizeBox==='acrylicOrientation')?'acrylic bead BOX preserves unverified placement through editing save and reload':bodySizeBox==='pair'?'PAIR box preserves unverified axes through editing placement and save':bodySizeBox?'BODY size box shows unverified physical axes through editing, placement and save':'nominal Part is usable in the real local editor without inventing connections',async({page},info)=>{
+ const pairBox=bodySizeBox==='pair'||bodySizeBox==='acrylicOrientation'||bodySizeBox==='categoryCharm';
+ const bytes=await sharp(Buffer.from('<svg width="256" height="256"><circle cx="128" cy="128" r="128" fill="gray"/></svg>')).resize(256,pairBox?128:256).png().toBuffer();
+ const name=(pairBox?'Body pair bead ':bodySizeBox?'Body size bead ':'Nominal pearl ')+info.project.name+' '+String(bodySizeBox);
+ await page.goto('/designs');
+ const ids=await page.evaluate(async({body,name,bodySizeBox})=>{
+  const pairBox=bodySizeBox==='pair'||bodySizeBox==='acrylicOrientation'||bodySizeBox==='categoryCharm',widthMm=pairBox?8:4;
+  const boot=await fetch('/api/local/workspace').then(r=>r.json());
+  const call=async(payload:object)=>{const reply=await fetch('/api/local/workspace',{method:'POST',headers:{'Content-Type':'application/json','x-catalog-token':boot.token},body:JSON.stringify(payload)}).then(r=>r.json());if(reply.error)throw new Error(reply.error.message);return reply.data;};
+  const rpc=(rpcName:string,args:object={})=>call({action:'rpc',name:rpcName,args,key:crypto.randomUUID()});
+  const reserve=await rpc('reserve_asset_upload');for(const path of reserve.paths)await call({action:'upload',path,body,mime:'image/png'});
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',Uint8Array.from(atob(body),c=>c.charCodeAt(0))))).map(n=>n.toString(16).padStart(2,'0')).join('');
+  const [original_path,normalized_high_path,normalized_medium_path,thumbnail_path]=reserve.paths;
+  const nominalPlacement={imageScaleVerified:false,connectionReady:false,...((bodySizeBox==='categoryCharm'||bodySizeBox==='categoryOther')?{recipe:'kiwa-own-photo-category-box-v1',variantAppearanceVerified:false}:{}),...(bodySizeBox==='acrylicOrientation'?{photoOrientationChoice:'reviewed-explicit-own-photo-rotation-for-layout-only',photoRotationDegrees:90,photoOrientationReview:{version:'reviewed-acrylic-photo-pose-v1',rotationDegrees:90,reason:'E2E fixture layout only; physical axes unverified'}}:{}),...((bodySizeBox==='acrylic'||bodySizeBox==='acrylicOrientation')?{recipe:'kiwa-acrylic-own-photo-body-box-v1',variantAppearanceVerified:false}:{}),...(bodySizeBox?{...(pairBox?{publishedBodySizePairMm:[8,4]}:{publishedBodySizeMm:4}),layoutSizeChoice:pairBox?'published-body-size-pair-box-for-layout-only':'published-body-size-square-box-for-layout-only',sizeAxisInterpretationVerified:false,physicalWidthVerified:false,physicalHeightVerified:false}:{})};
+  const part=await rpc('save_part_successor',{part_id:null,payload:{part:{name,category:bodySizeBox==='categoryCharm'?'charm':bodySizeBox==='categoryOther'?'other':(bodySizeBox==='acrylic'||bodySizeBox==='acrylicOrientation')?'bead':'pearl',geometry_kind:'node',width_mm:widthMm,height_mm:4,image_asset_id:reserve.id,metadata:{nominalPlacement}},image_asset:{id:reserve.id,asset_kind:'part_main',content_hash:hash,original_path,normalized_high_path,normalized_medium_path,thumbnail_path,pixel_width:256,pixel_height:pairBox?128:256,calibration_mm_per_px:widthMm/256,source_transform:{placementMode:'published-nominal',...nominalPlacement}},connection_points:[],through_holes:[]}});
+  const read=await rpc('get_part_aggregate',{part_id:part.part_id});if(read.through_holes.length||read.connection_points.length||read.part.width_mm!==widthMm)throw new Error('Invalid nominal Part');
+  const design=await rpc('create_design',{input_name:name,input_type:'necklace'});return{part:part.part_id,design:design.id};
+ },{body:bytes.toString('base64'),name,bodySizeBox});
+ await page.goto(`/parts/${ids.part}/edit`);await expect(page.getByText('掲載サイズで配置できます。画像尺度・サイズ別の外観・接続位置・穴径は未確認です。',{exact:!bodySizeBox})).toBeVisible();if(bodySizeBox)await expect(page.getByText(pairBox?'実際の幅・高さと、掲載値が表す軸・写真との対応は未確認です。':'実際の幅・高さと、サイズが表す軸は未確認です。',{exact:false})).toBeVisible();
+ await page.goto(`/designs/${ids.design}`);await page.getByRole('button',{name,exact:true}).click();await page.getByRole('button',{name:'この位置に配置',exact:true}).click();await page.getByRole('button',{name:name+' #1',exact:true}).click();
+ await expect(page.getByText('掲載サイズで配置中。画像尺度・接続位置・穴径は未確認です。',{exact:!bodySizeBox})).toBeVisible();
+ if(bodySizeBox)await expect(page.getByText(pairBox?'実際の幅・高さと、掲載値が表す軸・写真との対応は未確認です。':'実際の幅・高さと、サイズが表す軸は未確認です。',{exact:false})).toBeVisible();
+ await page.getByRole('button',{name:'保存',exact:true}).click();await expect(page.getByRole('status')).toContainText('保存しました');
+ await page.reload();await expect(page.getByRole('button',{name:name+' #1',exact:true})).toBeVisible();
+ if(bodySizeBox){await page.getByRole('button',{name:name+' #1',exact:true}).click();await expect(page.getByText(pairBox?'掲載値が表す軸・写真との対応は未確認です。':'サイズが表す軸は未確認です。',{exact:false})).toBeVisible();}
+});

@@ -1,0 +1,52 @@
+{
+  "id": "kiwa:8715248501028:46983750975780",
+  "productId": "8715248501028",
+  "variantId": "46983750975780",
+  "name": "つぶし玉　ゴールド / 外径 1.5mm / 20ヶ",
+  "sku": "10300107",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalfittings-base-end-0a-1m-001?variant=46983750975780",
+  "sourceName": "貴和製作所",
+  "category": "other",
+  "categoryBasis": "分類未確定",
+  "tags": [
+    "ボールチップつぶし玉",
+    "中袋",
+    "取寄商品",
+    "基礎金具",
+    "基礎金具エンドパーツ",
+    "大袋",
+    "大袋中袋"
+  ],
+  "description": "ワイヤー等に通したパーツを固定したり、端の処理に使用します。テグスに使用する場合は8号のみおすすめです。※細いテグスに使用すると切れてしまう可能性があるため使用しないでください。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)＜つぶし玉サイズ＞外径1.5mm→内径 約0.8mm外径2mm→内径 約1.1mm外径2.5mm→内径 約1.3mm外径3mm→内径 約1.8mm※非常に小さなパーツのため入荷時期やものにより、サイズに多少の誤差がある場合がございます。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10300107.jpg?v=1694614754"
+  ],
+  "price": 88,
+  "currency": "JPY",
+  "available": true,
+  "sizeText": "外径 1.5mm",
+  "purchase": {
+    "sourceText": "20ヶ",
+    "unit": "piece",
+    "approximate": false,
+    "quantity": 20
+  },
+  "measurements": [
+    {
+      "sourceText": "外径1.5mm",
+      "valuesMm": [
+        1.5
+      ],
+      "approximate": false,
+      "meaning": "outer_diameter"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:19:47.116Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認"
+  ]
+}

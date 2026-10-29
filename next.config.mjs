@@ -1,0 +1,1 @@
+export default {serverExternalPackages:['@electric-sql/pglite','sharp'],outputFileTracingExcludes:{'/*':['./.local/**/*','./.ai/**/*','./test-results/**/*']},outputFileTracingIncludes:{'/api/local/workspace':['./supabase/migrations/*.sql']}};

@@ -1,0 +1,32 @@
+import {loadMinimumSalePolicy,saleSourceFromRow} from './minimum-sale-unit-guard.mjs';
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const bytes=await readFile('.local/parts/parts.json'),registry=JSON.parse(bytes);
+const registrySha256=createHash('sha256').update(bytes).digest('hex');
+const mapping=JSON.parse(await readFile('.local/calibration/mapping/index.json'));
+if(mapping.summary.registrySha256!==registrySha256)throw new Error('MAPPING_STALE');
+const endpoint='http://127.0.0.1:3000/api/local/workspace',boot=await fetch(endpoint).then(r=>r.json());
+const reply=await fetch(endpoint,{method:'POST',headers:{Origin:'http://127.0.0.1:3000','Content-Type':'application/json','x-catalog-token':boot.token},body:JSON.stringify({action:'select',query:{table:'parts',columns:'*'}})}).then(r=>r.json());
+if(reply.error)throw new Error(reply.error.message);
+const sourceIds=new Set(registry.parts.map(p=>p.id)),active=new Set();
+const archivedBySource=new Map();
+const minimumSalePolicy=await loadMinimumSalePolicy(registrySha256);
+for(const part of reply.data){const source=saleSourceFromRow(part,minimumSalePolicy);if(!source||!sourceIds.has(source))continue;if(part.is_archived){const rows=archivedBySource.get(source)??[];rows.push({partId:part.id,recipe:part.metadata?.nominalPlacement?.recipe??null});archivedBySource.set(source,rows);}else active.add(source);}
+if([...active].some(id=>!sourceIds.has(id)))throw new Error('UNKNOWN_SOURCE');
+const evidenceById=new Map(mapping.entries.map(e=>[e.id,e.dimensionEvidence]));
+const holds=new Map(JSON.parse(await readFile('.local/calibration/nominal/plan.json')).blocked.map(e=>[e.draftId,e.reason]));
+const groups=new Map(),remaining=[];
+for(const draft of registry.parts){if(active.has(draft.id))continue;
+ const name=draft.name.normalize('NFKC'),cut=/#(\d+)(?!\d)/.exec(name)?.[1];
+ const family=cut?'crystal:'+cut:'catalog:'+draft.category+':'+name.split(' / ')[0].split(/\s+/)[0];
+ const evidence=evidenceById.get(draft.id);
+ const priorReason=holds.get(draft.id)??(evidence?'BODY_DIMENSION_OR_IMAGE_RECIPE_REVIEW_REQUIRED':'PUBLISHED_SIZE_MEANING_REVIEW_REQUIRED'),archived=archivedBySource.get(draft.id),reason=archived?.length?'EXISTING_ARCHIVED_SOURCE_PRESERVED':priorReason;
+ const entry={draftId:draft.id,productId:draft.productId,family,reason,publishedSizeText:draft.sizeText,dimensionEvidenceKind:evidence?.kind??null,...(archived?.length?{priorRegistrationReason:priorReason,existingArchivedParts:archived}:{})};remaining.push(entry);
+ if(!groups.has(family))groups.set(family,{family,variants:0,products:new Set(),reasons:{},ids:[]});
+ const g=groups.get(family);g.variants++;g.products.add(draft.productId);g.reasons[reason]=(g.reasons[reason]??0)+1;g.ids.push(draft.id);
+}
+if(sourceIds.size!==27046||active.size+remaining.length!==27046||new Set(remaining.map(p=>p.draftId)).size!==remaining.length)throw new Error('PARTITION_INVALID');
+const summary={checkedAt:new Date().toISOString(),workspaceId:boot.workspaceId,registrySha256,total:27046,registered:active.size,remaining:remaining.length,groups:groups.size,archivedSourceRemaining:remaining.filter(r=>r.existingArchivedParts?.length).length,scope:'Scheduling groups only; size labels or OCR do not prove body dimensions. No Parts modified.'};
+await writeFile('.local/calibration/nominal/remaining.json',JSON.stringify({summary,groups:[...groups.values()].map(g=>({...g,products:g.products.size})).sort((a,b)=>b.variants-a.variants),remaining},null,2));
+await writeFile('.ai/evidence/nominal-remaining-summary.json',JSON.stringify(summary,null,2));
+console.log(JSON.stringify(summary));

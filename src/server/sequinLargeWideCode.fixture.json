@@ -1,0 +1,55 @@
+{
+  "id": "kiwa:8944997466404:47625650209060",
+  "productId": "8944997466404",
+  "variantId": "47625650209060",
+  "name": "ブラジル製シークイン フラワー　ライムグリーン【アウトレット】 / ６(約55mm) / 2ヶ",
+  "sku": "62398206",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-outlet-brazil-sequin-1451?variant=47625650209060",
+  "sourceName": "貴和製作所",
+  "category": "other",
+  "categoryBasis": "分類未確定",
+  "tags": [
+    "OLブラジル製シークイン",
+    "SALE商品",
+    "アウトレット"
+  ],
+  "description": "特別に生産されたPVCを使用したハンドメイドのスパンコールです。とっても軽く、自由に加工することができます。厚みは約0.3mmです。ハンドメイドで作られているので、ひとつずつユニークで均一でない自然な仕上がりも魅力の1つです。カンでつなげたり、テグスで編みつけたりしてご使用ください。折る、切る、穴を開けるなど様々な加工が可能で、また温めて成形することもできる創作意欲の湧く汎用性の高い素材です。※ハンドメイドのため、色味に差があります。同じ形でもサイズによって色味が変わる場合があります。※製造工程上、形状・大きさ、穴の位置に個体差がございます。また、フチが滑らかではない場合がございます。予めご了承ください。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62398206.jpg?v=1701061604",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_flower1_1_d0be838d-af31-40a3-9bce-29f6efffb139.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_limegreen.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_attn_215c8e4f-6c95-42fe-832f-4a1d070070d2.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_clear_5b0cca39-2305-447c-8b9a-9ecd90550f28.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample1_6f9d6b7c-de35-4c69-8efd-33d8115152b4.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample2_e1880646-b025-43e4-ae5e-44076ba52422.jpg?v=1701061605",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample3_e1d16e4f-75ba-4723-b3e3-94da28681a0b.jpg?v=1701061605"
+  ],
+  "price": 105,
+  "currency": "JPY",
+  "available": true,
+  "sizeText": "６(約55mm)",
+  "purchase": {
+    "sourceText": "2ヶ",
+    "unit": "piece",
+    "approximate": false,
+    "quantity": 2
+  },
+  "measurements": [
+    {
+      "sourceText": "約55mm",
+      "valuesMm": [
+        55
+      ],
+      "approximate": true,
+      "meaning": "unassigned"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:25:25.776Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認"
+  ]
+}

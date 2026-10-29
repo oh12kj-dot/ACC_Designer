@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';import {coilDiagram} from './coilDiagramMapping';
+const recipe={productIds:['1'],sha256:'h',labels:['0.8x5']};const input={productId:'1',variantId:'2',sku:'3',sizeText:'0.8×5mm(内径)',variant:{id:'2',sku:'3',sizeText:'0.8×5mm(内径)'},galleryUrls:['url'],captures:[{url:'url',sha256:'h',productIds:['1'],fetchedAt:'today',finalUrl:'url'}]};
+it('retains explicitly published inner diameter without inventing outer diameter',()=>{const r=coilDiagram(input,recipe);expect(r?.publishedInnerDiameterMm).toBe(5);expect(r).not.toHaveProperty('outerDiameterMm');});
+it('requires inner-diameter annotation, reviewed label and own exact source identity',()=>{for(const patch of [{sizeText:'0.8×5mm'},{sizeText:'0.8×6mm(内径)'},{sku:'other'},{productId:'other'},{galleryUrls:[]},{captures:[]}])expect(coilDiagram({...input,...patch},recipe)).toBeUndefined();});

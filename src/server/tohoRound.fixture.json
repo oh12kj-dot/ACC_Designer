@@ -1,0 +1,50 @@
+{
+  "id": "kiwa:8711111508260:46969864257828",
+  "productId": "8711111508260",
+  "variantId": "46969864257828",
+  "name": "TOHO丸小ビーズ　No.49 / 約2mm / 7g(バラ・約670粒)",
+  "sku": "4964291000490",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-mseed-040?variant=46969864257828",
+  "sourceName": "貴和製作所",
+  "category": "bead",
+  "categoryBasis": "商品名による分類（形状の保証なし）",
+  "tags": [
+    "made in JAPAN",
+    "TOHO丸小ビーズ",
+    "シードビーズ"
+  ],
+  "description": "外径約2.0－2.2mmの丸みを帯びたビーズです。不透明な黒色です。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50047.jpg?v=1694516000"
+  ],
+  "price": 231,
+  "currency": "JPY",
+  "available": true,
+  "sizeText": "約2mm",
+  "purchase": {
+    "sourceText": "7g(バラ・約670粒)",
+    "unit": "weight",
+    "approximate": true,
+    "weightG": 7,
+    "estimatedCount": 670
+  },
+  "measurements": [
+    {
+      "sourceText": "約2mm",
+      "valuesMm": [
+        2
+      ],
+      "approximate": true,
+      "meaning": "unassigned"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:19:55.238Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認",
+    "購入単位の確認"
+  ]
+}

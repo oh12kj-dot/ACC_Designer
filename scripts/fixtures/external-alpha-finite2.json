@@ -1,0 +1,303 @@
+[
+  {
+    "draft": {
+      "id": "kiwa:8711092371748:46969809600804",
+      "productId": "8711092371748",
+      "variantId": "46969809600804",
+      "name": "TOHO特小ビーズ　No.81 / 約1.5mm / 7g(バラ・約1750粒)",
+      "sku": "4964291043961",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-sseed-032?variant=46969809600804",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "made in JAPAN",
+        "TOHO特小ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約1.5mmのとても小さいビーズです。黒ギョクビーズの表面に玉虫色の加工が施された黒色です。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50098.jpg?v=1694515453"
+      ],
+      "price": 440,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "約1.5mm",
+      "purchase": {
+        "sourceText": "7g(バラ・約1750粒)",
+        "unit": "weight",
+        "approximate": true,
+        "weightG": 7,
+        "estimatedCount": 1750
+      },
+      "measurements": [
+        {
+          "sourceText": "約1.5mm",
+          "valuesMm": [
+            1.5
+          ],
+          "approximate": true,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:23:41.515Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50098.jpg?v=1694515453",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50098.jpg?v=1694515453",
+      "fetchedAt": "2026-10-07T12:22:39.910Z",
+      "sha256": "9e6489e231f5133fd0f48803b5cc05166d7e659439975a097d4635ab40894c6c",
+      "bytes": 16980,
+      "mime": "image/webp",
+      "pixelWidth": 450,
+      "pixelHeight": 450,
+      "productIds": [
+        "8711092371748"
+      ],
+      "status": "pending_dimension_region_review"
+    },
+    "base": {
+      "recipe": "kiwa-own-photo-category-box-v1",
+      "category": "bead",
+      "family": "TOHO特小ビーズ No.81 / 約1.5mm / 7g(バラ・約1750粒)",
+      "reviewedBodyPrefix": "外径約1.5mmのとても小さいビーズです。",
+      "publishedSizeLabel": "約1.5mm",
+      "sourceObjectSha256": "f7a5d1f4b79d65e1c25883471d676af11b16c4d713f54fe3c682dea6d5a1dbdf",
+      "publishedBodyOuterDiameterMm": 1.5,
+      "bodySizeMeaning": "published-outer-body-extent-not-hole-diameter",
+      "publishedSizeLabelKind": "toho-small-body-scalar",
+      "publishedSizeValuesMm": [
+        1.5
+      ],
+      "approximate": true,
+      "widthMm": 1.5,
+      "heightMm": 1.5,
+      "layoutSizeChoice": "published-body-size-square-box-for-layout-only",
+      "publishedSizeOrder": "source-first-to-box-width-second-to-box-height",
+      "photoRotationDegrees": 0,
+      "photoOrientationReview": {
+        "version": "reviewed-category-photo-pose-v1",
+        "rotationDegrees": 0,
+        "reason": "Retain native photographed projection without inferring a through-hole axis"
+      },
+      "photoPose": "Complete isolated photographed specimen, reviewed in own original and crop contact sheets. Published nominal1.5mm from own externalBODY used only for provisional square. Physical dimensions, photo scale, axes and hole location unverified.",
+      "shapeReferenceKind": "own-product-photographed-projection-only-not-dimension-evidence",
+      "sourceCrop": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50098.jpg?v=1694515453",
+        "sha256": "9e6489e231f5133fd0f48803b5cc05166d7e659439975a097d4635ab40894c6c",
+        "sourceWidth": 450,
+        "sourceHeight": 450,
+        "crop": {
+          "left": 339,
+          "top": 219,
+          "width": 75,
+          "height": 80
+        },
+        "reviewed": true,
+        "reviewedBy": "Codex root direct own original complete specimen crop review 2026-10-25",
+        "reviewedAt": "2026-10-25T07:59:23.732Z",
+        "coordinateConvention": "unrotated-decoded-raster-integer-pixels"
+      },
+      "sizeAxisInterpretationVerified": false,
+      "physicalWidthVerified": false,
+      "physicalHeightVerified": false,
+      "variantCutAppearanceVerified": false
+    },
+    "rule": {
+      "draftId": "kiwa:8711092371748:46969809600804",
+      "productId": "8711092371748",
+      "name": "TOHO特小ビーズ　No.81 / 約1.5mm / 7g(バラ・約1750粒)",
+      "family": "TOHO特小ビーズ No.81 / 約1.5mm / 7g(バラ・約1750粒)",
+      "tag": "TOHO特小ビーズ",
+      "description": "外径約1.5mmのとても小さいビーズです。黒ギョクビーズの表面に玉虫色の加工が施された黒色です。",
+      "bodyPrefix": "外径約1.5mmのとても小さいビーズです。",
+      "bodyReviewed": true,
+      "category": "bead",
+      "labelKind": "toho-small-body-scalar",
+      "tohoSmallBinding": {
+        "objectSha256": "f7a5d1f4b79d65e1c25883471d676af11b16c4d713f54fe3c682dea6d5a1dbdf",
+        "photoSha256": "9e6489e231f5133fd0f48803b5cc05166d7e659439975a097d4635ab40894c6c",
+        "rawLabel": "約1.5mm"
+      }
+    },
+    "review": {
+      "family": "TOHO特小ビーズ No.81 / 約1.5mm / 7g(バラ・約1750粒)",
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50098.jpg?v=1694515453",
+      "sha256": "9e6489e231f5133fd0f48803b5cc05166d7e659439975a097d4635ab40894c6c",
+      "sourceWidth": 450,
+      "sourceHeight": 450,
+      "crop": {
+        "left": 339,
+        "top": 219,
+        "width": 75,
+        "height": 80
+      },
+      "reviewed": true,
+      "reviewedBy": "Codex root direct own original complete specimen crop review 2026-10-25",
+      "reviewedAt": "2026-10-25T07:59:23.732Z",
+      "coordinateConvention": "unrotated-decoded-raster-integer-pixels",
+      "photoPose": "Complete isolated photographed specimen, reviewed in own original and crop contact sheets. Published nominal1.5mm from own externalBODY used only for provisional square. Physical dimensions, photo scale, axes and hole location unverified.",
+      "rotationDegrees": 0,
+      "rotationReason": "Retain native photographed projection without inferring a through-hole axis"
+    }
+  },
+  {
+    "draft": {
+      "id": "kiwa:8711100530980:46969834471716",
+      "productId": "8711100530980",
+      "variantId": "46969834471716",
+      "name": "TOHO特小ビーズ No.11 / 約1.5mm / 7g(バラ・約1750粒)",
+      "sku": "4964291043626",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-sseed-059?variant=46969834471716",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "made in JAPAN",
+        "TOHO特小ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約1.5mmのとても小さいビーズです。透明な薄いピーチ色です。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50376.jpg?v=1694515682",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/pandamotif_1_8bd1c0d7-07a8-44fc-a87d-b030fdd8ef08.jpg?v=1694515682"
+      ],
+      "price": 440,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "約1.5mm",
+      "purchase": {
+        "sourceText": "7g(バラ・約1750粒)",
+        "unit": "weight",
+        "approximate": true,
+        "weightG": 7,
+        "estimatedCount": 1750
+      },
+      "measurements": [
+        {
+          "sourceText": "約1.5mm",
+          "valuesMm": [
+            1.5
+          ],
+          "approximate": true,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:23:58.339Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50376.jpg?v=1694515682",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50376.jpg?v=1694515682",
+      "fetchedAt": "2026-10-07T13:57:12.504Z",
+      "sha256": "bc605418f9848d27c130940dd83e2bf2ef27343644e1a39f81ca7fcfa90a1780",
+      "bytes": 12586,
+      "mime": "image/webp",
+      "pixelWidth": 450,
+      "pixelHeight": 450,
+      "productIds": [
+        "8711100530980"
+      ],
+      "status": "pending_dimension_region_review"
+    },
+    "base": {
+      "recipe": "kiwa-own-photo-category-box-v1",
+      "category": "bead",
+      "family": "TOHO特小ビーズ No.11 / 約1.5mm / 7g(バラ・約1750粒)",
+      "reviewedBodyPrefix": "外径約1.5mmのとても小さいビーズです。",
+      "publishedSizeLabel": "約1.5mm",
+      "sourceObjectSha256": "13093fcafe459dcaa04692da48d3d0b240695cd8bbfa207bfdc216d8a2c758bb",
+      "publishedBodyOuterDiameterMm": 1.5,
+      "bodySizeMeaning": "published-outer-body-extent-not-hole-diameter",
+      "publishedSizeLabelKind": "toho-small-body-scalar",
+      "publishedSizeValuesMm": [
+        1.5
+      ],
+      "approximate": true,
+      "widthMm": 1.5,
+      "heightMm": 1.5,
+      "layoutSizeChoice": "published-body-size-square-box-for-layout-only",
+      "publishedSizeOrder": "source-first-to-box-width-second-to-box-height",
+      "photoRotationDegrees": 0,
+      "photoOrientationReview": {
+        "version": "reviewed-category-photo-pose-v1",
+        "rotationDegrees": 0,
+        "reason": "Retain native photographed projection without inferring a through-hole axis"
+      },
+      "photoPose": "Complete isolated photographed specimen, reviewed in own original and crop contact sheets. Published nominal1.5mm from own externalBODY used only for provisional square. Physical dimensions, photo scale, axes and hole location unverified.",
+      "shapeReferenceKind": "own-product-photographed-projection-only-not-dimension-evidence",
+      "sourceCrop": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50376.jpg?v=1694515682",
+        "sha256": "bc605418f9848d27c130940dd83e2bf2ef27343644e1a39f81ca7fcfa90a1780",
+        "sourceWidth": 450,
+        "sourceHeight": 450,
+        "crop": {
+          "left": 359,
+          "top": 251,
+          "width": 56,
+          "height": 65
+        },
+        "reviewed": true,
+        "reviewedBy": "Codex root direct own original complete specimen crop review 2026-10-25",
+        "reviewedAt": "2026-10-25T08:01:58.836Z",
+        "coordinateConvention": "unrotated-decoded-raster-integer-pixels"
+      },
+      "sizeAxisInterpretationVerified": false,
+      "physicalWidthVerified": false,
+      "physicalHeightVerified": false,
+      "variantCutAppearanceVerified": false
+    },
+    "rule": {
+      "draftId": "kiwa:8711100530980:46969834471716",
+      "productId": "8711100530980",
+      "name": "TOHO特小ビーズ No.11 / 約1.5mm / 7g(バラ・約1750粒)",
+      "family": "TOHO特小ビーズ No.11 / 約1.5mm / 7g(バラ・約1750粒)",
+      "tag": "TOHO特小ビーズ",
+      "description": "外径約1.5mmのとても小さいビーズです。透明な薄いピーチ色です。",
+      "bodyPrefix": "外径約1.5mmのとても小さいビーズです。",
+      "bodyReviewed": true,
+      "category": "bead",
+      "labelKind": "toho-small-body-scalar",
+      "tohoSmallBinding": {
+        "objectSha256": "13093fcafe459dcaa04692da48d3d0b240695cd8bbfa207bfdc216d8a2c758bb",
+        "photoSha256": "bc605418f9848d27c130940dd83e2bf2ef27343644e1a39f81ca7fcfa90a1780",
+        "rawLabel": "約1.5mm"
+      }
+    },
+    "review": {
+      "family": "TOHO特小ビーズ No.11 / 約1.5mm / 7g(バラ・約1750粒)",
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50376.jpg?v=1694515682",
+      "sha256": "bc605418f9848d27c130940dd83e2bf2ef27343644e1a39f81ca7fcfa90a1780",
+      "sourceWidth": 450,
+      "sourceHeight": 450,
+      "crop": {
+        "left": 359,
+        "top": 251,
+        "width": 56,
+        "height": 65
+      },
+      "reviewed": true,
+      "reviewedBy": "Codex root direct own original complete specimen crop review 2026-10-25",
+      "reviewedAt": "2026-10-25T08:01:58.836Z",
+      "coordinateConvention": "unrotated-decoded-raster-integer-pixels",
+      "photoPose": "Complete isolated photographed specimen, reviewed in own original and crop contact sheets. Published nominal1.5mm from own externalBODY used only for provisional square. Physical dimensions, photo scale, axes and hole location unverified.",
+      "rotationDegrees": 0,
+      "rotationReason": "Retain native photographed projection without inferring a through-hole axis"
+    }
+  }
+]

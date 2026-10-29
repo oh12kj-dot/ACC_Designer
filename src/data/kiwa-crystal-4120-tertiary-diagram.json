@@ -1,0 +1,55 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sha256": "384ce7203c425f53aa00d0afd039c914f9b0a888e412b5d02022c8e3b68eefae",
+  "productIds": [
+    "10043541848356",
+    "9030816203044",
+    "9078492004644",
+    "9078492070180",
+    "9078492102948",
+    "9078492135716",
+    "9137771381028",
+    "9137771544868",
+    "9137835376932",
+    "9137835409700",
+    "9137835442468",
+    "9137835475236",
+    "9137835508004",
+    "9389897187620",
+    "9389897220388",
+    "9389897285924",
+    "9890257076516",
+    "9890257174820",
+    "9890260156708",
+    "9890260189476",
+    "9890260222244",
+    "9890260255012"
+  ],
+  "sizes": {
+    "4x2.7": {
+      "outerHeightMm": 4,
+      "outerWidthMm": 2.7
+    },
+    "6x4": {
+      "outerHeightMm": 6,
+      "outerWidthMm": 4
+    },
+    "8x6": {
+      "outerHeightMm": 8,
+      "outerWidthMm": 6
+    },
+    "14x10": {
+      "outerHeightMm": 14,
+      "outerWidthMm": 10
+    },
+    "18x13": {
+      "outerHeightMm": 18,
+      "outerWidthMm": 13
+    },
+    "25x18": {
+      "outerHeightMm": 25,
+      "outerWidthMm": 18
+    }
+  },
+  "scope": "Frontal labelled axes only. Side-view thickness and image scale unverified."
+}

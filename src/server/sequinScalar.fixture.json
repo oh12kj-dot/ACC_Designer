@@ -1,0 +1,55 @@
+{
+  "id": "kiwa:8945000907044:47625656828196",
+  "productId": "8945000907044",
+  "variantId": "47625656828196",
+  "name": "ブラジル製シークイン フラワー　レッド【アウトレット】 / B1(約9mm) / 20ヶ",
+  "sku": "62316903",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-outlet-brazil-sequin-1515?variant=47625656828196",
+  "sourceName": "貴和製作所",
+  "category": "other",
+  "categoryBasis": "分類未確定",
+  "tags": [
+    "OLブラジル製シークイン",
+    "SALE商品",
+    "アウトレット"
+  ],
+  "description": "特別に生産されたPVCを使用したハンドメイドのスパンコールです。とっても軽く、自由に加工することができます。厚みは約0.3mmです。ハンドメイドで作られているので、ひとつずつユニークで均一でない自然な仕上がりも魅力の1つです。カンでつなげたり、テグスで編みつけたりしてご使用ください。折る、切る、穴を開けるなど様々な加工が可能で、また温めて成形することもできる創作意欲の湧く汎用性の高い素材です。※摩擦等により色落ち、色移りする場合がございます。※ハンドメイドのため、色味に差があります。同じ形でもサイズによって色味が変わる場合があります。※製造工程上、形状・大きさ、穴の位置に個体差がございます。また、フチが滑らかではない場合がございます。予めご了承ください。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62316903.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_flowerb1_1_13a45b9d-a139-4a42-9921-db65b13bd67a.jpg?v=1701061837",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_red_0ce01f3d-7c7f-4403-a894-7f372d418c63.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_attn_9fc526c3-cd2a-49fe-a22c-cbfacadd00d5.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sequin_clear_79d90dbe-a768-4d41-8795-475491006831.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample1_667d4a7d-554a-4dcd-b688-e7f331e8f161.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample2_9d0684ee-c932-4f73-bbbf-da003d32b683.jpg?v=1701061838",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/sample3_3c459691-6395-420f-b2cd-d911e45db57a.jpg?v=1701061838"
+  ],
+  "price": 88,
+  "currency": "JPY",
+  "available": false,
+  "sizeText": "B1(約9mm)",
+  "purchase": {
+    "sourceText": "20ヶ",
+    "unit": "piece",
+    "approximate": false,
+    "quantity": 20
+  },
+  "measurements": [
+    {
+      "sourceText": "約9mm",
+      "valuesMm": [
+        9
+      ],
+      "approximate": true,
+      "meaning": "unassigned"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:24:46.451Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認"
+  ]
+}

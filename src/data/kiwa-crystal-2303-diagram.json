@@ -1,0 +1,35 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sha256": "2b54f50702d6fe0f98c9a3405983122c4dd4f6cfb5d306405c71a52e4f68e05e",
+  "productIds": [
+    "8707939631396",
+    "8707940090148",
+    "8707940548900",
+    "8707941138724",
+    "8707941630244",
+    "8707942318372",
+    "8707942809892",
+    "8707943268644",
+    "8707943792932",
+    "8707944218916",
+    "8707945300260",
+    "8707945824548",
+    "8707946348836",
+    "8707946840356",
+    "8707947331876",
+    "8707948151076",
+    "8707948871972"
+  ],
+  "sizes": {
+    "8x5": {
+      "outerHeightMm": 8,
+      "outerWidthMm": 5
+    },
+    "14x9": {
+      "outerHeightMm": 14,
+      "outerWidthMm": 9
+    }
+  },
+  "diagramApproximate": true,
+  "scope": "Approximate frontal axes only. Side-view thickness 2/3mm visually reviewed separately, not assigned by this recipe. Scale, appearance and connection unverified."
+}

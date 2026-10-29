@@ -1,0 +1,3 @@
+import type { PartCategory } from '../../types/domain';
+export const partCategories:ReadonlyArray<readonly [PartCategory,string]>=[['chain','チェーン'],['wire','ワイヤー'],['string','テグス'],['cord','コード'],['thread','糸'],['bead','ビーズ'],['pearl','パール'],['gem','天然石'],['charm','チャーム'],['connector','コネクター'],['jump_ring','丸カン'],['clasp','留め具'],['earring_hook','ピアスフック'],['earring_post','ピアスポスト'],['eye_pin','9ピン'],['head_pin','Tピン'],['spacer','スペーサー'],['cap','キャップ'],['pendant','ペンダント'],['other','その他']];
+export const inferredGeometry=(category:PartCategory)=>['chain','wire','string','cord','thread'].includes(category)?'path' as const:'node' as const;

@@ -1,0 +1,6 @@
+import {it,expect} from 'vitest';
+import {ovalDiagramCapture,ovalSizeKey} from './ovalDiagramMapping';
+const recipe={productIds:['1'],regions:[{sizeKey:'0.8x3.8x5.8',sha256:'hash',wireDiameterMm:0.8,outerWidthMm:3.8,outerHeightMm:5.8,approximateInnerHeightMm:4.2}]};
+const input={productId:'1',variantId:'2',sku:'3',sizeText:'0.8×3.8×5.8mm',variant:{id:'2',sku:'3',sizeText:'0.8×3.8×5.8mm'},galleryUrls:['https://cdn.shopify.com/a'],captures:[{url:'https://cdn.shopify.com/a',sha256:'hash',productIds:['1'],fetchedAt:'2026-10-07',finalUrl:'https://cdn.shopify.com/a'}]};
+it('maps exact three-axis labels without swapping widths or approximations',()=>{expect(ovalSizeKey('1.0×4.5×5.5mm')).toBe('1x4.5x5.5');expect(ovalDiagramCapture(input,recipe)?.region.approximateInnerHeightMm).toBe(4.2);for(const sizeText of ['0.8×5.8×3.8mm','約0.8×3.8×5.8mm','0.8×3.5×5mm'])expect(ovalDiagramCapture({...input,sizeText},recipe)).toBeUndefined();});
+it('requires exact identity and own captured gallery bytes',()=>{for(const patch of [{sku:'other'},{variantId:'other'},{productId:'other'},{captures:[]},{galleryUrls:[]}])expect(ovalDiagramCapture({...input,...patch},recipe)).toBeUndefined();expect(ovalDiagramCapture(input,{...recipe,regions:[{...recipe.regions[0],sha256:'other'}]})).toBeUndefined();});

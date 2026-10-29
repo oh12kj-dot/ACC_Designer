@@ -1,0 +1,4541 @@
+{
+  "at": "2026-10-25T17:46:29.131Z",
+  "registrySha256": "a4032127881c8dc19fd32877f80c0c76b6eab6b22dac9550fd5b5d05d933f7db",
+  "scopeSummary": {
+    "checkedAt": "2026-10-25T17:45:21.690Z",
+    "sqlCheckedAt": "2026-10-25T17:45:20.982Z",
+    "registrySha256": "a4032127881c8dc19fd32877f80c0c76b6eab6b22dac9550fd5b5d05d933f7db",
+    "officialMappingTarget": 27046,
+    "placementTarget": 20066,
+    "placementRegistered": 11806,
+    "placementRemaining": 8260,
+    "placementExcluded": 6980,
+    "kitToolExcluded": 310,
+    "obsoleteVariants": 2016,
+    "nonMinimumSaleVariants": 4673,
+    "rawRegistered": 11806,
+    "rawRemaining": 15240,
+    "exclusionManifestSha256": "8d793645f45db0390918dd93955056fa472021718c27431c477e4e31fd5f91e8",
+    "minimumSaleManifestSha256": "cf0523f499718c34615dec1d49c79608c0b310bbfb37e1f099815593dfe8538b",
+    "scope": "All 27046 official sources preserved. Only minimum sale offers represent resolved physical groups; obsolete offers excluded. Source identity and saved designs unchanged."
+  },
+  "rows": [
+    {
+      "draft": {
+        "id": "kiwa:8711731151140:46971933917476",
+        "productId": "8711731151140",
+        "variantId": "46971933917476",
+        "name": "メタルビーズ　ゴールド / 5(約2×2mm) / 1本 約10cm/約47ヶ",
+        "sku": "63952001",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-001?variant=46971933917476",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7.jpg?v=1694532617"
+        ],
+        "price": 418,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "5(約2×2mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約47ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 47
+        },
+        "measurements": [
+          {
+            "sourceText": "約2x2mm",
+            "valuesMm": [
+              2,
+              2
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:55.238Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "db42147b8e1d63a7667fa64704899ab5d7278ae74a4f2d4d75ba9a57802368d1",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+        "fetchedAt": "2026-10-07T16:32:43.864Z",
+        "sha256": "91344fdfe24d88fa40b69712c962e6902a21167b0c9fcc50eaac11bf70b2396f",
+        "bytes": 10400,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731151140"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711731151140:46971933950244",
+        "productId": "8711731151140",
+        "variantId": "46971933950244",
+        "name": "メタルビーズ　ゴールド / 6(約3×3mm) / 1本 約10cm/約24ヶ",
+        "sku": "63952407",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-001?variant=46971933950244",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5.jpg?v=1694532617",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6.jpg?v=1694532618",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7.jpg?v=1694532617"
+        ],
+        "price": 418,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6(約3×3mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約24ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 24
+        },
+        "measurements": [
+          {
+            "sourceText": "約3x3mm",
+            "valuesMm": [
+              3,
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:55.238Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "6394ec5d6495110ffa62a9b1e91b9a300881f83e9718645fe187aef6bda2e233",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359209.jpg?v=1694532618",
+        "fetchedAt": "2026-10-07T16:32:43.864Z",
+        "sha256": "91344fdfe24d88fa40b69712c962e6902a21167b0c9fcc50eaac11bf70b2396f",
+        "bytes": 10400,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731151140"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711727939876:46971917533476",
+        "productId": "8711727939876",
+        "variantId": "46971917533476",
+        "name": "メタルビーズ ミラーボール　ゴールド / 約3mm / 5ヶ",
+        "sku": "60595508",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0q-001?variant=46971917533476",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "中袋",
+          "大袋中袋"
+        ],
+        "description": "※仕様が変更になりました。予めご了承ください。(2022年2月9日、11月24日)パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508_1.jpg?v=1694532452",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_2.jpg?v=1694532451",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_3.jpg?v=1694532452",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_3.jpg?v=1737440431",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_6.jpg?v=1737440431"
+        ],
+        "price": 110,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約3mm",
+        "purchase": {
+          "sourceText": "5ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 5
+        },
+        "measurements": [
+          {
+            "sourceText": "約3mm",
+            "valuesMm": [
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "5d1a4de988cf4413f2498d3328d83074b26cd44434199b34e6e82b247b4e6055",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+        "fetchedAt": "2026-10-07T21:06:43.110Z",
+        "sha256": "7cb0bcbc0f63b69e8dbf2995fbcee7f25a000600a8d594b1089cdecda7d97df2",
+        "bytes": 7376,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711727939876"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711727939876:46971917664548",
+        "productId": "8711727939876",
+        "variantId": "46971917664548",
+        "name": "メタルビーズ ミラーボール　ゴールド / 約4mm / 5ヶ",
+        "sku": "60595706",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0q-001?variant=46971917664548",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "中袋",
+          "大袋中袋"
+        ],
+        "description": "※仕様が変更になりました。予めご了承ください。(2022年2月9日、11月24日)パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508_1.jpg?v=1694532452",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_2.jpg?v=1694532451",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_3.jpg?v=1694532452",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_3.jpg?v=1737440431",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_6.jpg?v=1737440431"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約4mm",
+        "purchase": {
+          "sourceText": "5ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 5
+        },
+        "measurements": [
+          {
+            "sourceText": "約4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "f64a3a503b09bf8e9f26f74417dd49ddf3f5e2311c3561ea7eab3e427b55d04c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508.jpg?v=1694532451",
+        "fetchedAt": "2026-10-07T21:06:43.110Z",
+        "sha256": "7cb0bcbc0f63b69e8dbf2995fbcee7f25a000600a8d594b1089cdecda7d97df2",
+        "bytes": 7376,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711727939876"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711731511588:46971935293732",
+        "productId": "8711731511588",
+        "variantId": "46971935293732",
+        "name": "メタルビーズ　ソフトゴールド(ソフト金) / 5(約2×2mm) / 1本 約10cm/約47ヶ",
+        "sku": "63952209",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-002?variant=46971935293732",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※6(約3×3mm)はカラー名がソフトゴールドに変更になりました。(2026年9月11日)※順次、カラー名が「ソフト金」から「ソフトゴールド」に変更になります。予めご了承ください。(2026年7月14日)表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_867af663-180b-45b3-8446-7f40bc06a729.jpg?v=1694532631",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_e8ee63b1-48e2-4f72-9481-04e98c6d9186.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4_21bef58d-c0df-4a40-90c6-a74d990cbefa.jpg?v=1694532631",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5_309a1885-9645-48f7-bf6d-b13a043cfbd9.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6_d04a6ba0-dcc2-4eb9-80ac-21346bcffd6e.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7_ad2318cc-5bb3-450b-b8a2-1be173f90188.jpg?v=1694532630"
+        ],
+        "price": 396,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "5(約2×2mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約47ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 47
+        },
+        "measurements": [
+          {
+            "sourceText": "約2x2mm",
+            "valuesMm": [
+              2,
+              2
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "d5d687251aa9867849d28f23f8a43ae12de4be61d8dff69fcfaf309c2206637c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+        "fetchedAt": "2026-10-07T21:20:13.189Z",
+        "sha256": "d90b3e485118c55d6b9097831cd925274d3047939b2d844cf4c32429407c3299",
+        "bytes": 7172,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731511588"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711731511588:46971935326500",
+        "productId": "8711731511588",
+        "variantId": "46971935326500",
+        "name": "メタルビーズ　ソフトゴールド(ソフト金) / 6(約3×3mm) / 1本 約10cm/約24ヶ",
+        "sku": "63952605",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-002?variant=46971935326500",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※6(約3×3mm)はカラー名がソフトゴールドに変更になりました。(2026年9月11日)※順次、カラー名が「ソフト金」から「ソフトゴールド」に変更になります。予めご了承ください。(2026年7月14日)表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_867af663-180b-45b3-8446-7f40bc06a729.jpg?v=1694532631",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_e8ee63b1-48e2-4f72-9481-04e98c6d9186.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4_21bef58d-c0df-4a40-90c6-a74d990cbefa.jpg?v=1694532631",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5_309a1885-9645-48f7-bf6d-b13a043cfbd9.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6_d04a6ba0-dcc2-4eb9-80ac-21346bcffd6e.jpg?v=1694532630",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7_ad2318cc-5bb3-450b-b8a2-1be173f90188.jpg?v=1694532630"
+        ],
+        "price": 385,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6(約3×3mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約24ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 24
+        },
+        "measurements": [
+          {
+            "sourceText": "約3x3mm",
+            "valuesMm": [
+              3,
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "76a458d7d9cb9275d382c683bd3a58e8278e69ed48b9d27c63961eadaae2bc86",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359506.jpg?v=1694532630",
+        "fetchedAt": "2026-10-07T21:20:13.189Z",
+        "sha256": "d90b3e485118c55d6b9097831cd925274d3047939b2d844cf4c32429407c3299",
+        "bytes": 7172,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731511588"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711732134180:46971936932132",
+        "productId": "8711732134180",
+        "variantId": "46971936932132",
+        "name": "メタルビーズ　ロジウムカラー / 5(約2×2mm) / 1本 約10cm/約47ヶ",
+        "sku": "63952100",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-004?variant=46971936932132",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_a2bfadfc-c57f-4eea-ae49-37871471b653.jpg?v=1694532656",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_fda249b4-6d0e-47c7-a591-5e590628ad2e.jpg?v=1694532655",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_4_e6b3a7ac-6185-423b-88e3-14108889626b.jpg?v=1694532656",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_5_529eae18-0d7d-4461-8f02-f54165183204.jpg?v=1694532657",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_6_4d420d12-354f-408d-b29a-29265cd2a95d.jpg?v=1694532656"
+        ],
+        "price": 396,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "5(約2×2mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約47ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 47
+        },
+        "measurements": [
+          {
+            "sourceText": "約2x2mm",
+            "valuesMm": [
+              2,
+              2
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "5e36b3ba4fe02dcb0a38cad2635bb27ebf0193dfd5508101adba2b9f48475f56",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+        "fetchedAt": "2026-10-08T04:45:23.591Z",
+        "sha256": "15606e5dfdaa25b756c21a93dd8eaee9b11b6a696068b6f5703fe77688fd3ed8",
+        "bytes": 7806,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711732134180"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711732134180:46971936964900",
+        "productId": "8711732134180",
+        "variantId": "46971936964900",
+        "name": "メタルビーズ　ロジウムカラー / 6(約3×3mm) / 1本 約10cm/約24ヶ",
+        "sku": "63952506",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-004?variant=46971936964900",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_a2bfadfc-c57f-4eea-ae49-37871471b653.jpg?v=1694532656",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_fda249b4-6d0e-47c7-a591-5e590628ad2e.jpg?v=1694532655",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_4_e6b3a7ac-6185-423b-88e3-14108889626b.jpg?v=1694532656",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_5_529eae18-0d7d-4461-8f02-f54165183204.jpg?v=1694532657",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_6_4d420d12-354f-408d-b29a-29265cd2a95d.jpg?v=1694532656"
+        ],
+        "price": 385,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6(約3×3mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約24ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 24
+        },
+        "measurements": [
+          {
+            "sourceText": "約3x3mm",
+            "valuesMm": [
+              3,
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "40f0c0939df8ee5e6f92eb658c06bb2b393475ae5d59d2f85f0e7228e0e8d32b",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359308.jpg?v=1694532655",
+        "fetchedAt": "2026-10-08T04:45:23.591Z",
+        "sha256": "15606e5dfdaa25b756c21a93dd8eaee9b11b6a696068b6f5703fe77688fd3ed8",
+        "bytes": 7806,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711732134180"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545636942116",
+        "productId": "9227452547364",
+        "variantId": "48545636942116",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / B：約7×8mm / 1ヶ",
+        "sku": "62694100",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545636942116",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "B：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "02a1581f4660b1aead6dbdca4aedf2c3bedba4a9c6c1cac93b6014b4304afc1c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545636974884",
+        "productId": "9227452547364",
+        "variantId": "48545636974884",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / C：約7×8mm / 1ヶ",
+        "sku": "62694209",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545636974884",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "C：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a82eea930b33281a7b8d99c9c5ebd93b8a718c89ffe9d3217f53cfb62a570554",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637007652",
+        "productId": "9227452547364",
+        "variantId": "48545637007652",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / D：約7×8mm / 1ヶ",
+        "sku": "62694308",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637007652",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "D：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "9502383d2c820f39864d510c15c4e1a9d3a5a3ba17e7f39d46b540a73ae13d7d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637040420",
+        "productId": "9227452547364",
+        "variantId": "48545637040420",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / E：約7×8mm / 1ヶ",
+        "sku": "62694407",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637040420",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "E：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "8d5265684158bd6dc520be84aa78d34e384acec27b02b385f9b43c6b8605dacf",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637073188",
+        "productId": "9227452547364",
+        "variantId": "48545637073188",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / F：約7×8mm / 1ヶ",
+        "sku": "62694506",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637073188",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "F：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "c3f4cea64d169ff90619571a93b28bd2abc5e7384e3393138302f6a0249c43dc",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637105956",
+        "productId": "9227452547364",
+        "variantId": "48545637105956",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / G：約7×8mm / 1ヶ",
+        "sku": "62694605",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637105956",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "G：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "71a571d6d68a25dfbf391da99471055e0d168049e893ccc83d1453f03d893c5d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637138724",
+        "productId": "9227452547364",
+        "variantId": "48545637138724",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / H：約7×8mm / 1ヶ",
+        "sku": "62694704",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637138724",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "H：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "c729db0d585c2c34027fa3465246ef370b1b9e5a597ebc67a5fdf16e630cd6f3",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637171492",
+        "productId": "9227452547364",
+        "variantId": "48545637171492",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / I：約7×8mm / 1ヶ",
+        "sku": "62694803",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637171492",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "I：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "3343c0d3707a44c0b17d611da0a8394a782d7140aaf087d9f23b1edc1cd7f5bf",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637204260",
+        "productId": "9227452547364",
+        "variantId": "48545637204260",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / J：約7×8mm / 1ヶ",
+        "sku": "62694902",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637204260",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "J：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a5b6f3d8d66db1190dba96c91ba9f30c8fd0944cf00dee163a3159821fd74143",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637237028",
+        "productId": "9227452547364",
+        "variantId": "48545637237028",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / K：約7×8mm / 1ヶ",
+        "sku": "62695008",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637237028",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "K：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "fb5962a1fdf13af8efefe1331c2c10b793ed3c1a7bcf5bab0bfb122e409213b4",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637269796",
+        "productId": "9227452547364",
+        "variantId": "48545637269796",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / L：約7×8mm / 1ヶ",
+        "sku": "62695107",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637269796",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "L：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "34c4816ed842a0a9cadc12d2f745cc8f71e7d695cf070cef8c81d21e5b273679",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637302564",
+        "productId": "9227452547364",
+        "variantId": "48545637302564",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / M：約7×8mm / 1ヶ",
+        "sku": "62695206",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637302564",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "M：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "4d4c9ed5c985e8f5ddea432914291f58d4ec81e197511e65ecf2241b3eeaa8f6",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637335332",
+        "productId": "9227452547364",
+        "variantId": "48545637335332",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / N：約7×8mm / 1ヶ",
+        "sku": "62695305",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637335332",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "N：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "d2122b982ac68f590b4f3b5ea388072c18a21a9e4da13ab6605a6322d3381455",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637368100",
+        "productId": "9227452547364",
+        "variantId": "48545637368100",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / O：約7×8mm / 1ヶ",
+        "sku": "62695404",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637368100",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "O：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "f61ea2fc5a85de9b75c555494d491a6b7aed598e4e2ca63cc78c7ccccea61bc6",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637400868",
+        "productId": "9227452547364",
+        "variantId": "48545637400868",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / P：約7×8mm / 1ヶ",
+        "sku": "62695503",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637400868",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "P：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2ace34d94fc2c25076cf8953cdf54ada69e381ba75cc9ff3ee6a42e77cad0d22",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637433636",
+        "productId": "9227452547364",
+        "variantId": "48545637433636",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / Q：約7×8mm / 1ヶ",
+        "sku": "62695602",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637433636",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "Q：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "9b4ecb8d338db1d23e93964bd1cdca3db6aec95b8557f8f3e4d4e8c244d93123",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637466404",
+        "productId": "9227452547364",
+        "variantId": "48545637466404",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / R：約7×8mm / 1ヶ",
+        "sku": "62695701",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637466404",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "R：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "b02e47342574676dbdd12bd85f7378bf1f30806aa36ea16516fd0605592a63fc",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637499172",
+        "productId": "9227452547364",
+        "variantId": "48545637499172",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / S：約7×8mm / 1ヶ",
+        "sku": "62695800",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637499172",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "S：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "f84cd20a3be47bf4ffaf2c74e5d82bfd8b7aa099547a02aa48ca4842dc7e6356",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637531940",
+        "productId": "9227452547364",
+        "variantId": "48545637531940",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / T：約7×8mm / 1ヶ",
+        "sku": "62695909",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637531940",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "T：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "fdaae6856fd9634fa4291f833fd2a81f42647d3e8f6556770c029e4e5a351ee0",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637564708",
+        "productId": "9227452547364",
+        "variantId": "48545637564708",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / U：約7×8mm / 1ヶ",
+        "sku": "62696005",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637564708",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "U：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "406f7ede110add113171670590a76efc4a31fb7eee3648e342f752f2c0cda8b9",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637597476",
+        "productId": "9227452547364",
+        "variantId": "48545637597476",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / V：約7×8mm / 1ヶ",
+        "sku": "62696104",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637597476",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "V：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "857ce903beed8108918e2702c3afa3cb10f5d07cf604be671a7c34a2657766fd",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637630244",
+        "productId": "9227452547364",
+        "variantId": "48545637630244",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / W：約7×8mm / 1ヶ",
+        "sku": "62696203",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637630244",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "W：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "fbe4b5c439aa7ccf688f497badb7e7ca0e9f1fa4a43d7d5885b7574cdae83d8a",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637663012",
+        "productId": "9227452547364",
+        "variantId": "48545637663012",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / X：約7×8mm / 1ヶ",
+        "sku": "62696302",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637663012",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "X：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6687e7ffcef76e04247c6b7e3fc54381f23d458ef94677eca57c6f89b1bfa944",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637695780",
+        "productId": "9227452547364",
+        "variantId": "48545637695780",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / Y：約7×8mm / 1ヶ",
+        "sku": "62696401",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637695780",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "Y：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2d25e743744ccc6b214ba072ea36e92f7f9569ff9f53500bd3c764dc2f31436e",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637728548",
+        "productId": "9227452547364",
+        "variantId": "48545637728548",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / Z：約7×8mm / 1ヶ",
+        "sku": "62696500",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637728548",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "Z：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "d2c79af495614fdf6a7baf3cc219f64cbaeb826b9de40b02b7bb8208e5181d15",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637761316",
+        "productId": "9227452547364",
+        "variantId": "48545637761316",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / &：約7×8mm / 1ヶ",
+        "sku": "62696609",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637761316",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "&：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "56e1f21388544b8c789bfe05476eb5b4e52c598ccc8430f6a19420a36cf78ba8",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637794084",
+        "productId": "9227452547364",
+        "variantId": "48545637794084",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / #：約7×8mm / 1ヶ",
+        "sku": "62696708",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637794084",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "#：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "8ec17fb13c8000abd22fbd3d3d1a89113ba0c6abea2f2010b3c7a29da95612d4",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637826852",
+        "productId": "9227452547364",
+        "variantId": "48545637826852",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / ハート：約7×8mm / 1ヶ",
+        "sku": "62696807",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637826852",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "ハート：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "c0f66e29d7f1e7c9a6067ca3ac88a943349e42b64dc6dccef28ad84327d36383",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9227452547364:48545637859620",
+        "productId": "9227452547364",
+        "variantId": "48545637859620",
+        "name": "メタルビーズ イニシャルラウンド　ホワイト/G / スター：約7×8mm / 1ヶ",
+        "sku": "62696906",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0b-001?variant=48545637859620",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "タルビーズ2階層",
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "中央に横穴の開いたエポ付きのイニシャルビーズです。穴のサイズは約1.6mm〜1.8mmです。丸みのあるころんとしたフォルムのビーズで、表面にエポが施されています。お好みのイニシャルと組み合わせて名前や英単語が作れます。マツバコードなど細め(太さ約1mm弱)のコードやチェーンに通してご使用ください。※MとWは共通のデザインです。お好みの向きでご使用ください。※製造工程上、白いエポの付き具合に個体差がございます。※製造工程上、厚みに多少の個体差がございます。また、バリや黒い点、凹みなどがある場合がございます。予めご了承ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_1.jpg?v=1712810922",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_4.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_2.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_3.jpg?v=1712824835",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001_5.jpg?v=1713260108"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "スター：約7×8mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約7x8mm",
+            "valuesMm": [
+              7,
+              8
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "7b73b2c93cb9797bad65a93f7861411f37e36cb347ff44c35ebeda845b30cece",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62694001.jpg?v=1712810915",
+        "fetchedAt": "2026-10-08T04:46:26.757Z",
+        "sha256": "be3b4acd8e3142d7d19808dbed6489f7e91512d4c164b0241295fbb490e454af",
+        "bytes": 53708,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9227452547364"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711731708196:46971935752484",
+        "productId": "8711731708196",
+        "variantId": "46971935752484",
+        "name": "メタルビーズ　ソフトシルバー / 5(約2×2mm) / 1本 約10cm/約47ヶ",
+        "sku": "63952308",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-003?variant=46971935752484",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※カラー名が「ソフトシルバー」に変更になりました。(2026年8月28日、9月11日)表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_ee43beab-8a8f-4efd-9e37-287f780104fa.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_5a74fa45-f1c0-4849-a383-afbc35b11c78.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_4.jpg?v=1694532644",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_5.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_6.jpg?v=1694532644"
+        ],
+        "price": 396,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "5(約2×2mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約47ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 47
+        },
+        "measurements": [
+          {
+            "sourceText": "約2x2mm",
+            "valuesMm": [
+              2,
+              2
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:39.900Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "2202a94a561c376e265c56fdb3fd2b1aa0a230fbb4f8a31850f2610554e8f345",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+        "fetchedAt": "2026-10-08T05:11:44.133Z",
+        "sha256": "6a1e945d384d8005c0dc99f1a556aedb60a1b282a0c757c24d90d90be2edc00b",
+        "bytes": 4652,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731708196"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711731708196:46971935785252",
+        "productId": "8711731708196",
+        "variantId": "46971935785252",
+        "name": "メタルビーズ　ソフトシルバー / 6(約3×3mm) / 1本 約10cm/約24ヶ",
+        "sku": "63952704",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-003?variant=46971935785252",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※カラー名が「ソフトシルバー」に変更になりました。(2026年8月28日、9月11日)表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。 ※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_ee43beab-8a8f-4efd-9e37-287f780104fa.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_5a74fa45-f1c0-4849-a383-afbc35b11c78.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_4.jpg?v=1694532644",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_5.jpg?v=1694532643",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359353_6.jpg?v=1694532644"
+        ],
+        "price": 385,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6(約3×3mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約24ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 24
+        },
+        "measurements": [
+          {
+            "sourceText": "約3x3mm",
+            "valuesMm": [
+              3,
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:39.900Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "035acd1e1f7c597213403f47033a7000f757e364a92db56b76f39833b597e013",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359605.jpg?v=1694532644",
+        "fetchedAt": "2026-10-08T05:11:44.133Z",
+        "sha256": "6a1e945d384d8005c0dc99f1a556aedb60a1b282a0c757c24d90d90be2edc00b",
+        "bytes": 4652,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711731708196"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711728103716:46971918090532",
+        "productId": "8711728103716",
+        "variantId": "46971918090532",
+        "name": "メタルビーズ ミラーボール　ロジウムカラー / 約3mm / 5ヶ",
+        "sku": "60595607",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0q-002?variant=46971918090532",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※仕様が変更になりました。予めご了承ください。(2022年3月18日、2022年6月30日)パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508_1_0a8c5cad-f229-475c-b0e1-fb8c110b4a9a.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_2_f8738782-8e94-4b9c-96b3-8130b52f3f55.jpg?v=1694532460",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_3_9982a255-159a-49f1-96bf-0db54521dc18.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_3.jpg?v=1737440431",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_6.jpg?v=1737440431"
+        ],
+        "price": 110,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約3mm",
+        "purchase": {
+          "sourceText": "5ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 5
+        },
+        "measurements": [
+          {
+            "sourceText": "約3mm",
+            "valuesMm": [
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:48.708Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "8f5786f18ab241b7aebc93245eab0a2f48fd0332e00551741d904994dd756a11",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+        "fetchedAt": "2026-10-08T06:16:38.876Z",
+        "sha256": "4fd53da386187920e0e06cb1c2eae1841dc32a051a671606b606f6f31cd5546b",
+        "bytes": 6680,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711728103716"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711728103716:46971918123300",
+        "productId": "8711728103716",
+        "variantId": "46971918123300",
+        "name": "メタルビーズ ミラーボール　ロジウムカラー / 約4mm / 5ヶ",
+        "sku": "60595805",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-0q-002?variant=46971918123300",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※仕様が変更になりました。予めご了承ください。(2022年3月18日、2022年6月30日)パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595508_1_0a8c5cad-f229-475c-b0e1-fb8c110b4a9a.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_2_f8738782-8e94-4b9c-96b3-8130b52f3f55.jpg?v=1694532460",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607_3_9982a255-159a-49f1-96bf-0db54521dc18.jpg?v=1694532461",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_3.jpg?v=1737440431",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1127a_6.jpg?v=1737440431"
+        ],
+        "price": 132,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約4mm",
+        "purchase": {
+          "sourceText": "5ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 5
+        },
+        "measurements": [
+          {
+            "sourceText": "約4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:48.708Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2c55131729eb2904bca48026b0000ec702cc06c5eb18d6b203e2a58110d388a4",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60595607.jpg?v=1694532461",
+        "fetchedAt": "2026-10-08T06:16:38.876Z",
+        "sha256": "4fd53da386187920e0e06cb1c2eae1841dc32a051a671606b606f6f31cd5546b",
+        "bytes": 6680,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711728103716"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711732756772:46971938996516",
+        "productId": "8711732756772",
+        "variantId": "46971938996516",
+        "name": "メタルビーズ　生地 / 5(約2×2mm) / 1本 約10cm/約47ヶ",
+        "sku": "61684850",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-008?variant=46971938996516",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_98ae535e-519a-4135-819a-754d6f7b9b7a.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_b6a631e2-f2ff-412c-b100-2da1cf0b3bcf.jpg?v=1694532690",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4_5ccf1156-b49c-4d98-9194-350813a7c392.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5_50edd07b-490c-448d-888c-7f07ad239cf1.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6_01eaad45-bbf5-4f27-ad16-6d9bebd6d2ec.jpg?v=1694532690",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7_7a2e0b98-8bee-4faf-9042-1bd621069d38.jpg?v=1694532689"
+        ],
+        "price": 330,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "5(約2×2mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約47ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 47
+        },
+        "measurements": [
+          {
+            "sourceText": "約2x2mm",
+            "valuesMm": [
+              2,
+              2
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "c589d667d2393decb21b8a047276540568f28868c3a9c60c81e1b9670d189272",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+        "fetchedAt": "2026-10-07T08:22:46.668Z",
+        "sha256": "3058e2230a4c9e7968a58a73f53b5d8e303f25019424de6c140fabc296b578c2",
+        "bytes": 10374,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711732756772"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711732756772:46971939029284",
+        "productId": "8711732756772",
+        "variantId": "46971939029284",
+        "name": "メタルビーズ　生地 / 6(約3×3mm) / 1本 約10cm/約24ヶ",
+        "sku": "61684959",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1i-008?variant=46971939029284",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "表面にカットが施されています。素材は真鍮で重厚感があります。穴のサイズは5(約2×2mm)が約1mm、6(約3×3mm)が約1-2mmです。パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※ピンが抜ける場合があるので、間に他のパーツを通してご使用ください。※サイズは＋－0.5mmの誤差が生じる場合がございます。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_1_98ae535e-519a-4135-819a-754d6f7b9b7a.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_2.jpg?v=1784014784",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_3_b6a631e2-f2ff-412c-b100-2da1cf0b3bcf.jpg?v=1694532690",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_4_5ccf1156-b49c-4d98-9194-350813a7c392.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_5_50edd07b-490c-448d-888c-7f07ad239cf1.jpg?v=1694532689",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_6_01eaad45-bbf5-4f27-ad16-6d9bebd6d2ec.jpg?v=1694532690",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60359254_7_7a2e0b98-8bee-4faf-9042-1bd621069d38.jpg?v=1694532689"
+        ],
+        "price": 308,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6(約3×3mm)",
+        "purchase": {
+          "sourceText": "1本 約10cm/約24ヶ",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 24
+        },
+        "measurements": [
+          {
+            "sourceText": "約3x3mm",
+            "valuesMm": [
+              3,
+              3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "1e39f6168f1f8ea6f39e48db229e5912c9a3f90a1e74486a9566f433dc9daeeb",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61684850.jpg?v=1694532689",
+        "fetchedAt": "2026-10-07T08:22:46.668Z",
+        "sha256": "3058e2230a4c9e7968a58a73f53b5d8e303f25019424de6c140fabc296b578c2",
+        "bytes": 10374,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711732756772"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715217338660:46983663747364",
+        "productId": "8715217338660",
+        "variantId": "46983663747364",
+        "name": "メタルビーズ シズク 横穴　ロジウムカラー / 約11×9mm/φ約1.3mm / 1ヶ",
+        "sku": "62712101",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3n-002?variant=46983663747364",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンやフープピアスを通してシンプルなアクセサリーにおすすめです。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712101_844bc6f4-a20d-4bb4-b4e9-f4657d5bafee.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_1_44623f89-a7e3-4eea-8ccc-51dda364f6a4.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_2_a8e1196f-de8c-4975-961e-15511347cdfa.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_3_5104d3c6-1460-4de3-91fa-0fa4dfd3932d.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_4_d47540ca-b9da-498b-9201-fc30f2af4843.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_5_6891dc4f-b0d5-494a-b6d5-077f88f40296.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_6_24418e2a-8c86-43e3-a863-d9c75edbf6d4.jpg?v=1696302507",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_7_d42455b5-a151-4f36-b3b6-d9fe74825813.jpg?v=1696302507"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約11×9mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約11x9mm",
+            "valuesMm": [
+              11,
+              9
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:41.515Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a4bc05ebee6faef3550a6ccb10389ef37c9a34d8939e174c490734ec434ca1f7",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712101_844bc6f4-a20d-4bb4-b4e9-f4657d5bafee.jpg?v=1696302507",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712101_844bc6f4-a20d-4bb4-b4e9-f4657d5bafee.jpg?v=1696302507",
+        "fetchedAt": "2026-10-07T12:02:26.832Z",
+        "sha256": "3a99fd520d451c43d0d45f59619bb5bcd330befa3f4e748a40447b99c01fe744",
+        "bytes": 9236,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715217338660"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715217240356:46983663649060",
+        "productId": "8715217240356",
+        "variantId": "46983663649060",
+        "name": "メタルビーズ シズク 横穴　ゴールド / 約11×9mm/φ約1.3mm / 1ヶ",
+        "sku": "62712002",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3n-001?variant=46983663649060",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンやフープピアスを通してシンプルなアクセサリーにおすすめです。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_d973eea8-cf3b-430a-b19e-c88b0374746b.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_1_7b8b3823-6906-427c-af17-1e14e1ba71b1.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_2_1e24fa24-2935-4928-8dba-6b217685ee57.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_3_44bc3b87-c209-4272-8ed4-a8fa7a7e346a.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_4_25412551-7693-4224-9b22-b710a694ebf9.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_5_fa831f80-043c-46a6-85bd-6485b047a09a.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_6_bfce8cf6-66cc-4d13-a07f-b8e42310a034.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_7_8ff1377c-ed42-464e-af3a-e74cec6aa7cd.jpg?v=1696302505"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約11×9mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約11x9mm",
+            "valuesMm": [
+              11,
+              9
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:45.728Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "f6509c4a62d613dc53047cd85787622a5704594ad1c3d022410c6f63b25c8984",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_d973eea8-cf3b-430a-b19e-c88b0374746b.jpg?v=1696302505",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712002_d973eea8-cf3b-430a-b19e-c88b0374746b.jpg?v=1696302505",
+        "fetchedAt": "2026-10-07T12:34:13.456Z",
+        "sha256": "0c782ba58038088a4bc618bf5759a0eef1de372a7cc6fdf8790c96783b12240e",
+        "bytes": 10128,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715217240356"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711733149988:46971940077860",
+        "productId": "8711733149988",
+        "variantId": "46971940077860",
+        "name": "メタルビーズ スクエアエンボス　ゴールド / 約1.9mm / 20ヶ",
+        "sku": "60594600",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1m-001?variant=46971940077860",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600.jpg?v=1694532698",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600_1.jpg?v=1694532699"
+        ],
+        "price": 110,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約1.9mm",
+        "purchase": {
+          "sourceText": "20ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 20
+        },
+        "measurements": [
+          {
+            "sourceText": "約1.9mm",
+            "valuesMm": [
+              1.9
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:45.728Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "98795077b73d2fc8762417bab00486e14f9725f13482d2abd959798dc8b7d4d3",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600.jpg?v=1694532698",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600.jpg?v=1694532698",
+        "fetchedAt": "2026-10-07T12:40:03.266Z",
+        "sha256": "594568353688e157544f554a788384771fe4ff83ed8800e16851641bde2db9a9",
+        "bytes": 6516,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711733149988"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715216617764:46983662928164",
+        "productId": "8715216617764",
+        "variantId": "46983662928164",
+        "name": "メタルビーズ ハート 横穴　ロジウムカラー / 約11×10mm/φ約1.3mm / 1ヶ",
+        "sku": "62779906",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3b-002?variant=46983662928164",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなハート形のビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンなどを通してシンプルなアクセサリーにおすすめです。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779906_fa205c88-dc15-416c-bbcb-260ebe3a052f.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_1_04aa78d4-c45e-4bdd-9d78-871a4bc3104a.jpg?v=1696301641",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_2_5c757395-7bd5-4ea3-a214-caabd886977e.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_4b401b12-2b48-44e7-8e19-0b959ddebd29.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_dd8c0a3e-9b5f-4981-a093-0b7fb043c700.jpg?v=1696302499"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約11×10mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約11x10mm",
+            "valuesMm": [
+              11,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:45.728Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "9c17662478afef737a3c5323bee4e53588bba61b7a2d1b947855c0c5f0fa666e",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779906_fa205c88-dc15-416c-bbcb-260ebe3a052f.jpg?v=1696301642",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779906_fa205c88-dc15-416c-bbcb-260ebe3a052f.jpg?v=1696301642",
+        "fetchedAt": "2026-10-07T12:45:49.588Z",
+        "sha256": "7981c15aa81129fbeade2515621f21af7b82fa69259312357d813e2fe88fa144",
+        "bytes": 4870,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715216617764"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715216519460:46983662829860",
+        "productId": "8715216519460",
+        "variantId": "46983662829860",
+        "name": "メタルビーズ ハート 横穴　ゴールド / 約11×10mm/φ約1.3mm / 1ヶ",
+        "sku": "62779807",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3b-001?variant=46983662829860",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなハート形のビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンなどを通してシンプルなアクセサリーにおすすめです。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_dcde6578-2acb-4396-99fd-c8dda2c707b1.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_1_40222f18-7dd6-44b6-b960-ee87f8bb1d76.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_2_cd5b2bb0-e255-40e4-891c-ee3500c86518.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_27dab5d2-257f-49a4-9922-f1ad8fa533a6.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_726a4942-78f4-4bea-af13-454ba103b5d1.jpg?v=1696302500"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約11×10mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約11x10mm",
+            "valuesMm": [
+              11,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:54.091Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "cf95d3920260c1c86bb767c0b249f90e28ce645afa313060947fe7edbc473b55",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_dcde6578-2acb-4396-99fd-c8dda2c707b1.jpg?v=1696301642",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62779807_dcde6578-2acb-4396-99fd-c8dda2c707b1.jpg?v=1696301642",
+        "fetchedAt": "2026-10-07T13:26:52.329Z",
+        "sha256": "1d087e3d6a4a2bff535d41ac06bbd234572edde68782de32831e714c71d23f57",
+        "bytes": 6224,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715216519460"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715216879908:46983663190308",
+        "productId": "8715216879908",
+        "variantId": "46983663190308",
+        "name": "メタルビーズ バロックNo.1 縦穴　ロジウムカラー / 約13×10mm/φ約1.0mm / 1ヶ",
+        "sku": "62780100",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3c-002?variant=46983663190308",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "縦穴タイプの表面が滑らかなバロック形のビーズです。貴和製作所オリジナル商品です。穴のサイズは約1mmです。しっかりとした重みがあり、高級感があります。線径0.6mm以上のピン類でパーツをつなげてご使用ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780100_b64d53fa-4f54-4abf-9a81-025f009dc128.jpg?v=1696301641",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_1_6b8a0436-3915-4e44-9f76-16224ecf46a6.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_2_64831049-166e-41f8-955c-3d698bf91b55.jpg?v=1696301641",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_ff0214b0-e89c-485b-aaf3-48ec6dc76632.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_5cdee030-c889-4a9c-a3a2-813d64e66217.jpg?v=1696302499"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約13×10mm/φ約1.0mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約13x10mm",
+            "valuesMm": [
+              13,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.0mm",
+            "valuesMm": [
+              1
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:15.255Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "c687b34c042f4a0d63387417bcf3d8ea710a8ebd5d5bca231f6d669e6cbcff5f",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780100_b64d53fa-4f54-4abf-9a81-025f009dc128.jpg?v=1696301641",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780100_b64d53fa-4f54-4abf-9a81-025f009dc128.jpg?v=1696301641",
+        "fetchedAt": "2026-10-07T17:05:57.399Z",
+        "sha256": "604e64e19ca82732793f98a7a007131ba7778837579d72dd62dd795b6fcb70f3",
+        "bytes": 3896,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715216879908"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711733281060:46971940405540",
+        "productId": "8711733281060",
+        "variantId": "46971940405540",
+        "name": "メタルビーズ スクエアエンボス　ロジウムカラー / 約1.9mm / 20ヶ",
+        "sku": "60594709",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1m-002?variant=46971940405540",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594709.jpg?v=1694532708",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600_1_fee2be4c-0715-4114-ad76-8642f98bbafb.jpg?v=1694532708"
+        ],
+        "price": 110,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約1.9mm",
+        "purchase": {
+          "sourceText": "20ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 20
+        },
+        "measurements": [
+          {
+            "sourceText": "約1.9mm",
+            "valuesMm": [
+              1.9
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:19.507Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "90d7a150b2124f5cfc3ab4363f1e8e3b9321dc5cdffb6eb9e180481a8e3995ec",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594709.jpg?v=1694532708",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594709.jpg?v=1694532708",
+        "fetchedAt": "2026-10-07T17:25:22.831Z",
+        "sha256": "4d2ef5f2f755d35dad562d333b480decd811ebdffd5f4f6a74d4e93e325653f1",
+        "bytes": 5966,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711733281060"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715216781604:46983663092004",
+        "productId": "8715216781604",
+        "variantId": "46983663092004",
+        "name": "メタルビーズ バロックNo.1 縦穴　ゴールド / 約13×10mm/φ約1.0mm / 1ヶ",
+        "sku": "62780001",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3c-001?variant=46983663092004",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "縦穴タイプの表面が滑らかなバロック形のビーズです。貴和製作所オリジナル商品です。穴のサイズは約1mmです。しっかりとした重みがあり、高級感があります。線径0.6mm以上のピン類でパーツをつなげてご使用ください。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_50461a29-1e7e-4fd4-9ccf-a4a9245b81d1.jpg?v=1696301647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_1_d0af74e5-57f6-4cf6-b0c6-001b8688d64d.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_2_70530599-5c12-4abe-9b59-82bbe1706d71.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_74ed8bd1-33f3-4111-a611-9bd98319644d.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_53cd85b7-0521-4997-8e07-2d58485141db.jpg?v=1696302503"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約13×10mm/φ約1.0mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約13x10mm",
+            "valuesMm": [
+              13,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.0mm",
+            "valuesMm": [
+              1
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:23.688Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "1dff6be8bda9d54b8c8d9a84935f6bf3c2a1486eba355b842b4bca1a6b0b101c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_50461a29-1e7e-4fd4-9ccf-a4a9245b81d1.jpg?v=1696301647",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780001_50461a29-1e7e-4fd4-9ccf-a4a9245b81d1.jpg?v=1696301647",
+        "fetchedAt": "2026-10-07T18:01:23.432Z",
+        "sha256": "7b7763b57475a4b6d778936c98c13c0f5ce2da68881d0500933d450fd86a4b53",
+        "bytes": 4766,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715216781604"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711733707044:46971941683492",
+        "productId": "8711733707044",
+        "variantId": "46971941683492",
+        "name": "メタルビーズ スクエアエンボス　マットゴールド / 約1.9mm / 20ヶ",
+        "sku": "60594808",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1m-003?variant=46971941683492",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※メッキ加工を施しているため、汗や摩擦によりメッキが変色する場合がございます。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、色を統一する事が難しいため、入荷時期により色ぶれがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)※マットゴールド、マットシルバーの一部商品につきまして、カラーが順次変更となります。少々艶の掛かった色味となります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594808.jpg?v=1694532717",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mg_ms_plat.jpg?v=1694532718",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594600_2.jpg?v=1694532717"
+        ],
+        "price": 110,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約1.9mm",
+        "purchase": {
+          "sourceText": "20ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 20
+        },
+        "measurements": [
+          {
+            "sourceText": "約1.9mm",
+            "valuesMm": [
+              1.9
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:32.257Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2b91414a3bcf83215d1bb7d3db8b21a7e90e482cf092017d4a5966cd10bd8851",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594808.jpg?v=1694532717",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60594808.jpg?v=1694532717",
+        "fetchedAt": "2026-10-07T18:42:32.795Z",
+        "sha256": "e23fc7fa3914ad36a08abd7a9b88044938f2752aa6675dac6683e17da9ccbbad",
+        "bytes": 6620,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711733707044"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715217600804:46983664009508",
+        "productId": "8715217600804",
+        "variantId": "46983664009508",
+        "name": "メタルビーズ ビーンズ 横穴　ロジウムカラー / 約14×10mm/φ約1.3mm / 1ヶ",
+        "sku": "62712309",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3o-002?variant=46983664009508",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンやフープピアスを通してシンプルなアクセサリーにおすすめです。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712309_88ee7e4f-72d9-469a-b5d6-29fbb0b75797.jpg?v=1696302508",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_1_5ada4899-ef10-4d48-a786-9ac6f86c83d9.jpg?v=1696302508",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_2_6fe33426-b7c5-45af-98b5-cf5cbdcd29cd.jpg?v=1696302508",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_3_bc79f9d7-4e2e-4b9d-8703-c23106769fa5.jpg?v=1696302508",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_4_f0fae8fc-a6f8-483a-8dfd-ee554f1866b2.jpg?v=1696302508",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712200_5_8d6f2411-8663-4901-b738-2af854f0923f.jpg?v=1696302508"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約14×10mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約14x10mm",
+            "valuesMm": [
+              14,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:42.165Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "240dbc8bdcb0b4e6bd82c913a9494079d91101210d79f39ca32c59427b3de82d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712309_88ee7e4f-72d9-469a-b5d6-29fbb0b75797.jpg?v=1696302508",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712309_88ee7e4f-72d9-469a-b5d6-29fbb0b75797.jpg?v=1696302508",
+        "fetchedAt": "2026-10-07T19:37:23.359Z",
+        "sha256": "6d8428d4dcefdeaba5567275275c9baeda02392adf017c17dc01c4e1a59c8a26",
+        "bytes": 11808,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715217600804"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8711735836964:46971951251748",
+        "productId": "8711735836964",
+        "variantId": "46971951251748",
+        "name": "メタルビーズ No.15667　ソフト銀 / 約2.5mm / 1本(4インチ/約77ヶ)",
+        "sku": "60923356",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-1u-003?variant=46971951251748",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層"
+        ],
+        "description": "※入数・価格が変更になりました。予めご了承ください。(2023年5月25日)パーツの間に通したり、パーツと一緒に編みこんだりと幅広く使えるパーツです。※製造工程上、バリやビーズ同士がくっついている場合がございます。くっついている場合はワイヤーに通した状態のままヤットコなどで挟み、折るようにしていただくと離す事ができます。※ものや入荷時期によりビーズの幅やサイズが異なる場合がございます。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923301.jpg?v=1694532795",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923004_1_85ff2d13-8614-4875-9433-ba54d62d800a.jpg?v=1694532794",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923004_2_23632a92-268f-424e-9ffc-22152d5676cd.jpg?v=1694532795",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923004_3_b4fe2e87-08ec-4395-ab94-f739bc644fab.jpg?v=1694532795",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923004_4_3269c608-81d5-42c6-8fb6-2094808704e4.jpg?v=1694532795"
+        ],
+        "price": 242,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "約2.5mm",
+        "purchase": {
+          "sourceText": "1本(4インチ/約77ヶ)",
+          "unit": "unknown",
+          "approximate": true,
+          "estimatedCount": 77
+        },
+        "measurements": [
+          {
+            "sourceText": "約2.5mm",
+            "valuesMm": [
+              2.5
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:46.451Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認",
+          "購入単位の確認"
+        ]
+      },
+      "objectSha256": "7a493b4c94ef20ca60fc7ac6b701430379e016c7df8d026645ab1bc97382a6ba",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923301.jpg?v=1694532795",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60923301.jpg?v=1694532795",
+        "fetchedAt": "2026-10-07T19:50:00.697Z",
+        "sha256": "b082ae938017f8c453a4d3879090932865d33ff73a2e2a0a111be764c52b47ae",
+        "bytes": 9420,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8711735836964"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715217469732:46983663878436",
+        "productId": "8715217469732",
+        "variantId": "46983663878436",
+        "name": "メタルビーズ ビーンズ 横穴　ゴールド / 約14×10mm/φ約1.3mm / 1ヶ",
+        "sku": "62712200",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3o-001?variant=46983663878436",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "トップホールタイプの表面が滑らかなビーズです。貴和製作所オリジナル商品です。しっかりとした重みがあり、高級感があります。穴が大きめなので、直接チェーンやフープピアスを通してシンプルなアクセサリーにおすすめです。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712200_76895f29-afdc-4dba-927f-4489a95ea0c2.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_1_c473f729-6c9e-47c1-b507-05936cdb61ca.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_2_d8edda7f-333a-40a7-b01e-a62f310d61a2.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_3_cc95aa75-b9ba-477a-8497-86d60bb8b8bd.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/mtb_yokoana_4_d0c29a1a-329a-47de-9fd2-5ef909bb7dfa.jpg?v=1696302505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712200_5_2b03e2bc-d417-45e2-8407-aceaed91e3b0.jpg?v=1696302505"
+        ],
+        "price": 176,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約14×10mm/φ約1.3mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約14x10mm",
+            "valuesMm": [
+              14,
+              10
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.3mm",
+            "valuesMm": [
+              1.3
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:50.805Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "08461ad5668d69e3c1376ed3a57af7d4001ec0f2952d84c5824398608bfe3b05",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712200_76895f29-afdc-4dba-927f-4489a95ea0c2.jpg?v=1696302505",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62712200_76895f29-afdc-4dba-927f-4489a95ea0c2.jpg?v=1696302505",
+        "fetchedAt": "2026-10-07T20:15:03.298Z",
+        "sha256": "5919f03f77abe16ae009af5442befa2128f365bd5b3597a0fb1721c491b99fb7",
+        "bytes": 14316,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715217469732"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715217109284:46983663419684",
+        "productId": "8715217109284",
+        "variantId": "46983663419684",
+        "name": "メタルビーズ バロックNo.2 縦穴　ロジウムカラー / 約14.5×7mm/φ約1.0mm / 1ヶ",
+        "sku": "62780308",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3d-002?variant=46983663419684",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "縦穴タイプの表面が滑らかなバロック形のビーズです。貴和製作所オリジナル商品です。穴のサイズは約1mmです。しっかりとした重みがあり、高級感があります。線径0.6mm以上のピン類でパーツをつなげてご使用ください。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780308_48a6cf13-14bc-4d48-b35d-67c45099543b.jpg?v=1696301647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_1_6b9de431-f2a2-4b16-9e1d-123b1c1916b7.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_2_0b155719-8e8c-469f-8794-de86aa0a6eef.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_69c6b949-75a3-4570-8af1-61ec7dd4f6e5.jpg?v=1696301646",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_07939b5d-e351-4047-af3a-e5f8b5927385.jpg?v=1696302503"
+        ],
+        "price": 165,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約14.5×7mm/φ約1.0mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約14.5x7mm",
+            "valuesMm": [
+              14.5,
+              7
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.0mm",
+            "valuesMm": [
+              1
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:25:08.289Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "c6afb426659c5e68fdc51cded0af4a55d1b91145b545dcdc1394932b6009631d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780308_48a6cf13-14bc-4d48-b35d-67c45099543b.jpg?v=1696301647",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780308_48a6cf13-14bc-4d48-b35d-67c45099543b.jpg?v=1696301647",
+        "fetchedAt": "2026-10-07T22:45:51.769Z",
+        "sha256": "63c212dba6eec1d2814398afab90d471ccf3dd3363fec34fe1563d392a3dcfce",
+        "bytes": 3762,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715217109284"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8715216978212:46983663288612",
+        "productId": "8715216978212",
+        "variantId": "46983663288612",
+        "name": "メタルビーズ バロックNo.2 縦穴　ゴールド / 約14.5×7mm/φ約1.0mm / 1ヶ",
+        "sku": "62780209",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalbeads-metalbeads-3d-001?variant=46983663288612",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "メタルビーズ",
+          "メタルビーズ2階層",
+          "大袋中袋"
+        ],
+        "description": "縦穴タイプの表面が滑らかなバロック形のビーズです。貴和製作所オリジナル商品です。穴のサイズは約1mmです。しっかりとした重みがあり、高級感があります。線径0.6mm以上のピン類でパーツをつなげてご使用ください。※アクセサリーですので、流行の変化を取り入れて色を変更する場合がございます。また加工過程において、予告なく色の濃淡が生じてしまうことがございます。予めご了承ください。(パーツによって、他のパーツと色のバラつきが生じる場合がございます。)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_fb683d2d-4793-43e1-abc2-a41620193d0b.jpg?v=1696301641",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_1_26d50892-0397-456d-9912-d6eeca947116.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_2_3dda037f-b8e8-415a-9dcc-dde18661aeab.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_3_34832e4a-e7d9-4194-b6f6-5c42dbb24683.jpg?v=1696301642",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/2022_metalbeads_4_6344b562-3061-4511-b9c0-fd08197f731e.jpg?v=1696302499"
+        ],
+        "price": 165,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "約14.5×7mm/φ約1.0mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "約14.5x7mm",
+            "valuesMm": [
+              14.5,
+              7
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          },
+          {
+            "sourceText": "約1.0mm",
+            "valuesMm": [
+              1
+            ],
+            "approximate": true,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:25:12.560Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "fb7152444060fb4809056465ccd6fe784e5d4a007e38f771ee17a04e1343481b",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_fb683d2d-4793-43e1-abc2-a41620193d0b.jpg?v=1696301641",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62780209_fb683d2d-4793-43e1-abc2-a41620193d0b.jpg?v=1696301641",
+        "fetchedAt": "2026-10-07T23:15:57.516Z",
+        "sha256": "deb6ca3b69c52e983bbe6383a74ae87833f57252e765cedd2fd341530b416fbc",
+        "bytes": 4750,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8715216978212"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    }
+  ]
+}

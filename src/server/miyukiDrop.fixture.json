@@ -1,0 +1,52 @@
+{
+  "id": "kiwa:8711215481124:46970128564516",
+  "productId": "8711215481124",
+  "variantId": "46970128564516",
+  "name": "MIYUKIドロップビーズ　DP528 / 約3.4mm / 7g(約126粒)",
+  "sku": "10101",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-miyuki-delicadrop-006?variant=46970128564516",
+  "sourceName": "貴和製作所",
+  "category": "bead",
+  "categoryBasis": "商品名による分類（形状の保証なし）",
+  "tags": [
+    "made in JAPAN",
+    "MIYUKIドロップビーズ",
+    "シードビーズ"
+  ],
+  "description": "外径約3.4mmで穴の位置が中心からずれた、しずくのような形をしたビーズです。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10101.jpg?v=1694518320",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10101_1.jpg?v=1694518321",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1274a_1.jpg?v=1760697813"
+  ],
+  "price": 198,
+  "currency": "JPY",
+  "available": true,
+  "sizeText": "約3.4mm",
+  "purchase": {
+    "sourceText": "7g(約126粒)",
+    "unit": "weight",
+    "approximate": true,
+    "weightG": 7,
+    "estimatedCount": 126
+  },
+  "measurements": [
+    {
+      "sourceText": "約3.4mm",
+      "valuesMm": [
+        3.4
+      ],
+      "approximate": true,
+      "meaning": "unassigned"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:22:48.708Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認",
+    "購入単位の確認"
+  ]
+}

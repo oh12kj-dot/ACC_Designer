@@ -1,0 +1,4407 @@
+{
+  "at": "2026-10-25T18:08:24.120Z",
+  "registrySha256": "a4032127881c8dc19fd32877f80c0c76b6eab6b22dac9550fd5b5d05d933f7db",
+  "scopeSummary": {
+    "checkedAt": "2026-10-25T18:06:32.655Z",
+    "sqlCheckedAt": "2026-10-25T18:06:31.981Z",
+    "registrySha256": "a4032127881c8dc19fd32877f80c0c76b6eab6b22dac9550fd5b5d05d933f7db",
+    "officialMappingTarget": 27046,
+    "placementTarget": 20066,
+    "placementRegistered": 11826,
+    "placementRemaining": 8240,
+    "placementExcluded": 6980,
+    "kitToolExcluded": 310,
+    "obsoleteVariants": 2016,
+    "nonMinimumSaleVariants": 4673,
+    "rawRegistered": 11826,
+    "rawRemaining": 15220,
+    "exclusionManifestSha256": "8d793645f45db0390918dd93955056fa472021718c27431c477e4e31fd5f91e8",
+    "minimumSaleManifestSha256": "cf0523f499718c34615dec1d49c79608c0b310bbfb37e1f099815593dfe8538b",
+    "scope": "All 27046 official sources preserved. Only minimum sale offers represent resolved physical groups; obsolete offers excluded. Source identity and saved designs unchanged."
+  },
+  "rows": [
+    {
+      "draft": {
+        "id": "kiwa:8709502533924:46965860466980",
+        "productId": "8709502533924",
+        "variantId": "46965860466980",
+        "name": "貴和クリスタル ＃4809　クリスタル/F / 13×12mm / 1ヶ",
+        "sku": "63905908",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-001?variant=46965860466980",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1.jpg?v=1694475874",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_3.jpg?v=1738043323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 429,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "47579b15c691a47e6a78b5203883c83e21d0fc08e3c1cbe2f4bf270cabefeb2d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+        "fetchedAt": "2026-10-07T21:16:57.403Z",
+        "sha256": "02f0cdf757dd97c1cebfbc9bdd20b32f7ffd74b25f34cc75a7fccf8fea7198bf",
+        "bytes": 15550,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709502533924"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-001?variant=46965860466980",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-4.json",
+          "sha256": "9d29a688f20814270a6ecac3967aa913b9e9254c7102f567592474966b92b35c",
+          "fetchedAt": "2026-10-05T09:19:59.275Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709502533924:46965860466980",
+        "variantId": "46965860466980",
+        "sku": "63905908",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709502533924:50303298699556",
+        "productId": "8709502533924",
+        "variantId": "50303298699556",
+        "name": "貴和クリスタル ＃4809　クリスタル/F / 8×7.5mm / 1ヶ",
+        "sku": "63271201",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-001?variant=50303298699556",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1.jpg?v=1694475874",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_3.jpg?v=1738043323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 198,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "57766ef526c9869d2f080c1c560b36e62c992bce43837bf089de2a6b17f7254a",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904.jpg?v=1694475873",
+        "fetchedAt": "2026-10-07T21:16:57.403Z",
+        "sha256": "02f0cdf757dd97c1cebfbc9bdd20b32f7ffd74b25f34cc75a7fccf8fea7198bf",
+        "bytes": 15550,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709502533924"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-001?variant=50303298699556",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-4.json",
+          "sha256": "9d29a688f20814270a6ecac3967aa913b9e9254c7102f567592474966b92b35c",
+          "fetchedAt": "2026-10-05T09:19:59.275Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709502533924:50303298699556",
+        "variantId": "50303298699556",
+        "sku": "63271201",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9137836261668:50303298830628",
+        "productId": "9137836261668",
+        "variantId": "50303298830628",
+        "name": "貴和クリスタル ＃4809　クリスタルソフトミントイグナイト / 8×7.5mm / 1ヶ",
+        "sku": "63348606",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-010?variant=50303298830628",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "2025SS先行発売",
+          "240319先行期間限定",
+          "中袋大袋",
+          "取寄商品",
+          "大袋",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。裏面に施したラッカーの内側にイグナイトエフェクトを施しています。鮮やかなラッカーと宝石のような煌めきのイグナイトエフェクトがカット面を際立たせ、透明感のある輝きが特徴です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109405.jpg?v=1710387651",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_bf1d36e9-dd6c-42a1-b0db-8ae87c391eab.jpg?v=1710396527",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoftmint_ignite_dfe520e2-5659-4e04-96cb-5b760dc7d68c.jpg?v=1738043198",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoft_ignite_fe918db3-77f0-48d9-9986-3cd5ec639a1c.jpg?v=1738043198",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_f4c5f380-25d7-4b65-ac44-bb0acc2a3e9a.jpg?v=1738043198",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1311a_4.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff1.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:03.236Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "9fed223ffc89343a49aba34297c37c19cbcd4db0650206ae30551df7d58b222d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109405.jpg?v=1710387651",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109405.jpg?v=1710387651",
+        "fetchedAt": "2026-10-08T02:45:33.416Z",
+        "sha256": "835cdb6fa1258eda449fe6a86a3f47a1b53d8415f456f876cd7aa3efeed49340",
+        "bytes": 11640,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9137836261668"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-010?variant=50303298830628",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-5.json",
+          "sha256": "5335ed7b9aa08373423dea3054288343deb5412db212ee4a19337850a9317b1b",
+          "fetchedAt": "2026-10-05T09:20:03.236Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9137836261668:50303298830628",
+        "variantId": "50303298830628",
+        "sku": "63348606",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8975028977956:47697984356644",
+        "productId": "8975028977956",
+        "variantId": "47697984356644",
+        "name": "貴和クリスタル ＃4809　ロザリン/F / 13×12mm / 1ヶ",
+        "sku": "60567604",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-003?variant=47697984356644",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "#4809",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_8b3b492d-7963-40b1-8dd8-54a70b0b14b1.jpg?v=1701936813",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_4a9f76fb-875f-4dd4-8cc0-ec7016aefd93.jpg?v=1738043256",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 484,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "0fcb2eb974d39b2671901bd662da99af3c25051e41fe2b5181789efad974858a",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+        "fetchedAt": "2026-10-08T04:33:10.267Z",
+        "sha256": "2afb5e1aedb2fd331b68984db61ade265b560ddfff19b46b6f8142f84bd2e549",
+        "bytes": 18024,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "8975028977956"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-003?variant=47697984356644",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8975028977956:47697984356644",
+        "variantId": "47697984356644",
+        "sku": "60567604",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8975028977956:50303298765092",
+        "productId": "8975028977956",
+        "variantId": "50303298765092",
+        "name": "貴和クリスタル ＃4809　ロザリン/F / 8×7.5mm / 1ヶ",
+        "sku": "63271805",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-003?variant=50303298765092",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "#4809",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_8b3b492d-7963-40b1-8dd8-54a70b0b14b1.jpg?v=1701936813",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_4a9f76fb-875f-4dd4-8cc0-ec7016aefd93.jpg?v=1738043256",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "f1c9f91d34df547c056c02fb52c2e11425124612db6ebc32ee53b459f4b35ce8",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60567604.jpg?v=1701935841",
+        "fetchedAt": "2026-10-08T04:33:10.267Z",
+        "sha256": "2afb5e1aedb2fd331b68984db61ade265b560ddfff19b46b6f8142f84bd2e549",
+        "bytes": 18024,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "8975028977956"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-003?variant=50303298765092",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8975028977956:50303298765092",
+        "variantId": "50303298765092",
+        "sku": "63271805",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8975029010724:47697984389412",
+        "productId": "8975029010724",
+        "variantId": "47697984389412",
+        "name": "貴和クリスタル ＃4809　バイオレット/F / 13×12mm / 1ヶ",
+        "sku": "63011500",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-005?variant=47697984389412",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "#4809",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_0475a572-c36f-41f3-874e-8dd799431122.jpg?v=1702285778",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_a37efc99-ae24-49b7-a7b7-f5cbd060e5fc.jpg?v=1738043242",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 484,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "1b5aa00802f7d7ca65d380fdae3f532be862f5af1c94b6a1702bf2102f6d75d1",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+        "fetchedAt": "2026-10-08T04:38:45.883Z",
+        "sha256": "71471d6b5fea047e78cadd7de9d3871da1957153ffe68ffa74ae703db15422ef",
+        "bytes": 19822,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "8975029010724"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-005?variant=47697984389412",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8975029010724:47697984389412",
+        "variantId": "47697984389412",
+        "sku": "63011500",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8975029010724:50303298797860",
+        "productId": "8975029010724",
+        "variantId": "50303298797860",
+        "name": "貴和クリスタル ＃4809　バイオレット/F / 8×7.5mm / 1ヶ",
+        "sku": "63272109",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-005?variant=50303298797860",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "#4809",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_0475a572-c36f-41f3-874e-8dd799431122.jpg?v=1702285778",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_a37efc99-ae24-49b7-a7b7-f5cbd060e5fc.jpg?v=1738043242",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "abb50b617887e28f78256921e4b1854029dca8a85458edb556c9f36ef1c956dc",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63011500.jpg?v=1702285778",
+        "fetchedAt": "2026-10-08T04:38:45.883Z",
+        "sha256": "71471d6b5fea047e78cadd7de9d3871da1957153ffe68ffa74ae703db15422ef",
+        "bytes": 19822,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "8975029010724"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-005?variant=50303298797860",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8975029010724:50303298797860",
+        "variantId": "50303298797860",
+        "sku": "63272109",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709503811876:46965860794660",
+        "productId": "8709503811876",
+        "variantId": "46965860794660",
+        "name": "貴和クリスタル ＃4809　クリスタルゴールデンシャドウ/F / 13×12mm / 1ヶ",
+        "sku": "63906103",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-004?variant=46965860794660",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※8×7.5mmはクリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1_a584f76c-442c-4fee-a7c6-f64b0847e2cd.jpg?v=1694475894",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208_3.jpg?v=1738043338",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1311a_3.jpg?v=1768358310",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 506,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "846c4acfe0ee09b943737edfe91e1c5defe946102a9b8d88763d75fef6d3cfce",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+        "fetchedAt": "2026-10-08T04:43:13.434Z",
+        "sha256": "49ffc191fe07e368b236355546b871817c5dc86ffbc5a843d726ff955961aea0",
+        "bytes": 12452,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709503811876"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-004?variant=46965860794660",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709503811876:46965860794660",
+        "variantId": "46965860794660",
+        "sku": "63906103",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709503811876:50303298961700",
+        "productId": "8709503811876",
+        "variantId": "50303298961700",
+        "name": "貴和クリスタル ＃4809　クリスタルゴールデンシャドウ/F / 8×7.5mm / 1ヶ",
+        "sku": "63271409",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-004?variant=50303298961700",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※8×7.5mmはクリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1_a584f76c-442c-4fee-a7c6-f64b0847e2cd.jpg?v=1694475894",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208_3.jpg?v=1738043338",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/KR1311a_3.jpg?v=1768358310",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 231,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:20:07.181Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "54025102175551b3d3804ca040a5a9ad706f0baeba1d68e35836996ed1a7342c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512208.jpg?v=1694475894",
+        "fetchedAt": "2026-10-08T04:43:13.434Z",
+        "sha256": "49ffc191fe07e368b236355546b871817c5dc86ffbc5a843d726ff955961aea0",
+        "bytes": 12452,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709503811876"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-004?variant=50303298961700",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-6.json",
+          "sha256": "6abe787c7c8303c06ee7c85df7a27efe4f3ca95d40ca9f35f473036f35cc3398",
+          "fetchedAt": "2026-10-05T09:20:07.181Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709503811876:50303298961700",
+        "variantId": "50303298961700",
+        "sku": "63271409",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9137836196132:50303298732324",
+        "productId": "9137836196132",
+        "variantId": "50303298732324",
+        "name": "貴和クリスタル ＃4809　ダークローズ/F / 8×7.5mm / 1ヶ",
+        "sku": "63271607",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-009?variant=50303298732324",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "2025SS先行発売",
+          "240319先行期間限定",
+          "中袋大袋",
+          "取寄商品",
+          "大袋",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。ダークローズは、科学熱処理HICT(Heat Induced Color Technology)を加えることで石の中に着色層を焼き付けています。フォイルのある1000番台・4000番台と比べて、ビーズ・トップホールタイプは淡い色味をしています。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109306.jpg?v=1710387672",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_75e1aa02-839e-4fac-916c-fe87e16d73b3.jpg?v=1710396550",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kiwacry_darkrose_c766a54e-69ab-4a66-9273-b2e323a7b9fa.jpg?v=1738043232",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kiwacry_darkrose_iceblue_da35ca79-cd83-4118-98fb-4fe0acd41320.jpg?v=1738043232",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kiwacry_darkrose2_74a06ee8-b30b-4bef-8eaa-304704b3efd0.jpg?v=1738043232",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr0984a.webp?v=1738043232",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_88644e1e-0b82-45e4-a68a-1e1b32ccb6de.jpg?v=1738043232",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:39.900Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "0bd6b975ab9b20ad2df957752a32b624fcfe4363a65e87c10f8883e4382c8708",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109306.jpg?v=1710387672",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109306.jpg?v=1710387672",
+        "fetchedAt": "2026-10-08T05:10:12.436Z",
+        "sha256": "9ea7354fd7c50adc3f28d739fe6603e67c6668e4615c0c0e2d820dcb05762a37",
+        "bytes": 28390,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9137836196132"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-009?variant=50303298732324",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-7.json",
+          "sha256": "f08e3d9dd35ccc2cf34e10a7881b6e58b3dae8d2c8b9cbac8f669ccde58329f5",
+          "fetchedAt": "2026-10-05T09:22:39.900Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9137836196132:50303298732324",
+        "variantId": "50303298732324",
+        "sku": "63271607",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9137836294436:50303298863396",
+        "productId": "9137836294436",
+        "variantId": "50303298863396",
+        "name": "貴和クリスタル ＃4809　クリスタルソフトローズイグナイト / 8×7.5mm / 1ヶ",
+        "sku": "63348705",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-011?variant=50303298863396",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "2025SS先行発売",
+          "240319先行期間限定",
+          "中袋大袋",
+          "取寄商品",
+          "大袋",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。裏面に施したラッカーの内側にイグナイトエフェクトを施しています。鮮やかなラッカーと宝石のような煌めきのイグナイトエフェクトがカット面を際立たせ、透明感のある輝きが特徴です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109504.jpg?v=1710387661",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_a451392c-4878-41d9-8f99-afe77fc03b4a.jpg?v=1710396538",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoftrose_ignite_5f4ea5bb-5e3a-4930-a909-05840568f8aa.jpg?v=1738043208",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoft_ignite_73b6fc73-fc01-4679-a451-b386d60108be.jpg?v=1738043208",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_0fe77fb4-fb4a-4890-90e4-d2ee83fbc24c.jpg?v=1738043208",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff1.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:44.704Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "327d76d6981b90b71d49eae7d478c99466624df82730c8fdb5179c8dd3d9a9bc",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109504.jpg?v=1710387661",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109504.jpg?v=1710387661",
+        "fetchedAt": "2026-10-08T05:43:23.342Z",
+        "sha256": "f6664914d7b104a775d8432b4f7c662e13751cca04c8c77dfd03b771facf3439",
+        "bytes": 12972,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9137836294436"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-011?variant=50303298863396",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-8.json",
+          "sha256": "691511753be8ccdf94b9a62824273cd220ab1bda7061cde73d0111d2c96e90dc",
+          "fetchedAt": "2026-10-05T09:22:44.704Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9137836294436:50303298863396",
+        "variantId": "50303298863396",
+        "sku": "63348705",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9137836327204:50303298928932",
+        "productId": "9137836327204",
+        "variantId": "50303298928932",
+        "name": "貴和クリスタル ＃4809　クリスタルソフトイエローイグナイト / 8×7.5mm / 1ヶ",
+        "sku": "63348804",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-012?variant=50303298928932",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "2025SS先行発売",
+          "240319先行期間限定",
+          "中袋大袋",
+          "取寄商品",
+          "大袋",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。裏面に施したラッカーの内側にイグナイトエフェクトを施しています。鮮やかなラッカーと宝石のような煌めきのイグナイトエフェクトがカット面を際立たせ、透明感のある輝きが特徴です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109603.jpg?v=1710387640",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_9a9fa0da-89ed-4871-a63f-88b2a453e458.jpg?v=1710396516",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoftyellow_ignite_730fb854-2576-45fd-ae93-c9eaac732d26.jpg?v=1738043185",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/crysoft_ignite_65d68114-e7b1-4851-8b1c-2bb39bffe52f.jpg?v=1738043185",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_79aa575b-20ce-47ad-b1e0-817cae985de5.jpg?v=1738043185",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_staff1.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:52.792Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6bdb86a0b66242afa3f5b404026a3aebd05220c70f6854c4728ddd06671adba5",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109603.jpg?v=1710387640",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63109603.jpg?v=1710387640",
+        "fetchedAt": "2026-10-07T04:14:25.789Z",
+        "sha256": "def4d0806babcbfcd97232acd8f8f0c60c05d0e438b393ba4ed512d7adc7e0c0",
+        "bytes": 12224,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9137836327204"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-012?variant=50303298928932",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-10.json",
+          "sha256": "a3fa671a6935aedb10bfb1793d356359732910724e455df553c8e9bbf82ce19d",
+          "fetchedAt": "2026-10-05T09:22:52.792Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9137836327204:50303298928932",
+        "variantId": "50303298928932",
+        "sku": "63348804",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9984616399140:50303268258084",
+        "productId": "9984616399140",
+        "variantId": "50303268258084",
+        "name": "貴和クリスタル ＃4809　Lt.シャム/F / 8×7.5mm / 1ヶ",
+        "sku": "63271706",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-016?variant=50303268258084",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63271706_main.jpg?v=1737945668",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut.jpg?v=1694476844",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:22:56.780Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a68fd41a85f2fad9035aa42d81f47f7f8bb6d8e8b95e3d78302bdc172bcd6ff7",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63271706_main.jpg?v=1737945668",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/63271706_main.jpg?v=1737945668",
+        "fetchedAt": "2026-10-07T05:12:31.055Z",
+        "sha256": "d38c590a0ab23ba335fd900d176b40ec1c2747a9950280568626b83a6e4a99b2",
+        "bytes": 21640,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9984616399140"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-016?variant=50303268258084",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-11.json",
+          "sha256": "9985be36091082cd2ca246c3641f28df418bd285f796db4a59bb68d344cfa1f0",
+          "fetchedAt": "2026-10-05T09:22:56.780Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9984616399140:50303268258084",
+        "variantId": "50303268258084",
+        "sku": "63271706",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9984616431908:50303268290852",
+        "productId": "9984616431908",
+        "variantId": "50303268290852",
+        "name": "貴和クリスタル ＃4809　クリスタルシルバーナイト/unf / 8×7.5mm / 1ヶ",
+        "sku": "63271508",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-017?variant=50303268290852",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※クリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43108_mian.jpg?v=1737704623",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut.jpg?v=1694476844",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 209,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:00.734Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "940aa4c4954a0e8ad1f456bf4d816f85d57928e62bf8dd5fdf860a81cda14ab5",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43108_mian.jpg?v=1737704623",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43108_mian.jpg?v=1737704623",
+        "fetchedAt": "2026-10-07T05:22:33.702Z",
+        "sha256": "674ff8eda5deea759d1efeff9f5d65e3bdd7e943992f3a20f72e04d6f14d071b",
+        "bytes": 19816,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9984616431908"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-017?variant=50303268290852",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-12.json",
+          "sha256": "977963c336656036abea64bbd98ee854f189c817df0ee0001f4359e8d9996c62",
+          "fetchedAt": "2026-10-05T09:23:00.734Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9984616431908:50303268290852",
+        "variantId": "50303268290852",
+        "sku": "63271508",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709542445348:50303298994468",
+        "productId": "8709542445348",
+        "variantId": "50303298994468",
+        "name": "貴和クリスタル ＃4809　ローズピーチ/F / 8×7.5mm / 1ヶ",
+        "sku": "63272000",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-006?variant=50303298994468",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "取寄商品",
+          "大袋",
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※8×7.5mmはクリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62947800.jpg?v=1694476843",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut.jpg?v=1694476844",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/230405_Rosepeach_4_149508d6-3043-402b-bb0d-3f1d5e1e68f4.jpg?v=1738043288",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/230405_Red_5_88756610-15ff-4782-ae02-44331325eb5c.jpg?v=1738043288",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/230405_ring_6_ae29e43f-722c-4341-a274-a2cc186194dc.jpg?v=1738043288",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/230405_ring_7_f7251485-2c29-47c1-a736-0f9e146fc2cc.jpg?v=1738043288",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:00.734Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "323a5db71e9a3e3f272fd5089037423f32064825f176e5b9f8d3c4ce4825ab4f",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62947800.jpg?v=1694476843",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/62947800.jpg?v=1694476843",
+        "fetchedAt": "2026-10-07T05:30:00.066Z",
+        "sha256": "abd224bb78782a4d1c9e83ea8528ed882624e15401c5173991476cf348b0ff56",
+        "bytes": 14960,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709542445348"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-006?variant=50303298994468",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-12.json",
+          "sha256": "977963c336656036abea64bbd98ee854f189c817df0ee0001f4359e8d9996c62",
+          "fetchedAt": "2026-10-05T09:23:00.734Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709542445348:50303298994468",
+        "variantId": "50303298994468",
+        "sku": "63272000",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709503189284:46965860663588",
+        "productId": "8709503189284",
+        "variantId": "46965860663588",
+        "name": "貴和クリスタル ＃4809　クリスタルAB/F / 13×12mm / 1ヶ",
+        "sku": "63906004",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-002?variant=46965860663588",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※クリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1_392aaa93-fdbe-4d72-afab-7eb68245e070.jpg?v=1694475884",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000_3.jpg?v=1738043332",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000_4.jpg?v=1738043332",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 506,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:00.734Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6954a11af3478056979b37b0f3da4036c0c3c320bb2599fcf9c45c3e8da0073d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+        "fetchedAt": "2026-10-07T05:34:50.791Z",
+        "sha256": "97a6799274fae5f8970b45d5815b8f9d739d9f76dc750a42db50f403314c3194",
+        "bytes": 12474,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709503189284"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-002?variant=46965860663588",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-12.json",
+          "sha256": "977963c336656036abea64bbd98ee854f189c817df0ee0001f4359e8d9996c62",
+          "fetchedAt": "2026-10-05T09:23:00.734Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709503189284:46965860663588",
+        "variantId": "46965860663588",
+        "sku": "63906004",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:8709503189284:50303299027236",
+        "productId": "8709503189284",
+        "variantId": "50303299027236",
+        "name": "貴和クリスタル ＃4809　クリスタルAB/F / 8×7.5mm / 1ヶ",
+        "sku": "63271300",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-002?variant=50303299027236",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※クリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60511904_1_392aaa93-fdbe-4d72-afab-7eb68245e070.jpg?v=1694475884",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000_3.jpg?v=1738043332",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000_4.jpg?v=1738043332",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 231,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:00.734Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "16bd4782d49f421a483fb341e01f15581a0b491332eebe3b7eb9fa06680ed896",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60512000.jpg?v=1694475884",
+        "fetchedAt": "2026-10-07T05:34:50.791Z",
+        "sha256": "97a6799274fae5f8970b45d5815b8f9d739d9f76dc750a42db50f403314c3194",
+        "bytes": 12474,
+        "mime": "image/webp",
+        "pixelWidth": 450,
+        "pixelHeight": 450,
+        "productIds": [
+          "8709503189284"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-002?variant=50303299027236",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-12.json",
+          "sha256": "977963c336656036abea64bbd98ee854f189c817df0ee0001f4359e8d9996c62",
+          "fetchedAt": "2026-10-05T09:23:00.734Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:8709503189284:50303299027236",
+        "variantId": "50303299027236",
+        "sku": "63271300",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141314852:48296954855716",
+        "productId": "9151141314852",
+        "variantId": "48296954855716",
+        "name": "TOHOプラビーズ 丸玉 No.161(クリア) / 4mm / 60ヶ",
+        "sku": "50406",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-001?variant=48296954855716",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1.jpg?v=1711001553",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3.jpg?v=1711001554",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4.jpg?v=1711094280",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5.jpg?v=1711094280",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6.jpg?v=1711414373",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7.jpg?v=1711414377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8.jpg?v=1711414377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9.jpg?v=1711415094"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:04.688Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "ed2bcbd4d90d98f941da7739bc5ea4767976d952b6698c946f8a943e782332d2",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+        "fetchedAt": "2026-10-07T05:52:26.485Z",
+        "sha256": "0f5781062744a738533386f57405636456b9b5d57b3d8967b9a9cc09939b0615",
+        "bytes": 27438,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141314852"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-001?variant=48296954855716",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T05:52:29.505Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553"
+        },
+        "productCapture": {
+          "file": "page-13.json",
+          "sha256": "6365888e212cb6f089baaf4f58545a70c4b41765b85488a9353a656d9662cab2",
+          "fetchedAt": "2026-10-05T09:23:04.688Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141314852:48296954855716",
+        "variantId": "48296954855716",
+        "sku": "50406",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141314852:48296954888484",
+        "productId": "9151141314852",
+        "variantId": "48296954888484",
+        "name": "TOHOプラビーズ 丸玉 No.161(クリア) / 6mm / 30ヶ",
+        "sku": "50407",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-001?variant=48296954888484",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1.jpg?v=1711001553",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3.jpg?v=1711001554",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4.jpg?v=1711094280",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5.jpg?v=1711094280",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6.jpg?v=1711414373",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7.jpg?v=1711414377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8.jpg?v=1711414377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9.jpg?v=1711415094"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:04.688Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "e3c3fde5b0f3516f530096549827f5ad732d1950e4ff9b0c3bb4bc320b30b2e2",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50406.jpg?v=1711001349",
+        "fetchedAt": "2026-10-07T05:52:26.485Z",
+        "sha256": "0f5781062744a738533386f57405636456b9b5d57b3d8967b9a9cc09939b0615",
+        "bytes": 27438,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141314852"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-001?variant=48296954888484",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T05:52:29.505Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2.jpg?v=1711001553"
+        },
+        "productCapture": {
+          "file": "page-13.json",
+          "sha256": "6365888e212cb6f089baaf4f58545a70c4b41765b85488a9353a656d9662cab2",
+          "fetchedAt": "2026-10-05T09:23:04.688Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141314852:48296954888484",
+        "variantId": "48296954888484",
+        "sku": "50407",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141609764:48296955904292",
+        "productId": "9151141609764",
+        "variantId": "48296955904292",
+        "name": "TOHOプラビーズ 丸玉 No.175(黄色) / 4mm / 60ヶ",
+        "sku": "50433",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955904292",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_1e07aa8e-1f64-4744-9dcf-93439cab54c2.jpg?v=1711001637",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_4166dc49-f150-4a78-a640-0e0751b7694e.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_d830fafb-188d-49b6-aa20-5a3bcdaf2b7b.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_a1c12434-8b84-495b-9cdc-f7dc721c2842.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_b57d1d3e-8811-4e14-a4d2-75c3d5f1b97a.jpg?v=1711415303",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_7e35905f-fcf8-4a6d-bfcd-abb9d9a497b8.jpg?v=1711415302",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_4049b5a2-c692-4147-9dbf-5200624a7f1a.jpg?v=1711415311",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_abbeeb5e-0783-4b2a-87ea-e8502deb5ffd.jpg?v=1711415311"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "be83615451f454fce9add6fdd29a26cf72d7a70d2808a44109e15ab2153f0ca1",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "fetchedAt": "2026-10-07T07:05:11.834Z",
+        "sha256": "3f7b0bf3e3b90e031a9c2f255247e4a81c2e65b0e93b6106473fc131d47cb758",
+        "bytes": 34702,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141609764"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955904292",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:05:16.040Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141609764:48296955904292",
+        "variantId": "48296955904292",
+        "sku": "50433",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141609764:48296955937060",
+        "productId": "9151141609764",
+        "variantId": "48296955937060",
+        "name": "TOHOプラビーズ 丸玉 No.175(黄色) / 6mm / 30ヶ",
+        "sku": "50434",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955937060",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_1e07aa8e-1f64-4744-9dcf-93439cab54c2.jpg?v=1711001637",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_4166dc49-f150-4a78-a640-0e0751b7694e.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_d830fafb-188d-49b6-aa20-5a3bcdaf2b7b.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_a1c12434-8b84-495b-9cdc-f7dc721c2842.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_b57d1d3e-8811-4e14-a4d2-75c3d5f1b97a.jpg?v=1711415303",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_7e35905f-fcf8-4a6d-bfcd-abb9d9a497b8.jpg?v=1711415302",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_4049b5a2-c692-4147-9dbf-5200624a7f1a.jpg?v=1711415311",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_abbeeb5e-0783-4b2a-87ea-e8502deb5ffd.jpg?v=1711415311"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "62c38d8065af9101913a138931c0d3a00959e82d760c05b0a011b50ad546b4d3",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "fetchedAt": "2026-10-07T07:05:11.834Z",
+        "sha256": "3f7b0bf3e3b90e031a9c2f255247e4a81c2e65b0e93b6106473fc131d47cb758",
+        "bytes": 34702,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141609764"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955937060",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:05:16.040Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141609764:48296955937060",
+        "variantId": "48296955937060",
+        "sku": "50434",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141609764:48296955969828",
+        "productId": "9151141609764",
+        "variantId": "48296955969828",
+        "name": "TOHOプラビーズ 丸玉 No.175(黄色) / 8mm / 23ヶ",
+        "sku": "50435",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955969828",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_1e07aa8e-1f64-4744-9dcf-93439cab54c2.jpg?v=1711001637",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_4166dc49-f150-4a78-a640-0e0751b7694e.jpg?v=1711001638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_d830fafb-188d-49b6-aa20-5a3bcdaf2b7b.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_a1c12434-8b84-495b-9cdc-f7dc721c2842.jpg?v=1711094409",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_b57d1d3e-8811-4e14-a4d2-75c3d5f1b97a.jpg?v=1711415303",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_7e35905f-fcf8-4a6d-bfcd-abb9d9a497b8.jpg?v=1711415302",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_4049b5a2-c692-4147-9dbf-5200624a7f1a.jpg?v=1711415311",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_abbeeb5e-0783-4b2a-87ea-e8502deb5ffd.jpg?v=1711415311"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6122a0f7360c226e3a6e76fd01d7aae53b628724c186212c89b9db065da25ac7",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50433.jpg?v=1711001473",
+        "fetchedAt": "2026-10-07T07:05:11.834Z",
+        "sha256": "3f7b0bf3e3b90e031a9c2f255247e4a81c2e65b0e93b6106473fc131d47cb758",
+        "bytes": 34702,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141609764"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-010?variant=48296955969828",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:05:16.040Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_ea396fdb-84d8-4111-84b4-732cb929fe1b.jpg?v=1711001638"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141609764:48296955969828",
+        "variantId": "48296955969828",
+        "sku": "50435",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141413156:48296955052324",
+        "productId": "9151141413156",
+        "variantId": "48296955052324",
+        "name": "TOHOプラビーズ 丸玉 No.163(水色) / 6mm / 30ヶ",
+        "sku": "50410",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-002?variant=48296955052324",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_6c520da1-ff2a-4ff2-932d-86f163d4a7dc.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_11222d3a-f8c3-4535-b4e4-3fb2c482d924.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_bb5b6b0c-1a5c-4164-9dd2-5e4b5c1e8d10.jpg?v=1711094295",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_eab360bf-fac9-45e4-8d6a-425f58c74945.jpg?v=1711094295",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_ffc94213-aa66-42b3-b6b5-8f6c418bd078.jpg?v=1711415125",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_a351ec15-0d70-48ac-9191-e8540b3693a8.jpg?v=1711415125",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_419fd884-47e4-400e-a331-79d67958cdd0.jpg?v=1711415132",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_d1628d1d-69df-4c28-bdcd-a2be81db8ba5.jpg?v=1711415133"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6c534e6df2b1778a4370d35f83a1c7f6484c7cde16f6e390d87a58c8fceb0a5a",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+        "fetchedAt": "2026-10-07T07:05:29.554Z",
+        "sha256": "b2cd74f97b12bfc20075c0b64983643146f8dd954432a4d0f75c180d836e4981",
+        "bytes": 23786,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141413156"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-002?variant=48296955052324",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:05:32.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141413156:48296955052324",
+        "variantId": "48296955052324",
+        "sku": "50410",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141413156:48296955085092",
+        "productId": "9151141413156",
+        "variantId": "48296955085092",
+        "name": "TOHOプラビーズ 丸玉 No.163(水色) / 8mm / 23ヶ",
+        "sku": "50411",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-002?variant=48296955085092",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_6c520da1-ff2a-4ff2-932d-86f163d4a7dc.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_11222d3a-f8c3-4535-b4e4-3fb2c482d924.jpg?v=1711001565",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_bb5b6b0c-1a5c-4164-9dd2-5e4b5c1e8d10.jpg?v=1711094295",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_eab360bf-fac9-45e4-8d6a-425f58c74945.jpg?v=1711094295",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_ffc94213-aa66-42b3-b6b5-8f6c418bd078.jpg?v=1711415125",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_a351ec15-0d70-48ac-9191-e8540b3693a8.jpg?v=1711415125",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_419fd884-47e4-400e-a331-79d67958cdd0.jpg?v=1711415132",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_d1628d1d-69df-4c28-bdcd-a2be81db8ba5.jpg?v=1711415133"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "e4972734e36cee70cc24397fe41bec174a76389c4fdb89864412609977a9f81b",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50409.jpg?v=1711001373",
+        "fetchedAt": "2026-10-07T07:05:29.554Z",
+        "sha256": "b2cd74f97b12bfc20075c0b64983643146f8dd954432a4d0f75c180d836e4981",
+        "bytes": 23786,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141413156"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-002?variant=48296955085092",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:05:32.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_fa66995b-6955-4846-9e08-a6db53597f00.jpg?v=1711001565"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141413156:48296955085092",
+        "variantId": "48296955085092",
+        "sku": "50411",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141478692:48296955314468",
+        "productId": "9151141478692",
+        "variantId": "48296955314468",
+        "name": "TOHOプラビーズ 丸玉 No.168(青) / 4mm / 60ヶ",
+        "sku": "50424",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955314468",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_26b78b66-f0a2-4ce5-96d3-d252c9c656ab.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_8bbe2e65-cf1c-4adb-9e01-bce00ffdf8cd.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_b75707af-935c-472d-a4bc-f804d87677cc.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_9ea20cd8-ef72-4cc5-87d7-e8e2f33ae896.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_c0081009-f5ba-4987-950a-98806374dc1a.jpg?v=1711415230",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_6647f148-d86c-41a5-aa66-47c33ef57b00.jpg?v=1711415231",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_5dab0ca6-f57e-48ff-b494-afcad49f9684.jpg?v=1711415236",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_c046a287-6ac1-4c67-b039-b6e81a16d4a1.jpg?v=1711415236"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "8ef61406aca0ec16f641f0cfd3c5d59e7d200f9086393a02cf99ab509bb31394",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "fetchedAt": "2026-10-07T07:25:11.366Z",
+        "sha256": "76caa462bd532c05eeda782c76cf3ff1394d2e3aedfb1dca09f74efe06f07347",
+        "bytes": 39504,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141478692"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955314468",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:25:14.245Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141478692:48296955314468",
+        "variantId": "48296955314468",
+        "sku": "50424",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141478692:48296955347236",
+        "productId": "9151141478692",
+        "variantId": "48296955347236",
+        "name": "TOHOプラビーズ 丸玉 No.168(青) / 6mm / 30ヶ",
+        "sku": "50425",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955347236",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_26b78b66-f0a2-4ce5-96d3-d252c9c656ab.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_8bbe2e65-cf1c-4adb-9e01-bce00ffdf8cd.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_b75707af-935c-472d-a4bc-f804d87677cc.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_9ea20cd8-ef72-4cc5-87d7-e8e2f33ae896.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_c0081009-f5ba-4987-950a-98806374dc1a.jpg?v=1711415230",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_6647f148-d86c-41a5-aa66-47c33ef57b00.jpg?v=1711415231",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_5dab0ca6-f57e-48ff-b494-afcad49f9684.jpg?v=1711415236",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_c046a287-6ac1-4c67-b039-b6e81a16d4a1.jpg?v=1711415236"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "3c65cd26c009988eaa4fa00b7c9947c04b266e919fe35afa3bcb86c7626031ef",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "fetchedAt": "2026-10-07T07:25:11.366Z",
+        "sha256": "76caa462bd532c05eeda782c76cf3ff1394d2e3aedfb1dca09f74efe06f07347",
+        "bytes": 39504,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141478692"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955347236",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:25:14.245Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141478692:48296955347236",
+        "variantId": "48296955347236",
+        "sku": "50425",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141478692:48296955380004",
+        "productId": "9151141478692",
+        "variantId": "48296955380004",
+        "name": "TOHOプラビーズ 丸玉 No.168(青) / 8mm / 23ヶ",
+        "sku": "50426",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955380004",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_26b78b66-f0a2-4ce5-96d3-d252c9c656ab.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_8bbe2e65-cf1c-4adb-9e01-bce00ffdf8cd.jpg?v=1711001612",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_b75707af-935c-472d-a4bc-f804d87677cc.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_9ea20cd8-ef72-4cc5-87d7-e8e2f33ae896.jpg?v=1711094362",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_c0081009-f5ba-4987-950a-98806374dc1a.jpg?v=1711415230",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_6647f148-d86c-41a5-aa66-47c33ef57b00.jpg?v=1711415231",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_5dab0ca6-f57e-48ff-b494-afcad49f9684.jpg?v=1711415236",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_c046a287-6ac1-4c67-b039-b6e81a16d4a1.jpg?v=1711415236"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:08.742Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2f008b1715fcce6eaf4293707862059c2e17fd454249c6d854493825d9669972",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50424.jpg?v=1711001443",
+        "fetchedAt": "2026-10-07T07:25:11.366Z",
+        "sha256": "76caa462bd532c05eeda782c76cf3ff1394d2e3aedfb1dca09f74efe06f07347",
+        "bytes": 39504,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141478692"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-007?variant=48296955380004",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:25:14.245Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_32bc60df-0920-4436-bbfe-27bf2e8aef60.jpg?v=1711001611"
+        },
+        "productCapture": {
+          "file": "page-14.json",
+          "sha256": "88f9680537586e501f48fee9ff364b01a91dc6ba6e85f7827b5a9468bca57173",
+          "fetchedAt": "2026-10-05T09:23:08.742Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141478692:48296955380004",
+        "variantId": "48296955380004",
+        "sku": "50426",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141708068:48296956002596",
+        "productId": "9151141708068",
+        "variantId": "48296956002596",
+        "name": "TOHOプラビーズ 丸玉 No.191(ピンク) / 4mm / 60ヶ",
+        "sku": "50436",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-011?variant=48296956002596",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_4a617b5e-b9e0-4c40-ae8d-ff2081167e22.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_2ed74867-1a2d-44aa-a2b5-9bebd6232286.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_2a7217e1-dc0d-4970-a915-26e05b5085d5.jpg?v=1711094426",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_11983c46-c801-417e-9448-1a654be9e10e.jpg?v=1711094426",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_5bfc966d-f629-4f45-894e-7102afa70e90.jpg?v=1711415323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_e7486cbc-e41f-48cf-9875-2e75d43c4fb4.jpg?v=1711415323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_495ec932-db85-4fcb-beaf-fcea9ba21274.jpg?v=1711415329",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_8ed4ee0b-a23b-422c-9491-37eaccb8f6f4.jpg?v=1711415329"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:12.874Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2e02b69ca539935bbfe9ba259914385fd4854e79be08c761a727aa8d7c73b5f0",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+        "fetchedAt": "2026-10-07T07:34:31.151Z",
+        "sha256": "b199d2ea35b8c41cafc4b2bd2f13b18a8c00abbbe460285e619a4b99cc7b57e6",
+        "bytes": 29546,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141708068"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-011?variant=48296956002596",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:34:34.062Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647"
+        },
+        "productCapture": {
+          "file": "page-15.json",
+          "sha256": "5e08df83f6f1ef53967e6789d4dfa50daab80fdd62baa6314910919822f50c43",
+          "fetchedAt": "2026-10-05T09:23:12.874Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141708068:48296956002596",
+        "variantId": "48296956002596",
+        "sku": "50436",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141708068:48296956100900",
+        "productId": "9151141708068",
+        "variantId": "48296956100900",
+        "name": "TOHOプラビーズ 丸玉 No.191(ピンク) / 8mm / 23ヶ",
+        "sku": "50438",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-011?variant=48296956100900",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_4a617b5e-b9e0-4c40-ae8d-ff2081167e22.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_2ed74867-1a2d-44aa-a2b5-9bebd6232286.jpg?v=1711001647",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_2a7217e1-dc0d-4970-a915-26e05b5085d5.jpg?v=1711094426",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_11983c46-c801-417e-9448-1a654be9e10e.jpg?v=1711094426",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_5bfc966d-f629-4f45-894e-7102afa70e90.jpg?v=1711415323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_e7486cbc-e41f-48cf-9875-2e75d43c4fb4.jpg?v=1711415323",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_495ec932-db85-4fcb-beaf-fcea9ba21274.jpg?v=1711415329",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_8ed4ee0b-a23b-422c-9491-37eaccb8f6f4.jpg?v=1711415329"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:12.874Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "6d2ee9e85de878be545803dd9f2ee4d5a1dbb346fdf3fc40e41376baaea0e52f",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50436.jpg?v=1711001485",
+        "fetchedAt": "2026-10-07T07:34:31.151Z",
+        "sha256": "b199d2ea35b8c41cafc4b2bd2f13b18a8c00abbbe460285e619a4b99cc7b57e6",
+        "bytes": 29546,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141708068"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-011?variant=48296956100900",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T07:34:34.062Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_16521c82-2e08-48bc-9016-b492d3bc0c94.jpg?v=1711001647"
+        },
+        "productCapture": {
+          "file": "page-15.json",
+          "sha256": "5e08df83f6f1ef53967e6789d4dfa50daab80fdd62baa6314910919822f50c43",
+          "fetchedAt": "2026-10-05T09:23:12.874Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141708068:48296956100900",
+        "variantId": "48296956100900",
+        "sku": "50438",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141740836:48296956199204",
+        "productId": "9151141740836",
+        "variantId": "48296956199204",
+        "name": "TOHOプラビーズ 丸玉 No.401(白) / 4mm / 60ヶ",
+        "sku": "50442",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956199204",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_6cac00f4-5710-4c1a-a320-49c2b8bcca7d.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_cffdd12a-25a9-42c9-884e-70f8b074bf2e.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_3d1e111e-c337-4eb0-a9f6-551aa77b9bb4.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_7194ab66-4a0c-416c-b1cf-ee60fc6ca960.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_5c044dd5-56e5-4185-a34b-987122f31251.jpg?v=1711415360",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_4bd532c8-1c26-4559-a22a-da508d945d1b.jpg?v=1711415361",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_e11c7135-b211-4c78-a6f8-a9361f8af238.jpg?v=1711415366",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_bfb9d645-26bc-45aa-9c5b-db6230137e92.jpg?v=1711415366"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "fb5287d7456adbb94601b04debb1258bb87b9ea64ce504486878c5fa3bfef643",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "fetchedAt": "2026-10-07T08:01:33.089Z",
+        "sha256": "a09dac6430212e149123f73993c4da9ec581fdc5c758591262da162c11d06efe",
+        "bytes": 21978,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141740836"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956199204",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:01:35.209Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141740836:48296956199204",
+        "variantId": "48296956199204",
+        "sku": "50442",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141740836:48296956231972",
+        "productId": "9151141740836",
+        "variantId": "48296956231972",
+        "name": "TOHOプラビーズ 丸玉 No.401(白) / 6mm / 30ヶ",
+        "sku": "50443",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956231972",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_6cac00f4-5710-4c1a-a320-49c2b8bcca7d.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_cffdd12a-25a9-42c9-884e-70f8b074bf2e.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_3d1e111e-c337-4eb0-a9f6-551aa77b9bb4.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_7194ab66-4a0c-416c-b1cf-ee60fc6ca960.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_5c044dd5-56e5-4185-a34b-987122f31251.jpg?v=1711415360",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_4bd532c8-1c26-4559-a22a-da508d945d1b.jpg?v=1711415361",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_e11c7135-b211-4c78-a6f8-a9361f8af238.jpg?v=1711415366",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_bfb9d645-26bc-45aa-9c5b-db6230137e92.jpg?v=1711415366"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "18871457e6556daf0add37585d24c39949a1f4bca946dcae08261231977d5a73",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "fetchedAt": "2026-10-07T08:01:33.089Z",
+        "sha256": "a09dac6430212e149123f73993c4da9ec581fdc5c758591262da162c11d06efe",
+        "bytes": 21978,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141740836"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956231972",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:01:35.209Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141740836:48296956231972",
+        "variantId": "48296956231972",
+        "sku": "50443",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141740836:48296956264740",
+        "productId": "9151141740836",
+        "variantId": "48296956264740",
+        "name": "TOHOプラビーズ 丸玉 No.401(白) / 8mm / 23ヶ",
+        "sku": "50444",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956264740",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_6cac00f4-5710-4c1a-a320-49c2b8bcca7d.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_cffdd12a-25a9-42c9-884e-70f8b074bf2e.jpg?v=1711001723",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_3d1e111e-c337-4eb0-a9f6-551aa77b9bb4.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_7194ab66-4a0c-416c-b1cf-ee60fc6ca960.jpg?v=1711094457",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_5c044dd5-56e5-4185-a34b-987122f31251.jpg?v=1711415360",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_4bd532c8-1c26-4559-a22a-da508d945d1b.jpg?v=1711415361",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_e11c7135-b211-4c78-a6f8-a9361f8af238.jpg?v=1711415366",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_bfb9d645-26bc-45aa-9c5b-db6230137e92.jpg?v=1711415366"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a130ea365a2d30d3b0132ed2b2f6d528fb34724e592f90e2136735527a092966",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50442.jpg?v=1711001505",
+        "fetchedAt": "2026-10-07T08:01:33.089Z",
+        "sha256": "a09dac6430212e149123f73993c4da9ec581fdc5c758591262da162c11d06efe",
+        "bytes": 21978,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141740836"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-013?variant=48296956264740",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:01:35.209Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_b959179d-ad2a-4e7c-841d-ff489509c9da.jpg?v=1711001723"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141740836:48296956264740",
+        "variantId": "48296956264740",
+        "sku": "50444",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141445924:48296955216164",
+        "productId": "9151141445924",
+        "variantId": "48296955216164",
+        "name": "TOHOプラビーズ 丸玉 No.165(赤) / 4mm / 60ヶ",
+        "sku": "50415",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955216164",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_5dffcedf-4ab9-4ad4-9e17-9a0258f0e53a.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_d8c628ee-ad26-49ea-8b8b-3334266abef0.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_9376c2f7-38b8-4b5e-835a-ad66d6e49313.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_fd9320b3-a8f3-4b6b-b197-75d403cc25ae.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_9b57535c-18a3-4d96-9377-594f68d2114f.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_ac5056ac-382f-4f67-9454-85a7dfffc948.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_04dd95b5-15d4-4a5d-a793-73ed3c986345.jpg?v=1711415174",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_e237ec35-82ed-441c-a7db-6344ba80951d.jpg?v=1711415174"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "4mm",
+        "purchase": {
+          "sourceText": "60ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 60
+        },
+        "measurements": [
+          {
+            "sourceText": "4mm",
+            "valuesMm": [
+              4
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "aeb17fd897c5e42aee016ce4ab6f5e9e2614abd7205ddbd45f556ca9a78e430d",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "fetchedAt": "2026-10-07T08:05:10.522Z",
+        "sha256": "0ec4f079ed421c601050545e4d784cf7612d1626cd66e5564d20156adb94ef02",
+        "bytes": 46266,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141445924"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955216164",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:05:13.339Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141445924:48296955216164",
+        "variantId": "48296955216164",
+        "sku": "50415",
+        "publishedDiameterMm": 4,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.8,
+        "appearanceNote": "公式比較図の直径4 mm・穴径約1.8 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141445924:48296955248932",
+        "productId": "9151141445924",
+        "variantId": "48296955248932",
+        "name": "TOHOプラビーズ 丸玉 No.165(赤) / 6mm / 30ヶ",
+        "sku": "50416",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955248932",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_5dffcedf-4ab9-4ad4-9e17-9a0258f0e53a.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_d8c628ee-ad26-49ea-8b8b-3334266abef0.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_9376c2f7-38b8-4b5e-835a-ad66d6e49313.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_fd9320b3-a8f3-4b6b-b197-75d403cc25ae.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_9b57535c-18a3-4d96-9377-594f68d2114f.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_ac5056ac-382f-4f67-9454-85a7dfffc948.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_04dd95b5-15d4-4a5d-a793-73ed3c986345.jpg?v=1711415174",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_e237ec35-82ed-441c-a7db-6344ba80951d.jpg?v=1711415174"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "6mm",
+        "purchase": {
+          "sourceText": "30ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 30
+        },
+        "measurements": [
+          {
+            "sourceText": "6mm",
+            "valuesMm": [
+              6
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "2b085863e5ce8f543048aa4e936d8c3be0da1cef5c750a63ebe2ce1c3a2f1cef",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "fetchedAt": "2026-10-07T08:05:10.522Z",
+        "sha256": "0ec4f079ed421c601050545e4d784cf7612d1626cd66e5564d20156adb94ef02",
+        "bytes": 46266,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141445924"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955248932",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:05:13.339Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141445924:48296955248932",
+        "variantId": "48296955248932",
+        "sku": "50416",
+        "publishedDiameterMm": 6,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 1.5,
+        "appearanceNote": "公式比較図の直径6 mm・穴径約1.5 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9151141445924:48296955281700",
+        "productId": "9151141445924",
+        "variantId": "48296955281700",
+        "name": "TOHOプラビーズ 丸玉 No.165(赤) / 8mm / 23ヶ",
+        "sku": "50417",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955281700",
+        "sourceName": "貴和製作所",
+        "category": "bead",
+        "categoryBasis": "商品名による分類（形状の保証なし）",
+        "tags": [
+          "made in JAPAN",
+          "TOHOプラビーズ",
+          "アクリル樹脂"
+        ],
+        "description": "表面にオーロラの加工が施された丸玉のビーズです。4mm・6mm・8mmの3サイズ展開です。色が豊富なので、様々な用途にご使用いただけます。テグス類やナイロンコートワイヤーなどに通してご使用ください。とても軽く穴も大きめなので、テグスを使ったモチーフ編みなどにもおすすめです。TOHOプラビーズ 丸玉を使用して作るセット アルファベットモチーフもあります。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_1_5dffcedf-4ab9-4ad4-9e17-9a0258f0e53a.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_3_d8c628ee-ad26-49ea-8b8b-3334266abef0.jpg?v=1711001584",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_4_9376c2f7-38b8-4b5e-835a-ad66d6e49313.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_5_fd9320b3-a8f3-4b6b-b197-75d403cc25ae.jpg?v=1711094322",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_6_9b57535c-18a3-4d96-9377-594f68d2114f.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_7_ac5056ac-382f-4f67-9454-85a7dfffc948.jpg?v=1711415168",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_8_04dd95b5-15d4-4a5d-a793-73ed3c986345.jpg?v=1711415174",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_9_e237ec35-82ed-441c-a7db-6344ba80951d.jpg?v=1711415174"
+        ],
+        "price": 143,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8mm",
+        "purchase": {
+          "sourceText": "23ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 23
+        },
+        "measurements": [
+          {
+            "sourceText": "8mm",
+            "valuesMm": [
+              8
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:16.863Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "96fcc01ca47ba7f1bfe230b14667f7ebf16bc7f4237529441af27b9983711eb6",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50415.jpg?v=1711001404",
+        "fetchedAt": "2026-10-07T08:05:10.522Z",
+        "sha256": "0ec4f079ed421c601050545e4d784cf7612d1626cd66e5564d20156adb94ef02",
+        "bytes": 46266,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9151141445924"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-ball-diameter-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-acrylic-tohoplasticbeads-004?variant=48296955281700",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584",
+        "diagramSha256": "9981d08b0cd24112ec3ae4c83e5f7dd54c8489bc7ee6b874909eddef88c83415",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T08:05:13.339Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/togoplabeads_2_a0c8ae33-481f-4f40-8a07-efdd78351ce3.jpg?v=1711001584"
+        },
+        "productCapture": {
+          "file": "page-16.json",
+          "sha256": "7bd53b6d46b8abc065a92538fe2570803735f6f78dee74a40ca16ce694d57f09",
+          "fetchedAt": "2026-10-05T09:23:16.863Z"
+        },
+        "reviewedAt": "2026-10-07T22:50:25.193Z",
+        "sourceDraftId": "kiwa:9151141445924:48296955281700",
+        "variantId": "48296955281700",
+        "sku": "50417",
+        "publishedDiameterMm": 8,
+        "approximate": false,
+        "diagramApproximate": false,
+        "approximateHoleDiameterMm": 3.4,
+        "appearanceNote": "公式比較図の直径8 mm・穴径約3.4 mmを対応。参考色・穴の位置と貫通軸・接続位置・画像尺度は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9984616530212:50303268389156",
+        "productId": "9984616530212",
+        "variantId": "50303268389156",
+        "name": "貴和クリスタル ＃4809　ローズ/F / 8×7.5mm / 1ヶ",
+        "sku": "63271904",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-020?variant=50303268389156",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※クリスタル館、LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43111_mian.jpg?v=1737704624",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_0a4202a9-b833-4753-8177-f7899aaedf85.jpg?v=1710396557",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:20.886Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "a14b87376dc9fe9f39a54850714e8a912b225bdc55441c2aa7bc564cc1f53301",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43111_mian.jpg?v=1737704624",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43111_mian.jpg?v=1737704624",
+        "fetchedAt": "2026-10-07T08:53:26.257Z",
+        "sha256": "f41a77208c69990c3a2998679c66376b36a2c83f2cf1ef4288f9ba1d5db88c23",
+        "bytes": 24286,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9984616530212"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-020?variant=50303268389156",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-17.json",
+          "sha256": "026d97e281761704d680039e968b0e3880ad7d1e773355fd19c018d43a943ccd",
+          "fetchedAt": "2026-10-05T09:23:20.886Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9984616530212:50303268389156",
+        "variantId": "50303268389156",
+        "sku": "63271904",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9984616464676:50303268323620",
+        "productId": "9984616464676",
+        "variantId": "50303268323620",
+        "name": "貴和クリスタル ＃4809　クリスタルブルーシェード/F / 8×7.5mm / 1ヶ",
+        "sku": "63372205",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-018?variant=50303268323620",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43109_main.jpg?v=1737704624",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut.jpg?v=1694476844",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 231,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:37.341Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "1d2611da677608814e828f653b41e9916d7b1b3a72440c0e26ee32503ebad595",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43109_main.jpg?v=1737704624",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43109_main.jpg?v=1737704624",
+        "fetchedAt": "2026-10-07T11:32:15.095Z",
+        "sha256": "72d7142c84287d2b04e487cde473c34cf813013a36e789ee423df4714172016d",
+        "bytes": 17704,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9984616464676"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-018?variant=50303268323620",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-21.json",
+          "sha256": "785a462786eb00d63b1dd6bc4443c37560019b13874ec8b7a5c7c9108072040b",
+          "fetchedAt": "2026-10-05T09:23:37.341Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9984616464676:50303268323620",
+        "variantId": "50303268323620",
+        "sku": "63372205",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9984616497444:50303268356388",
+        "productId": "9984616497444",
+        "variantId": "50303268356388",
+        "name": "貴和クリスタル ＃4809　アメジスト/F / 8×7.5mm / 1ヶ",
+        "sku": "63372304",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-019?variant=50303268356388",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "貴和クリスタル",
+          "＃4000番台",
+          "＃4809",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めて使用します。(F...フォイル加工あり　unf...フォイル加工なし)※LINKS UMEDA店、ONE GINZA店とオンラインストア限定商品です。",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43110_main.jpg?v=1737704624",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut.jpg?v=1694476844",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_8x7.5.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_2size.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_1.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_3.jpg?v=1768358377",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kc_4809_sample_2.jpg?v=1768358377"
+        ],
+        "price": 220,
+        "currency": "JPY",
+        "available": true,
+        "sizeText": "8×7.5mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "8x7.5mm",
+            "valuesMm": [
+              8,
+              7.5
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:23:41.515Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "1b8e3b38b3abddc399b172c9b77c1c8e5c9f106443e606d6ef08ad49fd34587c",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43110_main.jpg?v=1737704624",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43110_main.jpg?v=1737704624",
+        "fetchedAt": "2026-10-07T12:26:24.534Z",
+        "sha256": "a77f52d380efd28231632707320f3e29c9c019e7a23dd994029c7c7f163e678d",
+        "bytes": 19944,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9984616497444"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-019?variant=50303268356388",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-22.json",
+          "sha256": "f71f9d105ec1b1292be79abf31a0c78ca2ef0568c09a64db28bb62cb71f990e5",
+          "fetchedAt": "2026-10-05T09:23:41.515Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9984616497444:50303268356388",
+        "variantId": "50303268356388",
+        "sku": "63372304",
+        "label": "8x7.5",
+        "outerWidthMm": 7.5,
+        "outerHeightMm": 8,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": false,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9137772134692:48248811094308",
+        "productId": "9137772134692",
+        "variantId": "48248811094308",
+        "name": "貴和クリスタル ＃4809　バイオレットシマー/F / 13×12mm / 1ヶ",
+        "sku": "42610",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-007?variant=48248811094308",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "240319先行期間限定",
+          "241017先行発売",
+          "241017先行発売-会場限定",
+          "オンライン限定",
+          "先行会場限定",
+          "数量限定",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。透明なクリスタルガラスの表面にシマーエフェクトが施されているため、元々のカラーやエフェクトのブルー・イエローが見えたりと、角度によって様々に変化する華やかできれいなカラーです。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42610.jpg?v=1710388749",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_0a4202a9-b833-4753-8177-f7899aaedf85.jpg?v=1710396557",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_fd923d8d-7692-4c28-8030-4af61481748d.jpg?v=1738043266"
+        ],
+        "price": 638,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:15.255Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "263f0cfbd24db9edb57308eb5b2763f0aadd00832ce987a3de95742f562ea947",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42610.jpg?v=1710388749",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42610.jpg?v=1710388749",
+        "fetchedAt": "2026-10-07T16:53:39.311Z",
+        "sha256": "a10cd31243719191e9b83dab07adb5e94ac2b9309ad18a0a84dfdc76e62b55ff",
+        "bytes": 54844,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9137772134692"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-007?variant=48248811094308",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-30.json",
+          "sha256": "a95f7ba88e6d982cc1dfdc4dcdf77efeef0f605f95e65fce8681856317c37cdb",
+          "fetchedAt": "2026-10-05T09:24:15.255Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9137772134692:48248811094308",
+        "variantId": "48248811094308",
+        "sku": "42610",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": true,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9890257633572:49958025363748",
+        "productId": "9890257633572",
+        "variantId": "49958025363748",
+        "name": "貴和クリスタル ＃4809　ロザリンシマー/F / 13×12mm / 1ヶ",
+        "sku": "43001",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-015?variant=49958025363748",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "241017先行発売",
+          "241017先行発売-会場限定",
+          "オンライン限定",
+          "数量限定",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43001.jpg?v=1728980638",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_0a4202a9-b833-4753-8177-f7899aaedf85.jpg?v=1710396557",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_fd923d8d-7692-4c28-8030-4af61481748d.jpg?v=1738043266"
+        ],
+        "price": 638,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:24:50.805Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "d6d23bba85c0a1ee617e99cc2f291b69b2ada622fcc5ac4cae06823abfe15d03",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43001.jpg?v=1728980638",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/43001.jpg?v=1728980638",
+        "fetchedAt": "2026-10-07T20:26:11.270Z",
+        "sha256": "3abfa6dae35ddae4aa320cc0e1b83185999694a5be242d508dd2753e441c4385",
+        "bytes": 54138,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9890257633572"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-015?variant=49958025363748",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-38.json",
+          "sha256": "2da34026252493f2bd696abb13993a134af550529c5d4ca33c1a481b69531b16",
+          "fetchedAt": "2026-10-05T09:24:50.805Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9890257633572:49958025363748",
+        "variantId": "49958025363748",
+        "sku": "43001",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": true,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    },
+    {
+      "draft": {
+        "id": "kiwa:9890257568036:49958025298212",
+        "productId": "9890257568036",
+        "variantId": "49958025298212",
+        "name": "貴和クリスタル ＃4809　ジョンキルムーンライト/F / 13×12mm / 1ヶ",
+        "sku": "42999",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-013?variant=49958025298212",
+        "sourceName": "貴和製作所",
+        "category": "other",
+        "categoryBasis": "分類未確定",
+        "tags": [
+          "241017先行発売",
+          "241017先行発売-会場限定",
+          "オンライン限定",
+          "数量限定",
+          "＃4809＆対応石座"
+        ],
+        "description": "通し穴が開いていないパーツです。専用の石座に留めたり、ビーズで周りを囲むように編んだりして使用します。(F...フォイル加工あり　unf...フォイル加工なし)",
+        "imageUrls": [
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42999.jpg?v=1728980626",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_cut_75e1aa02-839e-4fac-916c-fe87e16d73b3.jpg?v=1710396550",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+          "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub3_88644e1e-0b82-45e4-a68a-1e1b32ccb6de.jpg?v=1738043232"
+        ],
+        "price": 638,
+        "currency": "JPY",
+        "available": false,
+        "sizeText": "13×12mm",
+        "purchase": {
+          "sourceText": "1ヶ",
+          "unit": "piece",
+          "approximate": false,
+          "quantity": 1
+        },
+        "measurements": [
+          {
+            "sourceText": "13x12mm",
+            "valuesMm": [
+              13,
+              12
+            ],
+            "approximate": false,
+            "meaning": "unassigned"
+          }
+        ],
+        "registeredAt": "2026-10-05T09:39:55.030Z",
+        "sourceFetchedAt": "2026-10-05T09:25:08.289Z",
+        "parserVersion": "kiwa-registration-v1",
+        "readiness": "needs_calibration",
+        "missing": [
+          "画像の実寸校正",
+          "接続点・貫通穴の確認"
+        ]
+      },
+      "objectSha256": "9f1aebc40628000385c7e94d1a718c89cec463c1a5cd323fe9d408e453ec66ec",
+      "capture": {
+        "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42999.jpg?v=1728980626",
+        "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/42999.jpg?v=1728980626",
+        "fetchedAt": "2026-10-07T22:50:41.259Z",
+        "sha256": "5927a94a16b68f0371d5e5d15c67106c05f1fec5bf2aaa02999f13350fc27d4f",
+        "bytes": 52654,
+        "mime": "image/webp",
+        "pixelWidth": 800,
+        "pixelHeight": 800,
+        "productIds": [
+          "9890257568036"
+        ],
+        "status": "pending_dimension_region_review"
+      },
+      "dimensionEvidence": {
+        "version": 1,
+        "kind": "official-crystal-frontal-axes-only",
+        "sourceUrl": "https://kiwaseisakujo.jp/products/g-kiwacrystals-kc4000-6z-013?variant=49958025298212",
+        "diagramUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345",
+        "diagramSha256": "35a7bb31a9cfc0c3e3d1c585757af9948246f3b452653c2316ae4c4225782de4",
+        "diagramCapture": {
+          "fetchedAt": "2026-10-07T04:14:28.824Z",
+          "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/4809_sub2.jpg?v=1738043345"
+        },
+        "productCapture": {
+          "file": "page-42.json",
+          "sha256": "31226ef6955780c60ff0937f2b4024417f241f07ac85466a7617fe3ce6eaf881",
+          "fetchedAt": "2026-10-05T09:25:08.289Z"
+        },
+        "reviewedAt": "2026-10-08",
+        "sourceDraftId": "kiwa:9890257568036:49958025298212",
+        "variantId": "49958025298212",
+        "sku": "42999",
+        "label": "13x12",
+        "outerWidthMm": 12,
+        "outerHeightMm": 13,
+        "appearanceNote": "公式図の正面の高さ・幅のみ確認。厚さ・配置画像の色と尺度・接続位置は未確認です。"
+      },
+      "sale": {
+        "allowed": true
+      },
+      "held": true,
+      "sourceMeaningReviewed": false,
+      "originalReviewed": false,
+      "processedReviewed": false
+    }
+  ]
+}

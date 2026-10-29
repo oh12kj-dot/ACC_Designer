@@ -1,0 +1,5 @@
+import type { PartCategory } from './domain';
+export interface PublishedMeasure {sourceText:string;valuesMm:number[];approximate:boolean;meaning:'unassigned'|'outer_diameter'|'inner_diameter'|'hole_diameter'|'wire_diameter'|'pin_diameter'|'length'|'width'|'height'|'thickness'}
+export interface PublishedPurchase {sourceText:string;unit:'piece'|'pair'|'length'|'weight'|'set'|'unknown';quantity?:number;lengthMm?:number;weightG?:number;approximate:boolean;estimatedCount?:number}
+export interface RegisteredPartDraft {id:string;productId:string;variantId:string;name:string;sku?:string;sourceUrl:string;sourceName:'貴和製作所';category:PartCategory;categoryBasis:string;tags:string[];description:string;imageUrls:string[];price?:number;currency?:string;available:boolean;sizeText:string;purchase:PublishedPurchase;measurements:PublishedMeasure[];registeredAt:string;sourceFetchedAt:string;parserVersion:string;readiness:'needs_calibration';missing:string[];userNotes?:string;favorite?:boolean}
+export interface RegisteredParts {version:1;registeredAt:string;catalogHash:string;parts:RegisteredPartDraft[]}

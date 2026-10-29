@@ -1,0 +1,138 @@
+[
+  {
+    "draft": {
+      "id": "kiwa:10269007642916:51392482771236",
+      "productId": "10269007642916",
+      "variantId": "51392482771236",
+      "name": "TOHO特小ビーズ　No.171 / 約１.5mm / 7g(バラ・約1750粒)",
+      "sku": "4964291044463",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-sseed-091?variant=51392482771236",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "251217発売",
+        "made in JAPAN",
+        "TOHO特小ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約1.5mmのとても小さいビーズです。透明なピンクで表面にレインボーの光沢加工が施されています。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50520_main.jpg?v=1765425418",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50520_sub1.jpg?v=1771983267",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1333a.jpg?v=1771983267",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1333a_4.jpg?v=1771983267"
+      ],
+      "price": 440,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "約１.5mm",
+      "purchase": {
+        "sourceText": "7g(バラ・約1750粒)",
+        "unit": "weight",
+        "approximate": true,
+        "weightG": 7,
+        "estimatedCount": 1750
+      },
+      "measurements": [
+        {
+          "sourceText": "約1.5mm",
+          "valuesMm": [
+            1.5
+          ],
+          "approximate": true,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:24:27.969Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50520_main.jpg?v=1765425418",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50520_main.jpg?v=1765425418",
+      "fetchedAt": "2026-10-07T18:24:56.449Z",
+      "sha256": "d94073270baf93a4f2acdf6f3ecb4e1fa00f566922f86ee0456cca3fc1f78386",
+      "bytes": 24510,
+      "mime": "image/webp",
+      "pixelWidth": 800,
+      "pixelHeight": 800,
+      "productIds": [
+        "10269007642916"
+      ],
+      "status": "pending_dimension_region_review"
+    }
+  },
+  {
+    "draft": {
+      "id": "kiwa:8711100039460:46969833423140",
+      "productId": "8711100039460",
+      "variantId": "46969833423140",
+      "name": "TOHO特小ビーズ　No.941 / 約1.5mm / 7g(バラ・約1750粒)",
+      "sku": "4964291045279",
+      "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-sseed-057?variant=46969833423140",
+      "sourceName": "貴和製作所",
+      "category": "bead",
+      "categoryBasis": "商品名による分類（形状の保証なし）",
+      "tags": [
+        "TOHO特小ビーズ",
+        "シードビーズ"
+      ],
+      "description": "外径約1.5mmのとても小さいビーズです。透明な茶色です。",
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50364.jpg?v=1694515667",
+        "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/re_kr0168a_1.jpg?v=1694515667"
+      ],
+      "price": 550,
+      "currency": "JPY",
+      "available": true,
+      "sizeText": "約1.5mm",
+      "purchase": {
+        "sourceText": "7g(バラ・約1750粒)",
+        "unit": "weight",
+        "approximate": true,
+        "weightG": 7,
+        "estimatedCount": 1750
+      },
+      "measurements": [
+        {
+          "sourceText": "約1.5mm",
+          "valuesMm": [
+            1.5
+          ],
+          "approximate": true,
+          "meaning": "unassigned"
+        }
+      ],
+      "registeredAt": "2026-10-05T09:39:55.030Z",
+      "sourceFetchedAt": "2026-10-05T09:24:27.969Z",
+      "parserVersion": "kiwa-registration-v1",
+      "readiness": "needs_calibration",
+      "missing": [
+        "画像の実寸校正",
+        "接続点・貫通穴の確認",
+        "購入単位の確認"
+      ]
+    },
+    "capture": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50364.jpg?v=1694515667",
+      "finalUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50364.jpg?v=1694515667",
+      "fetchedAt": "2026-10-07T18:27:22.723Z",
+      "sha256": "fd2df9e1450f976f0783382d683ff972b03365199993f49bbb354ec606fcc3d2",
+      "bytes": 22060,
+      "mime": "image/webp",
+      "pixelWidth": 450,
+      "pixelHeight": 450,
+      "productIds": [
+        "8711100039460"
+      ],
+      "status": "pending_dimension_region_review"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+import {it,expect} from 'vitest';
+import {crystalAxes} from './crystalAxesMapping';
+const recipe={productIds:['1'],sha256:'hash',sizes:{'4x2.9':{outerHeightMm:4,outerWidthMm:2.9}}};
+const input={productId:'1',variantId:'2',sku:'3',sizeText:'4×2.9mm',variant:{id:'2',sku:'3',sizeText:'4×2.9mm'},galleryUrls:['https://cdn.shopify.com/a'],captures:[{url:'https://cdn.shopify.com/a',sha256:'hash',productIds:['1'],fetchedAt:'2026-10-07',finalUrl:'https://cdn.shopify.com/a'}]};
+it('uses both reviewed square axes only for an explicitly configured single-size label',()=>{const single={...input,sizeText:'10mm',variant:{...input.variant,sizeText:'10mm'}};expect(crystalAxes(single,{...recipe,sizes:{'10':{outerWidthMm:10,outerHeightMm:10}}})).toMatchObject({outerWidthMm:10,outerHeightMm:10});expect(crystalAxes(single,recipe)).toBeUndefined();expect(crystalAxes({...single,sizeText:'10×10mm'},{...recipe,sizes:{'10':{outerWidthMm:10,outerHeightMm:10}}})).toBeUndefined();});
+it('maps chart vertical and horizontal axes without swapping the variant label',()=>{expect(crystalAxes(input,recipe)).toMatchObject({outerHeightMm:4,outerWidthMm:2.9});expect(crystalAxes({...input,sizeText:'2.9×4mm'},recipe)).toBeUndefined();});
+it('requires reviewed size, SKU, identity and own source capture',()=>{for(const patch of [{sizeText:'約4×2.9mm'},{sku:'other'},{variantId:'other'},{productId:'other'},{galleryUrls:[]},{captures:[]}])expect(crystalAxes({...input,...patch},recipe)).toBeUndefined();});

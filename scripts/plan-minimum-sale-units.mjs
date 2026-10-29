@@ -1,0 +1,12 @@
+import {stage2Refinement,assertStage2Registry} from './minimum-sale-stage2.mjs';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {buildMinimumSaleManifest,sha256} from './minimum-sale-units.mjs';
+const phase=process.argv.find(a=>a.startsWith('--phase='))?.slice(8)??'phase1';if(!/^phase[1-9][0-9]*$/.test(phase))throw Error('INVALID_CLEANUP_PHASE');const n=Number(phase.slice(5)),base='.local/calibration/minimum-sale-unit',folder=n===1?base:base+'/'+phase,snapshotPath=n===1?base+'/before.json':n===2?base+'/after.json':base+'/phase'+(n-1)+'/after.json';
+const registry=await readFile('.local/parts/parts.json'),catalog=await readFile('.local/catalog/catalog.json'),snapshot=await readFile(snapshotPath);
+if(n===2&&(sha256(catalog)!=='a18dc79933b952a0663c95327df44e27f3bdd4450ab4394c980469a64bd2ad0c'||sha256(snapshot)!=='b08fc13068221550f1bf8fed9c38615b521e5c092319bd586adc7a257df07019'||sha256(await readFile(base+'/manifest.json'))!=='0f6abfa3cfdb7c488a00667845596c2b321c3dcbd6414f0a3182eed53e01d71e'))throw Error('STAGE2_REVIEW_INPUT_CHANGED');
+if(n===2)assertStage2Registry(registry,JSON.parse(await readFile(base+'/manifest.json')));
+const refinement=n===2?stage2Refinement(JSON.parse(await readFile(base+'/manifest.json')),JSON.parse(catalog),JSON.parse(registry),JSON.parse(snapshot)):undefined;
+const manifest=buildMinimumSaleManifest(JSON.parse(catalog),JSON.parse(registry),JSON.parse(snapshot),{catalogSha256:sha256(catalog),registrySha256:sha256(registry),snapshotSha256:sha256(snapshot),refinement});
+manifest.phase=phase;if(refinement){manifest.version=2;manifest.parserVersion='minimum-sale-unit-v2-finite-refinement';manifest.refinement={...refinement.report,priorManifestSha256:sha256(await readFile(base+'/manifest.json')),snapshotSha256:sha256(snapshot)};}await mkdir(folder,{recursive:true});
+await writeFile(folder+'/manifest.json',JSON.stringify(manifest));
+console.log(JSON.stringify(manifest.summary));

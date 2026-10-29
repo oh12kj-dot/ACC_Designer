@@ -1,0 +1,9 @@
+{
+ "reviewedAt":"2026-10-07",
+ "sha256":"702d73cf96bb2320800fb5d70067d41c57264586d433872657e40274578e1453",
+ "productIds":["8715232510244","8715233034532","8712419508516","8712420983076","8712420458788","8712418132260"],
+ "lengthsMm":[15,20,25,30,35,40,45,60,65,75],
+ "heads":{"0.5":1.3,"0.6":1.7,"0.7":2,"0.8":2.2},
+ "evidenceText":"長さ: 15/20/25/30/35/40/45/60/65/75mm。皿部分の目安サイズ: 太さ0.5mm…直径約1.3mm、太さ0.6mm…直径約1.7mm、太さ0.7mm…直径約2mm、太さ0.8mm…直径約2.2mm",
+ "scope":"Dimensions only. Length comparison image does not certify variant appearance, pixel scale or connection positions."
+}

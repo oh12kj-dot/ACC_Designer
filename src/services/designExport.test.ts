@@ -1,0 +1,8 @@
+import { it,expect } from 'vitest';
+import type { DesignAggregate } from '../types/aggregate';
+import type { Part } from '../types/domain';
+import { designBounds } from './designExport';
+it('bounds rotated images at negative coordinates and includes physical stroke radius',()=>{const parts=[{id:'bead',geometryKind:'node',widthMm:10,heightMm:20},{id:'wire',geometryKind:'path',pathRenderSpec:{nominalDiameterMm:2}}] as Part[];const aggregate={nodes:[{partId:'bead',xMm:-10,yMm:0,rotationDeg:90,scaleX:1,scaleY:1}],paths:[{partId:'wire',start:{x:0,y:0},end:{x:100,y:0},physicalLengthMm:100,shape:'straight'}]} as unknown as DesignAggregate;const bounds=designBounds(aggregate,parts);expect(bounds.left).toBeCloseTo(-20);expect(bounds.top).toBeCloseTo(-5);expect(bounds.right).toBe(101);expect(bounds.bottom).toBeCloseTo(5);});
+it('rejects empty designs instead of exporting a misleading blank',()=>{expect(()=>designBounds({nodes:[],paths:[]} as unknown as DesignAggregate,[])).toThrow();});
+
+it('includes actual tall segment tiles rather than nominal stroke diameter',()=>{const aggregate={nodes:[],paths:[{partId:'wire',start:{x:0,y:0},end:{x:10,y:0},physicalLengthMm:10,shape:'straight'}]} as unknown as DesignAggregate;const part={id:'wire',pathRenderSpec:{renderMode:'segment_texture',segmentPhysicalLengthMm:8,textureOverlapMm:0,nominalDiameterMm:.1}} as Part;const images=new Map([['wire',{width:80,height:200} as HTMLImageElement]]);const bounds=designBounds(aggregate,[part],images);expect(bounds).toEqual({left:0,top:-10,right:10,bottom:10});expect(()=>designBounds(aggregate,[part])).toThrow(/読み込み/);});

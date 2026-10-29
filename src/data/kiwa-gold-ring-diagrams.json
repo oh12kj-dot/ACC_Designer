@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "productId": "8715235819812",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-metalfittings-base-jumpring-0a-0a-001",
+  "evidenceType": "visually-reviewed-official-labelled-diagram",
+  "reviewedAt": "2026-10-07",
+  "sourceImages": {
+    "1": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10650103_1_afc27c1b-f072-4b6f-9a04-4a10210f66e3.jpg?v=1728957118",
+      "sha256": "1178d72215799356b7d249e4167fc0c185754d096d4678492488c5c451aa4814",
+      "localObservedAt": "2026-10-07T02:25:07.010818+00:00"
+    },
+    "2": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10650103_2_79d93e40-78b9-4297-9df4-510701f4e4f2.jpg?v=1694614153",
+      "sha256": "a72288b4382f57bfc12421055037e462e2c36105e0b8f8bc45847afdfbeeb348",
+      "localObservedAt": "2026-10-07T02:25:08.795979+00:00"
+    },
+    "3": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10650103_3_da4861fd-5dfe-43fb-b669-6396204df8a5.jpg?v=1694614152",
+      "sha256": "6f07482113f8d5a667e1d19e80e388fa4991a612d81d724685de40ad683e2dea",
+      "localObservedAt": "2026-10-07T02:25:10.521872+00:00"
+    },
+    "4": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10650103_4_514833b6-6c37-432c-ae35-474a2865a10d.jpg?v=1694614153",
+      "sha256": "6232916ee789bb5800417a14127fe3d8a27df63e6489d22bd1b8ca3e06b1f335",
+      "localObservedAt": "2026-10-07T02:25:12.260902+00:00"
+    },
+    "5": {
+      "url": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/10650103_5_e24bb82f-f517-417d-9a95-03f1f84eb34f.jpg?v=1694614152",
+      "sha256": "5d17deaa4e2c59f938e8d4e3199b1a83cc5f598a2efc569a135befeea326bb42",
+      "localObservedAt": "2026-10-07T02:25:57.708408+00:00"
+    }
+  },
+  "regions": [
+    {
+      "sizeKey": "0.5x2.5",
+      "imageIndex": 1,
+      "crop": {
+        "left": 72,
+        "top": 87,
+        "width": 43,
+        "height": 40
+      },
+      "outerDiameterMm": 2.5,
+      "wireDiameterMm": 0.5,
+      "approximateInnerDiameterMm": 1.5
+    },
+    {
+      "sizeKey": "0.5x3",
+      "imageIndex": 1,
+      "crop": {
+        "left": 201,
+        "top": 78,
+        "width": 53,
+        "height": 49
+      },
+      "outerDiameterMm": 3,
+      "wireDiameterMm": 0.5,
+      "approximateInnerDiameterMm": 2
+    },
+    {
+      "sizeKey": "0.5x3.5",
+      "imageIndex": 1,
+      "crop": {
+        "left": 339,
+        "top": 76,
+        "width": 55,
+        "height": 51
+      },
+      "outerDiameterMm": 3.5,
+      "wireDiameterMm": 0.5,
+      "approximateInnerDiameterMm": 2.5
+    },
+    {
+      "sizeKey": "0.6x3",
+      "imageIndex": 1,
+      "crop": {
+        "left": 68,
+        "top": 273,
+        "width": 49,
+        "height": 50
+      },
+      "outerDiameterMm": 3,
+      "wireDiameterMm": 0.6,
+      "approximateInnerDiameterMm": 1.8
+    },
+    {
+      "sizeKey": "0.6x3.5",
+      "imageIndex": 1,
+      "crop": {
+        "left": 203,
+        "top": 270,
+        "width": 54,
+        "height": 51
+      },
+      "outerDiameterMm": 3.5,
+      "wireDiameterMm": 0.6,
+      "approximateInnerDiameterMm": 2.3
+    },
+    {
+      "sizeKey": "0.6x4",
+      "imageIndex": 1,
+      "crop": {
+        "left": 337,
+        "top": 264,
+        "width": 59,
+        "height": 61
+      },
+      "outerDiameterMm": 4,
+      "wireDiameterMm": 0.6,
+      "approximateInnerDiameterMm": 2.8
+    },
+    {
+      "sizeKey": "0.7x3.5",
+      "imageIndex": 2,
+      "crop": {
+        "left": 105,
+        "top": 91,
+        "width": 58,
+        "height": 53
+      },
+      "outerDiameterMm": 3.5,
+      "wireDiameterMm": 0.7,
+      "approximateInnerDiameterMm": 2.1
+    },
+    {
+      "sizeKey": "0.7x4",
+      "imageIndex": 2,
+      "crop": {
+        "left": 300,
+        "top": 80,
+        "width": 65,
+        "height": 65
+      },
+      "outerDiameterMm": 4,
+      "wireDiameterMm": 0.7,
+      "approximateInnerDiameterMm": 2.6
+    },
+    {
+      "sizeKey": "0.7x4.5",
+      "imageIndex": 2,
+      "crop": {
+        "left": 101,
+        "top": 263,
+        "width": 67,
+        "height": 66
+      },
+      "outerDiameterMm": 4.5,
+      "wireDiameterMm": 0.7,
+      "approximateInnerDiameterMm": 3.1
+    },
+    {
+      "sizeKey": "0.7x5",
+      "imageIndex": 2,
+      "crop": {
+        "left": 296,
+        "top": 251,
+        "width": 78,
+        "height": 80
+      },
+      "outerDiameterMm": 5,
+      "wireDiameterMm": 0.7,
+      "approximateInnerDiameterMm": 3.6
+    },
+    {
+      "sizeKey": "0.8x4",
+      "imageIndex": 3,
+      "crop": {
+        "left": 92,
+        "top": 77,
+        "width": 67,
+        "height": 60
+      },
+      "outerDiameterMm": 4,
+      "wireDiameterMm": 0.8,
+      "approximateInnerDiameterMm": 2.4
+    },
+    {
+      "sizeKey": "0.8x4.5",
+      "imageIndex": 3,
+      "crop": {
+        "left": 297,
+        "top": 74,
+        "width": 76,
+        "height": 67
+      },
+      "outerDiameterMm": 4.5,
+      "wireDiameterMm": 0.8,
+      "approximateInnerDiameterMm": 2.9
+    },
+    {
+      "sizeKey": "0.8x5",
+      "imageIndex": 3,
+      "crop": {
+        "left": 91,
+        "top": 277,
+        "width": 78,
+        "height": 73
+      },
+      "outerDiameterMm": 5,
+      "wireDiameterMm": 0.8,
+      "approximateInnerDiameterMm": 3.4
+    },
+    {
+      "sizeKey": "0.8x6",
+      "imageIndex": 3,
+      "crop": {
+        "left": 292,
+        "top": 263,
+        "width": 83,
+        "height": 84
+      },
+      "outerDiameterMm": 6,
+      "wireDiameterMm": 0.8,
+      "approximateInnerDiameterMm": 4.4
+    },
+    {
+      "sizeKey": "1x5",
+      "imageIndex": 4,
+      "crop": {
+        "left": 54,
+        "top": 72,
+        "width": 74,
+        "height": 73
+      },
+      "outerDiameterMm": 5,
+      "wireDiameterMm": 1,
+      "approximateInnerDiameterMm": 3
+    },
+    {
+      "sizeKey": "1x6",
+      "imageIndex": 4,
+      "crop": {
+        "left": 198,
+        "top": 69,
+        "width": 79,
+        "height": 76
+      },
+      "outerDiameterMm": 6,
+      "wireDiameterMm": 1,
+      "approximateInnerDiameterMm": 4
+    },
+    {
+      "sizeKey": "1x10",
+      "imageIndex": 4,
+      "crop": {
+        "left": 322,
+        "top": 58,
+        "width": 98,
+        "height": 95
+      },
+      "outerDiameterMm": 10,
+      "wireDiameterMm": 1,
+      "approximateInnerDiameterMm": 8
+    },
+    {
+      "sizeKey": "1.2x7",
+      "imageIndex": 4,
+      "crop": {
+        "left": 80,
+        "top": 250,
+        "width": 96,
+        "height": 95
+      },
+      "outerDiameterMm": 7,
+      "wireDiameterMm": 1.2,
+      "approximateInnerDiameterMm": 4.6
+    },
+    {
+      "sizeKey": "1.2x8",
+      "imageIndex": 4,
+      "crop": {
+        "left": 282,
+        "top": 249,
+        "width": 97,
+        "height": 93
+      },
+      "outerDiameterMm": 8,
+      "wireDiameterMm": 1.2,
+      "approximateInnerDiameterMm": 5.6
+    },
+    {
+      "sizeKey": "1.4x8",
+      "imageIndex": 5,
+      "crop": {
+        "left": 68,
+        "top": 55,
+        "width": 91,
+        "height": 88
+      },
+      "outerDiameterMm": 8,
+      "wireDiameterMm": 1.4,
+      "approximateInnerDiameterMm": 5.2
+    },
+    {
+      "sizeKey": "1.4x10",
+      "imageIndex": 5,
+      "crop": {
+        "left": 289,
+        "top": 49,
+        "width": 100,
+        "height": 98
+      },
+      "outerDiameterMm": 10,
+      "wireDiameterMm": 1.4,
+      "approximateInnerDiameterMm": 7.2
+    },
+    {
+      "sizeKey": "1.6x10",
+      "imageIndex": 5,
+      "crop": {
+        "left": 45,
+        "top": 269,
+        "width": 92,
+        "height": 91
+      },
+      "outerDiameterMm": 10,
+      "wireDiameterMm": 1.6,
+      "approximateInnerDiameterMm": 6.8
+    },
+    {
+      "sizeKey": "1.8x12",
+      "imageIndex": 5,
+      "crop": {
+        "left": 177,
+        "top": 261,
+        "width": 111,
+        "height": 110
+      },
+      "outerDiameterMm": 12,
+      "wireDiameterMm": 1.8,
+      "approximateInnerDiameterMm": 8.4
+    },
+    {
+      "sizeKey": "2x14",
+      "imageIndex": 5,
+      "crop": {
+        "left": 331,
+        "top": 254,
+        "width": 116,
+        "height": 116
+      },
+      "outerDiameterMm": 14,
+      "wireDiameterMm": 2,
+      "approximateInnerDiameterMm": 10
+    }
+  ]
+}

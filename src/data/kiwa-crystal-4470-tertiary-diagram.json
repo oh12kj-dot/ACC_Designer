@@ -1,0 +1,31 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sha256": "a25dbea1eee5e505e374d9e3fc808778029ad30f1dec97a978b77f738de48fea",
+  "productIds": [
+    "10029243203876",
+    "10029243236644",
+    "10029243302180",
+    "10029243367716",
+    "9030816301348",
+    "9078492234020",
+    "9078492299556",
+    "9137835835684",
+    "9137835868452",
+    "9890257338660",
+    "9890260975908",
+    "9890261008676",
+    "9890261041444",
+    "9890261074212"
+  ],
+  "sizes": {
+    "10": {
+      "outerHeightMm": 10,
+      "outerWidthMm": 10
+    },
+    "12": {
+      "outerHeightMm": 12,
+      "outerWidthMm": 12
+    }
+  },
+  "scope": "Frontal chart axes only; no thickness, pixel scale or appearance certification"
+}

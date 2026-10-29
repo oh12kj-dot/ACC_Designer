@@ -1,0 +1,5 @@
+import { it,expect } from 'vitest';
+import { throughPose,projectBoundsRelativeToHole,validateOccupancy } from './through';
+import type { Part,DesignNode } from '../../types/domain';
+it('places an off-center hole on the Path and preserves asymmetric occupancy',()=>{const part={geometryKind:'node',widthMm:10,heightMm:4} as Part;const hole={id:'h',name:'h',entryXNorm:.2,exitXNorm:.4,entryYNorm:.5,exitYNorm:.5,axisDeg:0};const node={id:'n',partId:'p',xMm:0,yMm:0,rotationDeg:0,scaleX:1,scaleY:1,zIndex:0,locked:false} as DesignNode;const pose=throughPose(node,part,hole,{x:20,y:10},{x:1,y:0},false);expect(pose.xMm).toBe(22);const occupancy=projectBoundsRelativeToHole(pose,part,hole,{x:1,y:0});expect(occupancy.beforeMm).toBeCloseTo(3);expect(occupancy.afterMm).toBeCloseTo(7);});
+it('allows exact contact and rejects overlap and out-of-range occupation',()=>{expect(()=>validateOccupancy([{id:'a',start:0,end:5},{id:'b',start:5,end:10}],10)).not.toThrow();expect(()=>validateOccupancy([{id:'a',start:0,end:5},{id:'b',start:4.9,end:10}],10)).toThrow();expect(()=>validateOccupancy([{id:'a',start:-.1,end:5}],10)).toThrow();});

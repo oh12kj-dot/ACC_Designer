@@ -1,0 +1,33 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sha256": "f76b32d140f2708368d92b407aa66ff03529dac1d12f8804cfe1000937e47531",
+  "productIds": [
+    "8707968336164",
+    "8707969057060",
+    "8707969777956",
+    "8707970367780",
+    "8707970892068",
+    "8707971547428",
+    "8707972235556",
+    "8707972858148",
+    "8707973808420",
+    "8708099309860",
+    "8708099997988",
+    "8708100522276",
+    "8708101112100",
+    "8708101865764",
+    "8708102488356"
+  ],
+  "sizes": {
+    "8x5.5": {
+      "outerHeightMm": 8,
+      "outerWidthMm": 5.5
+    },
+    "14x10": {
+      "outerHeightMm": 14,
+      "outerWidthMm": 10
+    }
+  },
+  "diagramApproximate": false,
+  "scope": "Frontal labelled axes only. Side-view approximate widths reviewed separately, no scale/connection certification."
+}

@@ -1,0 +1,8 @@
+import { it,expect } from 'vitest';
+import type { DesignAggregate } from '../../types/aggregate';
+import type { Part } from '../../types/domain';
+import { arrangeThrough,reorderThrough } from './arrangeThrough';
+const parts=[{id:'bead',geometryKind:'node',widthMm:10,heightMm:4,connectionPoints:[],throughHoles:[{id:'h',entryXNorm:.2,exitXNorm:.4,entryYNorm:.5,exitYNorm:.5,axisDeg:0}]}] as unknown as Part[];
+const aggregate={design:{editorConfig:{}},nodes:['a','b'].map(id=>({id,partId:'bead',xMm:0,yMm:0,rotationDeg:0,scaleX:1,scaleY:1,locked:false})),paths:[{id:'p',partId:'wire',start:{x:0,y:0},end:{x:50,y:0},shape:'straight',physicalLengthMm:50}],throughAttachments:['a','b'].map((nodeId,i)=>({id:nodeId,nodeId,holeId:'h',pathId:'p',distanceMm:20+i*15,flip180:false,orderIndex:i,lockedToNeighbors:false})),pointAttachments:[],pathAttachments:[]} as unknown as DesignAggregate;
+it('packs asymmetric beads with exact touching boundaries and reversible ordering',()=>{const result=arrangeThrough(aggregate,parts,'p',0);expect(result.throughAttachments[0].distanceMm).toBeCloseTo(3);expect(result.throughAttachments[1].distanceMm).toBeCloseTo(13);const reordered=reorderThrough(result,parts,'a',1,2);expect(reordered.throughAttachments.find(a=>a.id==='b')!.distanceMm).toBeCloseTo(3);expect(reordered.throughAttachments.find(a=>a.id==='a')!.distanceMm).toBeCloseTo(15);expect(aggregate.throughAttachments[0].distanceMm).toBe(20);});
+it('rejects insufficient length and invalid gaps without partial arrangement',()=>{expect(()=>arrangeThrough({...aggregate,paths:aggregate.paths.map(p=>({...p,physicalLengthMm:19,end:{x:19,y:0}}))},parts,'p',0)).toThrow(/不足/);expect(()=>arrangeThrough(aggregate,parts,'p',-1)).toThrow();});

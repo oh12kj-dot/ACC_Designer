@@ -1,0 +1,8 @@
+// A campaign is a review work unit, never an approval or an SQL transaction.
+export function partitionCampaign(rows,{unit=1000,rank=()=>0}={}){
+ if(!Number.isSafeInteger(unit)||unit<1||unit>1000||new Set(rows.map(r=>r.draftId)).size!==rows.length)throw Error('CAMPAIGN_INPUT');
+ const ordered=[...rows].sort((a,b)=>Number(!!a.restrictions.length)-Number(!!b.restrictions.length)||rank(a)-rank(b)||a.cohortKey.localeCompare(b.cohortKey)||a.draftId.localeCompare(b.draftId));
+ const jobs=[];for(let i=0;i<ordered.length;i+=unit)jobs.push({id:'registration-'+String(jobs.length+1).padStart(3,'0'),sourceIds:ordered.slice(i,i+unit).map(r=>r.draftId),state:'review-pending'});assertCampaignPartition(jobs,rows.map(r=>r.draftId),unit);return jobs;
+}
+export function assertCampaignPartition(jobs,sourceIds,unit=1000){const flat=jobs.flatMap(j=>j.sourceIds),expected=new Set(sourceIds);if(new Set(jobs.map(j=>j.id)).size!==jobs.length||flat.length!==expected.size||new Set(flat).size!==flat.length||flat.some(id=>!expected.has(id))||jobs.some((j,i)=>!j.sourceIds.length||j.sourceIds.length>unit||(i<jobs.length-1&&j.sourceIds.length!==unit)))throw Error('CAMPAIGN_PARTITION');}
+export function approvedCampaignChunks(job,adoptedIds,chunkSize=250){if(!Number.isSafeInteger(chunkSize)||chunkSize<1||chunkSize>250||new Set(job.sourceIds).size!==job.sourceIds.length)throw Error('CAMPAIGN_CHUNK');const approved=new Set(adoptedIds);if(adoptedIds.length!==approved.size||adoptedIds.some(id=>!job.sourceIds.includes(id)))throw Error('CAMPAIGN_APPROVAL_SCOPE');const selected=job.sourceIds.filter(id=>approved.has(id)),chunks=[];for(let i=0;i<selected.length;i+=chunkSize)chunks.push(selected.slice(i,i+chunkSize));return chunks;}

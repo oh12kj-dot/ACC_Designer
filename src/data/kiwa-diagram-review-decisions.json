@@ -1,0 +1,80 @@
+[
+  {
+    "sha256": "bf2fb073c4abbeff66090b36369d64418733c810865cddb99d725d96cc026601",
+    "reviewedAt": "2026-10-08",
+    "status": "reviewed-unresolved",
+    "reason": "SIZE_LABELS_WITH_INDIVIDUAL_VARIATION",
+    "observation": "2x4 and3.2x6.5mm comparison labels; official note says shapes/sizes vary. No physical axes, hole or scale certificate.",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_0f779882-776a-41a0-947e-e3e5a6aeabfb.jpg?v=1694490526",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_1c107c32-0537-4483-b208-00ab26fd4b49.jpg?v=1694490487",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_21d93eb3-ad7c-4c4e-87d4-57b2fd10ffb8.jpg?v=1694490424",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_3bea394b-103a-4649-b781-18feeb404f60.jpg?v=1694490393",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_702d55af-274e-4171-8b0f-ba4687611691.jpg?v=1694490414",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_7a08d895-9402-4301-9256-c10cf345324e.jpg?v=1694490497",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_7d8f6f02-ddca-4422-a2d5-e5c99ed334bc.jpg?v=1694490382",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61345300_1_c5afb39f-131e-4bed-9149-25a4eea705ab.jpg?v=1694490516",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61346406_c128ab871dea4fb19b19cc0aaee0b08a.jpg?v=1694490467",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61346505_2.jpg?v=1694490477",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/61348103_1.jpg?v=1694490436",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/farfalle_size1.jpg?v=1694490544",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/farfalle_size1_8af792e6-af93-4e51-87ea-fb19ee651c65.jpg?v=1694490562",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/farfalle_size1_bebdbc7b-f362-48a6-a9e9-5c398ebc902d.jpg?v=1694490553"
+    ],
+    "boundary": "This image review does not establish absence of official data. Variant remains pending; no promotion."
+  },
+  {
+    "sha256": "20655dc1975ea7eec41ef90981197573b167718c2fd975e93a8f3feaa7af34fe",
+    "reviewedAt": "2026-10-08",
+    "status": "reviewed-unresolved",
+    "reason": "UNASSIGNED_AXIS_AND_SIZE",
+    "observation": "About2.0/2.5mm arrows mark narrow end of two objects. No variant-size association or labelled length; do not use as overall width.",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1.jpg?v=1694490206",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_25b73077-1c83-4a9b-8333-004d8cfcd9e2.jpg?v=1694490225",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_35946119-4b12-4a15-ac3d-b91e4f00d12b.jpg?v=1694490309",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_5068ddf3-ae75-4de8-8017-dbdc8df61c92.jpg?v=1694490216",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_6b33dd74-375b-47c8-a90e-b999140c29ef.jpg?v=1694490301",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_74c49804-2f24-4c16-8cc5-0a94975804e0.jpg?v=1694490274",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_8e23aa51-5e13-4ac5-88ff-2cc12f5806df.jpg?v=1694490335",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_93977790-d928-4ec7-a3b8-c5a27e3b5bb6.jpg?v=1694490236",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_a6bfdb9f-6e98-4dc2-948c-339e50990d92.jpg?v=1694490246",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_a9ee72dd-1069-4bad-a421-a586a5f0070d.jpg?v=1694490255",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_b7bf78d4-c1ce-450a-b72f-06c4a35e3fca.jpg?v=1694490283",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_d3a3d54c-094b-4920-9090-efe1eba069f0.jpg?v=1694490264",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/czech_dagger1_da9296ec-73d9-4c0b-bab5-a4b09e0578bc.jpg?v=1694490318"
+    ],
+    "boundary": "This image review does not establish absence of official data. Variant remains pending; no promotion."
+  },
+  {
+    "sha256": "2b332c031c6a555eb9e75109c2102987de05e2833b4c9f82612f6ab2262a0e4a",
+    "reviewedAt": "2026-10-08",
+    "status": "reviewed-unresolved",
+    "reason": "WEARING_EXAMPLE_ONLY",
+    "observation": "12/14mm wearing examples; no axis arrows, scale or hole evidence.",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60606907_3.jpg?v=1694616141",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60606907_3_452555cb-ed41-4d10-9147-cc9458c2e7bc.jpg?v=1694616151",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60809803_7.jpg?v=1752469902",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/60809803_7_24110ae4-6f2c-49c0-99d1-c136be8f8fea.jpg?v=1694616176"
+    ],
+    "boundary": "This image review does not establish absence of official data. Variant remains pending; no promotion."
+  },
+  {
+    "sha256": "41533516474387ec2e77c744db471574900766f6afc5ec97914e0a7df25999f4",
+    "reviewedAt": "2026-10-08",
+    "status": "reviewed-unresolved",
+    "reason": "ACCESSORY_SIZE_REFERENCE",
+    "observation": "14/18mm labels refer to used #4460 settings, not measured #1400 stone axes.",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5.jpg?v=1694439652",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_0529d1ab-b8ca-4b85-b149-565966371a25.jpg?v=1694439714",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_11b4a66a-34c3-4c2c-887f-12ff27109fee.jpg?v=1694439664",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_3d117a1a-9821-4d45-b2c6-a70474bd3e8a.jpg?v=1694439688",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_40d346e2-cc47-4a36-a7e3-16fe37f2e25b.jpg?v=1694439725",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_9f790d3f-6bd0-4e44-a4c0-b05a09d46617.jpg?v=1694439676",
+      "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/1400_sub5_d5131599-ed06-480d-842a-937e4b969cca.jpg?v=1694439701"
+    ],
+    "boundary": "This image review does not establish absence of official data. Variant remains pending; no promotion."
+  }
+]

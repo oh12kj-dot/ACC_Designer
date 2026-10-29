@@ -1,0 +1,113 @@
+{
+  "status": "candidate-only-no-adoption",
+  "planSha256": "4a3e357b6d6759d22a0f89666ac7a28480eb783593d5fe884c1078b63b739383",
+  "registrySha256": "a4032127881c8dc19fd32877f80c0c76b6eab6b22dac9550fd5b5d05d933f7db",
+  "jobId": "registration-002",
+  "sourceFixtureSha256": "de3f46eccba6b8d2d0c94da1675fb52640bc93dc6e4db50ef8d3df0117652968",
+  "rows": [
+    {
+      "draftId": "kiwa:8710141706532:46967219093796",
+      "sourceObjectSha256": "047e07870b3af90170d91e63d79e7860795d7a474f8fde1fe68b10a630fe5e88",
+      "category": "other",
+      "rawLabel": "約14x10mm",
+      "kind": "literal-lowercase-x-pair",
+      "parseLabel": "約14×10mm"
+    },
+    {
+      "draftId": "kiwa:8710142001444:46967220076836",
+      "sourceObjectSha256": "2c488d5493c5b8bb642f31a6871c6d34f01c4f0926ad5b54aaa28f3251455b26",
+      "category": "other",
+      "rawLabel": "約17x6mm",
+      "kind": "literal-lowercase-x-pair",
+      "parseLabel": "約17×6mm"
+    },
+    {
+      "draftId": "kiwa:8710814368036:46969033294116",
+      "sourceObjectSha256": "cf45402dfb19242e76039e7b64bf891aa0d8da4f7b97deaa1163918d12c14136",
+      "category": "other",
+      "rawLabel": "約20x14mm",
+      "kind": "literal-lowercase-x-pair",
+      "parseLabel": "約20×14mm"
+    },
+    {
+      "draftId": "kiwa:8710299844900:46967807639844",
+      "sourceObjectSha256": "101b60d53e0457fc705ec4cb8849ad249321a9b101189abff35cab712cf823d5",
+      "category": "bead",
+      "rawLabel": "4mm(KW-101)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "4mm"
+    },
+    {
+      "draftId": "kiwa:8710299844900:46967807672612",
+      "sourceObjectSha256": "37c9b38b52e20760ab961f8bfe37cde5d507fec380d514b9fb524f89e8cb766d",
+      "category": "bead",
+      "rawLabel": "6mm(KW-102)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "6mm"
+    },
+    {
+      "draftId": "kiwa:8710299844900:46967807705380",
+      "sourceObjectSha256": "c762ef8e804a26ab0d928b04a6bab4d56a5a3cce8ead7020a4bb76ee60c95057",
+      "category": "bead",
+      "rawLabel": "8mm(KW-103)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "8mm"
+    },
+    {
+      "draftId": "kiwa:8710300827940:46967809540388",
+      "sourceObjectSha256": "c47a57f61c2efa8819eccfb1a685beff321479abf32ba53ce629e8e0baca91b2",
+      "category": "bead",
+      "rawLabel": "8mm(KW-104)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "8mm"
+    },
+    {
+      "draftId": "kiwa:8710300827940:46967809573156",
+      "sourceObjectSha256": "ac399c72074a3403c0c22f376d1e95f6f91367fa7eddb7e886434214c108825f",
+      "category": "bead",
+      "rawLabel": "10mm(KW-105)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "10mm"
+    },
+    {
+      "draftId": "kiwa:8710300827940:46967809605924",
+      "sourceObjectSha256": "b00c00324f7db252880b77b9dbf8d0bdf036b771e7cd4735f5f01ce483680253",
+      "category": "bead",
+      "rawLabel": "12mm(KW-106)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "12mm"
+    },
+    {
+      "draftId": "kiwa:8710701187364:46968766464292",
+      "sourceObjectSha256": "90ae5f15693f572cd34dd72e10f5aac607a83d0cd5500dfcb8d2f45d2695b02a",
+      "category": "other",
+      "rawLabel": "約16x11mm",
+      "kind": "literal-lowercase-x-pair",
+      "parseLabel": "約16×11mm"
+    },
+    {
+      "draftId": "kiwa:8710299418916:46967807082788",
+      "sourceObjectSha256": "3513f976febe2c2d5ff764f3cf5137bb1ed2f91d531b7af6bda0de7531528804",
+      "category": "bead",
+      "rawLabel": "4mm(KW-101)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "4mm"
+    },
+    {
+      "draftId": "kiwa:8710299418916:46967807115556",
+      "sourceObjectSha256": "8eaa2612e5335b7c5a57ade198e713bb243787bff4e721771da5a07be0275f43",
+      "category": "bead",
+      "rawLabel": "6mm(KW-102)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "6mm"
+    },
+    {
+      "draftId": "kiwa:8710299418916:46967807148324",
+      "sourceObjectSha256": "0fc7dc34b2b59f7f2d92932b66504e82d808067abc7bc6e81f89ba8da2b500ed",
+      "category": "bead",
+      "rawLabel": "8mm(KW-103)",
+      "kind": "exact-kw-code-suffix",
+      "parseLabel": "8mm"
+    }
+  ]
+}

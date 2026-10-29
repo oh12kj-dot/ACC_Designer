@@ -1,0 +1,12 @@
+import {it,expect,vi,afterEach} from 'vitest';
+import {createHash} from 'node:crypto';
+vi.mock('node:fs/promises',()=>({readFile:vi.fn()}));
+import {readFile} from 'node:fs/promises';
+import {readGalleryProgress,readOcrProgress} from './galleryProgress';
+const registry=Buffer.from('{"parts":[]}'),baseline=createHash('sha256').update(registry).digest('hex');
+const state={registrySha256:baseline,status:'processing',workerPid:process.pid,totalImages:10,completedImages:2,pendingImages:8,totalVariants:20,checkedAt:'2026-10-07'};
+afterEach(()=>vi.resetAllMocks());
+it('reports discovery counts separately from calibrated readiness',async()=>{vi.mocked(readFile).mockResolvedValueOnce(JSON.stringify(state)).mockResolvedValueOnce(registry);expect(await readGalleryProgress()).toMatchObject({status:'processing',completedImages:2,pendingImages:8,totalVariants:20});});
+it('rejects stale baselines and inconsistent denominator accounting',async()=>{vi.mocked(readFile).mockResolvedValueOnce(JSON.stringify({...state,registrySha256:'wrong'})).mockResolvedValueOnce(registry);await expect(readGalleryProgress()).rejects.toThrow('GALLERY_BASELINE_CHANGED');vi.mocked(readFile).mockResolvedValueOnce(JSON.stringify({...state,pendingImages:9})).mockResolvedValueOnce(registry);await expect(readGalleryProgress()).rejects.toThrow('GALLERY_PROGRESS_INVALID');});
+it('does not turn an absent worker into a zero or completed result',async()=>{vi.mocked(readFile).mockRejectedValueOnce(Object.assign(new Error('missing'),{code:'ENOENT'}));expect(await readGalleryProgress()).toBeUndefined();});
+it('keeps OCR matches as candidates and rejects impossible candidate counts',async()=>{const input={registrySha256:baseline,status:'processing',workerPid:process.pid,processedUniqueImages:10,candidateVariants:0,checkedAt:'2026-10-07'};vi.mocked(readFile).mockResolvedValueOnce(JSON.stringify(input)).mockResolvedValueOnce(registry);expect(await readOcrProgress()).toMatchObject({processedUniqueImages:10,candidateVariants:0});vi.mocked(readFile).mockResolvedValueOnce(JSON.stringify({...input,candidateVariants:1})).mockResolvedValueOnce(registry);await expect(readOcrProgress()).rejects.toThrow('OCR_PROGRESS_INVALID');});

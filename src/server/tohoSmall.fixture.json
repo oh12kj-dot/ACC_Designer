@@ -1,0 +1,54 @@
+{
+  "id": "kiwa:9533520314660:49486196146468",
+  "productId": "9533520314660",
+  "variantId": "49486196146468",
+  "name": "TOHO特小ビーズ　No.PF558 / 約1.5mm / 1m(約960粒）",
+  "sku": "4964291409682",
+  "sourceUrl": "https://kiwaseisakujo.jp/products/g-seedbeads-toho-sseed-061?variant=49486196146468",
+  "sourceName": "貴和製作所",
+  "category": "bead",
+  "categoryBasis": "商品名による分類（形状の保証なし）",
+  "tags": [
+    "made in JAPAN",
+    "TOHO特小ビーズ",
+    "シードビーズ"
+  ],
+  "description": "外径約1.5mmのとても小さいビーズです。摩擦に強く色が落ちにくいPF加工です。ビーズの表面に銀メッキ加工を施してから着色したメタリックな輝きのある銀色です。※尚、表面加工がされているカラーは、摩擦等により色落ちが生じ、サラシ(漂白)による変色、あるいは長時間経つと酸化現象によって変色する場合があります。予めご了承ください。",
+  "imageUrls": [
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50450FP_main.jpg?v=1749188019",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/50450_1.jpg?v=1749188019",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1017a.webp?v=1749188019",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1017a_6.webp?v=1749188019",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1018a_64e22dea-13f1-4af6-9c5c-be84584dfd65.jpg?v=1749188019",
+    "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/kr1018a_5.webp?v=1749188019"
+  ],
+  "price": 792,
+  "currency": "JPY",
+  "available": true,
+  "sizeText": "約1.5mm",
+  "purchase": {
+    "sourceText": "1m(約960粒）",
+    "unit": "length",
+    "approximate": true,
+    "estimatedCount": 960
+  },
+  "measurements": [
+    {
+      "sourceText": "約1.5mm",
+      "valuesMm": [
+        1.5
+      ],
+      "approximate": true,
+      "meaning": "unassigned"
+    }
+  ],
+  "registeredAt": "2026-10-05T09:39:55.030Z",
+  "sourceFetchedAt": "2026-10-05T09:19:59.275Z",
+  "parserVersion": "kiwa-registration-v1",
+  "readiness": "needs_calibration",
+  "missing": [
+    "画像の実寸校正",
+    "接続点・貫通穴の確認",
+    "購入単位の確認"
+  ]
+}

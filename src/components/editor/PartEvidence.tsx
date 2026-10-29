@@ -1,0 +1,8 @@
+'use client';
+import type {Part} from '../../types/domain';
+import {reviewedGuideAxis} from '../../domain/editor/reviewedGuideAxis';
+import {reviewedGuideAnchor} from '../../domain/editor/guideAnchor';
+export default function PartEvidence({part}:{part:Part}){const axis=reviewedGuideAxis(part),anchor=reviewedGuideAnchor(part),r=part.holeReference,valid=r?.sourceDraftId===part.metadata?.sourceDraftId&&r?.sourceUrl===part.sourceUrl&&!!r?.descriptionSha256;
+ const rows=[['穴の有無',axis==='none'?'通し穴なし（公式情報の審査）':part.throughHoles?.length?'登録された通し穴あり':valid?r!.presence==='through'?'通し穴あり（公式本文）':r!.presence==='blind'?'片穴（公式本文）':'穴なし（公式本文）':'未確認'],['穴の位置',anchor?anchor.referenceKind==='source-central-projection'?'公式説明からの中央投影・入口座標ではありません':'写真上の目安・実際の入口座標は未確認':part.throughHoles?.length?'登録定義あり':'未確認'],['穴の向き',typeof axis==='number'?`写真の${axis}°方向を審査`:part.throughHoles?.length?'登録定義あり':'未確認'],['穴径',valid?`${r!.approximate?'約':''}${r!.minMm}〜${r!.maxMm}mm（公式本文）`:part.holeDiameterMm?`${part.holeDiameterMm}mm（登録値）`:'未確認'],['本体寸法',part.widthMm&&part.heightMm?`${part.widthMm}×${part.heightMm}mm（登録値）`:'未確認'],['画像の尺度',part.metadata?.nominalPlacement?'掲載寸法による配置目安・実物未測定':'校正状態はパーツ詳細で確認・実物との照合は別確認'],['実際の接続',part.throughHoles?.length||part.connectionPoints?.length?'登録定義を別途確認してください':'接続点・入口／出口の定義なし']];
+ return <details className="mt-2 text-xs"><summary className="min-h-11 cursor-pointer content-center">穴・寸法の確認状態</summary><dl>{rows.map(([label,text])=><div className="mt-2" key={label}><dt className="font-medium">{label}</dt><dd>{text}</dd></div>)}</dl>{part.sourceUrl&&<a className="inline-flex min-h-11 items-center underline" href={part.sourceUrl} target="_blank" rel="noreferrer">商品の出典を確認</a>}</details>;
+}

@@ -1,0 +1,106 @@
+{
+  "reviewedAt": "2026-10-07",
+  "productIds": [
+    "8715237654820",
+    "8715238179108",
+    "8712461943076",
+    "8712461517092",
+    "8712462336292",
+    "8715238342948",
+    "8715238572324",
+    "8715238539556",
+    "8715237949732",
+    "8712460402980"
+  ],
+  "scope": "Dimensions only; shared gold appearance and pixel scale unverified. Inner heights remain approximate.",
+  "regions": [
+    {
+      "sizeKey": "0.5x2.2x3",
+      "sha256": "50cb96645a05352df6d4f585525c11ed869de03ce5a93bf598b3b58bb400ede8",
+      "wireDiameterMm": 0.5,
+      "outerWidthMm": 2.2,
+      "outerHeightMm": 3,
+      "approximateInnerHeightMm": 2
+    },
+    {
+      "sizeKey": "0.6x3x4",
+      "sha256": "50cb96645a05352df6d4f585525c11ed869de03ce5a93bf598b3b58bb400ede8",
+      "wireDiameterMm": 0.6,
+      "outerWidthMm": 3,
+      "outerHeightMm": 4,
+      "approximateInnerHeightMm": 2.8
+    },
+    {
+      "sizeKey": "0.7x3.5x4.5",
+      "sha256": "50cb96645a05352df6d4f585525c11ed869de03ce5a93bf598b3b58bb400ede8",
+      "wireDiameterMm": 0.7,
+      "outerWidthMm": 3.5,
+      "outerHeightMm": 4.5,
+      "approximateInnerHeightMm": 3.1
+    },
+    {
+      "sizeKey": "0.8x3.5x5",
+      "sha256": "c11444e1c1f2bd7c5919549c70158c2fed9d8fb729fbfd59e4ab2fedbc2f8f1d",
+      "wireDiameterMm": 0.8,
+      "outerWidthMm": 3.5,
+      "outerHeightMm": 5,
+      "approximateInnerHeightMm": 3.4
+    },
+    {
+      "sizeKey": "0.8x3.8x5.8",
+      "sha256": "c11444e1c1f2bd7c5919549c70158c2fed9d8fb729fbfd59e4ab2fedbc2f8f1d",
+      "wireDiameterMm": 0.8,
+      "outerWidthMm": 3.8,
+      "outerHeightMm": 5.8,
+      "approximateInnerHeightMm": 4.2
+    },
+    {
+      "sizeKey": "0.8x4.5x6",
+      "sha256": "c11444e1c1f2bd7c5919549c70158c2fed9d8fb729fbfd59e4ab2fedbc2f8f1d",
+      "wireDiameterMm": 0.8,
+      "outerWidthMm": 4.5,
+      "outerHeightMm": 6,
+      "approximateInnerHeightMm": 4.4
+    },
+    {
+      "sizeKey": "0.8x6x8",
+      "sha256": "c11444e1c1f2bd7c5919549c70158c2fed9d8fb729fbfd59e4ab2fedbc2f8f1d",
+      "wireDiameterMm": 0.8,
+      "outerWidthMm": 6,
+      "outerHeightMm": 8,
+      "approximateInnerHeightMm": 6.4
+    },
+    {
+      "sizeKey": "1x4.5x5.5",
+      "sha256": "b20253513479b783d9f1a45282bb1e8e354a06960bc6a596681aa4b2320495c8",
+      "wireDiameterMm": 1,
+      "outerWidthMm": 4.5,
+      "outerHeightMm": 5.5,
+      "approximateInnerHeightMm": 3.5
+    },
+    {
+      "sizeKey": "1.2x5.5x6.5",
+      "sha256": "b20253513479b783d9f1a45282bb1e8e354a06960bc6a596681aa4b2320495c8",
+      "wireDiameterMm": 1.2,
+      "outerWidthMm": 5.5,
+      "outerHeightMm": 6.5,
+      "approximateInnerHeightMm": 4.1
+    },
+    {
+      "sizeKey": "1.4x6x7",
+      "sha256": "b20253513479b783d9f1a45282bb1e8e354a06960bc6a596681aa4b2320495c8",
+      "wireDiameterMm": 1.4,
+      "outerWidthMm": 6,
+      "outerHeightMm": 7,
+      "approximateInnerHeightMm": 4.2
+    },
+    {
+      "sizeKey": "1.6x7.6x9.6",
+      "sha256": "b20253513479b783d9f1a45282bb1e8e354a06960bc6a596681aa4b2320495c8",
+      "wireDiameterMm": 1.6,
+      "outerWidthMm": 7.6,
+      "outerHeightMm": 9.6,
+      "approximateInnerHeightMm": 6.4
+    }
+  ]
+}

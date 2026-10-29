@@ -1,0 +1,16 @@
+node_modules/
+.next/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.env*
+!.env.example
+
+.local/
+.ai/evidence/
+__pycache__/
+*.pyc
+*.accbackup.ndjson
+*.accbackup.json
+*.log

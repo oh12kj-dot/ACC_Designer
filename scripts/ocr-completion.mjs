@@ -1,0 +1,1 @@
+export function ocrSnapshotComplete(recordCount,progress){return progress?.status==='discovery-complete'&&recordCount===progress.completedImages&&progress.completedImages===progress.totalImages;}

@@ -1,0 +1,3 @@
+import { it,expect } from 'vitest';
+import { purchaseDraft,parsePurchaseDraft } from './purchaseDraft';
+it('keeps unknown price separate from zero and validates sale units',()=>{const draft=purchaseDraft();expect(parsePurchaseDraft(draft).unitPrice).toBeUndefined();expect(parsePurchaseDraft({...draft,unitPrice:'0'}).unitPrice).toBe(0);expect(()=>parsePurchaseDraft({...draft,saleMode:'pack',packQuantity:'1.5'})).toThrow();expect(()=>parsePurchaseDraft({...draft,saleMode:'length',saleLengthMm:''})).toThrow();expect(parsePurchaseDraft({...draft,saleMode:'length',saleLengthMm:'1000',weightBasis:'per_sale_length',weightBasisLengthMm:'100'})).toMatchObject({saleLengthMm:1000,weightBasisLengthMm:100});});

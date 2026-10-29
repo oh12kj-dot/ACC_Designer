@@ -1,0 +1,8 @@
+import type { PurchaseSpec,SaleMode } from '../../types/domain';
+export interface PurchaseDraft {saleMode:SaleMode;packQuantity:string;saleLengthMm:string;minimumUnits:string;unitPrice:string;weightBasis:''|'per_piece'|'per_sale_length';weightBasisLengthMm:string}
+export function purchaseDraft(spec?:PurchaseSpec):PurchaseDraft{return{saleMode:spec?.saleMode??'piece',packQuantity:spec?.packQuantity===undefined?'':String(spec.packQuantity),saleLengthMm:spec?.saleLengthMm===undefined?'':String(spec.saleLengthMm),minimumUnits:String(spec?.minimumUnits??1),unitPrice:spec?.unitPrice===undefined?'':String(spec.unitPrice),weightBasis:spec?.weightBasis??'',weightBasisLengthMm:spec?.weightBasisLengthMm===undefined?'':String(spec.weightBasisLengthMm)};}
+export function parsePurchaseDraft(draft:PurchaseDraft):PurchaseSpec{
+ const number=(text:string,label:string,min:number,integer=false)=>{const value=Number(text);if(!text.trim()||!Number.isFinite(value)||value<min||(integer&&!Number.isInteger(value)))throw new Error(`${label}を確認してください`);return value;};
+ if(!['piece','pack','length'].includes(draft.saleMode))throw new Error('販売方式が不正です');
+ return{saleMode:draft.saleMode,minimumUnits:number(draft.minimumUnits,'最小購入単位',1,true),currency:'JPY',packQuantity:draft.saleMode==='pack'?number(draft.packQuantity,'パック入数',1,true):undefined,saleLengthMm:draft.saleMode==='length'?number(draft.saleLengthMm,'販売長',Number.MIN_VALUE):undefined,unitPrice:draft.unitPrice.trim()?number(draft.unitPrice,'価格',0):undefined,weightBasis:draft.weightBasis||undefined,weightBasisLengthMm:draft.weightBasis==='per_sale_length'?number(draft.weightBasisLengthMm,'重量の基準長',Number.MIN_VALUE):undefined};
+}

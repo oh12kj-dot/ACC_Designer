@@ -1,0 +1,44 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sha256": "eb88338d356d7f8491c8fab24a87945f3f9f3a7794edd021a7f5d62c0f55a048",
+  "productIds": [
+    "10029242581284",
+    "10029242614052",
+    "10029242646820",
+    "10029242777892",
+    "10397398139172",
+    "9078492168484",
+    "9137771708708",
+    "9137835671844",
+    "9137835704612",
+    "9389897253156",
+    "9389897351460",
+    "9389897416996",
+    "9389897449764",
+    "9890257273124",
+    "9890257305892"
+  ],
+  "sizes": {
+    "4x2.9": {
+      "outerHeightMm": 4,
+      "outerWidthMm": 2.9
+    },
+    "8x6": {
+      "outerHeightMm": 8,
+      "outerWidthMm": 6
+    },
+    "10x7": {
+      "outerHeightMm": 10,
+      "outerWidthMm": 7
+    },
+    "14x10": {
+      "outerHeightMm": 14,
+      "outerWidthMm": 10
+    },
+    "18x13": {
+      "outerHeightMm": 18,
+      "outerWidthMm": 13
+    }
+  },
+  "scope": "Frontal height/width only. Thickness, appearance, scale and connection unverified."
+}

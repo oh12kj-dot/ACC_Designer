@@ -1,0 +1,750 @@
+{
+  "version": 1,
+  "sourceUrl": "https://cdn.shopify.com/s/files/1/0758/6503/0948/files/ppss.pdf",
+  "sha256": "181cbd0efc4ca1994fdac4ddda5a93bac18139c6b0eaefbdcf25854b96cdb643",
+  "scopeUrl": "https://kiwaseisakujo.jp/en/collections/kiwa-crystal?view=list",
+  "scopeCaptureSha256": "c27317d4f39fa65bb298ba49cb155355d8134a25ab9474224c0513038ef93ae6",
+  "ranges": {
+    "PP1": {
+      "min": 0.8,
+      "max": 0.9,
+      "rows": [
+        "PP1"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS000": {
+      "min": 0.8,
+      "max": 0.9,
+      "rows": [
+        "PP1"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP2": {
+      "min": 0.9,
+      "max": 1,
+      "rows": [
+        "PP2"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS00": {
+      "min": 0.9,
+      "max": 1,
+      "rows": [
+        "PP2"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP3": {
+      "min": 1,
+      "max": 1.1,
+      "rows": [
+        "PP3"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS0": {
+      "min": 1,
+      "max": 1.1,
+      "rows": [
+        "PP3"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP4": {
+      "min": 1.1,
+      "max": 1.2,
+      "rows": [
+        "PP4"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS1": {
+      "min": 1.1,
+      "max": 1.2,
+      "rows": [
+        "PP4"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP5": {
+      "min": 1.2,
+      "max": 1.3,
+      "rows": [
+        "PP5"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS2": {
+      "min": 1.2,
+      "max": 1.35,
+      "rows": [
+        "PP5",
+        "PP6"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP6": {
+      "min": 1.3,
+      "max": 1.35,
+      "rows": [
+        "PP6"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP7": {
+      "min": 1.35,
+      "max": 1.4,
+      "rows": [
+        "PP7"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS3": {
+      "min": 1.35,
+      "max": 1.5,
+      "rows": [
+        "PP7",
+        "PP8"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP8": {
+      "min": 1.4,
+      "max": 1.5,
+      "rows": [
+        "PP8"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP9": {
+      "min": 1.5,
+      "max": 1.6,
+      "rows": [
+        "PP9"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS4": {
+      "min": 1.5,
+      "max": 1.7,
+      "rows": [
+        "PP9",
+        "PP10"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP10": {
+      "min": 1.6,
+      "max": 1.7,
+      "rows": [
+        "PP10"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP11": {
+      "min": 1.7,
+      "max": 1.8,
+      "rows": [
+        "PP11"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS5": {
+      "min": 1.7,
+      "max": 1.9,
+      "rows": [
+        "PP11",
+        "PP12"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP12": {
+      "min": 1.8,
+      "max": 1.9,
+      "rows": [
+        "PP12"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP13": {
+      "min": 1.9,
+      "max": 2,
+      "rows": [
+        "PP13"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS6": {
+      "min": 1.9,
+      "max": 2.1,
+      "rows": [
+        "PP13",
+        "PP14"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP14": {
+      "min": 2,
+      "max": 2.1,
+      "rows": [
+        "PP14"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP15": {
+      "min": 2.1,
+      "max": 2.2,
+      "rows": [
+        "PP15"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS7": {
+      "min": 2.1,
+      "max": 2.3,
+      "rows": [
+        "PP15",
+        "PP16"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP16": {
+      "min": 2.2,
+      "max": 2.3,
+      "rows": [
+        "PP16"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP17": {
+      "min": 2.3,
+      "max": 2.4,
+      "rows": [
+        "PP17"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS8": {
+      "min": 2.3,
+      "max": 2.5,
+      "rows": [
+        "PP17",
+        "PP18"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP18": {
+      "min": 2.4,
+      "max": 2.5,
+      "rows": [
+        "PP18"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP19": {
+      "min": 2.5,
+      "max": 2.6,
+      "rows": [
+        "PP19"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS9": {
+      "min": 2.5,
+      "max": 2.7,
+      "rows": [
+        "PP19",
+        "PP20"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP20": {
+      "min": 2.6,
+      "max": 2.7,
+      "rows": [
+        "PP20"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP21": {
+      "min": 2.7,
+      "max": 2.8,
+      "rows": [
+        "PP21"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS10": {
+      "min": 2.7,
+      "max": 2.9,
+      "rows": [
+        "PP21",
+        "PP22"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP22": {
+      "min": 2.8,
+      "max": 2.9,
+      "rows": [
+        "PP22"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP23": {
+      "min": 2.9,
+      "max": 3,
+      "rows": [
+        "PP23"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS11": {
+      "min": 2.9,
+      "max": 3,
+      "rows": [
+        "PP23"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP24": {
+      "min": 3,
+      "max": 3.2,
+      "rows": [
+        "PP24"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS12": {
+      "min": 3,
+      "max": 3.2,
+      "rows": [
+        "PP24"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP25": {
+      "min": 3.2,
+      "max": 3.3,
+      "rows": [
+        "PP25"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS13": {
+      "min": 3.2,
+      "max": 3.4,
+      "rows": [
+        "PP25",
+        "PP26"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP26": {
+      "min": 3.3,
+      "max": 3.4,
+      "rows": [
+        "PP26"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP27": {
+      "min": 3.4,
+      "max": 3.5,
+      "rows": [
+        "PP27"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS14": {
+      "min": 3.4,
+      "max": 3.6,
+      "rows": [
+        "PP27",
+        "PP28"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP28": {
+      "min": 3.5,
+      "max": 3.6,
+      "rows": [
+        "PP28"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP29": {
+      "min": 3.6,
+      "max": 3.7,
+      "rows": [
+        "PP29"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS15": {
+      "min": 3.6,
+      "max": 3.8,
+      "rows": [
+        "PP29",
+        "PP30"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP30": {
+      "min": 3.7,
+      "max": 3.8,
+      "rows": [
+        "PP30"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "PP31": {
+      "min": 3.8,
+      "max": 4,
+      "rows": [
+        "PP31"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS16": {
+      "min": 3.8,
+      "max": 4,
+      "rows": [
+        "PP31"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP32": {
+      "min": 4,
+      "max": 4.1,
+      "rows": [
+        "PP32"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS17": {
+      "min": 4,
+      "max": 4.2,
+      "rows": [
+        "PP32",
+        "PP33"
+      ],
+      "origin": "envelope-of-chart-PP-rows"
+    },
+    "PP33": {
+      "min": 4.1,
+      "max": 4.2,
+      "rows": [
+        "PP33"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS18": {
+      "min": 4.2,
+      "max": 4.4,
+      "rows": [
+        "SS18"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS19": {
+      "min": 4.4,
+      "max": 4.6,
+      "rows": [
+        "SS19"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS20": {
+      "min": 4.6,
+      "max": 4.8,
+      "rows": [
+        "SS20"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS21": {
+      "min": 4.8,
+      "max": 4.9,
+      "rows": [
+        "SS21"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS22": {
+      "min": 4.9,
+      "max": 5.1,
+      "rows": [
+        "SS22"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS23": {
+      "min": 5.1,
+      "max": 5.27,
+      "rows": [
+        "SS23"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS24": {
+      "min": 5.27,
+      "max": 5.44,
+      "rows": [
+        "SS24"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS25": {
+      "min": 5.44,
+      "max": 5.61,
+      "rows": [
+        "SS25"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS26": {
+      "min": 5.61,
+      "max": 5.78,
+      "rows": [
+        "SS26"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS27": {
+      "min": 5.78,
+      "max": 5.96,
+      "rows": [
+        "SS27"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS28": {
+      "min": 5.96,
+      "max": 6.14,
+      "rows": [
+        "SS28"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS29": {
+      "min": 6.14,
+      "max": 6.32,
+      "rows": [
+        "SS29"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS30": {
+      "min": 6.32,
+      "max": 6.5,
+      "rows": [
+        "SS30"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS31": {
+      "min": 6.5,
+      "max": 6.68,
+      "rows": [
+        "SS31"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS32": {
+      "min": 6.68,
+      "max": 6.87,
+      "rows": [
+        "SS32"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS33": {
+      "min": 6.87,
+      "max": 7.07,
+      "rows": [
+        "SS33"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS34": {
+      "min": 7.07,
+      "max": 7.27,
+      "rows": [
+        "SS34"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS35": {
+      "min": 7.27,
+      "max": 7.48,
+      "rows": [
+        "SS35"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS36": {
+      "min": 7.48,
+      "max": 7.7,
+      "rows": [
+        "SS36"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS37": {
+      "min": 7.7,
+      "max": 7.93,
+      "rows": [
+        "SS37"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS38": {
+      "min": 7.93,
+      "max": 8.16,
+      "rows": [
+        "SS38"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS39": {
+      "min": 8.16,
+      "max": 8.41,
+      "rows": [
+        "SS39"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS40": {
+      "min": 8.41,
+      "max": 8.67,
+      "rows": [
+        "SS40"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS41": {
+      "min": 8.67,
+      "max": 8.95,
+      "rows": [
+        "SS41"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS42": {
+      "min": 8.95,
+      "max": 9.23,
+      "rows": [
+        "SS42"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS43": {
+      "min": 9.23,
+      "max": 9.53,
+      "rows": [
+        "SS43"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS44": {
+      "min": 9.53,
+      "max": 9.85,
+      "rows": [
+        "SS44"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS45": {
+      "min": 9.85,
+      "max": 10.19,
+      "rows": [
+        "SS45"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS46": {
+      "min": 10.19,
+      "max": 10.54,
+      "rows": [
+        "SS46"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS47": {
+      "min": 10.54,
+      "max": 10.91,
+      "rows": [
+        "SS47"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS48": {
+      "min": 10.91,
+      "max": 11.3,
+      "rows": [
+        "SS48"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS49": {
+      "min": 11.3,
+      "max": 11.72,
+      "rows": [
+        "SS49"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS50": {
+      "min": 11.72,
+      "max": 11.97,
+      "rows": [
+        "SS50"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS55": {
+      "min": 12.97,
+      "max": 13.22,
+      "rows": [
+        "SS55"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS60": {
+      "min": 14.22,
+      "max": 14.47,
+      "rows": [
+        "SS60"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS65": {
+      "min": 15.47,
+      "max": 15.72,
+      "rows": [
+        "SS65"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS70": {
+      "min": 16.72,
+      "max": 16.97,
+      "rows": [
+        "SS70"
+      ],
+      "origin": "direct-chart-row"
+    },
+    "SS75": {
+      "min": 17.97,
+      "max": 18.22,
+      "rows": [
+        "SS75"
+      ],
+      "origin": "direct-chart-row"
+    }
+  }
+}

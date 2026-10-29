@@ -1,0 +1,8 @@
+import {it,expect} from 'vitest';import {ballDiagram} from './ballDiagramMapping';
+const recipe={productIds:['1'],sha256:'h',diametersMm:[2,18]};const input={productId:'1',variantId:'2',sku:'3',sizeText:'約18mm',variant:{id:'2',sku:'3',sizeText:'約18mm'},galleryUrls:['url'],captures:[{url:'url',sha256:'h',productIds:['1'],fetchedAt:'today',finalUrl:'url'}]};
+it('preserves approximate diameter without hole or scale claims',()=>{expect(ballDiagram(input,recipe)).toMatchObject({publishedDiameterMm:18,approximate:true});expect(ballDiagram(input,recipe)).not.toHaveProperty('connectionPoints');});
+it('rejects changed approximation, accessory size and foreign evidence',()=>{for(const patch of [{sizeText:'18mm'},{sizeText:'丸玉18mm'},{sku:'other'},{galleryUrls:[]},{captures:[]}])expect(ballDiagram({...input,...patch},recipe)).toBeUndefined();});
+
+it('keeps a nominal variant label separate from an approximate diagram',()=>{const nominal={...input,sizeText:'18mm',variant:{...input.variant,sizeText:'18mm'}};expect(ballDiagram(nominal,{...recipe,diagramApproximate:true})).toMatchObject({publishedDiameterMm:18,approximate:false,diagramApproximate:true});});
+
+it('retains non-monotonic approximate holes without interpolation',()=>{const make=(n:number)=>({...input,sizeText:n+'mm',variant:{...input.variant,sizeText:n+'mm'}});const holes={...recipe,diametersMm:[4,6,8],approximateHoleDiametersMm:{'4':1.8,'6':1.5,'8':3.4}};expect(ballDiagram(make(4),holes)).toMatchObject({approximateHoleDiameterMm:1.8});expect(ballDiagram(make(6),holes)).toMatchObject({approximateHoleDiameterMm:1.5});expect(ballDiagram(make(8),holes)).toMatchObject({approximateHoleDiameterMm:3.4});expect(ballDiagram(make(5),holes)).toBeUndefined();});

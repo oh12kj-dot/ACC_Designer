@@ -1,0 +1,10 @@
+// @vitest-environment jsdom
+import {it,expect,vi,afterEach} from 'vitest';
+import {render,screen,fireEvent,cleanup,waitFor} from '@testing-library/react';
+const mock=vi.hoisted(()=>({signed:vi.fn(),metadata:vi.fn()}));
+vi.mock('../../components/parts/LocalRegisteredParts',()=>({default:()=> <p>管理用の候補</p>}));
+vi.mock('../../services/assetService',()=>({AssetService:class{signedUrl=mock.signed;}}));
+vi.mock('../../lib/supabase/client',()=>({getWorkspaceClient:()=>({auth:{onAuthStateChange:()=>({data:{subscription:{unsubscribe(){}}}}),getSession:async()=>({data:{session:{user:{id:'owner'}}}})},from:(table:string)=>({select:()=>({eq:()=>({order:async()=>({data:Array.from({length:125},(_,i)=>({id:String(i),name:`商品 ${i}`,image_asset_id:`a${i}`,category:'bead',tags:[],geometry_kind:'node'})),error:null})}),in:async(_key:string,ids:string[])=>{if(table==='part_image_assets'){mock.metadata(ids);return{data:ids.map(id=>({id,thumbnail_path:id})),error:null};}return{data:[],error:null};},then:(resolve:(v:unknown)=>void)=>resolve({data:[],error:null})})})})}));
+import PartsPage from './page';
+afterEach(()=>{cleanup();vi.clearAllMocks();});
+it('pages all search results while resolving photographs only for the visible page',async()=>{mock.signed.mockImplementation(async(id:string)=>`/${id}`);render(<PartsPage/>);await screen.findByRole('heading',{name:'商品 0'});await waitFor(()=>expect(mock.signed).toHaveBeenCalledTimes(60));expect(screen.getAllByRole('listitem')).toHaveLength(60);expect(screen.queryByText('管理用の候補')).toBeNull();fireEvent.click(screen.getAllByRole('button',{name:'次の60件'})[0]);await screen.findByRole('heading',{name:'商品 60'});await waitFor(()=>expect(mock.signed).toHaveBeenCalledTimes(120));expect(screen.getAllByRole('listitem')).toHaveLength(60);fireEvent.change(screen.getByLabelText('商品名・番号・素材・色・タグで検索'),{target:{value:'商品 124'}});await screen.findByRole('heading',{name:'商品 124'});expect(screen.getAllByRole('listitem')).toHaveLength(1);expect(screen.getAllByRole('button',{name:'次の60件'})[0]).toHaveProperty('disabled',true);});

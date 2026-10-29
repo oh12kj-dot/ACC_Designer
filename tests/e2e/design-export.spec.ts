@@ -1,0 +1,22 @@
+import { test,expect } from '@playwright/test';
+import { build } from 'vite';
+import { readFileSync } from 'node:fs';
+let bundle:string;
+test.beforeAll(async()=>{await build({configFile:false,logLevel:'silent',build:{outDir:'test-results/export-harness',emptyOutDir:false,lib:{entry:'src/services/designExport.ts',name:'ExportHarness',formats:['iife'],fileName:()=> 'export.js'}}});bundle=readFileSync('test-results/export-harness/export.js','utf8');});
+test('dedicated PNG export uses high images and verifies size, transparency, background and rotated bounds',async({page})=>{await page.goto('/');await page.addScriptTag({content:bundle});const result=await page.evaluate(async()=>{
+ const source=document.createElement('canvas');source.width=100;source.height=100;const ctx=source.getContext('2d')!;ctx.fillStyle='#ef4444';ctx.fillRect(0,0,100,100);const img=new Image();await new Promise<void>(resolve=>{img.onload=()=>resolve();img.src=source.toDataURL();});
+ const part={id:'p',name:'Bead',geometryKind:'node',widthMm:10,heightMm:20,purchaseSpec:{saleMode:'piece',minimumUnits:1,currency:'JPY'},connectionPoints:[],throughHoles:[]};
+ const aggregate={design:{editorConfig:{}},nodes:[{id:'n',partId:'p',xMm:-10,yMm:0,rotationDeg:90,scaleX:1,scaleY:1,zIndex:0}],paths:[],pointAttachments:[],throughAttachments:[],pathAttachments:[],mirrorLinks:[]};
+ const harness=(window as unknown as {ExportHarness:{exportDesignPng:(a:unknown,p:unknown[],images:Map<string,HTMLImageElement>,options:unknown)=>Promise<Blob>}}).ExportHarness;
+ async function output(background:string,longSide:number){const blob=await harness.exportDesignPng(aggregate,[part],new Map([['p',img]]),{background,longSide,dimensionGuide:false,bomSummary:false});const image=new Image(),url=URL.createObjectURL(blob);await new Promise<void>(resolve=>{image.onload=()=>resolve();image.src=url;});const canvas=document.createElement('canvas');canvas.width=image.width;canvas.height=image.height;const c=canvas.getContext('2d')!;c.drawImage(image,0,0);const corner=[...c.getImageData(0,0,1,1).data],center=[...c.getImageData(Math.floor(canvas.width/2),Math.floor(canvas.height/2),1,1).data];URL.revokeObjectURL(url);return{width:canvas.width,height:canvas.height,corner,center};}
+ return{transparent:await output('transparent',2048),white:await output('white',4096)};
+ });expect(Math.max(result.transparent.width,result.transparent.height)).toBe(2048);expect(result.transparent.corner[3]).toBe(0);expect(result.transparent.center).toEqual([239,68,68,255]);expect(Math.max(result.white.width,result.white.height)).toBe(4096);expect(result.white.corner).toEqual([255,255,255,255]);expect(result.white.center).toEqual([239,68,68,255]);});
+
+test('exports the persisted local image reflection after MirrorLink removal',async({page})=>{
+ await page.goto('/');await page.addScriptTag({content:bundle});const colors=await page.evaluate(async()=>{
+  const source=document.createElement('canvas');source.width=100;source.height=50;const ctx=source.getContext('2d')!;ctx.fillStyle='#ff0000';ctx.fillRect(0,0,50,50);ctx.fillStyle='#0000ff';ctx.fillRect(50,0,50,50);const img=new Image();await new Promise<void>(resolve=>{img.onload=()=>resolve();img.src=source.toDataURL();});
+  const part={id:'p',geometryKind:'node',widthMm:20,heightMm:10,connectionPoints:[],throughHoles:[]};
+  const harness=(window as unknown as {ExportHarness:{exportDesignPng:(a:unknown,p:unknown[],images:Map<string,HTMLImageElement>,options:unknown)=>Promise<Blob>}}).ExportHarness;
+  const output=[];for(const flip of [false,true]){const aggregate={design:{editorConfig:{mirror:{version:1,nodeFlipX:{n:flip},groups:{}}}},nodes:[{id:'n',partId:'p',xMm:0,yMm:0,rotationDeg:0,scaleX:1,scaleY:1,zIndex:0}],paths:[],pointAttachments:[],throughAttachments:[],pathAttachments:[],mirrorLinks:[]};const blob=await harness.exportDesignPng(aggregate,[part],new Map([['p',img]]),{background:'transparent',longSide:2048,dimensionGuide:false,bomSummary:false});const image=new Image(),url=URL.createObjectURL(blob);await new Promise<void>(resolve=>{image.onload=()=>resolve();image.src=url;});const canvas=document.createElement('canvas');canvas.width=image.width;canvas.height=image.height;const c=canvas.getContext('2d')!;c.drawImage(image,0,0);output.push([...[.35,.65].map(x=>[...c.getImageData(Math.floor(canvas.width*x),Math.floor(canvas.height/2),1,1).data])]);URL.revokeObjectURL(url);}return output;
+ });expect(colors).toEqual([[[255,0,0,255],[0,0,255,255]],[[0,0,255,255],[255,0,0,255]]]);
+});

@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';import {wireDiagram} from './wireDiagramMapping';
+const recipe={productIds:['1'],sha256:'h',gauges:{'30':0.25}};const input={productId:'1',variantId:'2',sku:'3',sizeText:'＃30(約0.25mm)',variant:{id:'2',sku:'3',sizeText:'＃30(約0.25mm)'},galleryUrls:['url'],captures:[{url:'url',sha256:'h',productIds:['1'],fetchedAt:'today',finalUrl:'url'}]};
+it('preserves gauge and approximate diameter without assigning selling length',()=>{expect(wireDiagram(input,recipe)).toMatchObject({gauge:'30',approximateWireDiameterMm:0.25});expect(wireDiagram(input,recipe)).not.toHaveProperty('lengthMm');});
+it('rejects conflicting diameter, missing approximate annotation and foreign identities',()=>{for(const patch of [{sizeText:'#30(約0.3mm)'},{sizeText:'#30(0.25mm)'},{sku:'other'},{productId:'other'},{captures:[]},{galleryUrls:[]}])expect(wireDiagram({...input,...patch},recipe)).toBeUndefined();});
