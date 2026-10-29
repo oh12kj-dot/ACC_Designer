@@ -34,6 +34,7 @@ export async function assertCordSave(tx:{query:Function;exec:Function},args:Reco
  if(config?.cordLayoutV1||config?.visualAssembliesV1)validateStudio({design:{editorConfig:config},nodes:(payload.nodes??[]).map(fromRow),paths:[],pointAttachments:(payload.point_attachments??[]).map(fromRow),throughAttachments:(payload.through_attachments??[]).map(fromRow),pathAttachments:(payload.path_attachments??[]).map(fromRow),mirrorLinks:(payload.mirror_links??[]).map(fromRow)}as unknown as DesignAggregate);
  await tx.exec('reset role');let oldConfig;try{oldConfig=(await tx.query('select editor_config from public.designs where id=$1 and user_id=auth.uid() for update',[args.design_id])).rows[0]?.editor_config;}finally{await tx.exec('set local role authenticated');}
  const layoutChanged=!!config?.cordLayoutV1&&stableSaleRow(config.cordLayoutV1)!==stableSaleRow(oldConfig?.cordLayoutV1??null);
+ if((next!=null||oldConfig?.cordSpecification!=null)&&!await availableSalePolicy())throw Error('CATALOG_SOURCES_REQUIRED');
  if(!layoutChanged&&stableSaleRow(next??null)===stableSaleRow(oldConfig?.cordSpecification??null)||next==null)return;
  if(next.version!==1||!validCordLength(next.usedLengthMm))throw Error('紐の使用長さは0より大きいmmで指定してください（最大1000m）。');
  const product=(await cordProducts()).find(p=>p.sourceDraftId===next.sourceDraftId);

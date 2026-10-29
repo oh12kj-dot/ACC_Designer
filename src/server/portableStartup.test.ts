@@ -29,6 +29,14 @@ it('fresh clone supports manual parts/designs and refuses incomplete sources or 
   const designId=(await rpc('create_design',{input_name:'portable design',input_type:'necklace'})).id;
   await rpc('save_design_aggregate',{design_id:designId,expected_revision:0,payload:{design:{id:designId,name:'portable design',type:'necklace',canvas_config:{},editor_config:{}},nodes:[{id:randomUUID(),part_id:partId,x_mm:0,y_mm:0,rotation_deg:0,scale_x:1,scale_y:1,z_index:0,locked:false}],paths:[],point_attachments:[],through_attachments:[],path_attachments:[],mirror_links:[]}});
   expect((await rpc('get_design_aggregate',{design_id:designId})).nodes.length).toBe(1);
+  await expect(rpc('record_part_source_snapshot',{part_id:partId,snapshot:{source_url:'https://www.kiwaseisakujo.jp/products/1',fetched_at:new Date().toISOString(),parser_version:'fixture',status:'success'}})).rejects.toThrow('CATALOG_SOURCES_REQUIRED');
+  const readKey=randomUUID();await db.rpc('get_design_aggregate',{design_id:designId},readKey);
+  const cord={version:1,sourceDraftId:'kiwa:1:2',usedLengthMm:10};
+  await db.db.query('update public.designs set editor_config=$1::jsonb where id=$2',[JSON.stringify({cordSpecification:cord}),designId]);
+  await expect(rpc('get_design_aggregate',{design_id:designId})).rejects.toThrow('CATALOG_SOURCES_REQUIRED');
+  await expect(db.rpc('get_design_aggregate',{design_id:designId},readKey)).rejects.toThrow('CATALOG_SOURCES_REQUIRED');
+  await expect(rpc('save_design_aggregate',{design_id:designId,expected_revision:1,payload:{design:{id:designId,name:'portable design',type:'necklace',canvas_config:{},editor_config:{cordSpecification:cord}},nodes:[],paths:[],point_attachments:[],through_attachments:[],path_attachments:[],mirror_links:[]}})).rejects.toThrow('CATALOG_SOURCES_REQUIRED');
+  await db.db.query('update public.designs set editor_config=$1::jsonb where id=$2',['{}',designId]);
   const backup=await db.exportBackupSet(),source=join(workspace,'exports',backup.id+'.accbackup.ndjson'),restored=join(root,'restored');
   await restoreWorkspaceBackup(source,restored);const reopened=await LocalWorkspace.open(restored);
   try{expect((await reopened.readParts([partId])).length).toBe(1);}finally{await reopened.close();}

@@ -102,15 +102,16 @@ export class LocalWorkspace {
  async rpc(name:string,args:Record<string,unknown>,key:string){
   if(!Object.hasOwn(functions,name)||!uuid(key)||!args||Array.isArray(args)||Object.keys(args).some(k=>!Object.hasOwn(functions[name],k)))throw new Error('INVALID_OPERATION');
   const digest=hash(JSON.stringify({name,args}));
+  if(name==='record_part_source_snapshot'&&!await salePolicy())throw Error('CATALOG_SOURCES_REQUIRED');
   return this.db.transaction(async tx=>{
    const cached=(await tx.query<{digest:string;result:unknown}>('select digest,result from public.local_operations where key=$1',[key])).rows[0];
    await tx.query("select set_config('request.jwt.claim.sub',$1,true)",[this.owner]);await tx.exec('set local role authenticated');
-   if(cached){if(cached.digest!==digest)throw new Error('IDEMPOTENCY_CONFLICT');if(name==='get_design_aggregate')return(await tx.query<any>('select public.get_design_aggregate($1) as data',[args.design_id])).rows[0]?.data??null;if(name==='delete_design'){const row=(await tx.query('select id from public.designs where id=$1 and user_id=auth.uid()',[args.design_id])).rows[0];if(row)throw Error('DELETE_REPLAY_REJECTED');}if(name==='save_part_successor'){const id=(cached.result as any)?.part_id;const row=(await tx.query<any>('select * from public.parts where id=$1',[id])).rows[0];if(!row||row.is_archived)throw Error('PART_NO_LONGER_REGISTERED');await assertSaleSave(tx,{part_id:id,payload:{part:{}}});}if(name==='get_part_aggregate'){const row=(await tx.query<any>('select public.get_part_aggregate($1) as data',[args.part_id])).rows[0]?.data;return row?projectLocalAggregate(row,await salePolicy()):null;}return cached.result;}
+   if(cached){if(cached.digest!==digest)throw new Error('IDEMPOTENCY_CONFLICT');if(name==='get_design_aggregate')return projectLocalDesign((await tx.query<any>('select public.get_design_aggregate($1) as data',[args.design_id])).rows[0]?.data??null);if(name==='delete_design'){const row=(await tx.query('select id from public.designs where id=$1 and user_id=auth.uid()',[args.design_id])).rows[0];if(row)throw Error('DELETE_REPLAY_REJECTED');}if(name==='save_part_successor'){const id=(cached.result as any)?.part_id;const row=(await tx.query<any>('select * from public.parts where id=$1',[id])).rows[0];if(!row||row.is_archived)throw Error('PART_NO_LONGER_REGISTERED');await assertSaleSave(tx,{part_id:id,payload:{part:{}}});}if(name==='get_part_aggregate'){const row=(await tx.query<any>('select public.get_part_aggregate($1) as data',[args.part_id])).rows[0]?.data;return row?projectLocalAggregate(row,await salePolicy()):null;}return cached.result;}
    if(name==='save_design_aggregate')await assertCordSave(tx,args);
    if(name==='save_part_successor'){await assertSaleSave(tx,args);await this.verifyAssets(tx,args.payload);}
    const entries=Object.entries(args);const sql=`select to_jsonb(public.${name}(${entries.map(([k],i)=>`${k}=>$${i+1}::${functions[name][k]}`).join(',')})) as data`;
    const result=name==='delete_design'?await deleteOwnedDesign(tx,this.owner,args.design_id,args.expected_revision):(await tx.query<{data:unknown}>(sql,entries.map(([k,v])=>functions[name][k]==='jsonb'?JSON.stringify(v):v))).rows[0]?.data??null;
-   await tx.exec('reset role');await tx.query('insert into public.local_operations values($1,$2,$3::jsonb)',[key,digest,JSON.stringify(result)]);if(name==='get_part_aggregate'&&result)return projectLocalAggregate(result,await salePolicy());return result;
+   await tx.exec('reset role');await tx.query('insert into public.local_operations values($1,$2,$3::jsonb)',[key,digest,JSON.stringify(result)]);if(name==='get_part_aggregate'&&result)return projectLocalAggregate(result,await salePolicy());if(name==='get_design_aggregate')return projectLocalDesign(result);return result;
   });
  }
  private async verifyAssets(tx:Transaction,payload:unknown){
@@ -222,3 +223,5 @@ function projectLocalAggregate(data:any,policy:Awaited<ReturnType<typeof salePol
  if(!policy&&data.source_snapshots?.length)throw Error('CATALOG_SOURCES_REQUIRED');
  return {...data,selection_reference:projectSaleReference(data.part,policy),hole_reference:projectHoleReference(data.part,policy?.holeReferences??new Map())};
 }
+
+async function projectLocalDesign(data:any){if(data?.design?.editor_config?.cordSpecification!=null&&!await salePolicy())throw Error('CATALOG_SOURCES_REQUIRED');return data;}
