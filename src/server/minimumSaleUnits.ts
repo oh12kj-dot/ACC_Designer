@@ -15,7 +15,7 @@ export function salePolicy(){return cached??=load().catch(error=>{cached=undefin
 // A partial copy or any integrity/read error must retain the strict failure.
 export async function availableSalePolicy(){
  const present=await Promise.all(['.local/parts/parts.json','.local/catalog/catalog.json'].map(async path=>{
-  try{await stat(join(process.cwd(),path));return true;}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return false;throw error;}
+  try{await stat(join(/* turbopackIgnore: true */ process.cwd(),path));return true;}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return false;throw error;}
  }));
  if(present.every(value=>!value))return null;
  return salePolicy();
