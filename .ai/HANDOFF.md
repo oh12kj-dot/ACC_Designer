@@ -4,7 +4,7 @@
 
 ## 登録以外の整備（2026-10-29 JST）
 
-GitHub `oh12kj-dot/ACC_Designer` への公開準備。初回セットアップBAT/npm ci/build、通常起動BAT、別端末README/非公開バックアップ移行手順を追加。新規cloneで原資料2ファイルが両ENOENTの時だけ手動専用。片欠落/改変/読込エラーはstrict failure、旧hash/hold/販売/identity維持。原資料由来の手動偽装・snapshot RPC・紐指定Design維持保存/通常・再実行読込・backup2形式を拒否する回帰を追加。独立レビューP1の2経路を修正し回帰成功。全525tests成功（maxWorkers2、通常設定では大原資料I/Oの5秒timeout2件を観測、判定変更なし）。Next16.4.3/undici7.30.1/vite8.3.5へ既存範囲内更新、npm audit 0。クリーン取得先でnpm ci/typecheck/build確認。原資料/DB/画像/Design/.env/作業証拠/backupはGit対象外。登録PAUSED・実データ変更0。
+GitHub `oh12kj-dot/ACC_Designer` の **mainへ公開済み**。初回セットアップBAT/npm ci/build、通常起動BAT、別端末README/非公開バックアップ移行手順を追加。新規cloneで原資料2ファイルが両ENOENTの時だけ手動専用。片欠落/改変/読込エラーはstrict failure、旧hash/hold/販売/identity維持。原資料由来の手動偽装・snapshot RPC・紐指定Design維持保存/通常・再実行読込・backup2形式を拒否する回帰を追加。独立レビューP1の2経路を修正し回帰成功。全525tests成功（maxWorkers2、通常設定では大原資料I/Oの5秒timeout2件を観測、判定変更なし）。Next16.4.3/undici7.30.1/vite8.3.5へ既存範囲内更新、npm audit 0。クリーン取得先でnpm ci/typecheck/build警告0・portable test・launcher4tests、実Chrome窓close中の保存drain/終了/再open読戻し成功。原資料/DB/画像/Design/.env/作業証拠/backupはGit対象外。登録PAUSED・実データ変更0。
 
 `ACC_Designer.bat` を追加。Chrome専用窓close→処理中HTTP保存drain→PGlite close/lock解放→Next close/IPC ACK→server exit。独立Windows named pipe排他・loopback固定・既存dev/start不変。通常install/build/登録0。Chrome隔離UUIDで保存途中に実窓close→保存成功/再open Design読戻し成功、負例含むlauncher4tests成功。[実機proof](evidence/desktop-launcher-chrome.json)・[使い方](../起動方法.md)。Edge初回案内が終了操作を妨げたためChromeのみ。既存3000devは起動元で終了後BAT利用、他processを強制終了しない。電源断/強制終了は未受入。登録PAUSEDと実Part12,219/Asset15,217/Design3・全旧保全を読取検証、変更0。
 
