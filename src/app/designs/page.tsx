@@ -1,6 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import DesignThumbnail from '../../components/editor/DesignThumbnail';
+import{DesignDuplicator,PendingDuplicationError}from '../../services/designDuplication';
+import type{DesignAggregate}from '../../types/aggregate';
 import {useRouter} from 'next/navigation';
 import WorkspaceBackup from '../../components/parts/WorkspaceBackup';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -14,6 +17,7 @@ import NecklaceLengthFields from '../../components/editor/NecklaceLengthFields';
 
 export default function DesignsPage() {
   const router=useRouter();
+  const[pendingDuplicate,setPendingDuplicate]=useState<DesignAggregate>();
   const owner=useRef<string|undefined>(undefined);
   const [renaming,setRenaming]=useState<{design:Design;name:string}>();
   const [deleting,setDeleting]=useState<string>();
@@ -63,7 +67,7 @@ export default function DesignsPage() {
     let cleanup=()=>{};
     const applySession=(current:Session|null)=>{
       const id=current?.user.id;
-      if(owner.current!==id){setDesigns([]);setRenaming(undefined);setDeleting(undefined);setPendingCreation(undefined);setName('');setPassword('');setNotice('');setError('');setBusy(false);setQuery('');setFilter('all');setListFailed(false);setListLoading(!!current);}
+      if(owner.current!==id){setDesigns([]);setRenaming(undefined);setDeleting(undefined);setPendingCreation(undefined);setPendingDuplicate(undefined);setName('');setPassword('');setNotice('');setError('');setBusy(false);setQuery('');setFilter('all');setListFailed(false);setListLoading(!!current);}
       owner.current=id;setSession(current);setReady(true);
     };
     try {
@@ -106,7 +110,7 @@ export default function DesignsPage() {
   }
 
   async function create(event:React.FormEvent) {
-    event.preventDefault();if(busy)return;setBusy(true);setError('');
+    event.preventDefault();if(busy||pendingDuplicate)return;setBusy(true);setError('');
     const requestedOwner=owner.current;
     try {
       const repository=new SupabaseDesignRepository(getBrowserSupabase());
@@ -117,6 +121,12 @@ export default function DesignsPage() {
     finally {if(owner.current===requestedOwner)setBusy(false);}
   }
 
+  async function duplicateDesign(sourceId?:string){
+    if(busy||deleting||renaming||pendingCreation)return;const requestedOwner=owner.current;setBusy(true);setError('');setNotice('');
+    try{const duplicator=new DesignDuplicator(new SupabaseDesignRepository(getBrowserSupabase()),()=>owner.current===requestedOwner);const result=pendingDuplicate?await duplicator.resume(pendingDuplicate):await duplicator.start(sourceId!);if(owner.current!==requestedOwner)return;setPendingDuplicate(undefined);router.push(`/designs/${result.design.id}?backend=${isLocalWorkspace()?'local':'supabase'}`);}
+    catch(error){if(owner.current!==requestedOwner)return;if(error instanceof PendingDuplicationError){setPendingDuplicate(error.snapshot);setError('複製先は作成済みです。保存の確認ができなかったため、同じ複製先で再試行してください。');}else setError('複製できませんでした。元のデザインは変更していません。接続と保存内容を確認してください。');}
+    finally{if(owner.current===requestedOwner)setBusy(false);}
+  }
   async function removeDesign(design:Design){
     if(busy||deleting||!isLocalWorkspace())return;
     if(!window.confirm(`「${design.name}」を削除しますか？\nデザインと配置内容が削除されます。この操作は元に戻せません。`))return;
@@ -166,14 +176,14 @@ export default function DesignsPage() {
           <div className="mt-4 grid gap-4 sm:grid-cols-2"><label>名前<input className={field} autoFocus={fromHome} disabled={busy||!!pendingCreation} placeholder="例：春のパールネックレス" required maxLength={200} value={name} onChange={e=>setName(e.target.value)} /></label><label>種類<select className={field} disabled={busy||!!pendingCreation} value={type} onChange={e=>setType(e.target.value as Design['type'])}><option value="necklace">ネックレス</option><option value="earrings">ピアス</option></select></label></div>
           {type==='necklace'&&<NecklaceLengthFields cm={lengthCm} basis={lengthBasis} onLength={setLengthCm} onBasis={setLengthBasis} disabled={busy||!!pendingCreation}/>}
           {lengthError&&<p role="alert" className="mt-3 text-red-800">{lengthError}</p>}
-          <div className="creation-actions"><button disabled={busy||!name.trim()||!!lengthError} className="studio-primary">{busy?'準備しています…':pendingCreation?'同じデザインで再試行':'作成して編集をはじめる'}</button>
+          <div className="creation-actions"><button disabled={busy||!!pendingDuplicate||!name.trim()||!!lengthError} className="studio-primary">{busy?'準備しています…':pendingCreation?'同じデザインで再試行':'作成して編集をはじめる'}</button>
           {pendingCreation&&<><Link className="design-secondary" href={`/designs/${pendingCreation.id}?backend=${isLocalWorkspace()?'local':'supabase'}`}>作成済みのデザインを開く</Link><button type="button" disabled={busy} onClick={()=>{setPendingCreation(undefined);setCreating(false);void load().catch(()=>setError('一覧を読み込めませんでした。'));}}>一覧で確認する</button></>}</div>
         </form>)}
-        <section className="mt-8" aria-label="保存済みデザイン"><div className="design-list-heading"><h2 className="text-xl">保存済みデザイン</h2><span>{visibleDesigns.length} / {designs.length} 件</span></div>
+        {pendingDuplicate&&<section className="duplication-pending" aria-label="複製の保存確認"><p>「{pendingDuplicate.design.name}」の保存を確認してください。再試行で別のコピーは作成しません。</p><button className="studio-primary" disabled={busy} onClick={()=>void duplicateDesign()}>同じ複製先で再試行</button><Link className="design-secondary" href={`/designs/${pendingDuplicate.design.id}?backend=${isLocalWorkspace()?'local':'supabase'}`}>複製先を開いて確認</Link><button className="design-secondary" disabled={busy} onClick={()=>{setPendingDuplicate(undefined);void load().catch(()=>setError('一覧を読み込めませんでした。'));}}>一覧で確認する</button></section>}<section className="mt-8" aria-label="保存済みデザイン"><div className="design-list-heading"><h2 className="text-xl">保存済みデザイン</h2><span>{visibleDesigns.length} / {designs.length} 件</span></div>
         <div className="design-discovery"><label>デザインを検索<input type="search" placeholder="名前で探す" value={query} onChange={e=>setQuery(e.target.value)}/></label><label>種類で絞り込み<select value={filter} onChange={e=>setFilter(e.target.value as DesignFilter)}><option value="all">すべて</option><option value="necklace">ネックレス</option><option value="earrings">ピアス</option></select></label><label>並び順<select value={sort} onChange={e=>setSort(e.target.value as DesignSort)}><option value="updated">更新が新しい順</option><option value="name">名前順</option></select></label></div>
         {listLoading&&<p className="mt-4" role="status">{designs.length?'一覧を更新しています…':'デザインを読み込んでいます…'}</p>}
         {listFailed&&<button className="design-secondary mt-3" disabled={listLoading} onClick={()=>{setError('');void load().catch(()=>setError('デザイン一覧を読み込めませんでした。'));}}>一覧を再読み込み</button>}
-        {designs.length===0?(listLoading||listFailed?null:<div className="design-empty"><h3>最初のデザインを作りましょう</h3><p>種類と長さを選ぶところからはじめられます。</p><button className="studio-primary" onClick={()=>setCreating(true)}>最初のデザインを作る</button></div>):visibleDesigns.length===0?<div className="design-empty"><h3>条件に合うデザインがありません</h3><button className="design-secondary" onClick={()=>{setQuery('');setFilter('all');}}>検索条件をクリア</button></div>:<ul className="mt-4 grid gap-4 sm:grid-cols-2">{visibleDesigns.map(design=><li key={design.id} className="rounded-xl border border-stone-200 bg-white p-6">{renaming?.design.id===design.id?<form onSubmit={renameDesign} className="design-rename-form"><label className="block text-sm font-medium">デザイン名<input aria-label="新しいデザイン名" autoFocus required maxLength={200} className={field} value={renaming.name} onChange={e=>setRenaming({...renaming,name:e.target.value})} disabled={busy}/></label><div className="mt-3 flex gap-2"><button className="studio-primary" disabled={busy||!renaming.name.trim()}>名前を保存</button><button type="button" className="design-secondary" disabled={busy} onClick={()=>setRenaming(undefined)}>キャンセル</button></div></form>:<h3 className="text-lg break-words">{design.name}</h3>}<p className="mt-2 text-sm text-stone-600">{design.type==='necklace'?'ネックレス':'ピアス'} · 更新 {Number.isFinite(Date.parse(design.updatedAt))?new Date(design.updatedAt).toLocaleDateString('ja-JP'):'日時未確認'}</p>{necklaceSetup(design)&&<p className="design-length-badge">{lengthCaption(necklaceSetup(design)!)}</p>}<div className="mt-4 flex flex-wrap gap-3"><Link href={`/designs/${design.id}?backend=${isLocalWorkspace()?'local':'supabase'}`} className="studio-primary">編集する</Link><button type="button" className="design-secondary" aria-label={`「${design.name}」の名前を変更`} disabled={busy||!!deleting||!!renaming} onClick={()=>setRenaming({design,name:design.name})}>名前を変更</button>{isLocalWorkspace()&&<button type="button" className="design-delete" aria-label={`「${design.name}」を削除`} disabled={busy||!!deleting||!!renaming} onClick={()=>void removeDesign(design)}>{deleting===design.id?'削除中…':'削除'}</button>}</div></li>)}</ul>}</section>
+        {designs.length===0?(listLoading||listFailed?null:<div className="design-empty"><h3>最初のデザインを作りましょう</h3><p>種類と長さを選ぶところからはじめられます。</p><button className="studio-primary" onClick={()=>setCreating(true)}>最初のデザインを作る</button></div>):visibleDesigns.length===0?<div className="design-empty"><h3>条件に合うデザインがありません</h3><button className="design-secondary" onClick={()=>{setQuery('');setFilter('all');}}>検索条件をクリア</button></div>:<ul className="mt-4 grid gap-4 sm:grid-cols-2">{visibleDesigns.map(design=><li key={design.id} className="design-project-card rounded-xl border border-stone-200 bg-white p-6"><DesignThumbnail key={session.user.id+design.id} ownerId={session.user.id} design={design}/>{renaming?.design.id===design.id?<form onSubmit={renameDesign} className="design-rename-form"><label className="block text-sm font-medium">デザイン名<input aria-label="新しいデザイン名" autoFocus required maxLength={200} className={field} value={renaming.name} onChange={e=>setRenaming({...renaming,name:e.target.value})} disabled={busy}/></label><div className="mt-3 flex gap-2"><button className="studio-primary" disabled={busy||!renaming.name.trim()}>名前を保存</button><button type="button" className="design-secondary" disabled={busy} onClick={()=>setRenaming(undefined)}>キャンセル</button></div></form>:<h3 className="text-lg break-words">{design.name}</h3>}<p className="mt-2 text-sm text-stone-600">{design.type==='necklace'?'ネックレス':'ピアス'} · 更新 {Number.isFinite(Date.parse(design.updatedAt))?new Date(design.updatedAt).toLocaleDateString('ja-JP'):'日時未確認'}</p>{necklaceSetup(design)&&<p className="design-length-badge">{lengthCaption(necklaceSetup(design)!)}</p>}<div className="mt-4 flex flex-wrap gap-3"><Link href={`/designs/${design.id}?backend=${isLocalWorkspace()?'local':'supabase'}`} className="studio-primary">編集する</Link><button type="button" className="design-secondary" aria-label={`「${design.name}」を複製`} disabled={busy||!!deleting||!!renaming||!!pendingCreation||!!pendingDuplicate} onClick={()=>void duplicateDesign(design.id)}>複製して編集</button><button type="button" className="design-secondary" aria-label={`「${design.name}」の名前を変更`} disabled={busy||!!deleting||!!renaming} onClick={()=>setRenaming({design,name:design.name})}>名前を変更</button>{isLocalWorkspace()&&<button type="button" className="design-delete" aria-label={`「${design.name}」を削除`} disabled={busy||!!deleting||!!renaming} onClick={()=>void removeDesign(design)}>{deleting===design.id?'削除中…':'削除'}</button>}</div></li>)}</ul>}</section>
       </>}
     <details className="mt-10 rounded-xl border p-4"><summary className="min-h-11 cursor-pointer">バックアップ・復元</summary><WorkspaceBackup/></details>
   </main>;

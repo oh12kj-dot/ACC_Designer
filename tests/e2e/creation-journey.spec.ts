@@ -7,13 +7,13 @@ test('choose a length, edit immediately, save safely and find saved designs',asy
  await page.getByLabel('名前',{exact:true}).fill(name);
  if(initial==='42.5'){await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill(initial);}else await page.getByLabel('長さを選ぶ').selectOption(initial);
  await page.getByRole('button',{name:'作成して編集をはじめる',exact:true}).click();await expect(page).toHaveURL(/\/designs\/[0-9a-f-]+\?backend=local$/);
- await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();await expect(page.getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');
+ await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();await expect(page.getByRole('navigation',{name:'デザインの作り方'}).getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');
  const id=page.url().split('/designs/')[1].split('?')[0];
- await page.reload();await expect(page.getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();
- await page.getByRole('button',{name:'長さを変更',exact:true}).click();await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill('47.5');await page.getByRole('button',{name:'長さを適用',exact:true}).click();
+ await page.reload();await expect(page.getByRole('navigation',{name:'デザインの作り方'}).getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'1 長さ',exact:true}).click();await page.getByRole('button',{name:'長さを変更',exact:true}).click();await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill('47.5');await page.getByRole('button',{name:'長さを適用',exact:true}).click();
  await expect(page.getByLabel('保存状態')).toHaveText('未保存の変更があります');
  page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('link',{name:'← デザイン一覧',exact:true}).click();await expect(page).toHaveURL(new RegExp('/designs/'+id));
- await page.getByRole('button',{name:'保存',exact:true}).click();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');await page.reload();await expect(page.getByText('仕上がりの目標 47.5 cm',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'保存',exact:true}).click();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');await page.reload();await expect(page.getByRole('navigation',{name:'デザインの作り方'}).getByText('仕上がりの目標 47.5 cm',{exact:true})).toBeVisible();
  await expect(page.getByLabel('紐の長さ（ガイド沿い・mm）')).toHaveValue('475');
  const backup=await page.evaluate(async()=>{const boot=await fetch('/api/local/workspace').then(r=>r.json());return fetch('/api/local/workspace',{method:'POST',headers:{'Content-Type':'application/json','x-catalog-token':boot.token},body:JSON.stringify({action:'export'})}).then(r=>r.json());});
  expect(backup.error).toBeNull();expect(backup.data.payload.tables.designs.find((d:any)=>d.id===id).editor_config.necklaceSetupV1.targetLengthMm).toBe(475);

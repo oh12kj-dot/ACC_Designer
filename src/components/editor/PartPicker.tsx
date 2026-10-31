@@ -25,10 +25,11 @@ function Thumbnail({url,onFailure}:{url?:string;onFailure:()=>void}){
  </span>;
 }
 
-export default function PartPicker({parts,busy,onAdd,children,mounting=defaultMounting(),clearance=.05,mountingControls,onPatternAdd}:{parts:Part[];busy:boolean;onAdd:(part:Part)=>void;children?:ReactNode;mounting?:MountingSettings;clearance?:number;mountingControls?:ReactNode;onPatternAdd?:(p:Part,center?:boolean)=>void}){
+export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mounting=defaultMounting(),clearance=.05,mountingControls,onPatternAdd}:{categoryRequest?:{category:string;key:number};parts:Part[];busy:boolean;onAdd:(part:Part)=>void;children?:ReactNode;mounting?:MountingSettings;clearance?:number;mountingControls?:ReactNode;onPatternAdd?:(p:Part,center?:boolean)=>void}){
  const [facets,setFacets]=useState<Record<FacetAxis,string[]>>({material:[],shape:[],use:[]}),[patternPicking,setPatternPicking]=useState(false),[patternTarget,setPatternTarget]=useState('sequence'),[glossaryOpen,setGlossaryOpen]=useState(false);
  const [query,setQuery]=useState(''),[category,setCategory]=useState('all'),[colorFamily,setColorFamily]=useState<ColorFamily|'all'>('all'),[color,setColor]=useState('all'),[colorQuery,setColorQuery]=useState(''),[limit,setLimit]=useState(100);
  const [kind,setKind]=useState('all'),[series,setSeries]=useState('all'),[seriesQuery,setSeriesQuery]=useState(''),[seriesOpen,setSeriesOpen]=useState(false),[shadesOpen,setShadesOpen]=useState(false),[shadeLimit,setShadeLimit]=useState(24);
+ useEffect(()=>{if(!categoryRequest)return;setCategory(categoryRequest.category);setQuery('');setKind('all');setSeries('all');setColorFamily('all');setColor('all');setFacets({material:[],shape:[],use:[]});setLimit(100);},[categoryRequest]);
  const [urls,setUrls]=useState<Record<string,string>>({}),[imageError,setImageError]=useState(false),[retry,setRetry]=useState(0);
  const cache=useRef(new Map<string,{url:string;expires:number}>());
  const active=useMemo(()=>parts.filter(p=>!p.isArchived),[parts]);
@@ -77,7 +78,7 @@ export default function PartPicker({parts,busy,onAdd,children,mounting=defaultMo
  return <section aria-label="追加するパーツを探す" className="studio-picker">
   <label className="mt-3 block">パーツ検索<input className="min-h-11 w-full border px-2" placeholder="名前・品番・色など" value={query} onChange={e=>{setQuery(e.target.value);setLimit(100);}}/></label>
 <div className="picker-category-row">  <label className="mt-3 block">カテゴリ<select className="min-h-11 w-full border px-2" value={category} onChange={e=>{setCategory(e.target.value);setKind('all');setSeries('all');setSeriesQuery('');setLimit(100);}}>
-   <option value="all">すべて（{active.length}件）</option>{partCategories.filter(([id])=>counts.has(id)).map(([id,label])=><option key={id} value={id}>{label}（{counts.get(id)}件）</option>)}
+   <option value="all">すべて（{active.length}件）</option>{partCategories.filter(([id])=>counts.has(id)||id===category).map(([id,label])=><option key={id} value={id}>{label}（{counts.get(id)??0}件）</option>)}
   </select></label>
   <label className="mt-3 block">種類で絞る<select className="min-h-11 w-full border px-2" value={kind} onChange={e=>{setKind(e.target.value);setSeries('all');setSeriesQuery('');setLimit(100);}}><option value="all">すべての種類</option>{kinds.map(([id,row])=><option key={id} value={id}>{row.label}（{row.count}件）</option>)}</select></label>
 </div>  <details className="picker-color-details mt-2"><summary className="min-h-11 cursor-pointer">絞り込み：色・商品シリーズ{colorFamily!=='all'||series!=='all'||color!=='all'?'（選択中）':''}</summary>  <details className="picker-series mt-2" onToggle={e=>setSeriesOpen(e.currentTarget.open)}><summary className="min-h-11 cursor-pointer content-center text-xs">商品シリーズで絞る{series!=='all'&&`：${series}`}</summary>

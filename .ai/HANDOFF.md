@@ -2,11 +2,13 @@
 
 ユーザー指示で一時停止中。登録・加工workerなしを確認。明示的な再開指示まで登録/加工を開始しない。
 
-## 作成・編集の使いやすさ（2026-10-31 JST）
+## 作成手順・完成前チェック・複製（2026-10-31 JST）
 
-ネックレス作成前に35/40/45/50/60cmまたは自由入力、仕上がり目標/配置長さを選べる。任意JSONへ保存しbackup復元保持、作成後は編集へ直接移動。同一IDで初期設定再試行・保存応答消失の読戻し・既存編集上書き拒否。編集で目標変更可能、Part移動/実接続生成なし。既存ガイド記憶/紐配置範囲優先。長さは参考値で材料長や物理精度を保証しない。[契約](PRODUCT_CREATION_UX_CONTRACT.md)。
+操作可能な①長さ→②紐・留め具→③配置→④完成確認へ統一。長さカードを独立した最上部から①内へ移動。新規で長さ選択済みは②、配置済みは③、未設定は①。ピアスは配置/確認。紐設定は②へ集約し、留め具/チェーン検索はカテゴリを切替。目標長さは既存JSON/backup保持、ガイド記憶/紐配置範囲優先。Part移動/実接続自動生成なし。
 
-一覧検索/種類/並び替え/読込再試行、未保存戻る確認、保存状態/保存先、空ライブラリーの手動登録入口を追加。owner切替/離脱後の遅延結果を破棄。登録PAUSED、実Part12,219/Asset15,217/全3Design/archive/公式registry不変、domain書込0・main正常起動/DB close/終了確認。[保全proof](evidence/product-creation-main-preservation.json)。全546tests成功、型/production build成功。PC/モバイル幅の隔離E2Eは[最終proof](evidence/product-creation-verification.json)を参照。Sol明示要求はthread上限で実施不可。実cloud/実端末/物理受入と全件登録は未完。
+完成前チェックは現在の編集内容から既存適合/構造検証/BOM/cordBudgetを再利用し、問題と要確認を分離、対象node/pathを選択・中央表示。必要量/購入単位を表示、在庫不足/物理製作可を捏造しない。保存制限の追加なし。一覧は必要Part/画像のみ遅延読取し共通rendererでサムネイル生成。複製は全entity/mirror/配列/表示グループ参照を新IDへ付替え、Part/Asset共有・元不変・expected0/forceなし。既知ID失敗は同じsnapshot/ID再試行、応答消失は全内容照合、owner/離脱後の続行を停止。[契約](GUIDED_COMPLETION_CONTRACT.md)・[最終検証](evidence/guided-completion-verification.json)。一覧検索/保存状態/未保存確認は維持。登録/加工PAUSED・実データ保全を維持。Sol明示要求はthread上限で実施不可。実cloud/実端末/物理受入と全件登録は未完。
+
+全122 files/560 tests、PC/mobile Chromiumの実API隔離E2E12件、型/build成功。起動済み3000は停止せず既存APIから全旧行/archive/全3Design/公式registryと登録PAUSEDを再照合し不変。今回mainの新規起動/終了確認は実施できていない（既存アプリがポート使用中）。新ビルドの画面反映は、ユーザーが保存して専用画面を閉じBAT再起動する。試験で実データの書換え・登録・加工0。
 
 ## デスクトップ起動（2026-10-31 JST）
 

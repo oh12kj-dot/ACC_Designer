@@ -151,6 +151,34 @@
 .creation-actions,.length-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 20px; }
 .creation-actions button,.length-actions button { min-height: 44px; }
 .necklace-length-summary { background: #f5f8f0; border: 1px solid #d8e2d0; border-radius: 12px; padding: 16px; margin-top: 16px; }
+.creation-workflow { margin: 20px 0; }
+.editor-steps.guided-steps { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+.editor-steps.guided-steps li { padding: 0; min-width: 0; }
+.guided-steps button { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 100%; min-height: 56px; padding: 12px; text-align: left; border-radius: 10px; }
+.guided-steps button>span { display: grid; place-items: center; width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; background: #e5e9df; }
+.guided-steps button[aria-current]>span { background: var(--studio-green); color: white; }
+.guided-steps small { flex-basis: 100%; font-size: 11px; }
+.workflow-panel { background: #fffef9; border: 1px solid var(--studio-line); border-radius: 12px; margin-top: 12px; padding: 18px; }
+.workflow-panel h2 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+.workflow-panel>.studio-primary,.workflow-panel>.design-secondary { margin-top: 14px; }
+.workflow-panel .necklace-length-summary { margin-top: 8px; margin-bottom: 12px; }
+.workflow-material-actions,.duplication-pending { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+.duplication-pending { border: 1px solid #c9a768; border-radius: 12px; padding: 16px; background: #fffbeb; }
+.duplication-pending p { flex-basis: 100%; }
+.placement-step-intro { display: flex; gap: 16px; align-items: center; justify-content: space-between; }
+.completion-issues { list-style: none; display: grid; gap: 12px; margin: 16px 0; padding: 0; max-height: 440px; overflow: auto; }
+.check-problem,.check-review { border: 1px solid #e5cf98; border-radius: 10px; padding: 12px; background: #fffaf0; }
+.check-problem { border-color: #dca8a2; background: #fff3f0; }
+.completion-panel button { min-height: 44px; padding: 8px 12px; border: 1px solid #a8b9ac; border-radius: 8px; margin-top: 6px; background: white; }
+.completion-panel h3 { font-weight: 600; margin-top: 20px; }
+.completion-quantity-scroll { overflow-x: auto; }
+.completion-panel table { width: 100%; min-width: 360px; font-size: 14px; text-align: left; }
+.completion-panel th,.completion-panel td { border-bottom: 1px solid var(--studio-line); padding: 10px 6px; }
+.design-thumbnail { aspect-ratio: 16/9; display: grid; place-items: center; background: #f7f8f2; border: 1px solid #e0e7da; border-radius: 10px; overflow: hidden; margin-bottom: 14px; }
+.design-thumbnail canvas { max-width: 100%; width: 100%; height: auto; }
+.design-thumbnail p { text-align: center; color: var(--studio-muted); font-size: 13px; padding: 12px; }
+.design-thumbnail button { display: block; margin: 8px auto 0; min-height: 44px; text-decoration: underline; }
+@media(max-width:600px) { .editor-steps.guided-steps { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }.guided-steps button { padding: 10px; }.workflow-panel { padding: 12px; }.placement-step-intro { flex-direction: column; align-items: stretch; } }
 .length-summary-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 .length-summary-row strong { font-size: 15px; font-weight: 600; }
 .length-summary-row span { display: block; margin-top: 5px; font-size: 12px; color: #596653; }

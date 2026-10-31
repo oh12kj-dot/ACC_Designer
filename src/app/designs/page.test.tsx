@@ -1,10 +1,13 @@
 // @vitest-environment jsdom
 import {it,expect,vi,beforeEach,afterEach} from 'vitest';import {render,screen,fireEvent,waitFor,cleanup,act}from'@testing-library/react';
-const mock=vi.hoisted(()=>({list:vi.fn(),remove:vi.fn(),rename:vi.fn(),create:vi.fn(),resume:vi.fn(),push:vi.fn(),local:true,auth:undefined as undefined|((event:string,session:any)=>void)}));
+const mock=vi.hoisted(()=>({copyStart:vi.fn(),copyResume:vi.fn(),list:vi.fn(),remove:vi.fn(),rename:vi.fn(),create:vi.fn(),resume:vi.fn(),push:vi.fn(),local:true,auth:undefined as undefined|((event:string,session:any)=>void)}));
 vi.mock('next/navigation',()=>({useRouter:()=>({push:mock.push})}));
 vi.mock('../../components/parts/WorkspaceBackup',()=>({default:()=>null}));
 vi.mock('../../services/designRepository',async original=>({...await original<typeof import('../../services/designRepository')>(),SupabaseDesignRepository:class{list=mock.list;remove=mock.remove;rename=mock.rename;create=mock.create;resumeCreation=mock.resume;}}));
 vi.mock('../../lib/supabase/client',()=>({isLocalWorkspace:()=>mock.local,getWorkspaceClient:()=>({auth:{onAuthStateChange:(callback:typeof mock.auth)=>{mock.auth=callback;return{data:{subscription:{unsubscribe(){}}}};},getSession:async()=>({data:{session:{user:{id:'owner'}}}})}})}));
+vi.mock('../../services/designDuplication',async original=>({...await original<typeof import('../../services/designDuplication')>(),DesignDuplicator:class{start=mock.copyStart;resume=mock.copyResume;}}));
+import{PendingDuplicationError}from'../../services/designDuplication';
+import type{DesignAggregate}from'../../types/aggregate';
 import Page from './page';
 import{DesignCreationPendingError}from'../../services/designRepository';
 const design={id:'d',name:'私のネックレス',type:'necklace',revision:3};
@@ -45,3 +48,6 @@ it('does not navigate to an old owner creation after the account changes',async(
 it('does not pull a user back into the editor after leaving during creation',async()=>{
  let finish!:(value:any)=>void;mock.create.mockImplementationOnce(()=>new Promise(resolve=>finish=resolve));const view=render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'Pending'}});fireEvent.click(screen.getByRole('button',{name:'作成して編集をはじめる'}));view.unmount();await act(async()=>finish({design:{id:'created-after-leaving'}}));expect(mock.push).not.toHaveBeenCalled();
 });
+
+it('duplicates the selected saved design and opens the copy without renaming the original',async()=>{mock.copyStart.mockResolvedValue({design:{id:'copy'}});render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'「私のネックレス」を複製'}));await waitFor(()=>expect(mock.push).toHaveBeenCalledWith('/designs/copy?backend=local'));expect(mock.copyStart).toHaveBeenCalledWith('d');expect(mock.rename).not.toHaveBeenCalled();});
+it('keeps a failed copy for an explicit retry against the same snapshot',async()=>{const snapshot={design:{...design,id:'copy',name:'私のネックレス のコピー'},nodes:[],paths:[],pointAttachments:[],throughAttachments:[],pathAttachments:[],mirrorLinks:[]}as unknown as DesignAggregate;mock.copyStart.mockRejectedValueOnce(new PendingDuplicationError(snapshot,Error('network')));mock.copyResume.mockResolvedValue(snapshot);render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'「私のネックレス」を複製'}));fireEvent.click(await screen.findByRole('button',{name:'同じ複製先で再試行'}));await waitFor(()=>expect(mock.copyResume).toHaveBeenCalledWith(snapshot));expect(mock.copyStart).toHaveBeenCalledTimes(1);});
