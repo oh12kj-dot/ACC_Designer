@@ -2,6 +2,12 @@
 
 ユーザー指示で一時停止中。登録・加工workerなしを確認。明示的な再開指示まで登録/加工を開始しない。
 
+## 作成・編集の使いやすさ（2026-10-31 JST）
+
+ネックレス作成前に35/40/45/50/60cmまたは自由入力、仕上がり目標/配置長さを選べる。任意JSONへ保存しbackup復元保持、作成後は編集へ直接移動。同一IDで初期設定再試行・保存応答消失の読戻し・既存編集上書き拒否。編集で目標変更可能、Part移動/実接続生成なし。既存ガイド記憶/紐配置範囲優先。長さは参考値で材料長や物理精度を保証しない。[契約](PRODUCT_CREATION_UX_CONTRACT.md)。
+
+一覧検索/種類/並び替え/読込再試行、未保存戻る確認、保存状態/保存先、空ライブラリーの手動登録入口を追加。owner切替/離脱後の遅延結果を破棄。登録PAUSED、実Part12,219/Asset15,217/全3Design/archive/公式registry不変、domain書込0・main正常起動/DB close/終了確認。[保全proof](evidence/product-creation-main-preservation.json)。全546tests成功、型/production build成功。PC/モバイル幅の隔離E2Eは[最終proof](evidence/product-creation-verification.json)を参照。Sol明示要求はthread上限で実施不可。実cloud/実端末/物理受入と全件登録は未完。
+
 ## デスクトップ起動（2026-10-31 JST）
 
 旧build16.3.8/installed Next16.4.3不一致はmain再buildと起動前の版/必須ファイル確認で修正済み。起動失敗IPCは具体的原因を維持。旧devは正常DB close/lock解放→自身のcleanupで終了済み。

@@ -26,6 +26,18 @@ it('restores guide length per design without carrying it into another design or 
  view.rerender(<DesignEditor designId="two"/>);await waitFor(()=>expect((screen.getByLabelText('ガイドの幅（mm）')as HTMLInputElement).value).toBe('180'));
  view.rerender(<DesignEditor designId="one"/>);await waitFor(()=>expect((screen.getByLabelText('紐の長さ（ガイド沿い・mm）')as HTMLInputElement).value).toBe('400'));expect(mocks.save).not.toHaveBeenCalled();expect(mocks.rpc).not.toHaveBeenCalled();
 });
+it('seeds a chosen length, prefers an existing local guide, and saves target changes without moving parts',async()=>{
+ const a=await mocks.get('new');a.design.editorConfig={necklaceSetupV1:{version:1,lengthBasis:'finished-target',targetLengthMm:500}};mocks.get.mockResolvedValue(a);
+ localStorage.setItem('acc-designer:guide:v1:user:new',JSON.stringify({version:1,guide:{enabled:true,snap:true,rotate:true,offset:0,shape:'u',width:180,drop:120,center:{x:150,y:350/3}}}));
+ render(<DesignEditor designId="new"/>);await screen.findByRole('button',{name:'Glass bead'});expect(screen.getByText('仕上がりの目標 50 cm')).toBeTruthy();expect((screen.getByLabelText('ガイドの幅（mm）')as HTMLInputElement).value).toBe('180');expect(mocks.save).not.toHaveBeenCalled();
+ fireEvent.click(screen.getByRole('button',{name:'長さを変更'}));fireEvent.change(screen.getByLabelText('長さを選ぶ'),{target:{value:'60'}});fireEvent.click(screen.getByRole('button',{name:'長さを適用'}));expect(screen.getByLabelText('保存状態').textContent).toContain('未保存');fireEvent.click(getControl('button',{name:'保存'}));await waitFor(()=>expect(mocks.save).toHaveBeenCalledTimes(1));expect(mocks.save.mock.calls[0][0].design.editorConfig.necklaceSetupV1.targetLengthMm).toBe(600);expect(mocks.save.mock.calls[0][0].nodes).toEqual(a.nodes);expect(mocks.save.mock.calls[0][0].paths).toEqual(a.paths);
+});
+it('starts a fresh guide at the chosen length without creating a save operation',async()=>{
+ const a=await mocks.get('seed');a.design.editorConfig={necklaceSetupV1:{version:1,lengthBasis:'layout',targetLengthMm:425}};mocks.get.mockResolvedValue(a);render(<DesignEditor designId="seed"/>);await screen.findByRole('button',{name:'Glass bead'});expect((screen.getByLabelText('紐の長さ（ガイド沿い・mm）')as HTMLInputElement).value).toBe('425');expect(screen.getByText('配置する長さ 42.5 cm')).toBeTruthy();expect(mocks.save).not.toHaveBeenCalled();
+});
+it('shows an actionable empty library only after loading has finished',async()=>{
+ mocks.partMany.mockResolvedValue([]);render(<DesignEditor designId="empty-library"/>);expect(screen.queryByText('パーツを用意しましょう')).toBeNull();await screen.findByRole('link',{name:'パーツを登録する →'});expect(screen.getByText('パーツを用意しましょう')).toBeTruthy();expect(mocks.save).not.toHaveBeenCalled();
+});
 it('places a batch in one undo step and deletes the selected copies together',async()=>{
  render(<DesignEditor designId="d"/>);fireEvent.click(await screen.findByRole('button',{name:'Glass bead'}));fireEvent.change(screen.getByLabelText('配置する個数'),{target:{value:'5'}});fireEvent.change(screen.getByLabelText('間隔の決め方'),{target:{value:'manual'}});fireEvent.change(screen.getByLabelText('中心間隔（mm）'),{target:{value:'12'}});expect(mocks.rpc).not.toHaveBeenCalled();fireEvent.click(getControl('button',{name:'この位置に配置'}));
  fireEvent.click(getControl('button',{name:'保存'}));await waitFor(()=>expect(mocks.save).toHaveBeenCalledTimes(1));const a=mocks.save.mock.calls[0][0];expect(a.nodes).toHaveLength(5);expect(a.nodes[1].xMm-a.nodes[0].xMm).toBe(12);expect(mocks.rpc).toHaveBeenCalledTimes(1);

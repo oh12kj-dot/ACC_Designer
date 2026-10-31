@@ -1,10 +1,12 @@
 // @vitest-environment jsdom
-import {it,expect,vi,beforeEach,afterEach} from 'vitest';import {render,screen,fireEvent,waitFor,cleanup}from'@testing-library/react';
-const mock=vi.hoisted(()=>({list:vi.fn(),remove:vi.fn(),rename:vi.fn(),local:true}));
+import {it,expect,vi,beforeEach,afterEach} from 'vitest';import {render,screen,fireEvent,waitFor,cleanup,act}from'@testing-library/react';
+const mock=vi.hoisted(()=>({list:vi.fn(),remove:vi.fn(),rename:vi.fn(),create:vi.fn(),resume:vi.fn(),push:vi.fn(),local:true,auth:undefined as undefined|((event:string,session:any)=>void)}));
+vi.mock('next/navigation',()=>({useRouter:()=>({push:mock.push})}));
 vi.mock('../../components/parts/WorkspaceBackup',()=>({default:()=>null}));
-vi.mock('../../services/designRepository',()=>({SupabaseDesignRepository:class{list=mock.list;remove=mock.remove;rename=mock.rename;}}));
-vi.mock('../../lib/supabase/client',()=>({isLocalWorkspace:()=>mock.local,getWorkspaceClient:()=>({auth:{onAuthStateChange:()=>({data:{subscription:{unsubscribe(){}}}}),getSession:async()=>({data:{session:{user:{id:'owner'}}}})}})}));
+vi.mock('../../services/designRepository',async original=>({...await original<typeof import('../../services/designRepository')>(),SupabaseDesignRepository:class{list=mock.list;remove=mock.remove;rename=mock.rename;create=mock.create;resumeCreation=mock.resume;}}));
+vi.mock('../../lib/supabase/client',()=>({isLocalWorkspace:()=>mock.local,getWorkspaceClient:()=>({auth:{onAuthStateChange:(callback:typeof mock.auth)=>{mock.auth=callback;return{data:{subscription:{unsubscribe(){}}}};},getSession:async()=>({data:{session:{user:{id:'owner'}}}})}})}));
 import Page from './page';
+import{DesignCreationPendingError}from'../../services/designRepository';
 const design={id:'d',name:'私のネックレス',type:'necklace',revision:3};
 beforeEach(()=>{mock.local=true;vi.clearAllMocks();mock.list.mockResolvedValue([design]);mock.remove.mockResolvedValue(undefined);mock.rename.mockResolvedValue({...design,name:'新しい名前',revision:4});});afterEach(()=>{cleanup();vi.restoreAllMocks();});
 it('asks confirmation containing the name, cancel does nothing, confirmed success removes only the card',async()=>{const confirm=vi.spyOn(window,'confirm').mockReturnValue(false);render(<Page/>);const button=await screen.findByRole('button',{name:'「私のネックレス」を削除'});fireEvent.click(button);expect(confirm).toHaveBeenCalledWith(expect.stringContaining('私のネックレス'));expect(mock.remove).not.toHaveBeenCalled();expect(screen.getByRole('heading',{name:design.name})).toBeTruthy();confirm.mockReturnValue(true);fireEvent.click(button);await waitFor(()=>expect(mock.remove).toHaveBeenCalledWith('d',3));await waitFor(()=>expect(screen.queryByRole('heading',{name:design.name})).toBeNull());expect(screen.getByRole('status').textContent).toContain('削除しました');});
@@ -12,3 +14,34 @@ it('keeps the card after deletion fails and never retries a destructive call',as
 it('allows name editing and cancellation, preserving the displayed revision until save',async()=>{render(<Page/>);fireEvent.click(await screen.findByRole('button',{name:'「私のネックレス」の名前を変更'}));fireEvent.change(screen.getByLabelText('新しいデザイン名'),{target:{value:'別の案'}});fireEvent.click(screen.getByRole('button',{name:'キャンセル'}));expect(mock.rename).not.toHaveBeenCalled();fireEvent.click(screen.getByRole('button',{name:'「私のネックレス」の名前を変更'}));fireEvent.change(screen.getByLabelText('新しいデザイン名'),{target:{value:'新しい名前'}});fireEvent.click(screen.getByRole('button',{name:'名前を保存'}));await screen.findByRole('heading',{name:'新しい名前'});expect(mock.rename).toHaveBeenCalledWith('d','新しい名前',3);});
 it('refreshes after a stale revision instead of forcing deletion, and hides local deletion in cloud mode',async()=>{vi.spyOn(window,'confirm').mockReturnValue(true);mock.remove.mockRejectedValue(Error('REVISION_CONFLICT'));render(<Page/>);fireEvent.click(await screen.findByRole('button',{name:'「私のネックレス」を削除'}));expect((await screen.findByRole('alert')).textContent).toContain('一覧を更新');expect(mock.remove).toHaveBeenCalledTimes(1);cleanup();mock.local=false;render(<Page/>);await screen.findByRole('heading',{name:design.name});expect(screen.queryByRole('button',{name:'「私のネックレス」を削除'})).toBeNull();});
 it('puts saved work before optional management and creation controls',async()=>{render(<Page/>);await screen.findByRole('heading',{name:design.name});expect(screen.queryByLabelText('名前',{exact:true})).toBeNull();const backup=screen.getByText('バックアップ・復元').closest('details');expect(backup?.open).toBe(false);fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));expect(screen.getByLabelText('名前',{exact:true})).toBeTruthy();fireEvent.click(screen.getByRole('button',{name:'作成を閉じる'}));expect(screen.queryByLabelText('名前',{exact:true})).toBeNull();});
+it('selects a necklace length before creating and enters the resulting editor directly',async()=>{
+ mock.create.mockResolvedValue({design:{id:'created'}});render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));
+ fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'New necklace'}});fireEvent.change(screen.getByLabelText('長さを選ぶ'),{target:{value:'50'}});fireEvent.click(screen.getByRole('button',{name:'作成して編集をはじめる'}));
+ await waitFor(()=>expect(mock.push).toHaveBeenCalledWith('/designs/created?backend=local'));expect(mock.create).toHaveBeenCalledWith({name:'New necklace',type:'necklace',setup:{version:1,lengthBasis:'finished-target',targetLengthMm:500}});
+});
+it('keeps custom input usable and does not submit an invalid length',async()=>{
+ render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'Custom'}});fireEvent.change(screen.getByLabelText('長さを選ぶ'),{target:{value:'custom'}});fireEvent.change(screen.getByLabelText('長さ（cm）'),{target:{value:'0'}});
+ expect((screen.getByRole('button',{name:'作成して編集をはじめる'})as HTMLButtonElement).disabled).toBe(true);fireEvent.change(screen.getByLabelText('長さ（cm）'),{target:{value:'45'}});expect(screen.getByLabelText('長さ（cm）')).toBeTruthy();
+ fireEvent.change(screen.getByLabelText('種類',{exact:true}),{target:{value:'earrings'}});expect(screen.queryByLabelText('長さを選ぶ')).toBeNull();
+});
+it('retries setup against the same created design with the original inputs locked',async()=>{
+ const pending={id:'created',name:'Retry',type:'necklace' as const,setup:{version:1 as const,lengthBasis:'finished-target' as const,targetLengthMm:450}};
+ mock.create.mockRejectedValueOnce(new DesignCreationPendingError(pending,Error('network')));mock.resume.mockResolvedValue({design:{id:'created'}});
+ render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'Retry'}});fireEvent.click(screen.getByRole('button',{name:'作成して編集をはじめる'}));
+ await screen.findByRole('button',{name:'同じデザインで再試行'});expect((screen.getByLabelText('名前',{exact:true})as HTMLInputElement).disabled).toBe(true);fireEvent.click(screen.getByRole('button',{name:'同じデザインで再試行'}));await waitFor(()=>expect(mock.resume).toHaveBeenCalledWith(pending));expect(mock.create).toHaveBeenCalledTimes(1);
+});
+it('filters names/types, clears empty results, and offers a list retry after a read failure',async()=>{
+ mock.list.mockResolvedValueOnce([{...design,name:'Pearl necklace',updatedAt:'2026-10-31'},{...design,id:'e',name:'Gold earrings',type:'earrings',updatedAt:'2026-10-30'}]);render(<Page/>);await screen.findByRole('heading',{name:'Pearl necklace'});fireEvent.change(screen.getByLabelText('デザインを検索'),{target:{value:'pearl'}});expect(screen.queryByRole('heading',{name:'Gold earrings'})).toBeNull();fireEvent.change(screen.getByLabelText('種類で絞り込み'),{target:{value:'earrings'}});expect(screen.getByText('条件に合うデザインがありません')).toBeTruthy();fireEvent.click(screen.getByRole('button',{name:'検索条件をクリア'}));expect(screen.getByRole('heading',{name:'Gold earrings'})).toBeTruthy();
+ cleanup();mock.list.mockRejectedValueOnce(Error('network'));render(<Page/>);fireEvent.click(await screen.findByRole('button',{name:'一覧を再読み込み'}));await screen.findByRole('heading',{name:design.name});
+});
+it('clears the prior owner list when switching accounts even if the next read fails',async()=>{
+ render(<Page/>);await screen.findByRole('heading',{name:design.name});mock.list.mockRejectedValueOnce(Error('network'));
+ act(()=>mock.auth?.('SIGNED_IN',{user:{id:'another-owner'}}));await screen.findByRole('button',{name:'一覧を再読み込み'});expect(screen.queryByRole('heading',{name:design.name})).toBeNull();
+});
+it('does not navigate to an old owner creation after the account changes',async()=>{
+ let finish!:(value:any)=>void;mock.create.mockImplementationOnce(()=>new Promise(resolve=>finish=resolve));render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'Pending'}});fireEvent.click(screen.getByRole('button',{name:'作成して編集をはじめる'}));
+ act(()=>mock.auth?.('SIGNED_IN',{user:{id:'another-owner'}}));await act(async()=>finish({design:{id:'old-owner-design'}}));expect(mock.push).not.toHaveBeenCalled();
+});
+it('does not pull a user back into the editor after leaving during creation',async()=>{
+ let finish!:(value:any)=>void;mock.create.mockImplementationOnce(()=>new Promise(resolve=>finish=resolve));const view=render(<Page/>);await screen.findByRole('heading',{name:design.name});fireEvent.click(screen.getByRole('button',{name:'＋ 新しいデザイン'}));fireEvent.change(screen.getByLabelText('名前',{exact:true}),{target:{value:'Pending'}});fireEvent.click(screen.getByRole('button',{name:'作成して編集をはじめる'}));view.unmount();await act(async()=>finish({design:{id:'created-after-leaving'}}));expect(mock.push).not.toHaveBeenCalled();
+});

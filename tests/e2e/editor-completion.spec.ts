@@ -107,7 +107,7 @@ test('ten beads remain ordered after mirror, opposite-side flip, atomic save and
  await mount(page,10,true);await page.getByRole('button',{name:'ビーズ #1',exact:true}).click();await page.getByRole('button',{name:'選択した構造を左右に複製'}).click();await expect(page.getByRole('button',{name:'ビーズ #20',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'ビーズ #11',exact:true}).click();await page.getByRole('button',{name:'180°切替',exact:true}).click();await page.getByRole('button',{name:'保存',exact:true}).click();await expect(page.getByRole('status')).toContainText('保存しました');
  const saved=await page.evaluate(()=>(window as any).EditorHarness.writes[0].payload);expect(saved.nodes).toHaveLength(20);expect(saved.paths).toHaveLength(2);expect(saved.through_attachments).toHaveLength(20);expect(saved.through_attachments.filter((a:any)=>a.flip_180)).toHaveLength(2);
- await page.getByRole('button',{name:'最新版を読み込む',exact:true}).click();await expect(page.getByRole('button',{name:'ビーズ #20',exact:true})).toBeVisible();await expect(page.getByText('保存済み / Revision 1')).toBeVisible();
+ await page.getByRole('button',{name:'最新版を読み込む',exact:true}).click();await expect(page.getByRole('button',{name:'ビーズ #20',exact:true})).toBeVisible();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');
 });
 test('two-finger pinch pans and zooms without changing the design or creating history',async({page,browserName})=>{
  test.skip(browserName!=='chromium','Native multi-touch injection requires Chromium CDP; pointer lifecycle is checked separately on all engines.');

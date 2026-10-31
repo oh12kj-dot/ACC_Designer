@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Design, DesignAggregate } from '../types/aggregate';
 import { fromRow, safeRevision, toRow, type Row } from './databaseMapping';
+import {validNecklaceSetup,type NecklaceSetup} from '../domain/editor/necklaceSetup';
 
 export class RepositoryError extends Error {
   constructor(public readonly code: string, message: string) { super(message); this.name = 'RepositoryError'; }
@@ -17,6 +18,10 @@ interface DbAggregate {
   through_attachments: Row[];
   path_attachments: Row[];
   mirror_links: Row[];
+}
+export interface PendingDesignCreation{id:string;name:string;type:Design['type'];setup?:NecklaceSetup}
+export class DesignCreationPendingError extends RepositoryError{
+ constructor(public readonly pending:PendingDesignCreation,cause:unknown){super('INITIAL_SETUP_PENDING','デザインは作成済みですが、初期設定を確認できませんでした。');this.cause=cause;}
 }
 
 function decodeDesign(row: Row): Design {
@@ -37,11 +42,25 @@ function decodeAggregate(data: DbAggregate): DesignAggregate {
 export class SupabaseDesignRepository {
   constructor(private readonly client: SupabaseClient) {}
 
-  async create(input: { name: string; type: Design['type'] }): Promise<DesignAggregate> {
-    const { data, error } = await this.client.rpc('create_design',{ input_name: input.name, input_type: input.type });
+  async create(input: { name: string; type: Design['type'];setup?:NecklaceSetup }): Promise<DesignAggregate> {
+    const name=input.name.trim();if(!name||name.length>200||!['necklace','earrings'].includes(input.type)||input.setup&&(input.type!=='necklace'||!validNecklaceSetup(input.setup)))throw new RepositoryError('INVALID_INPUT','名前・種類・長さを確認してください。');
+    const { data, error } = await this.client.rpc('create_design',{ input_name:name, input_type: input.type });
     checkError(error);
-    if (!data) throw new RepositoryError('INVALID_RESPONSE','新規Designの応答がありません');
-    return this.get(data.id);
+    if (!data||typeof data.id!=='string'||!data.id) throw new RepositoryError('INVALID_RESPONSE','作成したデザインを確認できませんでした。');
+    return this.resumeCreation({id:data.id,name,type:input.type,setup:input.setup});
+  }
+
+  async resumeCreation(pending:PendingDesignCreation):Promise<DesignAggregate>{
+    try{
+      const aggregate=await this.get(pending.id);if(!pending.setup)return aggregate;
+      const setup=pending.setup;if(pending.type!=='necklace'||!validNecklaceSetup(setup))throw new RepositoryError('INVALID_INPUT','長さを確認してください。');
+      if(aggregate.design.type!==pending.type||aggregate.design.name!==pending.name)throw new RepositoryError('REVISION_CONFLICT','作成済みのデザインが更新されています。');
+      const existing=aggregate.design.editorConfig?.necklaceSetupV1 as NecklaceSetup|undefined;
+      if(validNecklaceSetup(existing)&&existing.targetLengthMm===setup.targetLengthMm&&existing.lengthBasis===setup.lengthBasis)return aggregate;
+      if(aggregate.design.revision!==0||aggregate.nodes.length||aggregate.paths.length||aggregate.pointAttachments.length||aggregate.throughAttachments.length||aggregate.pathAttachments.length||aggregate.mirrorLinks.length)throw new RepositoryError('REVISION_CONFLICT','作成済みのデザインを確認してください。');
+      const next={...aggregate,design:{...aggregate.design,editorConfig:{...aggregate.design.editorConfig,necklaceSetupV1:setup}}};
+      const saved=await this.save(next,0);return{...next,design:{...next.design,revision:saved.revision,updatedAt:saved.savedAt}};
+    }catch(error){throw new DesignCreationPendingError(pending,error);}
   }
 
   async get(id: string): Promise<DesignAggregate> {

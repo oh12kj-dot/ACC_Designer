@@ -6,6 +6,8 @@
 
 ## §36
 
+2026-10-31 作成導線更新: ネックレス初期長さ/基準の選択・保存/復元・編集時の目標変更、一覧検索/絞り込み/並び替え、保存状態/未保存戻る確認、空パーツ登録入口を実装。[限定契約](PRODUCT_CREATION_UX_CONTRACT.md)・[検証](evidence/product-creation-verification.json)。既存データと登録PAUSEDを維持。製品全体/物理精度/実cloudの受入完了とはしない。
+
 |区分|実装とローカル証拠|残る実環境受入|
 |---|---|---|
 |A 登録/Import|登録・既存画像再編集・crop/透明化/perspective/校正・Point/Hole・購入条件・segment生成・favorite/recent/tag/notes検索。part-registration、perspective-annotation、segment、import-fallback E2E、import/asset/storage/database/part domain tests|実Kiwa HTML単品候補取込、実private Storage upload/download（公開JSON catalog/実画像取込は別途確認済み）|

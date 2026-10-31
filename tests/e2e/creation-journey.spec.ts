@@ -1,0 +1,28 @@
+import{test,expect}from'@playwright/test';import{randomUUID}from'node:crypto';
+test('choose a length, edit immediately, save safely and find saved designs',async({page},info)=>{
+ test.setTimeout(90000);
+ const suffix=randomUUID().slice(0,8),name=`UX ${info.project.name} ${suffix}`,earName=name+' ピアス';
+ const initial=info.project.name.startsWith('mobile')?'42.5':'50';
+ await page.goto('/designs?type=necklace#new-design');await expect(page.getByRole('heading',{name:'新しいデザイン',exact:true})).toBeVisible();
+ await page.getByLabel('名前',{exact:true}).fill(name);
+ if(initial==='42.5'){await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill(initial);}else await page.getByLabel('長さを選ぶ').selectOption(initial);
+ await page.getByRole('button',{name:'作成して編集をはじめる',exact:true}).click();await expect(page).toHaveURL(/\/designs\/[0-9a-f-]+\?backend=local$/);
+ await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();await expect(page.getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');
+ const id=page.url().split('/designs/')[1].split('?')[0];
+ await page.reload();await expect(page.getByText(`仕上がりの目標 ${initial} cm`,{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'長さを変更',exact:true}).click();await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill('47.5');await page.getByRole('button',{name:'長さを適用',exact:true}).click();
+ await expect(page.getByLabel('保存状態')).toHaveText('未保存の変更があります');
+ page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('link',{name:'← デザイン一覧',exact:true}).click();await expect(page).toHaveURL(new RegExp('/designs/'+id));
+ await page.getByRole('button',{name:'保存',exact:true}).click();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');await page.reload();await expect(page.getByText('仕上がりの目標 47.5 cm',{exact:true})).toBeVisible();
+ await expect(page.getByLabel('紐の長さ（ガイド沿い・mm）')).toHaveValue('475');
+ const backup=await page.evaluate(async()=>{const boot=await fetch('/api/local/workspace').then(r=>r.json());return fetch('/api/local/workspace',{method:'POST',headers:{'Content-Type':'application/json','x-catalog-token':boot.token},body:JSON.stringify({action:'export'})}).then(r=>r.json());});
+ expect(backup.error).toBeNull();expect(backup.data.payload.tables.designs.find((d:any)=>d.id===id).editor_config.necklaceSetupV1.targetLengthMm).toBe(475);
+ await page.screenshot({path:info.outputPath('necklace-editor.png'),fullPage:true});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+ await page.locator('canvas').first().scrollIntoViewIfNeeded();await page.getByRole('button',{name:'拡大',exact:true}).click();await expect(page.getByLabel('保存状態')).toHaveText('保存済み');
+ await page.getByRole('link',{name:'← デザイン一覧',exact:true}).click();await page.getByLabel('デザインを検索').fill(name);await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();
+ await page.getByLabel('種類で絞り込み').selectOption('earrings');await expect(page.getByText('条件に合うデザインがありません',{exact:true})).toBeVisible();await page.getByRole('button',{name:'検索条件をクリア'}).click();
+ await page.getByRole('button',{name:'＋ 新しいデザイン',exact:true}).click();await page.getByRole('combobox',{name:'種類',exact:true}).selectOption('earrings');await expect(page.getByLabel('長さを選ぶ')).toHaveCount(0);await page.getByLabel('名前',{exact:true}).fill(earName);await page.getByRole('button',{name:'作成して編集をはじめる',exact:true}).click();await expect(page.getByRole('heading',{name:earName,exact:true})).toBeVisible();await expect(page.getByRole('region',{name:'ネックレスの長さ設定'})).toHaveCount(0);
+ await page.getByRole('link',{name:'← デザイン一覧',exact:true}).click();await page.getByLabel('デザインを検索').fill(name);await page.getByLabel('並び順').selectOption('name');await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();await expect(page.getByRole('heading',{name:earName,exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'＋ 新しいデザイン',exact:true}).click();await page.getByRole('combobox',{name:'種類',exact:true}).selectOption('necklace');await page.getByLabel('名前',{exact:true}).fill('新しい案');await page.getByLabel('長さを選ぶ').selectOption('custom');await page.getByLabel('長さ（cm）').fill('44.5');await page.screenshot({path:info.outputPath('creation-and-library.png'),fullPage:true});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});
