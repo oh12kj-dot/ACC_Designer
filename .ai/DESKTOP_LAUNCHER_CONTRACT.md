@@ -1,4 +1,6 @@
-# Windows デスクトップ起動・終了契約（設計のみ）
+# Windows デスクトップ起動・終了契約
+
+2026-10-31更新: [早期表示契約](DESKTOP_FAST_START_CONTRACT.md)を起動順序の現行契約とする。Next listenerで `listening`→専用窓の待機画面、従来の全件検証/global共有確認が成功した時だけ `ready`→ホーム。起動/停止競合と失敗時の窓所有を含めて検証し、以下の「DB確認後にChromeを開く」旧順序は置き換える。全画像audit・single writer・正常closeを省略しない。
 
 状態: **Chrome 専用経路を実装・隔離 workspace で実機検証済み**。`ACC_Designer.bat` → `scripts/desktop-launcher.mjs` → private IPC の `desktop-server.mjs`。Chrome 保存POST本文送信途中で実窓を閉じ、保存完了→DB close→lock解放→server exit→再open/保存Design読戻し成功。[proof](evidence/desktop-launcher-chrome.json)。登録・画像加工・自動再開 **PAUSED**、実データ変更0。下記は元設計、現在の差分・未検証境界は次段落を優先。
 

@@ -5,7 +5,7 @@
   "scripts": {
     "setup:desktop": "node scripts/setup-desktop.mjs",
     "desktop": "node scripts/desktop-launcher.mjs",
-    "test:desktop": "node --test scripts/desktop-build.test.mjs scripts/desktop-launcher.test.mjs",
+    "test:desktop": "node --test --test-concurrency=1 scripts/desktop-build.test.mjs scripts/desktop-launcher.test.mjs scripts/desktop-startup.test.mjs",
     "parts:audit-calibration": "node scripts/audit-calibration.mjs",
     "db:prepare": "node scripts/prepare-database.mjs",
     "dev": "node scripts/local-next.mjs dev",

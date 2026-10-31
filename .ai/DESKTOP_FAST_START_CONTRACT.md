@@ -1,0 +1,11 @@
+# デスクトップの早期表示
+
+Next prepare/listenが完了した自分のloopbackサーバーだけが `listening` IPCを送り、Chrome専用窓に小さな起動中画面を表示する。これはDB readyを意味しない。画面は「保存データを確認しています」と表示し、読み取り専用状態GETがreadyになって初めて既存ホームへ移動する。接続消失/初期化失敗は画面と起動元に失敗を案内する。
+
+同じprocessの自己workspace probe・PGlite起動・全画像hash/参照のaudit・global共有確認を維持する。自己probeだけをセッション内nonce headerで通し、準備中の他のホーム/API要求は503。shutdown HTTPは追加しない。登録・画像加工・自動再開PAUSEDと全旧Part/Asset/Design保全を維持する。
+
+shutdownは一回に集約し、stopping→自己probe取消→startupTask完了待ち→HTTP受付停止/active handler drain→既存workspace Promise完了待ち→DB close/lock解放確認→Next close→IPC ACK。startupTaskはshutdownをawaitしない。停止後はprobe開始/ready通知/listen開始/Chrome起動を抑止する。DB初期化そのものを強制終了しない。
+
+起動中にserverが先に失敗してもlauncherは専用窓が閉じるまで排他を保持し、所有外のChromeやserverを停止しない。通常のclose、保存途中close、初期化中close、probe未接続close、即停止、busy writer、監査失敗、browser失敗、server先行終了で検証する。
+
+変更するのはブラウザーの表示開始時点。実DBの全件確認に必要な時間は短縮・省略しない。計測はブラウザー開始/待機窓表示とDB readyを区別し、単発の実測を将来端末の保証にしない。

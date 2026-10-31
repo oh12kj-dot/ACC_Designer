@@ -5,6 +5,7 @@ import {launch} from './desktop-launcher.mjs';
 import {createServer} from 'node:net';
 import {randomUUID} from 'node:crypto';
 import {join} from 'node:path';
+import {access} from 'node:fs/promises';
 
 test('desktop lock rejects a second owner and is reusable after normal release',async()=>{
  const directory=root+'-launcher-test';
@@ -25,7 +26,8 @@ test('occupied port never attaches to or stops an unrelated listener',async()=>{
  finally{await new Promise(resolve=>listener.close(resolve));}
 });
 test('browser spawn failure closes only the owned server',async()=>{
- const events=[];
- await assert.rejects(launch({port:3418,browser:join(root,'missing-browser.exe'),env:{...process.env,ACC_LOCAL_WORKSPACE_TEST_ID:randomUUID()},onEvent:e=>events.push(e)}),/ENOENT/);
- assert.ok(events.some(e=>e.type==='stopped'&&e.workspaceClosed));
+ const events=[],testId=randomUUID();
+ await assert.rejects(launch({port:3418,browser:join(root,'missing-browser.exe'),env:{...process.env,ACC_LOCAL_WORKSPACE_TEST_ID:testId},onEvent:e=>events.push(e)}),/ENOENT/);
+ assert.ok(events.some(e=>e.type==='stopped'));
+ await assert.rejects(access(join(root,'.local','test-workspaces',testId,'writer.lock')),{code:'ENOENT'});
 });

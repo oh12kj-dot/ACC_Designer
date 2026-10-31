@@ -2,11 +2,13 @@
 
 ユーザー指示で一時停止中。登録・加工workerなしを確認。明示的な再開指示まで登録/加工を開始しない。
 
-## 起動修復（2026-10-31 JST）
+## デスクトップ起動（2026-10-31 JST）
 
-旧16.3.8 BUILD_IDが残るmain .nextに対しinstalled Next16.4.3がpreview-props.jsonを要求して起動失敗。main buildを16.4.3で再生成。launcherはframework診断の版一致/BUILD_ID/required-server-files全列挙/preview-propsの存在を起動前に確認し、不備は初回セットアップ再実行を案内。起動失敗IPCで具体的原因を伝え、失敗通知後の二重shutdown/EPIPEと警告timer残留も修正。再現負例を含むdesktop5tests・本番build警告0・隔離Chrome窓close中保存→正常終了/再open読戻し成功。
+旧build16.3.8/installed Next16.4.3不一致はmain再buildと起動前の版/必須ファイル確認で修正済み。起動失敗IPCは具体的原因を維持。旧devは正常DB close/lock解放→自身のcleanupで終了済み。
 
-以前のowned旧devは旧依存のlive cache不一致でAPI500。対象PID/global既存DB所有を確認し、接続0→HTTP受付停止→全Part/Asset/穴接続/全3Designの既存proof一致→DB.close成功/lock解放→worker自身のNext cleanup実行の順で正常終了。wrapper/CLI/workerと3000/9229解放を確認、強制kill/lock手動削除0。修正版BATからmain端末データで正常起動、Chrome専用画面表示を確認。再起動後も使用可能12,183/全Part12,219/Asset15,217/全3Design・全旧行/archive/registryの既存proof一致。登録/加工PAUSED維持。
+ブラウザー起動が全画像audit完了待ちだったため20.4秒。Next listenで専用待機画面を先行表示し、従来の自己probe/PGlite/full audit/global確認が成功してからホームへ移動する。準備中は自己nonce probe以外のアプリ/APIを503で遮断。実データ1回計測でbrowser開始611ms/窓存在確認896ms、DB ready21.8秒。短縮は表示開始までであり、全件検証時間は省略していない。[早期表示契約](DESKTOP_FAST_START_CONTRACT.md)。
+
+desktop11tests成功（初期化中close/probe未接続close/即停止/監査失敗/busy旧writer保持/server先行終了の窓所有を含む）。実Chrome保存途中close→正常DB close/lock解放→再open/Design読戻し成功。mainも正常起動/全旧Part12,219/Asset15,217/全3Design/archive/registry一致→窓closeで正常終了。登録/加工PAUSED維持、domain書込0。独立post-reviewはthread上限により実施不可、設計はSol明示要求・終了競合は実回帰で検証。
 
 ## 登録以外の整備（2026-10-29 JST）
 

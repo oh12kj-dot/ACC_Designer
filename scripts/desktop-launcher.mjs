@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {dirname,resolve,join} from 'node:path';
 import {localNodeOptions} from './local-next-options.mjs';
 import {verifyDesktopBuild} from './desktop-build.mjs';
+import {startupPath,waitForWindow} from './desktop-startup.mjs';
 
 export const root = resolve(dirname(fileURLToPath(import.meta.url)),'..');
 export function pipeName(directory) {
@@ -31,7 +32,7 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
   await verifyDesktopBuild(root);
   browser ??= await findBrowser();
   const release = await acquireLauncherLock(root).catch(error => { if (error.code==='EADDRINUSE') throw new Error('ACC Designer は既に起動中です。'); throw error; });
-  let server,window,shutdownAck=false,requested=false;
+  let server,window,shutdownAck=false,requested=false,startupError;
   try {
     await mkdir(profile,{recursive:true});
     server=spawn(process.execPath,[join(root,'scripts','desktop-server.mjs')],{
@@ -42,22 +43,24 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
     const requestStop=()=>{ if (!requested && server.connected) { requested=true;server.send({type:'shutdown'},()=>{}); } };
     server.on('message',message => { if(message.type==='stopped') shutdownAck=true; onEvent(message); });
     const ready = new Promise((resolve,reject) => {
-      server.on('message',message => { if(message.type==='ready') resolve(message); if(message.type==='startup-error') { requested=true;reject(new Error('サーバーを起動できません: '+message.error)); } });
+      server.on('message',message => { if(message.type==='listening') resolve(message); if(message.type==='startup-error') { requested=true;startupError=new Error('サーバーを起動できません: '+message.error);reject(startupError); } });
       server.once('error',reject);
       server.once('exit',() => reject(new Error('サーバーを起動できません。ポートの使用状況と上のエラーを確認してください。')));
     });
     let primaryError;
     try {
       await ready;
+      if(startupError)throw startupError;
+      if(server.exitCode!==null)throw new Error('サーバーが終了したため専用画面を開けません。');
       // Installed Edge otherwise exits its bootstrap PID and relaunches a detached main process.
-      const browserArgs=[`--user-data-dir=${profile}`,`--app=http://127.0.0.1:${port}/`,'--no-first-run','--no-default-browser-check','--disable-background-mode'];
+      const browserArgs=[`--user-data-dir=${profile}`,`--app=http://127.0.0.1:${port}${startupPath}`,'--no-first-run','--no-default-browser-check','--disable-background-mode'];
       if (/msedge\.exe$/i.test(browser)) browserArgs.push('--edge-skip-compat-layer-relaunch');
       const browserStarted=Date.now();
       window=spawn(browser,browserArgs,{windowsHide:false,stdio:'ignore'});
       onEvent({type:'browser',pid:window.pid,serverPid:server.pid});
       const browserExit=new Promise((resolve,reject)=>{window.once('error',reject);window.once('exit',(code)=>resolve(code));});
-      const outcome=await Promise.race([browserExit.then(code=>({browser:true,code})),exited.then(result=>({browser:false,...result}))]);
-      if (!outcome.browser) throw new Error('サーバーが予期せず終了しました。専用画面を閉じてから再起動してください。');
+      const outcome=await waitForWindow(browserExit,exited,()=>console.error(startupError?.message??'サーバーが終了しました。専用画面を閉じてから再起動してください。'));
+      if (!outcome.browser) throw startupError??new Error('サーバーが予期せず終了しました。専用画面を閉じてから再起動してください。');
       if (Date.now()-browserStarted < 1000) throw new Error('専用画面を維持できませんでした。残っている ACC Designer の専用画面を閉じて再起動してください。');
       if (outcome.code !== 0) throw new Error('ブラウザーの起動または終了に失敗しました。');
     } catch(error) { primaryError=error;throw error; }
@@ -67,7 +70,7 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
       let result;try{result=await exited;}finally{clearTimeout(timer);}
       if (result.code!==0 || !shutdownAck) {
         if (primaryError) console.error('終了状態:',result.code,shutdownAck ? '終了処理済み' : '正常終了未確認');
-        else throw new Error('正常終了を確認できませんでした。上のエラーを確認してください。');
+        else throw startupError??new Error('正常終了を確認できませんでした。上のエラーを確認してください。');
       }
     }
     console.log('ACC Designer を停止しました。');
