@@ -60,4 +60,4 @@ try {
     if (!globalThis.localWorkspace) throw new Error('DESKTOP_WORKSPACE_PROCESS_MISMATCH');
     report({type:'ready',pid:process.pid,port});
   }
-} catch(error) { console.error('起動に失敗しました:',error.message); process.exitCode=1; await shutdown(); }
+} catch(error) { report({type:'startup-error',error:error.message});console.error('起動に失敗しました:',error.message); process.exitCode=1; await shutdown(); }

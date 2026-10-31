@@ -5,6 +5,7 @@ import {access,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {dirname,resolve,join} from 'node:path';
 import {localNodeOptions} from './local-next-options.mjs';
+import {verifyDesktopBuild} from './desktop-build.mjs';
 
 export const root = resolve(dirname(fileURLToPath(import.meta.url)),'..');
 export function pipeName(directory) {
@@ -27,7 +28,7 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
   if (process.platform !== 'win32') throw new Error('Windows 専用です。');
   if (Number(process.versions.node.split('.')[0]) < 24) throw new Error('Node.js 24 以降が必要です。');
   await access(join(root,'node_modules','next','package.json')).catch(() => { throw new Error('依存ファイルがありません。先に npm ci を実行してください。'); });
-  await access(join(root,'.next','BUILD_ID')).catch(() => { throw new Error('起動用ビルドがありません。先に npm run build を実行してください。'); });
+  await verifyDesktopBuild(root);
   browser ??= await findBrowser();
   const release = await acquireLauncherLock(root).catch(error => { if (error.code==='EADDRINUSE') throw new Error('ACC Designer は既に起動中です。'); throw error; });
   let server,window,shutdownAck=false,requested=false;
@@ -38,10 +39,10 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
       env:{...env,NODE_ENV:'production',NODE_OPTIONS:localNodeOptions(env.NODE_OPTIONS),ACC_LOCAL_BIND:'127.0.0.1',ACC_DESKTOP_PORT:String(port)},
     });
     const exited = new Promise((resolve,reject) => { server.once('error',reject); server.once('exit',(code,signal) => resolve({code,signal})); });
-    const requestStop=()=>{ if (!requested && server.connected) { requested=true;server.send({type:'shutdown'}); } };
+    const requestStop=()=>{ if (!requested && server.connected) { requested=true;server.send({type:'shutdown'},()=>{}); } };
     server.on('message',message => { if(message.type==='stopped') shutdownAck=true; onEvent(message); });
     const ready = new Promise((resolve,reject) => {
-      server.on('message',message => { if(message.type==='ready') resolve(message); });
+      server.on('message',message => { if(message.type==='ready') resolve(message); if(message.type==='startup-error') { requested=true;reject(new Error('サーバーを起動できません: '+message.error)); } });
       server.once('error',reject);
       server.once('exit',() => reject(new Error('サーバーを起動できません。ポートの使用状況と上のエラーを確認してください。')));
     });
@@ -63,9 +64,9 @@ export async function launch({port=3000,profile=join(root,'.local','desktop-brow
     finally {
       requestStop();
       const timer=setTimeout(()=>console.error('終了処理を待っています。保存データの保護のため、このウィンドウは閉じずにお待ちください。'),30000);
-      const result=await exited;clearTimeout(timer);
+      let result;try{result=await exited;}finally{clearTimeout(timer);}
       if (result.code!==0 || !shutdownAck) {
-        if (primaryError) console.error('終了状態:',result.code,shutdownAck ? 'データベース終了済み' : '正常終了未確認');
+        if (primaryError) console.error('終了状態:',result.code,shutdownAck ? '終了処理済み' : '正常終了未確認');
         else throw new Error('正常終了を確認できませんでした。上のエラーを確認してください。');
       }
     }

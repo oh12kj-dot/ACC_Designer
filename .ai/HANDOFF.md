@@ -2,6 +2,12 @@
 
 ユーザー指示で一時停止中。登録・加工workerなしを確認。明示的な再開指示まで登録/加工を開始しない。
 
+## 起動修復（2026-10-31 JST）
+
+旧16.3.8 BUILD_IDが残るmain .nextに対しinstalled Next16.4.3がpreview-props.jsonを要求して起動失敗。main buildを16.4.3で再生成。launcherはframework診断の版一致/BUILD_ID/required-server-files全列挙/preview-propsの存在を起動前に確認し、不備は初回セットアップ再実行を案内。起動失敗IPCで具体的原因を伝え、失敗通知後の二重shutdown/EPIPEと警告timer残留も修正。再現負例を含むdesktop5tests・本番build警告0・隔離Chrome窓close中保存→正常終了/再open読戻し成功。
+
+以前のowned旧devは旧依存のlive cache不一致でAPI500。対象PID/global既存DB所有を確認し、接続0→HTTP受付停止→全Part/Asset/穴接続/全3Designの既存proof一致→DB.close成功/lock解放→worker自身のNext cleanup実行の順で正常終了。wrapper/CLI/workerと3000/9229解放を確認、強制kill/lock手動削除0。修正版BATからmain端末データで正常起動、Chrome専用画面表示を確認。再起動後も使用可能12,183/全Part12,219/Asset15,217/全3Design・全旧行/archive/registryの既存proof一致。登録/加工PAUSED維持。
+
 ## 登録以外の整備（2026-10-29 JST）
 
 GitHub `oh12kj-dot/ACC_Designer` の **mainへ公開済み**。初回セットアップBAT/npm ci/build、通常起動BAT、別端末README/非公開バックアップ移行手順を追加。新規cloneで原資料2ファイルが両ENOENTの時だけ手動専用。片欠落/改変/読込エラーはstrict failure、旧hash/hold/販売/identity維持。原資料由来の手動偽装・snapshot RPC・紐指定Design維持保存/通常・再実行読込・backup2形式を拒否する回帰を追加。独立レビューP1の2経路を修正し回帰成功。全525tests成功（maxWorkers2、通常設定では大原資料I/Oの5秒timeout2件を観測、判定変更なし）。Next16.4.3/undici7.30.1/vite8.3.5へ既存範囲内更新、npm audit 0。クリーン取得先でnpm ci/typecheck/build警告0・portable test・launcher4tests、実Chrome窓close中の保存drain/終了/再open読戻し成功。原資料/DB/画像/Design/.env/作業証拠/backupはGit対象外。登録PAUSED・実データ変更0。
