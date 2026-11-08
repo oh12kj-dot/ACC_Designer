@@ -1,0 +1,2 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{chainWidthSentence}from'./chain-width-dimensions.mjs';
+test('chain width is separate from connector gauge and multiple component widths',()=>{assert.deepEqual(chainWidthSentence('幅が約1.8mmのデザインチェーンです。線径0.6mm以下の丸カンを使用。'),{sentence:'幅が約1.8mmのデザインチェーンです。',width:1.8});for(const s of['幅が約1mmと2.5mmのデザインチェーンです。','線径は約1mmです。','幅が約1mmのチェーンに2サイズのパールを通したデザインチェーンです。'])assert.throws(()=>chainWidthSentence(s));});

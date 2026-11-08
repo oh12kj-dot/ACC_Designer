@@ -4,6 +4,10 @@ export function nominalLayoutNotice(metadata:Record<string,unknown>|undefined){
  const n=metadata?.nominalPlacement;
  if(!n||typeof n!=='object'||!('layoutSizeChoice' in n))return undefined;
  const natural=n as Record<string,unknown>;
+ if(natural.recipe==='published-body-single-product-photo-finite-v1'){
+  if(natural.representativePhoto!==true||natural.imageScaleVerified!==false||natural.variantAppearanceVerified!==false||natural.connectionReady!==false||![natural.widthMm,natural.heightMm].every(x=>typeof x==='number'&&Number.isFinite(x)&&x>0&&x<=40))return undefined;
+  return `掲載寸法${natural.approximate?'（概寸）':''}の仮配置枠：幅${natural.approximate?'約':''}${natural.widthMm}mm・高さ${natural.approximate?'約':''}${natural.heightMm}mm。同一商品の代表写真を掲載寸法の仮配置枠で表示しています。サイズ別の形状・線径との比率・画像尺度・実寸・穴接続は未確認です。`;
+ }
  if(natural.recipe==='nominal-t-pin-reviewed-single-photo-v1'){
   if(![natural.widthMm,natural.heightMm,natural.wireDiameterMm].every(x=>typeof x==='number'&&Number.isFinite(x)&&x>0)||Number(natural.widthMm)>2.2||Number(natural.heightMm)>75)return undefined;
   return `掲載値の頭部目安径約${natural.widthMm}mm×全長${natural.heightMm}mmで一本のTピンの仮配置枠を置いています。線径${natural.wireDiameterMm}mmは軸の太さです。写真は一本を切り出した形状参考で、サイズ別の長さ・実寸・画像尺度・曲げ後の形状・接続位置は未確認です。`;

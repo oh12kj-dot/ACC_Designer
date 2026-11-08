@@ -8,9 +8,19 @@ export interface SaleReference {displayName:string;offerDraftId:string;sourceUrl
 type Row=Record<string,any>;
 type Manifest={version:number;registrySha256:string;catalogSha256:string;workspaceId:string;summary:Record<string,number>;groups:SaleGroup[]};
 let cached:Promise<Awaited<ReturnType<typeof load>>>|undefined;
+let cachedPolicyStamp:string|undefined;
 async function load(){const bytes=await readFile(join(process.cwd(),'src/data/kiwa-minimum-sale-units.json'));const manifest=JSON.parse(bytes.toString()) as Manifest;if(![1,2].includes(manifest.version))throw Error('SALE_POLICY_VERSION');const registryBytes=await readFile(join(process.cwd(),'.local/parts/parts.json')),catalogBytes=await readFile(join(process.cwd(),'.local/catalog/catalog.json'));if(saleBytesHash(registryBytes)!==manifest.registrySha256||saleBytesHash(catalogBytes)!==manifest.catalogSha256)throw Error('SALE_POLICY_SOURCE_CHANGED');const drafts=JSON.parse(registryBytes.toString()).parts as Row[],expected=new Set<string>(drafts.map((p:Row)=>p.id));const groups=new Map<string,SaleGroup>(),byUrl=new Map<string,string>(),bySku=new Map<string,string[]>();for(const g of manifest.groups){for(const offer of g.members){if(!expected.delete(offer.draftId))throw Error('SALE_POLICY_UNKNOWN_OR_DUPLICATE_SOURCE');if(groups.has(offer.draftId))throw Error('SALE_POLICY_DUPLICATE_SOURCE');groups.set(offer.draftId,g);byUrl.set(offer.sourceUrl,offer.draftId);if(offer.sku)bySku.set(offer.sku,[...(bySku.get(offer.sku)??[]),offer.draftId]);}}if(expected.size||groups.size!==manifest.summary.sources)throw Error('SALE_POLICY_INCOMPLETE');const registryStat=await stat(join(process.cwd(),'.local/parts/parts.json')),catalogStat=await stat(join(process.cwd(),'.local/catalog/catalog.json'));return {manifest,drafts,groups,byUrl,bySku,holeReferences:reviewedHoleIndex(drafts,saleBytesHash(registryBytes)),sourceStamp:[registryStat.mtimeMs,registryStat.size,catalogStat.mtimeMs,catalogStat.size].join(':'),sha256:createHash('sha256').update(bytes).digest('hex')};}
 const saleBytesHash=(bytes:Uint8Array)=>createHash('sha256').update(bytes).digest('hex');
-export function salePolicy(){return cached??=load().catch(error=>{cached=undefined;throw error;});}
+export async function salePolicy(){
+ const s=await stat(join(process.cwd(),'src/data/kiwa-minimum-sale-units.json'));
+ const stamp=[s.mtimeMs,s.size].join(':');
+ if(!cached||cachedPolicyStamp!==stamp){
+  cachedPolicyStamp=stamp;
+  const pending=load();cached=pending;
+  void pending.catch(()=>{if(cached===pending){cached=undefined;cachedPolicyStamp=undefined;}});
+ }
+ return cached;
+}
 // Only a completely fresh clone may work without the private source pair.
 // A partial copy or any integrity/read error must retain the strict failure.
 export async function availableSalePolicy(){
@@ -49,6 +59,7 @@ export async function assertSaleSave(tx:{query:Function;exec:Function},args:Row,
  const old=args.part_id?(await tx.query('select to_jsonb(p) as data from public.parts p where id=$1 and user_id=auth.uid() for update',[args.part_id])).rows[0]?.data as Row|undefined:undefined;
    if(Object.hasOwn(payload,'expected_part_sha256')&&(!old||typeof payload.expected_part_sha256!=='string'||saleRowHash(old)!==payload.expected_part_sha256))throw Error('PART_EDIT_CONFLICT');
    const incoming=payload.part,effective={...old,...incoming};
+ if(old&&incoming.metadata?.supplierCategoryReview?.recipe==='supplier-tool-category-review-v1'&&stableSaleRow(incoming.metadata.supplierCategoryReview)!==stableSaleRow(old.metadata?.supplierCategoryReview)&&(await tx.query('select 1 from public.design_nodes where part_id=$1 union all select 1 from public.design_paths where part_id=$1 limit 1',[old.id])).rows.length)throw Error('CATEGORY_CORRECTION_REFERENCED_PART');
  if(!policy){
   if(old)assertManualPart(old);assertManualPart(incoming);assertManualPart(effective);
   if(payload.source_snapshots?.length||old&&(await tx.query('select 1 from public.part_source_snapshots where part_id=$1 limit 1',[old.id])).rows.length)throw Error('CATALOG_SOURCES_REQUIRED');

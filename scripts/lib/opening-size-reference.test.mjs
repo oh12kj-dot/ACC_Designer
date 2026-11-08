@@ -1,0 +1,2 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{openingStatement}from'./opening-size-reference.mjs';
+test('keeps an opening range distinct from body thickness and rejects recommendations or size tables',()=>{assert.deepEqual(openingStatement('厚みは約5mm、穴のサイズは約1mm〜1.7mmです。'),{sentence:'厚みは約5mm、穴のサイズは約1mm〜1.7mmです。',minMm:1,maxMm:1.7,subject:'supplier-declared-opening'});for(const s of['穴のサイズ約1mmがおすすめです。','穴のサイズは約0.7〜1mmです。<穴のサイズ>8mm…0.8mm','※穴のサイズに+-3mmの差が生じます。'])assert.throws(()=>openingStatement(s));});

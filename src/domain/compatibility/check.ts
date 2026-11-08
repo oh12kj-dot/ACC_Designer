@@ -1,3 +1,4 @@
+import{chainSizeMeaningPending}from'../chainGaugeReference';
 import type { CompatibilityStatus,ConnectionPoint,Part } from '../../types/domain';
 export interface CompatibilityResult {status:CompatibilityStatus;reasons:string[]}
 const result=(status:CompatibilityStatus,reason:string):CompatibilityResult=>({status,reasons:[reason]});
@@ -20,7 +21,7 @@ export function pointCompatibility(a:ConnectionPoint,b:ConnectionPoint,clearance
 /** Chain thickness is a necessary lower bound, not a substitute for the link envelope. */
 export function pathPositionCompatibility(part:Part,point:ConnectionPoint,material:Part,clearanceMm=.05):CompatibilityResult{
  if(material.category!=='chain'||part.category!=='jump_ring'&&point.type!=='ring')return result('unknown','任意位置接続の種別・寸法情報が不足しています');
- const inner=point.localInnerDiameterMm??part.innerDiameterMm,thickness=material.thicknessMm??material.wireDiameterMm,opening=part.openingWidthMm;
+ const inner=point.localInnerDiameterMm??part.innerDiameterMm,thickness=material.thicknessMm??(chainSizeMeaningPending(material)?undefined:material.wireDiameterMm),opening=part.openingWidthMm;
  if(thickness!==undefined){
   if(inner!==undefined&&inner<thickness+clearanceMm)return result('incompatible','丸カン内径がチェーン厚みとクリアランスより小さいです');
   if(opening!==undefined&&opening<thickness+clearanceMm)return result('incompatible','丸カン開口幅がチェーン厚みとクリアランスより小さいです');

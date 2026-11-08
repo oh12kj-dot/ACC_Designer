@@ -1,0 +1,7 @@
+export const provisionalRecipe='provisional-placeholder-v1';
+export const provisionalNotice='簡易登録・要精査。画像は商品形状ではなく共通の仮表示です。10×10mmは表示用の枠で、実寸ではありません。寸法・色・接続位置・穴・購入量は精査してください。';
+export function provisionalPayload(draft,assetId,registeredAt,batchId){
+ if(!/^kiwa:\d+:\d+$/.test(draft.id)||!assetId||!registeredAt||!batchId)throw Error('PROVISIONAL_INPUT');
+ const evidence={version:1,recipe:provisionalRecipe,status:'needs_review',registeredAt,batchId,layoutSizeSource:'fixed-placeholder-not-physical',layoutWidthMm:10,layoutHeightMm:10,imageScaleVerified:false,connectionReady:false,physicalDimensionsVerified:false,sourceImageUrls:draft.imageUrls,publishedSizeText:draft.sizeText,pending:['本体寸法','商品画像・色・輪郭','画像の尺度','接続位置・穴','購入単位・必要量']};
+ return {part:{name:draft.name,sku:draft.sku,source_name:draft.sourceName,source_url:draft.sourceUrl,category:draft.category,geometry_kind:'node',width_mm:10,height_mm:10,mirror_policy:'keep_orientation',tags:draft.tags,notes:provisionalNotice,import_source:'kiwa_url',import_status:'partial',image_asset_id:assetId,metadata:{sourceDraftId:draft.id,provisionalRegistration:evidence,publishedPurchase:draft.purchase,publishedPrice:draft.price,publishedCurrency:draft.currency}},connection_points:[],through_holes:[],source_snapshots:[{source_url:draft.sourceUrl,fetched_at:draft.sourceFetchedAt,parser_version:provisionalRecipe,raw_fields:{evidence,sourceDraft:draft,publishedSizeText:draft.sizeText,publishedPurchase:draft.purchase},status:'partial'}]};
+}

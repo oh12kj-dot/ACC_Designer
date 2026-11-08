@@ -1,4 +1,7 @@
 'use client';
+import{supplierPurchaseBlocked,supplierListingNotice}from'../../domain/supplierListingReview';
+import{dimensionMeaningNotice}from'../../domain/dimensionMeaningReview';
+import{isSchematicWire}from'../../domain/schematicWireReview';
 import PartEvidence from './PartEvidence';
 import PartGlossary from './PartGlossary';
 import {discovery,matchesFacets,facetLabels,type FacetAxis} from '../../domain/part/discovery';
@@ -27,6 +30,7 @@ function Thumbnail({url,onFailure}:{url?:string;onFailure:()=>void}){
 
 export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mounting=defaultMounting(),clearance=.05,mountingControls,onPatternAdd}:{categoryRequest?:{category:string;key:number};parts:Part[];busy:boolean;onAdd:(part:Part)=>void;children?:ReactNode;mounting?:MountingSettings;clearance?:number;mountingControls?:ReactNode;onPatternAdd?:(p:Part,center?:boolean)=>void}){
  const [facets,setFacets]=useState<Record<FacetAxis,string[]>>({material:[],shape:[],use:[]}),[patternPicking,setPatternPicking]=useState(false),[patternTarget,setPatternTarget]=useState('sequence'),[glossaryOpen,setGlossaryOpen]=useState(false);
+ const [reviewFilter,setReviewFilter]=useState('all');
  const [query,setQuery]=useState(''),[category,setCategory]=useState('all'),[colorFamily,setColorFamily]=useState<ColorFamily|'all'>('all'),[color,setColor]=useState('all'),[colorQuery,setColorQuery]=useState(''),[limit,setLimit]=useState(100);
  const [kind,setKind]=useState('all'),[series,setSeries]=useState('all'),[seriesQuery,setSeriesQuery]=useState(''),[seriesOpen,setSeriesOpen]=useState(false),[shadesOpen,setShadesOpen]=useState(false),[shadeLimit,setShadeLimit]=useState(24);
  useEffect(()=>{if(!categoryRequest)return;setCategory(categoryRequest.category);setQuery('');setKind('all');setSeries('all');setColorFamily('all');setColor('all');setFacets({material:[],shape:[],use:[]});setLimit(100);},[categoryRequest]);
@@ -35,7 +39,7 @@ export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mo
  const active=useMemo(()=>parts.filter(p=>!p.isArchived),[parts]);
  const counts=useMemo(()=>{const result=new Map<string,number>();for(const p of active){const key=partCategories.some(([id])=>id===p.category)?p.category:'other';result.set(key,(result.get(key)??0)+1);}return result;},[active]);
  const indexed=useMemo(()=>active.map(p=>{const entry=pickerIdentity(p);return{...entry,kind:pickerKind(entry),discovery:discovery(p)};}).sort(comparePickerEntries),[active]);
- const baseCandidates=useMemo(()=>indexed.filter(({part:p,color:c,discovery:d})=>matchesFacets(d,facets)&&(category==='all'||(partCategories.some(([id])=>id===p.category)?p.category:'other')===category)&&`${p.name} ${p.selectionReference?.displayName??''} ${p.sku??''} ${c} ${p.tags?.join(' ')??''} ${categoryLabel(p)}`.toLowerCase().includes(query.trim().toLowerCase())),[indexed,category,query,facets]);
+ const baseCandidates=useMemo(()=>indexed.filter(({part:p,color:c,discovery:d})=>matchesFacets(d,facets)&&(reviewFilter==='all'||(reviewFilter==='provisional')===!!p.metadata?.provisionalRegistration)&&(category==='all'||(partCategories.some(([id])=>id===p.category)?p.category:'other')===category)&&`${p.name} ${p.selectionReference?.displayName??''} ${p.sku??''} ${c} ${p.tags?.join(' ')??''} ${categoryLabel(p)}`.toLowerCase().includes(query.trim().toLowerCase())),[indexed,category,query,facets,reviewFilter]);
  const kinds=useMemo(()=>{const result=new Map<string,{label:string;count:number}>();for(const e of baseCandidates){const row=result.get(e.kind.id)??{label:e.kind.label,count:0};row.count++;result.set(e.kind.id,row);}if(kind!=='all'&&!result.has(kind))result.set(kind,{label:indexed.find(e=>e.kind.id===kind)?.kind.label??'選択中の種類',count:0});return [...result].sort((a,b)=>comparePickerLabels(a[1].label,b[1].label));},[baseCandidates,kind,indexed]);
  const typedCandidates=useMemo(()=>baseCandidates.filter(e=>kind==='all'||e.kind.id===kind),[baseCandidates,kind]);
  const seriesCounts=useMemo(()=>{const result=new Map<string,number>();for(const e of typedCandidates)result.set(e.family,(result.get(e.family)??0)+1);return result;},[typedCandidates]);
@@ -47,10 +51,10 @@ export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mo
  const colorOptions=useMemo(()=>[...new Set([...colors.keys(),...(color==='all'?[]:[color])])].filter(c=>c===color||c.toLowerCase().includes(colorQuery.trim().toLowerCase())).sort(comparePickerLabels),[colors,color,colorQuery]);
  const matching=useMemo(()=>familyCandidates.filter(entry=>color==='all'||entry.color===color).map(entry=>entry.part),[familyCandidates,color]);
  const visible=matching.slice(0,limit);
- const shadeSamples=shadesOpen?colorOptions.slice(0,shadeLimit).map(c=>({color:c,part:familyCandidates.find(e=>e.color===c)?.part})):[];
- const assetIds=[...new Set([...(glossaryOpen?['丸カン|丸かん','9ピン','Tピン','クラスプ|カニカン|留め具','つぶし玉','台座|セッティング|貼付'].map(re=>active.find(p=>new RegExp(re).test(p.name))?.imageAssetId):[]),...visible.map(p=>p.imageAssetId),...shadeSamples.map(s=>s.part?.imageAssetId)].filter(Boolean))].sort().join(',');
+ const shadeSamples=shadesOpen?colorOptions.slice(0,shadeLimit).map(c=>({color:c,part:familyCandidates.find(e=>e.color===c&&!e.part.metadata?.provisionalRegistration)?.part})):[];
+ const assetIds=[...new Set([...(glossaryOpen?['丸カン|丸かん','9ピン','Tピン','クラスプ|カニカン|留め具','つぶし玉','台座|セッティング|貼付'].map(re=>active.find(p=>!p.metadata?.provisionalRegistration&&new RegExp(re).test(p.name))?.imageAssetId):[]),...visible.map(p=>p.imageAssetId),...shadeSamples.map(s=>s.part?.imageAssetId)].filter(Boolean))].sort().join(',');
  function chooseFamily(value:ColorFamily|'all'){setColorFamily(value);setColor('all');setColorQuery('');setLimit(100);setShadeLimit(24);}
- function resetFilters(){setFacets({material:[],shape:[],use:[]});setQuery('');setCategory('all');setKind('all');setSeries('all');setSeriesQuery('');chooseFamily('all');}
+ function resetFilters(){setReviewFilter('all');setFacets({material:[],shape:[],use:[]});setQuery('');setCategory('all');setKind('all');setSeries('all');setSeriesQuery('');chooseFamily('all');}
  useEffect(()=>{
   let current=true;
   void(async()=>{
@@ -77,7 +81,7 @@ export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mo
  },[assetIds,retry]);
  return <section aria-label="追加するパーツを探す" className="studio-picker">
   <label className="mt-3 block">パーツ検索<input className="min-h-11 w-full border px-2" placeholder="名前・品番・色など" value={query} onChange={e=>{setQuery(e.target.value);setLimit(100);}}/></label>
-<div className="picker-category-row">  <label className="mt-3 block">カテゴリ<select className="min-h-11 w-full border px-2" value={category} onChange={e=>{setCategory(e.target.value);setKind('all');setSeries('all');setSeriesQuery('');setLimit(100);}}>
+<label className="mt-2 block text-xs">登録状態<select className="min-h-11 w-full border px-2" value={reviewFilter} onChange={e=>{setReviewFilter(e.target.value);setLimit(100);}}><option value="all">すべて</option><option value="provisional">簡易登録・要精査</option><option value="other">簡易登録以外</option></select></label><div className="picker-category-row">  <label className="mt-3 block">カテゴリ<select className="min-h-11 w-full border px-2" value={category} onChange={e=>{setCategory(e.target.value);setKind('all');setSeries('all');setSeriesQuery('');setLimit(100);}}>
    <option value="all">すべて（{active.length}件）</option>{partCategories.filter(([id])=>counts.has(id)||id===category).map(([id,label])=><option key={id} value={id}>{label}（{counts.get(id)??0}件）</option>)}
   </select></label>
   <label className="mt-3 block">種類で絞る<select className="min-h-11 w-full border px-2" value={kind} onChange={e=>{setKind(e.target.value);setSeries('all');setSeriesQuery('');setLimit(100);}}><option value="all">すべての種類</option>{kinds.map(([id,row])=><option key={id} value={id}>{row.label}（{row.count}件）</option>)}</select></label>
@@ -105,10 +109,10 @@ export default function PartPicker({categoryRequest,parts,busy,onAdd,children,mo
   <div className="mt-2 flex max-h-[28rem] flex-col gap-2 overflow-auto" aria-label="パーツの候補">
    {visible.map(part=>{const assessment=mountingAssessment(part,mounting,clearance);return <div key={part.id}><button className={`${button} studio-part-card flex shrink-0 items-center gap-3 py-2 text-left`} aria-label={patternPicking?'配列に追加：'+partSelectionName(part):partSelectionName(part)} aria-describedby={[reviewedGuideAxis(part)==='none'?`part-no-hole-${part.id}`:'',assessment.text?`mounting-${part.id}`:''].filter(Boolean).join(' ')||undefined} disabled={busy||assessment.blocked} key={part.id} onClick={()=>{if(!mountingAssessment(part,mounting,clearance).blocked)patternPicking&&onPatternAdd?onPatternAdd(part,patternTarget==='center'):onAdd(part);}}>
     <Thumbnail key={`${part.imageAssetId}:${urls[part.imageAssetId]??''}:${retry}`} url={urls[part.imageAssetId]} onFailure={()=>setImageError(true)}/>
-    <span className="min-w-0 break-words"><span className="block text-xs text-stone-500">{pickerKind(pickerIdentity(part)).label}</span><span className="block text-sm">{partSelectionName(part)}</span>
+    <span className="min-w-0 break-words"><span className="block text-xs text-stone-500">{pickerKind(pickerIdentity(part)).label}</span><span className="block text-sm">{partSelectionName(part)}</span>{supplierListingNotice(part)&&<span className="block text-xs text-amber-900">掲載情報・要確認</span>}{part.metadata?.provisionalRegistration&&<span className="block text-xs text-amber-900">{isSchematicWire(part)?"掲載概算線径・模式線・要精査":dimensionMeaningNotice(part)?"掲載サイズの意味・要精査":part.metadata.provisionalRegistration.photoReference?"商品写真・切抜き／実寸は要精査":"簡易登録・仮表示・要精査"}</span>}
      {reviewedGuideAxis(part)==='none'&&<span id={`part-no-hole-${part.id}`} className="mt-1 inline-block rounded border border-amber-300 bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-900">通し穴なし</span>}
      {assessment.text&&<span id={`mounting-${part.id}`} className={`mt-1 block text-xs ${assessment.blocked?'text-red-800':'text-amber-900'}`}>{assessment.text}</span>}
-     {part.selectionReference&&<span className="mt-1 block text-xs text-stone-500">参考 {minimumOfferPrice(part.selectionReference)} / {part.selectionReference.purchaseText}</span>}
+     {part.selectionReference&&!supplierPurchaseBlocked(part)&&<span className="mt-1 block text-xs text-stone-500">参考 {minimumOfferPrice(part.selectionReference)} / {part.selectionReference.purchaseText}</span>}
     </span>
    </button><PartEvidence part={part}/></div>;})}
    {!matching.length&&<p className="py-4 text-sm">該当するパーツがありません。カテゴリ・色・検索語を変えてください。</p>}

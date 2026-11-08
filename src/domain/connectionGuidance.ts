@@ -1,0 +1,2 @@
+import type{Part}from'../types/domain';
+export function connectionGuidance(part:Pick<Part,'metadata'|'sku'>){const r=part.metadata?.supplierConnectionGuidance;if(!r||r.recipe!=='supplier-connector-gauge-guidance-v1'||r.sourceDraftId!==part.metadata?.sourceDraftId||r.sku!==part.sku||!Number.isFinite(r.maxConnectorWireDiameterMm)||r.maxConnectorWireDiameterMm<=0||r.holeDiameterEstablished!==false||r.individualFitVerified!==false||!r.quotedSentence)return;return`仕入先の接続材料案内: ${r.quotedSentence} 製品の線径・穴径の実測値ではありません。穴位置・実物同士の適合は未確認です。`;}

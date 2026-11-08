@@ -1,3 +1,4 @@
+import {isSchematicWire} from '../schematicWireReview';
 import {pickerColorFamilies} from './colorFamilies';
 import type {Part} from '../../types/domain';
 
@@ -24,7 +25,7 @@ export function pickerIdentity(part:Part){
  const split=kiwa?title.indexOf('　'):-1;
  const family=split>0?title.slice(0,split):title;
  const color=part.color?.trim()||(split>0?title.slice(split+1).trim():'');
- const dimensions=[positive(part.widthMm),positive(part.heightMm)].filter((v):v is number=>v!==undefined).sort((a,b)=>b-a);
+ const dimensions=(part.metadata?.provisionalRegistration||isSchematicWire(part))?[]:[positive(part.widthMm),positive(part.heightMm)].filter((v):v is number=>v!==undefined).sort((a,b)=>b-a);
  const groupedColor=pickerColorGroup(color);
  return {part,name,family:normalized(family),color:groupedColor,colorFamilies:pickerColorFamilies(groupedColor),publishedColor:normalized(color),dimensions};
 }

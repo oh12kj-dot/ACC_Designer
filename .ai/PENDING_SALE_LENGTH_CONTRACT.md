@@ -1,0 +1,17 @@
+# 有限販売単位解決の契約
+
+2026-11-04。現pending873 sourceから同一商品・同一非購入optionのexact長さ販売だけを解決する。parseSaleAmountを一般拡張しない。Sol Mediumを明示して設計依頼し返却契約を採用（actual runtime model情報は提供されない）。
+
+原資料/現販売方針/promotions/live全行を固定。商品ID/variant/SKU/URL/原購入文/非購入optionを照合し、確定m/cmを有理数mmで比較する。1ヶ(50m)等は同じ線状素材1包の掲載内容長として確認できるexact商品だけに限定。約長・コマ数・重量・セット・移動/旧品・異商品はこの経路で解決しない。価格/原文/推定個数を保持し粒単価や保証個数を作らない。
+
+既存Partがグループ内にある場合は別計画へ退避。新規グループだけstatus/canonical/parse/有限根拠を更新し、他のpolicy groupと全source partition、既存cleanupを保持する。新規groupのcleanupは空。過去cleanup CLIを実行しない。
+
+canonicalだけ通常RPCで商品写真参照Partを作成。商品ID＋原写真hashが一致するAssetだけ再利用可。needs_review/未校正・単体未切抜きを維持する。実読戻し前にpendingを減らさず、canonical実登録と全memberの対応を確認後にpromotionsへ反映する。sourceごとの元販売offerも保持。
+
+cacheの永続固定を回帰で実証し、policyファイルのstamp変更時だけ再読込する最小修正を採用。破損新方針は旧cacheへのfallbackなしで拒否する。対応表は実canonical Part IDから仮登録状態を投影し、siblingを審査済みに昇格しない。
+
+全旧Part/関連行/Asset/Design/registry/catalogを保持。変更画像4段階hash/Part/販売参照を読戻し、正式再実行created0。部分登録と全工程精査完了を別集計。
+
+本文で輪とバー/フック、またはボタン状の留め合わせを確認した同一商品32グループ68sourceは、反復する機能セットの販売単位として別scopeに固定。セット数を構成部品数へ換算せず、nativeのpiece数/長さspecを作らない。
+
+追加の有限判断：same-productのチェーン74グループ148sourceにある1mと約10cmのみ、本文の「こちらの商品は量り売りです。」と全非購入optionを照合した場合、最小の掲載公称販売クラスとして比較可。新証拠を添えて同じ設計担当へbounded followupし採用。比較unitはpublished-nominal-length-pack-class、約/コマ/パターンの原文は保持。保証された実長比較ではなく、100mmの確定sale_length_mm、正確なコマ数、単価換算は作らない。この2クラス以外へ一般化しない。

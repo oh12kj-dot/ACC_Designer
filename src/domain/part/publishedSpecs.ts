@@ -16,7 +16,8 @@ export function publishedMeasurements(sourceText:string):PublishedMeasure[]{
  const meanings:Record<string,PublishedMeasure['meaning']>={線径:'wire_diameter',ピン径:'pin_diameter',穴径:'hole_diameter',内径:'inner_diameter',外径:'outer_diameter',厚み:'thickness',厚さ:'thickness',長さ:'length',幅:'width',高さ:'height'};
  for(const m of s.matchAll(pattern)){const values=m[3].split('x').map(Number).map(n=>n*(m[4]==='cm'?10:1));if(values.some(n=>!Number.isFinite(n)||n<=0))continue;out.push({sourceText:m[0],valuesMm:values,approximate:!!m[2]||/約/.test(sourceText),meaning:values.length===1&&m[1]?meanings[m[1]]:'unassigned'});}return out;
 }
-export function publishedCategory(name:string):{category:PartCategory;basis:string}{
+export function publishedCategory(name:string,sourceUrl?:string):{category:PartCategory;basis:string}{
+ try{const url=new URL(sourceUrl??'');if(url.protocol==='https:'&&url.hostname==='kiwaseisakujo.jp'&&!url.port&&!url.username&&!url.password&&/^\/products\/g-tools-adhesives-cases-[a-z0-9]+(?:-[a-z0-9]+)*$/.test(url.pathname))return{category:'other',basis:'仕入先の工具・収納・包装用品区分による分類（形状の保証なし）'};}catch{}
  const rules:[RegExp,PartCategory][]=[[/丸カン|Cカン/,'jump_ring'],[/9ピン/,'eye_pin'],[/Tピン/,'head_pin'],[/カニカン|ヒキワ/,'clasp'],[/ピアス.*(?:フック|U字)|U字ピアス/,'earring_hook'],[/ピアス.*(?:丸皿|ポスト|芯立)|チタンピアス/,'earring_post'],[/チェーン/,'chain'],[/ワイヤー/,'wire'],[/テグス/,'string'],[/コード|革ヒモ/,'cord'],[/パール/,'pearl'],[/ビーズ/,'bead'],[/チャーム/,'charm']];
  const rule=rules.find(([pattern])=>pattern.test(name));return{category:rule?.[1]??'other',basis:rule?'商品名による分類（形状の保証なし）':'分類未確定'};
 }

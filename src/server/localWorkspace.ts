@@ -1,4 +1,5 @@
 import {deleteOwnedDesign} from './deleteDesign';
+import{loadSupplierListingReview,projectListingAggregate,projectListingRows,type ListingIndex}from'./supplierListingReview';
 import {assertCordSave} from './cordProducts';
 import {projectHoleReference} from './holeReferences';
 import { PGlite, type Transaction } from '@electric-sql/pglite';
@@ -83,7 +84,7 @@ export class LocalWorkspace {
   return this.actor(async tx=>{
    const rows=(await tx.query<{data:unknown}>('select public.get_part_aggregate(id) as data from unnest($1::uuid[]) as requested(id)',[ids])).rows;
    if(rows.some(row=>row.data===null))throw Error('NOT_FOUND');
-   const policy=await salePolicy();return rows.map(row=>projectLocalAggregate(row.data,policy));
+   const policy=await salePolicy(),listing=await loadSupplierListingReview(this.owner,this.root);return rows.map(row=>projectLocalAggregate(row.data,policy,listing));
   });
  }
  async auditIntegrity(){
@@ -106,12 +107,12 @@ export class LocalWorkspace {
   return this.db.transaction(async tx=>{
    const cached=(await tx.query<{digest:string;result:unknown}>('select digest,result from public.local_operations where key=$1',[key])).rows[0];
    await tx.query("select set_config('request.jwt.claim.sub',$1,true)",[this.owner]);await tx.exec('set local role authenticated');
-   if(cached){if(cached.digest!==digest)throw new Error('IDEMPOTENCY_CONFLICT');if(name==='get_design_aggregate')return projectLocalDesign((await tx.query<any>('select public.get_design_aggregate($1) as data',[args.design_id])).rows[0]?.data??null);if(name==='delete_design'){const row=(await tx.query('select id from public.designs where id=$1 and user_id=auth.uid()',[args.design_id])).rows[0];if(row)throw Error('DELETE_REPLAY_REJECTED');}if(name==='save_part_successor'){const id=(cached.result as any)?.part_id;const row=(await tx.query<any>('select * from public.parts where id=$1',[id])).rows[0];if(!row||row.is_archived)throw Error('PART_NO_LONGER_REGISTERED');await assertSaleSave(tx,{part_id:id,payload:{part:{}}});}if(name==='get_part_aggregate'){const row=(await tx.query<any>('select public.get_part_aggregate($1) as data',[args.part_id])).rows[0]?.data;return row?projectLocalAggregate(row,await salePolicy()):null;}return cached.result;}
+   if(cached){if(cached.digest!==digest)throw new Error('IDEMPOTENCY_CONFLICT');if(name==='get_design_aggregate')return projectLocalDesign((await tx.query<any>('select public.get_design_aggregate($1) as data',[args.design_id])).rows[0]?.data??null);if(name==='delete_design'){const row=(await tx.query('select id from public.designs where id=$1 and user_id=auth.uid()',[args.design_id])).rows[0];if(row)throw Error('DELETE_REPLAY_REJECTED');}if(name==='save_part_successor'){const id=(cached.result as any)?.part_id;const row=(await tx.query<any>('select * from public.parts where id=$1',[id])).rows[0];if(!row||row.is_archived)throw Error('PART_NO_LONGER_REGISTERED');await assertSaleSave(tx,{part_id:id,payload:{part:{}}});}if(name==='get_part_aggregate'){const row=(await tx.query<any>('select public.get_part_aggregate($1) as data',[args.part_id])).rows[0]?.data;return row?projectLocalAggregate(row,await salePolicy(),await loadSupplierListingReview(this.owner,this.root)):null;}return cached.result;}
    if(name==='save_design_aggregate')await assertCordSave(tx,args);
    if(name==='save_part_successor'){await assertSaleSave(tx,args);await this.verifyAssets(tx,args.payload);}
    const entries=Object.entries(args);const sql=`select to_jsonb(public.${name}(${entries.map(([k],i)=>`${k}=>$${i+1}::${functions[name][k]}`).join(',')})) as data`;
    const result=name==='delete_design'?await deleteOwnedDesign(tx,this.owner,args.design_id,args.expected_revision):(await tx.query<{data:unknown}>(sql,entries.map(([k,v])=>functions[name][k]==='jsonb'?JSON.stringify(v):v))).rows[0]?.data??null;
-   await tx.exec('reset role');await tx.query('insert into public.local_operations values($1,$2,$3::jsonb)',[key,digest,JSON.stringify(result)]);if(name==='get_part_aggregate'&&result)return projectLocalAggregate(result,await salePolicy());if(name==='get_design_aggregate')return projectLocalDesign(result);return result;
+   await tx.exec('reset role');await tx.query('insert into public.local_operations values($1,$2,$3::jsonb)',[key,digest,JSON.stringify(result)]);if(name==='get_part_aggregate'&&result)return projectLocalAggregate(result,await salePolicy(),await loadSupplierListingReview(this.owner,this.root));if(name==='get_design_aggregate')return projectLocalDesign(result);return result;
   });
  }
  private async verifyAssets(tx:Transaction,payload:unknown){
@@ -138,7 +139,8 @@ export class LocalWorkspace {
     for(const row of (await tx.query<Record<string,unknown>>('select * from public.parts')).rows)assertManualPart(row);
     if((await tx.query('select 1 from public.part_source_snapshots limit 1')).rows.length)throw Error('CATALOG_SOURCES_REQUIRED');
    }
-   const projected=input.table==='parts'&&(input.columns.includes('metadata')||input.columns==='*')?rows.map(row=>({...row,selection_reference:projectSaleReference(row,policy??null)})):rows;
+   let projected=input.table==='parts'&&(input.columns.includes('metadata')||input.columns==='*')?rows.map(row=>({...row,selection_reference:projectSaleReference(row,policy??null)})):rows;
+   if(input.table==='parts'&&(input.columns.includes('metadata')||input.columns==='*'))projected=await projectListingRows(tx,projected,await loadSupplierListingReview(this.owner,this.root));
    if(input.single){if(projected.length!==1)throw new Error('NOT_FOUND');return projected[0];}return projected;
   });
  }
@@ -164,7 +166,7 @@ export class LocalWorkspace {
  async exportPackage():Promise<WorkspacePackage>{return this.db.transaction(tx=>this.portable(tx));}
  async exportBackupSet(signal?:AbortSignal){return createBackupSet(this.db,this.owner,this.root,signal);}
  async backupDownload(id:string){return openBackupSet(this.root,this.owner,id);}
- async importBackupSet(file:string){return importBackupSet(this.db,this.owner,file,(tx,payload)=>this.verifyAssets(tx,payload),tx=>this.assertPortableSources(tx));}
+ async importBackupSet(file:string){return importBackupSet(this.db,this.owner,file,(tx,payload)=>this.verifyAssets(tx,payload),tx=>this.assertPortableSources(tx),this.root);}
  private async assertPortableSources(tx:Transaction){
   if(await salePolicy())return;
   for(const row of (await tx.query<Record<string,unknown>>('select * from public.parts')).rows)assertManualPart(row);
@@ -217,11 +219,13 @@ function safeAssetPath(path:unknown,owner:string):path is string{return typeof p
 function raster(b:Uint8Array,mime:string){const buf=Buffer.from(b);return mime==='image/png'&&buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))||mime==='image/jpeg'&&b[0]===255&&b[1]===216&&b[2]===255||mime==='image/webp'&&buf.toString('ascii',0,4)==='RIFF'&&buf.toString('ascii',8,12)==='WEBP';}
 async function migrationSources(){const dir=join(process.cwd(),'supabase','migrations');return Promise.all((await readdir(dir)).filter(f=>/^\d+_[a-z_]+\.sql$/.test(f)).sort().map(async name=>({name,body:await readFile(join(dir,name),'utf8')})));}
 const global=globalThis as typeof globalThis&{localWorkspace?:Promise<LocalWorkspace>};
-export function workspace(){const testId=process.env.ACC_LOCAL_WORKSPACE_TEST_ID;if(testId&&!uuid(testId))throw new Error('INVALID_TEST_WORKSPACE');const root=testId?join(/* turbopackIgnore: true */ process.cwd(),'.local','test-workspaces',testId):undefined;return global.localWorkspace??(global.localWorkspace=LocalWorkspace.open(root).catch(e=>{global.localWorkspace=undefined;throw e;}));}
+// Keep the one open DB/lock during Next dev reloads while refreshing its methods.
+export function workspace(){const testId=process.env.ACC_LOCAL_WORKSPACE_TEST_ID;if(testId&&!uuid(testId))throw new Error('INVALID_TEST_WORKSPACE');const root=testId?join(/* turbopackIgnore: true */ process.cwd(),'.local','test-workspaces',testId):undefined;const current=global.localWorkspace??(global.localWorkspace=LocalWorkspace.open(root).catch(e=>{global.localWorkspace=undefined;throw e;}));return current.then(instance=>{if(Object.getPrototypeOf(instance)!==LocalWorkspace.prototype)Object.setPrototypeOf(instance,LocalWorkspace.prototype);return instance;});}
 
-function projectLocalAggregate(data:any,policy:Awaited<ReturnType<typeof salePolicy>>){
+function projectLocalAggregate(data:any,policy:Awaited<ReturnType<typeof salePolicy>>,listing:ListingIndex){
  if(!policy&&data.source_snapshots?.length)throw Error('CATALOG_SOURCES_REQUIRED');
- return {...data,selection_reference:projectSaleReference(data.part,policy),hole_reference:projectHoleReference(data.part,policy?.holeReferences??new Map())};
+ const reference=projectSaleReference(data.part,policy);
+ return {...data,selection_reference:reference,supplier_listing_review:projectListingAggregate(data,listing,reference?.offerDraftId),hole_reference:projectHoleReference(data.part,policy?.holeReferences??new Map())};
 }
 
 async function projectLocalDesign(data:any){if(data?.design?.editor_config?.cordSpecification!=null&&!await salePolicy())throw Error('CATALOG_SOURCES_REQUIRED');return data;}

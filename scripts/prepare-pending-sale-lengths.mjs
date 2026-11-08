@@ -1,0 +1,11 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';import assert from'node:assert/strict';
+import{sha256}from'./minimum-sale-units.mjs';import{resolvePendingLengthGroups,resolvePendingFunctionalSets,resolvePendingNominalChains,resolvePendingMiscSales}from'./lib/pending-sale-length-resolution.mjs';import{registrationApi}from'./lib/local-registration-api.mjs';
+const sets=process.argv[2]==='sets',nominal=process.argv[2]==='nominal',misc=['misc','pack-revision'].includes(process.argv[2]),dir=sets?'.local/setup/pending-sale-sets-20261104':nominal?'.local/setup/pending-sale-nominal-20261104':process.argv[2]==='pack-revision'?'.local/setup/pending-sale-pack-revision-20261105':misc?'.local/setup/pending-sale-misc-20261104':'.local/setup/pending-sale-lengths-20261104';await mkdir(dir,{recursive:true});
+const policyPath='src/data/kiwa-minimum-sale-units.json',mb=await readFile('.local/calibration/provisional/promotions.json'),pb=await readFile(policyPath),rb=await readFile('.local/parts/parts.json'),cb=await readFile('.local/catalog/catalog.json');
+const m=JSON.parse(mb);assert.equal(sha256(rb),m.registrySha256);
+const api=await registrationApi();assert.equal(api.boot.workspaceId,m.workspaceId);
+const before=await api.snapshot();
+const result=(sets?resolvePendingFunctionalSets:nominal?resolvePendingNominalChains:misc?resolvePendingMiscSales:resolvePendingLengthGroups)(JSON.parse(pb),JSON.parse(rb),JSON.parse(cb),m.pendingReferences,new Set(before.tables.parts.map(p=>p.metadata?.sourceDraftId)));
+const plan={version:1,workspaceId:m.workspaceId,policySha256:sha256(pb),registrySha256:sha256(rb),catalogSha256:sha256(cb),promotionsSha256:sha256(mb),resolved:result.resolved,held:result.held,candidatePolicySha256:sha256(JSON.stringify(result.policy))};
+for(const[name,data]of[['before.json',JSON.stringify(before)],['policy.before.json',pb],['promotions.before.json',mb],['policy.candidate.json',JSON.stringify(result.policy)],['plan.json',JSON.stringify(plan)]])await writeFile(dir+'/'+name,data,{flag:'wx'});
+console.log(JSON.stringify({plannedGroups:plan.resolved.length,sources:plan.resolved.reduce((n,g)=>n+g.sourceIds.length,0),oldParts:before.tables.parts.length,oldAssets:before.tables.part_image_assets.length,oldDesigns:before.tables.designs.length,policyChanged:false}));

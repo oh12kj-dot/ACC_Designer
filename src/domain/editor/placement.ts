@@ -10,6 +10,7 @@ export interface Placement {id:string;part:Part;point:Vec2;rotationDeg:number;le
 export interface BatchGuide {settings:LayoutGuide;geometry:PathGeometry|undefined;cssPxPerMm:number;allowSnap?:boolean}
 /** Nominal body-box span along a direction, not measured photo or physical contact. */
 export function automaticSpacingMm(part:Part,relativeAngleDeg=0):number|undefined{
+ if(part.metadata?.provisionalRegistration)return undefined;
  const w=part.widthMm,h=part.heightMm;if(!w||!h||![w,h,relativeAngleDeg].every(Number.isFinite)||w<=0||h<=0)return;
  const t=relativeAngleDeg*Math.PI/180;return Math.abs(w*Math.cos(t))+Math.abs(h*Math.sin(t));
 }

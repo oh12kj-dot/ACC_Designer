@@ -4,6 +4,9 @@ test('offline runtime rewrites only its fixed dependency graph, including compac
  assert.equal(rewriteRuntimeImports('src/server/localWorkspace.ts',"import{a}from'./holeReferences';"),"import{a}from './holeReferences.mjs';");
  assert.equal(rewriteRuntimeImports('src/server/cordProducts.ts','import {validCordLength} from "../domain/editor/cord";'),'import {validCordLength} from "./cord.mjs";');
  assert.equal(rewriteRuntimeImports('src/server/holeReferences.ts',"import manifest from'../data/kiwa-reviewed-hole-diameters.json';"),"import manifest from './reviewedHoleDiameters.mjs';");
+ assert.equal(rewriteRuntimeImports('src/server/localWorkspace.ts',"import{loadSupplierListingReview}from'./supplierListingReview';"),"import{loadSupplierListingReview}from './supplierListingReview.mjs';");
+ assert.equal(rewriteRuntimeImports('src/domain/editor/cord.ts',"import{listingAssessmentBlocked}from'../supplierListingReview';"),"import{listingAssessmentBlocked}from './supplierListingReviewDomain.mjs';");
+ assert.equal(rewriteRuntimeImports('src/server/supplierListingReview.ts',"import{listingBusiness}from'../domain/supplierListingReviewBinding.mjs';"),"import{listingBusiness}from './supplierListingReviewBinding.mjs';");
  for(const dependency of ['./unreviewed','../../outside','../data/untrusted.json'])assert.throws(()=>rewriteRuntimeImports('src/server/localWorkspace.ts',`import x from '${dependency}';`),/RESTORE_RUNTIME_DEPENDENCY/);
 });
 test('offline runtime loads the real restore closure and removes all generated files on disposal',async()=>{

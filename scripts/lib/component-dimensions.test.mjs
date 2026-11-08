@@ -1,0 +1,2 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{componentSentence}from'./component-dimensions.mjs';
+test('post length and wire diameter remain distinct from a recommended bead hole',()=>{assert.deepEqual(componentSentence('ポストの長さは約15mm、線径は約0.7mmです。穴のサイズ約1mmがおすすめです。'),{sentence:'ポストの長さは約15mm、線径は約0.7mmです。',subject:'ポスト',wireDiameterMm:.7,lengthMm:15});assert.throws(()=>componentSentence('カンには線径0.8mm以下のカン類が使用できます。'));assert.throws(()=>componentSentence('25mmの線径は約3.6mmです。'));});

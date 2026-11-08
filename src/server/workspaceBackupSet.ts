@@ -1,3 +1,4 @@
+import{captureReviewArchive,stageReviewArchive,type ReviewFileChunk}from'./supplierReviewArchive';
 import type {PGlite,Transaction} from '@electric-sql/pglite';
 import {mkdir,open,lstat,realpath,rename,unlink,readdir} from 'node:fs/promises';
 import {join,resolve} from 'node:path';
@@ -19,13 +20,13 @@ async function exportRoot(root:string){
 }
 export async function createBackupSet(db:PGlite,owner:string,root:string,signal?:AbortSignal){
  signal?.throwIfAborted();
- const dir=await exportRoot(root),id=randomUUID(),temp=join(dir,id+'.'+process.pid+'.tmp'),file=await open(temp,'wx');let bytes=0,closed=false;
+ const review=await captureReviewArchive(owner,root);const dir=await exportRoot(root),id=randomUUID(),temp=join(dir,id+'.'+process.pid+'.tmp'),file=await open(temp,'wx');let bytes=0,closed=false;
  try{
   const write=async(line:string)=>{signal?.throwIfAborted();await file.writeFile(line);bytes+=Buffer.byteLength(line);};
   await db.transaction(async tx=>{
    const schema=(await tx.query<{migration_hash:string}>('select migration_hash from public.local_schema')).rows[0];
-   const header:BackupHeader={format:'acc-workspace-backup-set',version:2,exportSetId:id,owner,migrationHash:schema.migration_hash,tables:backupTables,createdAt:new Date().toISOString(),scope:'full-domain-workspace',migrationStatus:'not_migrated',excluded:backupExcluded,limits:backupLimits};
-   const headerHash=backupHash(JSON.stringify(header));let chain=headerHash,sequence=0,blobBytes=0n;const counts=backupCounts();await write(backupLine('header',header));
+   const header:BackupHeader={format:'acc-workspace-backup-set',version:review?3:2,exportSetId:id,owner,migrationHash:schema.migration_hash,tables:backupTables,createdAt:new Date().toISOString(),scope:'full-domain-workspace',migrationStatus:'not_migrated',excluded:backupExcluded,limits:backupLimits};
+   const headerHash=backupHash(JSON.stringify(header));let chain=headerHash,sequence=0,blobBytes=0n;const counts=backupCounts(header.version);await write(backupLine('header',header));
    const emit=async(payload:BackupChunk)=>{const line=backupLine('chunk',payload,sequence);await write(line);chain=chainBackup(chain,sequence++,backupHash(JSON.stringify(payload)));};
    const emitRows=async(table:string,rows:Row[]):Promise<void>=>{try{backupLine('chunk',{type:'rows',table,rows},sequence);}catch(e){if(rows.length===1)throw e;const mid=Math.floor(rows.length/2);await emitRows(table,rows.slice(0,mid));await emitRows(table,rows.slice(mid));return;}await emit({type:'rows',table,rows});counts[table]+=rows.length;};
    for(const table of [...backupTables,'storage.objects'])await eachRows(tx,table,rows=>emitRows(table,rows));
@@ -33,7 +34,8 @@ export async function createBackupSet(db:PGlite,owner:string,root:string,signal?
     if(!backupPath(b.path,owner)||b.body.length>backupLimits.maxBlobBytes||backupHash(b.body)!==b.sha256)throw Error('ASSET_INTEGRITY_FAILED');
     await emit({type:'blob',path:b.path,mime:b.mime,sha256:b.sha256,length:b.body.length,body:Buffer.from(b.body).toString('base64')});counts.local_blobs++;blobBytes+=BigInt(b.body.length);after=b.path;
    }
-   await write(backupLine('footer',{exportSetId:id,headerSha256:headerHash,chunkCount:sequence,chainSha256:chain,counts,blobBytes:blobBytes.toString(),complete:true}));
+   let reviewBytes=0n;if(review)for(const c of review){await emit(c);counts.review_files++;reviewBytes+=BigInt(c.decodedLength);}
+   await write(backupLine('footer',{exportSetId:id,headerSha256:headerHash,chunkCount:sequence,chainSha256:chain,counts,blobBytes:blobBytes.toString(),...(review?{reviewBytes:reviewBytes.toString()}:{}),complete:true}));
   });
   signal?.throwIfAborted();await file.sync();await file.close();closed=true;signal?.throwIfAborted();await rename(temp,join(dir,id+'.accbackup.ndjson'));return{id,bytes};
  }catch(e){if(!closed)await file.close();await unlink(temp).catch(error=>{if(error.code!=='ENOENT')throw error;});throw e;}
@@ -55,19 +57,20 @@ export async function openBackupSet(root:string,owner:string,id:string){
  if(!backupUuid(id))throw Error('BACKUP_ID_INVALID');const path=join(await exportRoot(root),id+'.accbackup.ndjson');if(!(await lstat(path)).isFile()||(await lstat(path)).isSymbolicLink())throw Error('BACKUP_FILE_INVALID');
  const header=await readBackupHeader(path);if(header.owner!==owner||header.exportSetId!==id)throw Error('BACKUP_IDENTITY_INVALID');const file=await open(path,'r');return{file,size:(await file.stat()).size};
 }
-export async function importBackupSet(db:PGlite,owner:string,file:string,verifyAssets:(tx:Transaction,payload:unknown)=>Promise<void>,validateImported?:(tx:Transaction)=>Promise<void>){
- return db.transaction(async tx=>{
+export async function importBackupSet(db:PGlite,owner:string,file:string,verifyAssets:(tx:Transaction,payload:unknown)=>Promise<void>,validateImported?:(tx:Transaction)=>Promise<void>,reviewRoot?:string){
+ let cleanupReview:(()=>Promise<void>)|undefined;try{return await db.transaction(async tx=>{
   for(const table of [...backupTables,'storage.objects','public.local_blobs']){const sql=table==='public.local_blobs'?table:tableSql(table);if((await tx.query(`select 1 from ${sql} limit 1`)).rows.length)throw Error('WORKSPACE_NOT_EMPTY');}
   const schema=(await tx.query<{migration_hash:string}>('select migration_hash from public.local_schema')).rows[0];
   await tx.exec('create temporary table acc_backup_rows(table_name text,key text,body jsonb,sha256 text,done boolean not null default false,primary key(table_name,key)) on commit drop');
   const columns=new Map<string,string[]>();for(const table of [...backupTables,'storage.objects']){const [schema,name]=tableSql(table).split('.');columns.set(table,(await tx.query<{column_name:string}>('select column_name from information_schema.columns where table_schema=$1 and table_name=$2',[schema,name])).rows.map(r=>r.column_name).sort());}
-  const consumed=await consumeBackup(file,{
+  const review:ReviewFileChunk[]=[];const consumed=await consumeBackup(file,{
    header:async h=>{if(h.owner!==owner||h.migrationHash!==schema.migration_hash)throw Error('WORKSPACE_SCHEMA_MISMATCH');},
    chunk:async c=>{
     if(c.type==='rows'){
      for(const row of c.rows)if(JSON.stringify(Object.keys(row).sort())!==JSON.stringify(columns.get(c.table)))throw Error('BACKUP_COLUMNS_INVALID');
      const values=c.rows.map(row=>({table_name:c.table,key:String(row[keyColumn(c.table)]),body:row,sha256:backupHash(JSON.stringify(row))}));
      await tx.query('insert into acc_backup_rows(table_name,key,body,sha256) select table_name,key,body,sha256 from jsonb_to_recordset($1::jsonb) as x(table_name text,key text,body jsonb,sha256 text)',[JSON.stringify(values)]);
+    }else if(c.type==='review-file'){if(!reviewRoot)throw Error('BACKUP_REVIEW_TARGET_REQUIRED');review.push(c);
     }else{
      const bytes=Buffer.from(c.body,'base64'),metadata=await sharp(bytes,{limitInputPixels:16777216,failOn:'warning'}).metadata();
      if(!['image/png','image/jpeg','image/webp'].includes(c.mime)||({png:'image/png',jpeg:'image/jpeg',webp:'image/webp'} as Record<string,string>)[metadata.format??'']!==c.mime||!metadata.width||!metadata.height||metadata.pages&&metadata.pages>1)throw Error('INVALID_BACKUP_IMAGE');await sharp(bytes,{limitInputPixels:16777216,failOn:'warning'}).stats();
@@ -94,7 +97,7 @@ export async function importBackupSet(db:PGlite,owner:string,file:string,verifyA
   for(const table of [...backupTables,'storage.objects']){
    let count=0;await eachRows(tx,table,async rows=>{const expected=(await tx.query<{key:string;sha256:string}>('select key,sha256 from acc_backup_rows where table_name=$1 and key=any($2)',[table,rows.map(r=>String(r[keyColumn(table)]))])).rows;const hashes=new Map(expected.map(r=>[r.key,r.sha256]));for(const row of rows)if(hashes.get(String(row[keyColumn(table)]))!==backupHash(JSON.stringify(row)))throw Error('BACKUP_ROUNDTRIP_MISMATCH');count+=rows.length;});if(count!==consumed.footer.counts[table])throw Error('BACKUP_ROUNDTRIP_MISMATCH');
   }
-  await validateImported?.(tx);
+  await validateImported?.(tx);if(review.length)cleanupReview=await stageReviewArchive(owner,reviewRoot!,review);
   return {restored:true,exportSetId:consumed.header.exportSetId,counts:consumed.footer.counts};
- });
+ });}catch(error){await cleanupReview?.();throw error;}
 }

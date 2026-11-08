@@ -1,0 +1,8 @@
+import assert from'node:assert/strict';import{sha256}from'../minimum-sale-units.mjs';
+export const shindoWidthRecipe='shindo-sic109-width-reference-v1';
+export function shindoWidthPayload(d,a,refs,allowedWidths,at){
+ assert.ok(d.tags.includes('56両面ベルベットリボンSIC-109'));assert.ok(d.name.normalize('NFKC').startsWith('両面ベルベットリボン'));const m=d.sizeText.normalize('NFKC').match(/^(\d+(?:\.\d+)?)mm$/);assert.ok(m);const width=Number(m[1]);assert.ok(allowedWidths.includes(width));assert.equal(a.part.metadata.sourceDraftId,d.id);assert.equal(a.part.sku,d.sku);assert.equal(a.part.hole_diameter_mm,null);assert.deepEqual(a.through_holes,[]);assert.deepEqual(a.connection_points,[]);assert.equal(a.path_spec,null);
+ const review={version:1,recipe:shindoWidthRecipe,sourceDraftId:d.id,productId:d.productId,variantId:d.variantId,sku:d.sku,sourceObjectSha256:sha256(JSON.stringify(d)),manufacturer:'SHINDO',family:'SIC-109 両面別珍リボン',manufacturerSeries:'SIC-109',familyBinding:'exact-supplier-SIC109-tag-and-product-type',sourceFamilyTag:'56両面ベルベットリボンSIC-109',flatWidthMm:width,approximate:true,scope:'flat-ribbon-width-reference-only',individualMeasurementVerified:false,colourAppearanceVerified:false,functionalConnectionReady:false,evidenceReferences:refs,reviewedAt:at};
+ const main=refs.find(r=>r.file==='sic109.html');assert.ok(main);
+ return{part:{metadata:{...a.part.metadata,manufacturerDimensionReview:review},notes:[a.part.notes,`メーカー系列参考寸法（SHINDO SIC-109）: リボン幅${width}mm。帯の幅であり線径・厚み・長さとは別です。写真の実寸尺度・色別外観・穴への適合は未確認です。販売長と価格は仕入先の登録情報を保持しています。`].filter(Boolean).join('\n')},source_snapshots:[{source_url:main.url,fetched_at:main.fetchedAt,parser_version:shindoWidthRecipe,raw_fields:{manufacturerDimensionReview:review},status:'partial'}]};
+}

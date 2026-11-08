@@ -6,7 +6,7 @@ import { checkError, RepositoryError } from './designRepository';
 import { localPartReader } from './localWorkspaceClient';
 
 function decodePart(data:any):Part{
- return {...fromRow(data.part as Row),selectionReference:data.selection_reference,holeReference:data.hole_reference,purchaseSpec:data.purchase_spec?fromRow(data.purchase_spec):undefined,pathRenderSpec:data.path_spec?fromRow(data.path_spec):undefined,connectionPoints:data.connection_points.map(fromRow),throughHoles:data.through_holes.map(fromRow)} as unknown as Part;
+ return {...fromRow(data.part as Row),supplierListingReview:data.supplier_listing_review,selectionReference:data.selection_reference,holeReference:data.hole_reference,purchaseSpec:data.purchase_spec?fromRow(data.purchase_spec):undefined,pathRenderSpec:data.path_spec?fromRow(data.path_spec):undefined,connectionPoints:data.connection_points.map(fromRow),throughHoles:data.through_holes.map(fromRow)} as unknown as Part;
 }
 
 export class SupabasePartRepository {
@@ -31,7 +31,8 @@ export class SupabasePartRepository {
   }
 
   async save(id: string | null, input: PartSaveInput): Promise<{ partId:string; createdSuccessor:boolean }> {
-    const payload: Row = {part:toRow(input.part)};
+    const {supplierListingReview:_listingReview,...writablePart}=input.part as typeof input.part & {supplierListingReview?:unknown};
+    const payload: Row = {part:toRow(writablePart)};
     if (input.segmentAsset !== undefined) payload.segment_asset=toRow(input.segmentAsset);
     if (input.imageAsset !== undefined) payload.image_asset=toRow(input.imageAsset);
     if (input.purchaseSpec !== undefined) payload.purchase_spec=input.purchaseSpec === null ? null : toRow(input.purchaseSpec);

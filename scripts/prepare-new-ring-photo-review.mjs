@@ -1,0 +1,32 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';import assert from'node:assert/strict';import sharp from'sharp';
+import{sha256}from'./minimum-sale-units.mjs';import{registrationApi}from'./lib/local-registration-api.mjs';import{loadTeardropRestrictions}from'./teardrop-registration-guards.mjs';import{prepareCzechCrop}from'./prepare-czech-crop.mjs';import{publishedBodyFrame,bodyPhotoRecipe}from'./lib/published-body-photo.mjs';
+const dir='.local/setup/new-ring-photo-review-20261105';const inputs=JSON.parse(await readFile(dir+'/inputs.json')),ledger=JSON.parse(await readFile('.local/setup/precision-review-20261103/ledger.json')),rb=await readFile('.local/parts/parts.json'),ds=new Map(JSON.parse(rb).parts.map(d=>[d.id,d])),ls=new Map(ledger.rows.map(r=>[r.draftId,r]));
+assert.equal(sha256(rb),ledger.registrySha256);const guard=await loadTeardropRestrictions('.local/calibration/nominal');
+const negativePaths=['.local/calibration/nominal/new-input-cutout-negative-inputs.json','.local/calibration/nominal/campaign-body-negative-inputs.json'],negatives=await Promise.all(negativePaths.map(async p=>({path:p,bytes:await readFile(p)})));
+const rows=[],renders=new Map(),at=new Date().toISOString();
+for(const g of inputs){if(g.evidence[0].kind==='official-ball-diameter-only')continue;
+ const c=g.capture,original=await readFile('.local/calibration/gallery/bytes/'+c.sha256);assert.equal(sha256(original),c.sha256);assert.ok(c.productIds.includes(g.productId));
+ const originalReview={reviewed:true,reviewedBy:'codex-primary',reviewedAt:at,sha256:c.sha256,sourceWidth:c.pixelWidth,sourceHeight:c.pixelHeight,coordinateConvention:'unrotated-decoded-raster-integer-pixels',crop:{left:0,top:0,width:c.pixelWidth,height:c.pixelHeight},photoPose:'single-component-as-photographed',rotationDegrees:0,reason:'Source contact sheet reviewed as one complete component. Keep photographed pose; do not claim alignment to physical BODY axes.'};
+ for(let i=0;i<g.sourceIds.length;i++){
+  const d=ds.get(g.sourceIds[i]),r=ls.get(d.id),e=g.evidence[i];assert.equal(r.partId,g.partIds[i]);assert.equal(r.sourceObjectSha256,sha256(JSON.stringify(d)));assert.ok(!guard.blocked.has(d.id));assert.ok(negatives.every(n=>!n.bytes.toString().includes(d.id)&&!n.bytes.toString().includes(c.sha256)),'FROZEN_NEGATIVE');assert.equal(d.imageUrls[0],c.url);assert.ok(d.imageUrls.includes(e.diagramUrl));assert.equal(sha256(await readFile('.local/calibration/gallery/bytes/'+e.diagramSha256)),e.diagramSha256);
+  const frame=publishedBodyFrame(d,e),key=sha256(JSON.stringify({recipe:bodyPhotoRecipe,productId:g.productId,photoSha256:c.sha256,frame,crop:originalReview.crop,rotation:0}));
+  const spec={recipe:bodyPhotoRecipe,...frame,photoRotationDegrees:0,sourceCrop:{...originalReview,url:c.url},sourceObjectSha256:r.sourceObjectSha256,sourceDraftId:d.id,evidence:e,evidenceSha256:sha256(JSON.stringify(e)),photoUrl:c.url,photoSha256:c.sha256,productId:g.productId,originalReview};
+  rows.push({draftId:d.id,partId:r.partId,oldAssetId:r.assetId,renderKey:key,spec});
+  if(!renders.has(key))renders.set(key,{key,spec,original,capture:c,sourceIds:[]});renders.get(key).sourceIds.push(d.id);
+ }
+}
+assert.equal(rows.length,31);const api=await registrationApi(),before=await api.snapshot();assert.equal(before.workspaceId,JSON.parse(await readFile('.local/calibration/provisional/promotions.json')).workspaceId);
+for(const r of rows){const p=before.tables.parts.find(p=>p.id===r.partId);assert.ok(p&&!p.is_archived&&p.metadata?.provisionalRegistration);assert.equal(p.width_mm,10);assert.equal(p.height_mm,10);assert.equal(p.image_asset_id,r.oldAssetId);assert.equal(p.metadata.provisionalRegistration.photoReference.sha256,r.spec.photoSha256);r.beforePart=p;}
+await writeFile(dir+'/before.json',JSON.stringify(before),{flag:'wx'});
+const plan={at,recipe:bodyPhotoRecipe,registrySha256:sha256(rb),policySha256:sha256(await readFile('src/data/kiwa-minimum-sale-units.json')),holdFingerprint:guard.fingerprint,negatives:negatives.map(n=>({path:n.path,sha256:sha256(n.bytes)})),rows};await writeFile(dir+'/plan.json',JSON.stringify(plan),{flag:'wx'});
+const processed=[];
+for(const render of renders.values()){
+ const out=dir+'/prepared/'+render.key;await mkdir(out,{recursive:true});
+ try{const p=await prepareCzechCrop(render.original,render.spec);await writeFile(out+'/original',render.original);for(const k of['high','medium','thumbnail'])await writeFile(out+'/'+k+'.png',p[k]);const receipt={key:render.key,sourceIds:render.sourceIds,spec:render.spec,width:p.width,height:p.height,mmPerPx:p.mmPerPx,originalMime:p.originalMime,transform:p.transform,hashes:{original:sha256(render.original),high:sha256(p.high),medium:sha256(p.medium),thumbnail:sha256(p.thumbnail)},status:'prepared-not-approved'};await writeFile(out+'/receipt.json',JSON.stringify(receipt));processed.push(receipt);}catch(e){processed.push({key:render.key,sourceIds:render.sourceIds,error:e.message,status:'failed-frozen-no-retry'});}
+}
+await writeFile(dir+'/processed.json',JSON.stringify(processed));
+// Review every distinct aspect-ratio render, preserving transparent edges against checkerboard.
+const layers=[],success=processed.filter(r=>r.status==='prepared-not-approved');let n=0;
+for(const r of success){const x=(n%6)*200,y=Math.floor(n/6)*225;const checker=Buffer.from('<svg width="190" height="190"><defs><pattern id="c" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="#eee"/><rect width="10" height="10" fill="#bbb"/><rect x="10" y="10" width="10" height="10" fill="#bbb"/></pattern></defs><rect width="190" height="190" fill="url(#c)"/></svg>');const image=await sharp(await readFile(dir+'/prepared/'+r.key+'/high.png')).resize(180,180,{fit:'contain',background:{r:0,g:0,b:0,alpha:0}}).png().toBuffer();layers.push({input:checker,left:x,top:y},{input:image,left:x+5,top:y+5},{input:Buffer.from(`<svg width="200" height="30"><text x="3" y="18" font-size="12">${n+1}: ${r.spec.widthMm}x${r.spec.heightMm} ${r.spec.productId.slice(-4)}</text></svg>`),left:x,top:y+190});r.reviewNumber=++n;}
+await writeFile(dir+'/processed.json',JSON.stringify(processed));await sharp({create:{width:1200,height:Math.ceil(n/6)*225,channels:3,background:'white'}}).composite(layers).png().toFile(dir+'/processed-contact.png');
+console.log(JSON.stringify({scope:rows.length,renders:processed.length,prepared:success.length,failed:processed.length-success.length,adopted:0}));

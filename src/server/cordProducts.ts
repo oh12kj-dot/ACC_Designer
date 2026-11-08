@@ -1,3 +1,4 @@
+import{loadSupplierListingReview,projectListingSource}from'./supplierListingReview';
 import {readFile} from 'node:fs/promises';
 import {join} from 'node:path';
 import {createHash} from 'node:crypto';
@@ -27,7 +28,7 @@ export async function cordProducts():Promise<CordProduct[]>{const policy=await a
  const sourceSha256=createHash('sha256').update(stableSaleRow({p,policy:policy.sha256})).digest('hex');
  return[{sourceDraftId:p.id,title:p.name,sizeText:p.sizeText,sourceUrl:p.sourceUrl,sourceFetchedAt:p.sourceFetchedAt,sourceSha256,diameterMm:cordDiameter(p.sizeText),purchaseText:p.purchase.sourceText,available:p.available}];
  }).sort((a,b)=>a.title.split(' / ')[0].localeCompare(b.title.split(' / ')[0],'ja')||(a.diameterMm??Infinity)-(b.diameterMm??Infinity)||a.title.localeCompare(b.title,'ja'));}
-export async function cordQuotes(products:CordProduct[]):Promise<CordQuote[]>{if(!products.length)return[];const policy=await salePolicy();return products.map(product=>{const p=policy.drafts.find(p=>p.id===product.sourceDraftId)!,t=String(p.purchase.sourceText).normalize('NFKC'),m=t.match(/^(?:1ヶ\()?([\d.]+)(mm|cm|m)\)?$/),n=m?Number(m[1])*({mm:1,cm:10,m:1000}[m[2]]!):NaN;return{sourceDraftId:p.id,sourceSha256:product.sourceSha256,saleLengthMm:!p.purchase.approximate&&Number.isFinite(n)&&n>0?n:null,price:typeof p.price==='number'&&Number.isFinite(p.price)&&p.price>=0?p.price:null,currency:p.currency??null};});}
+export async function cordQuotes(products:CordProduct[]):Promise<CordQuote[]>{if(!products.length)return[];const policy=await salePolicy(),reviewRoot=process.env.ACC_LOCAL_WORKSPACE_TEST_ID?join(process.cwd(),'.local/test-workspaces',process.env.ACC_LOCAL_WORKSPACE_TEST_ID):join(process.cwd(),'.local/workspace'),review=await loadSupplierListingReview(policy.manifest.workspaceId,reviewRoot);return products.map(product=>{const p=policy.drafts.find(p=>p.id===product.sourceDraftId)!,t=String(p.purchase.sourceText).normalize('NFKC'),m=t.match(/^(?:1ヶ\()?([\d.]+)(mm|cm|m)\)?$/),n=m?Number(m[1])*({mm:1,cm:10,m:1000}[m[2]]!):NaN;return{sourceDraftId:p.id,sourceSha256:product.sourceSha256,supplierListingReview:projectListingSource(review,p.id),saleLengthMm:!p.purchase.approximate&&Number.isFinite(n)&&n>0?n:null,price:typeof p.price==='number'&&Number.isFinite(p.price)&&p.price>=0?p.price:null,currency:p.currency??null};});}
 export async function assertCordSave(tx:{query:Function;exec:Function},args:Record<string,any>){
  const next=args.payload?.design?.editor_config?.cordSpecification;
  const payload=args.payload,config=payload?.design?.editor_config;

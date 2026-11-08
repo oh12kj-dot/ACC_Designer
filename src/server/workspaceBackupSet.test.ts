@@ -87,6 +87,24 @@ it('preserves a target that appears after staging and never publishes over it',a
  const target=join(root,'publication-race'),original=LocalWorkspace.open.bind(LocalWorkspace),spy=vi.spyOn(LocalWorkspace,'open').mockImplementationOnce(async(...args)=>{const staged=await original(...args);await mkdir(target);await writeFile(join(target,'keep.txt'),'user-owned target');return staged;});
  try{await expect(restoreWorkspaceBackup(archive,target)).rejects.toThrow('WORKSPACE_EXISTS');expect(await readFile(join(target,'keep.txt'),'utf8')).toBe('user-owned target');}finally{spy.mockRestore();}
 },30000);
+it('exports v3 frozen review files and restores them through the offline CLI without the registry',async()=>{
+ const sidecar=join(db.root,'supplier-listing-review'),report=JSON.stringify({rows:[]}),files=[{path:'evidence/review.json',sha256:backupHash(report)}];
+ const manifest={version:1,workspaceId:owner,registrySha256:'a'.repeat(64),baselinePartSetSha256:backupHash('[]'),reviewReportSha256:backupHash(report),evidenceManifestSha256:backupHash(JSON.stringify(files)),files,parts:[],sources:[]};
+ const bytes=JSON.stringify(manifest),binding=JSON.stringify({version:1,manifestSha256:backupHash(bytes),sources:[]});
+ await mkdir(join(sidecar,'evidence'),{recursive:true});for(const[name,body]of [['manifest.json',bytes],['manifest.sha256',backupHash(bytes)],['portable-sources.json',binding],['evidence/review.json',report]])await writeFile(join(sidecar,name),body);
+ const id=randomUUID(),target=resolve('.local/test-workspaces',id);
+ try{
+  const exported=await db.exportBackupSet(),file=join(db.root,'exports',exported.id+'.accbackup.ndjson');const proof=await consumeBackup(file,{header:async h=>{expect(h.version).toBe(3);},chunk:async()=>{}});expect(proof.footer.counts.review_files).toBe(4);
+  const retryRoot=join(root,'v3-rollback');await mkdir(retryRoot);await writeFile(join(retryRoot,'identity.json'),JSON.stringify({version:1,id:owner}));const retryDb=await LocalWorkspace.open(retryRoot);
+  try{const original=retryDb.db.transaction.bind(retryDb.db),fault=vi.spyOn(retryDb.db,'transaction').mockImplementationOnce((async(callback:any)=>original(async(tx:any)=>{await callback(tx);throw Error('INJECTED_COMMIT_FAILURE');})) as any);
+   await expect(retryDb.importBackupSet(file)).rejects.toThrow('INJECTED_COMMIT_FAILURE');fault.mockRestore();await expect(lstat(join(retryRoot,'supplier-listing-review'))).rejects.toMatchObject({code:'ENOENT'});expect((await retryDb.db.query('select * from public.parts')).rows).toHaveLength(0);await expect(retryDb.importBackupSet(file)).resolves.toMatchObject({restored:true});
+  }finally{await retryDb.close();}
+
+  const result=await promisify(execFile)(process.execPath,['scripts/restore-local-workspace.mjs',file],{cwd:process.cwd(),env:{...process.env,ACC_LOCAL_WORKSPACE_TEST_ID:id},windowsHide:true});expect(result.stdout).toContain('Restored and verified');
+  expect(await readFile(join(target,'supplier-listing-review/manifest.json'),'utf8')).toBe(bytes);
+  const restored=await LocalWorkspace.open(target);try{const next=await restored.exportBackupSet();const readback=await consumeBackup(join(target,'exports',next.id+'.accbackup.ndjson'),{header:async h=>{expect(h.version).toBe(3);},chunk:async()=>{}});expect(readback.footer.counts).toEqual(proof.footer.counts);}finally{await restored.close();}
+ }finally{if(sidecar===join(db.root,'supplier-listing-review'))await rm(sidecar,{recursive:true,force:true});if(target===resolve('.local/test-workspaces',id))await rm(target,{recursive:true,force:true});}
+},60000);
 it('streams and restores more than50000 rows and more than128MiB without the legacy whole-package limit',async()=>{
  await db.db.query("insert into public.part_source_snapshots(id,part_id,source_url,fetched_at,parser_version,raw_fields,status) select gen_random_uuid(),$1,'https://example.com/bounded-fixture',now(),'capacity-fixture','{}'::jsonb,'partial' from generate_series(1,50001)",[part]);
  const noise=await sharp(randomBytes(1024*1024*3),{raw:{width:1024,height:1024,channels:3}}).png().toBuffer();

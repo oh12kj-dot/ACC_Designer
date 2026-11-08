@@ -1,8 +1,10 @@
 # MVP実装・受入マトリクス
 
-2026-10-29 JST更新。詳細設計v1.4 §36/§38と最新ユーザー判断・採用contractに基づく。以下はローカル実装と検証の範囲。全件登録・実クラウド・実機・実物精度の受入完了は意味しない。設計書本体は改訂しない。
+2026-11-07 JST更新。詳細設計v1.4 §36/§38と現行契約に基づく。ローカル実装/試験と、実cloud・実端末・実物精度の受入を区別する。設計書本体は改訂しない。
 
-使用可能12,183、配置対象20,066、残7,883、除外6,980。公式対象27,046。全Part12,219/Asset15,217/保存済みDesign3。ユーザー指示で登録・画像加工・自動再開は停止中（PAUSED）。登録以外の不具合修正・検証を進める。最新件数は実SQLと [非登録作業の保全確認](evidence/non-registration-preservation.json) に基づく。寸法なし画像枠方式は未承認。
+全Part19,647／有効19,611／Asset20,585／Design3、登録対象未登録0。全件精査は未完了。更新1,744件、全19,611の掲載束縛一致、警告952/購入計算保留833。正本は `.local/setup/all-parts-review-20261106/current-verification.json`、全件精査契約はALL_PARTS_REVIEW_CONTRACT.md。旧20,066/残7,883等の件数は現在の残登録件数ではない。
+
+旧worker/自動監視はPAUSED。許可済み手動精査を継続し、旧negative/意味hold/失敗cropの再試行はしない。写真比較は今回158、未実施19,453。寸法参考値の保存を写真校正・実接続・物理製作可へ昇格しない。
 
 ## §36
 
@@ -40,23 +42,12 @@
 |15|Kiwa候補・差分・fallback|API import/Part source UI、fixture/security/fallback tests。単品HTML候補取込は未検証。公開JSON収集・実画像取込は確認済み|
 |16|実画像2.5D編集画面|Konva stage＋shared editorRenderer、実寸画像/texture/影/z順、PNG E2E。実物見え方未受入|
 
-## 最新の再現と測定範囲
+## 最新の検証と残る受入条件
 
-2026-10-29 登録停止中の整備：オフライン復元用runtimeの依存不足を修正し、現行の紐・デザイン検証・穴径参照を含む固定19ファイルを読み込む。未許可の相対依存とリンク先への書込みは引き続き拒否する。実際のCLIによる隔離先への旧v1/v2復元、強制終了後の復旧を検証する。部品一覧のテストfixtureを現行の販売単位参照に合わせ、保存済み同一グループ部品の寸法範囲を使う回帰を追加。実データへの登録・加工・復元は実施していない。[独立レビュー](evidence/non-registration-offline-restore-review.md)。通常worker設定で112 files/524 tests成功、runtime3tests・typecheck・production build成功。過大探索警告2件も解消し、private作業データ混入0・必要SQL32保持を確認。[今回の検証記録](evidence/non-registration-maintenance-verification.json)。
+全件精査のfirst/正式rerun0/読戻し/全対象外行・全旧Asset・全Design/原registry/catalog/販売方針保全はcurrent-verification.json参照。TOHO3件の掲載寸法矛盾は2026-11-07公式API再取得でも継続。物理校正0、全件精査完了0。未実施の写真/意味確認と、調査済みの資料不足/矛盾は区別する。
 
-以下は過去の検証記録であり、今回再実行した全体テスト・現在のSQL件数とは区別する。
+掲載照合証拠のbackup自動同梱を実装。証拠ありはv3、なしはv2、旧JSON v1/v2の読込を維持。改変/別owner/出典差替え/欠落/業務内容変更を拒否またはunknown/staleへし、保留を解除しない。復元書込/commit失敗時のcleanup・再試行、offline CLI・再export、容量/path/junction/空404証拠を回帰。実sidecar220ファイルを隔離先へ保存し、元registryに頼らない束縛読取を検証したが、公式DB全体の復元には従来の原資料配置要件を維持する。[範囲と証拠](PORTABLE_SUPPLIER_REVIEW_CONTRACT.md)。
 
-2026-10-19 編集読み込み改善: 配置済みPart先読み・local read-only batch・検索全件/100件ずつ表示・キャンセル/auth境界を実装。対象unit32件（native全bytes hash/画像破損・復元・強制終了・遅延library/auth/refresh競合を含む）、入口回帰8成功、typecheck/build成功。Editor関連E2Eの最終結果は証拠参照。全suiteの再実行結果とは区別する。実測は再起動後初回確認292.9秒→21.1秒、起動後canvas0.323秒、全library5.46秒（単一端末・自動ブラウザーでの観測）。全bytes SHA256をDB内計算し、128行ずつheader/hash/path/mimeのみ取得する。画像をまとめてJS転送する試案は効果がなく撤回。実Part/Asset/Design1の行hash保全。詳細/最終E2E結果はevidence/editor-loading-verification.json参照。
+今回の型検査/build/runtime/全体試験の結果は `.local/setup/portable-review-20261107/`。ビルドと全体試験の並行実行で旧JSON復元renameにEPERMを1回観測、同じ試験の単独再実行は成功。原因を断定・動作変更せず、単一workerで全体132 files/607 tests成功・4明示skipを再確認した。最終結果は同dirのfull-tests-serial.logを正本とする。
 
-- Vitest81 files/380 tests成功、Playwright全140件中138成功/2明示skip、typecheck/production build成功。別途runtime Node1 test成功。E2Eは隔離workspaceのPC/mobile Chromium/WebKit。skipはWebKit native2指注入で、同engineのsynthetic pointerは別検証。証拠 [workspace-backup-v2-verification.json](evidence/workspace-backup-v2-verification.json) と同prefixのunit/e2e/build.log。
-- 全migration001–016をPGliteで検証。非空Design/画像/Part/archive/後継のv1/v2往復、SQL rollback、writer競合、処理強制終了前後のcommit境界・復元再実行を隔離保存先で検証。OS電源断の耐久性保証ではない。
-- 新backup v2は全domain libraryを逐次処理。128MiB超・50,000行超、改変/欠損/順序/owner/path/schema拒否、書出しdisk/cancel失敗、復元公開競合を検証。1画像20MiB/1記録32MiB制限は維持。旧JSONも支持し旧上限を維持。raw catalog/候補registry/画像審査sidecarは対象外。手順 [WORKSPACE_BACKUP_SET_USAGE.md](WORKSPACE_BACKUP_SET_USAGE.md)。
-- 実保存先は1回再起動後、全Part16,716/Asset13,073/Design0の行hash・archive状態・registry/除外hash不変。登録追加0/実backup作成0/実restore0。画像startup監査は全件確認し、取得の件数/bytesを制限する。証拠 [workspace-backup-v2-real-preservation.json](evidence/workspace-backup-v2-real-preservation.json)。非空実Design保全は未実証。
-- ティアドロップ範囲寸法・独立写真crop/姿勢・persistent prepared cache・審査packageの集合identity/原子的公開を実装。初回2件の登録/再実行0/cold read-backは停止前に検証。停止後は実登録せず隔離テスト。詳細HANDOFF/TEARDROP_PREPARATION参照。
-- PWA通信断fallback、性能の測定範囲、過去の商品別照合はRECOVERY_PWA_REVIEW.md、evidence/performance-*.json、PART_REGISTRATION_REVIEW.md、ALL_VARIANT_MAPPING_CONTRACT.mdと各family証拠を参照。合成画像・自動ブラウザーを実物精度や実機性能の証明へ昇格しない。
-
-## 残る受入条件
-
-全20,066配置対象の使用可能と全27,046公式対応は未完了。品質hold245以上（元85含む）と各有限契約の保留を維持。画像尺度/サイズ別外観/穴/接続の未確認は明示し、寸法根拠と配置可否を分ける。登録再開は明示指示を待つ。
-
-実Supabase/Auth/Storage/並行接続・PC/iPhone cloud往復、iPhone Safari/PWA install、実Kiwa HTML単品候補取込、既知寸法による実物比±3%の実測、電源断試験、実ライブラリ復元は未受入。垂直U/Vは製品規約判断待ちで拒否を維持。クラウド接続設定だけで端末データは移行されない。
+実Supabase/Auth/Storage/並行接続、PC/iPhone cloud往復、iPhone Safari/PWA install、実Kiwa HTML単品候補取込、既知寸法による実物比±3%の実測、電源断/強制終了、実保存先のライブラリ復元は未受入。垂直U/Vは従来の製品規約判断待ちで拒否を維持。cloud接続設定だけで端末データは移行されない。以前のローカル実績はGitと各evidenceに保持し、現在の件数/受入へ転用しない。

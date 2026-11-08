@@ -49,3 +49,5 @@ it('uses the registered hole axis for every batch member and keeps spacing along
  expect(result.throughAttachments).toEqual([]);
  }
 });
+
+it('does not use a provisional box for automatic physical spacing',()=>{expect(automaticSpacingMm({...part,geometryKind:'node',widthMm:10,heightMm:10,metadata:{provisionalRegistration:{version:1,recipe:'provisional-placeholder-v1',status:'needs_review',layoutSizeSource:'fixed-placeholder-not-physical',physicalDimensionsVerified:false,imageScaleVerified:false,connectionReady:false,sourceImageUrls:[],publishedSizeText:'unknown',pending:[]}}})).toBeUndefined();});

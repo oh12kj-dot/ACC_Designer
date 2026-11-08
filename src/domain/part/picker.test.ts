@@ -28,3 +28,5 @@ it('groups only known finishing suffixes, keeping genuine two-colour and unknown
  for(const c of ['ブルー/ホワイト','アメジスト/レインボームーンストーン','アメジスト/XYZ','アメジストAB'])expect(pickerColorGroup(c)).toBe(c);
  expect(pickerColorGroup('アメジスト/G【アウトレット】')).toBe('アメジスト');expect(pickerColorGroup('')).toBe('');
 });
+
+it('does not sort a provisional drawing box as a physical 10mm size',()=>{const p=part('placeholder',{widthMm:10,heightMm:10,metadata:{provisionalRegistration:{version:1,recipe:'provisional-placeholder-v1',status:'needs_review',layoutSizeSource:'fixed-placeholder-not-physical',physicalDimensionsVerified:false,imageScaleVerified:false,connectionReady:false,sourceImageUrls:[],publishedSizeText:'100cm',pending:[]}}});expect(pickerIdentity(p).dimensions).toEqual([]);});

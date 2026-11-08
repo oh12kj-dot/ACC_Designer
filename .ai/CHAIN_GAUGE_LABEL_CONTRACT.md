@@ -1,0 +1,9 @@
+# 旧scopeの解釈撤回・凍結
+
+旧415件scopeは線径ラベルを線材径と断定したため撤回。ボールチェーンの本文との相違を確認してwriter停止、399件のmetadata/notes保存をinterrupted.json/snapshotへ記録した。native寸法・写真・穴・接続・購入業務値・Design変更はない。旧writerを再起動しない。
+
+新scope chain-size-labelで全415件を原文ラベルの参照記録へ訂正する。数値の物理的意味は未確定とし、線材径/玉径/穴径/幅を推定しない。旧metadataを除去し、原notesを保持して新注意書きを追加。誤解釈の旧snapshotは削除せず、新snapshotで撤回を明記する。CAS・全読戻し・正式rerun0・全旧行/Design保全・掲載sidecarの厳密な差分再結合を必須とする。
+
+独立確認で、旧scope以前からnative wire_diameter_mm/旧publishedLabelReviewにも同じ解釈があると判明。保存値/履歴は保持し、新しい意味未確定metadataに基づいて物理線径の編集欄・線径検索・素材径/チェーン厚みのwire fallbackへの使用を停止する。SKU41309209のボールチェーンを負例とし、手動の通常線径は維持する。
+
+現在掲載に差分があるため保存対象から外した3件も、旧publishedLabelReviewが明示線径ラベルだけを根拠とする場合は読取時の意味未確定ガードを適用。native書込0、現在掲載へ自動採用せず、旧値を素材径として復活させない。

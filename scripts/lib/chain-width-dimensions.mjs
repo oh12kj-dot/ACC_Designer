@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import {sha256} from '../minimum-sale-units.mjs';
+export const chainWidthRecipe='supplier-chain-width-reference-v1';
+export const chainWidthPatterns=['幅が約#mmのデザインチェーンです。','幅が約#mmの耐食性に優れたステンレス製の小判チェーンです。','幅が約#mmのキヘイチェーンです。','幅が約#mmの小判チェーンです。','幅が約#mmのボックスチェーンです。','幅が約#mmの耐食性に優れたステンレス製のデザインチェーンです。'];
+export function chainWidthSentence(text){const matches=text.normalize('NFKC').split(/(?<=。)/).map(s=>s.trim()).filter(s=>chainWidthPatterns.includes(s.replace(/\d+(?:\.\d+)?/g,'#')));assert.equal(matches.length,1,'EXACT_SINGLE_CHAIN_WIDTH_SENTENCE');const sentence=matches[0],width=Number(sentence.match(/約(\d+(?:\.\d+)?)mm/)[1]);assert.ok(width>0&&Number.isFinite(width));return{sentence,width};}
+export function chainWidthPayload(d,a,currentText,receipt,at){assert.equal(d.category,'chain');assert.equal(a.part.metadata.sourceDraftId,d.id);assert.equal(a.part.sku,d.sku);const old=chainWidthSentence(d.description),now=chainWidthSentence(currentText);assert.deepEqual(now,old);assert.equal(a.path_spec,null);assert.deepEqual(a.through_holes,[]);assert.deepEqual(a.connection_points,[]);assert.ok(!a.part.metadata.supplierDimensionReview);
+ const review={version:1,recipe:chainWidthRecipe,sourceDraftId:d.id,sourceObjectSha256:sha256(JSON.stringify(d)),productId:d.productId,variantId:d.variantId,sku:d.sku,approximate:true,chainWidthMm:old.width,quotedSentence:old.sentence,sourceUrl:d.sourceUrl,evidenceReferences:[receipt],individualMeasurementVerified:false,imageScaleVerified:false,functionalConnectionReady:false,reviewedAt:at};
+ return{part:{metadata:{...a.part.metadata,supplierDimensionReview:review},notes:[a.part.notes,`仕入先公表参考寸法: チェーン幅約${old.width}mm。チェーンの幅であり、線材の線径・厚み・全長とは別です。写真の実寸尺度・コマの内径・接続適合は未確認です。`].filter(Boolean).join('\n')},source_snapshots:[{source_url:d.sourceUrl,fetched_at:receipt.fetchedAt,parser_version:chainWidthRecipe,raw_fields:{supplierDimensionReview:review},status:'partial'}]};
+}

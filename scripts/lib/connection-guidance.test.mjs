@@ -1,0 +1,2 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{guidanceSentence}from'./connection-guidance.mjs';
+test('records recommended connector gauge without inventing an actual hole diameter',()=>{assert.deepEqual(guidanceSentence('カンには線径0.8mm以下の丸カンやCカンが使用できます。'),{sentence:'カンには線径0.8mm以下の丸カンやCカンが使用できます。',maxConnectorWireDiameterMm:.8});for(const s of['※線径0.6mm以下のTピンは抜ける場合があります。','25mmには線径5mm以下、30mmには線径7mm以下。','穴径は約1mmです。'])assert.throws(()=>guidanceSentence(s));});
